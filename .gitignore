@@ -1,0 +1,13 @@
+# Raw source workbooks: large, re-downloadable, never deployed
+raw/*
+!raw/.gitkeep
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json

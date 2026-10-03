@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studying Down Under: setup test</title>
+
+  <!-- Vega stack, pinned to major versions -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin: 0; background: #FAF7F2; color: #14212B; font-family: Inter, system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-family: "Source Serif 4", Georgia, serif; font-size: 40px; margin: 0 0 8px; }
+    p  { color: #5C6670; line-height: 1.6; }
+    .status { padding: 12px 16px; border-left: 4px solid #C2701C; background: #fff; margin: 24px 0; }
+    .status.ok { border-color: #2A6B70; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Setup test</h1>
+  <p>This page is temporary. If a bar chart appears below with the education bar in ochre, the browser can load
+     Vega-Lite from the CDN and read CSVs from <code>data/</code>, which means Live Server is working.
+     It gets replaced by the real page skeleton in build step 2.</p>
+
+  <div id="status" class="status">Loading…</div>
+  <div id="vis"></div>
+</main>
+
+<script>
+  const spec = {
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+    width: 560,
+    data: { url: "data/exports_by_commodity.csv" },
+    transform: [{ filter: "datum.rank <= 10" }],
+    mark: { type: "bar", cornerRadiusEnd: 2 },
+    encoding: {
+      y: { field: "commodity", type: "nominal", sort: "-x", title: null },
+      x: { field: "fy2024_25", type: "quantitative", title: "A$ million, 2024–25" },
+      color: {
+        condition: { test: "datum.is_education === 'true' || datum.is_education === true", value: "#C2701C" },
+        value: "#B8B0A6"
+      },
+      tooltip: [
+        { field: "commodity", title: "Export" },
+        { field: "fy2024_25", title: "A$ million", format: ",.0f" }
+      ]
+    },
+    config: { font: "Inter", axis: { labelColor: "#5C6670", titleColor: "#5C6670", domain: false, grid: false } }
+  };
+
+  const status = document.getElementById("status");
+  if (location.protocol === "file:") {
+    status.textContent = "Opened as a file. Close this tab, then right-click index.html in VSCode → Open with Live Server.";
+  } else {
+    vegaEmbed("#vis", spec, { actions: true, renderer: "svg" })
+      .then(() => { status.textContent = "Working: Vega-Lite loaded and the CSV was read."; status.classList.add("ok"); })
+      .catch(err => { status.textContent = "Chart failed: " + err.message; console.error(err); });
+  }
+</script>
+</body>
+</html>
