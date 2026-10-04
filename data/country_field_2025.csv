@@ -1,0 +1,111 @@
+nationality,field,enrolments,country_total,share,country_rank,field_order
+China,Business & Commerce,70113,227460,0.30824,1,0
+China,IT,22397,227460,0.09847,1,1
+China,English language,22063,227460,0.097,1,2
+China,Society & Culture,23880,227460,0.10499,1,3
+China,Engineering,17241,227460,0.0758,1,4
+China,Education,11308,227460,0.04971,1,5
+China,Health,6381,227460,0.02805,1,6
+China,Hospitality & Services,2232,227460,0.00981,1,7
+China,Architecture & Building,5510,227460,0.02422,1,8
+China,"Sciences, Arts & Agriculture",26961,227460,0.11853,1,9
+China,School & other,19374,227460,0.08518,1,10
+India,Business & Commerce,50512,182369,0.27698,2,0
+India,IT,31107,182369,0.17057,2,1
+India,English language,1380,182369,0.00757,2,2
+India,Society & Culture,9094,182369,0.04987,2,3
+India,Engineering,21325,182369,0.11693,2,4
+India,Education,13162,182369,0.07217,2,5
+India,Health,14976,182369,0.08212,2,6
+India,Hospitality & Services,11019,182369,0.06042,2,7
+India,Architecture & Building,18616,182369,0.10208,2,8
+India,"Sciences, Arts & Agriculture",8021,182369,0.04398,2,9
+India,School & other,3157,182369,0.01731,2,10
+Nepal,Business & Commerce,27150,89530,0.30325,3,0
+Nepal,IT,17608,89530,0.19667,3,1
+Nepal,English language,3492,89530,0.039,3,2
+Nepal,Society & Culture,8466,89530,0.09456,3,3
+Nepal,Engineering,4514,89530,0.05042,3,4
+Nepal,Education,10733,89530,0.11988,3,5
+Nepal,Health,9333,89530,0.10424,3,6
+Nepal,Hospitality & Services,4821,89530,0.05385,3,7
+Nepal,Architecture & Building,1287,89530,0.01438,3,8
+Nepal,"Sciences, Arts & Agriculture",1607,89530,0.01795,3,9
+Nepal,School & other,519,89530,0.0058,3,10
+Philippines,Business & Commerce,14084,47666,0.29547,4,0
+Philippines,IT,2703,47666,0.05671,4,1
+Philippines,English language,745,47666,0.01563,4,2
+Philippines,Society & Culture,8253,47666,0.17314,4,3
+Philippines,Engineering,4441,47666,0.09317,4,4
+Philippines,Education,5723,47666,0.12006,4,5
+Philippines,Health,2846,47666,0.05971,4,6
+Philippines,Hospitality & Services,7063,47666,0.14818,4,7
+Philippines,Architecture & Building,576,47666,0.01208,4,8
+Philippines,"Sciences, Arts & Agriculture",772,47666,0.0162,4,9
+Philippines,School & other,460,47666,0.00965,4,10
+Vietnam,Business & Commerce,15752,45356,0.3473,5,0
+Vietnam,IT,4546,45356,0.10023,5,1
+Vietnam,English language,2986,45356,0.06583,5,2
+Vietnam,Society & Culture,2818,45356,0.06213,5,3
+Vietnam,Engineering,2185,45356,0.04817,5,4
+Vietnam,Education,3291,45356,0.07256,5,5
+Vietnam,Health,1737,45356,0.0383,5,6
+Vietnam,Hospitality & Services,2764,45356,0.06094,5,7
+Vietnam,Architecture & Building,814,45356,0.01795,5,8
+Vietnam,"Sciences, Arts & Agriculture",2748,45356,0.06059,5,9
+Vietnam,School & other,5715,45356,0.126,5,10
+Colombia,Business & Commerce,11945,39867,0.29962,6,0
+Colombia,IT,1910,39867,0.04791,6,1
+Colombia,English language,12504,39867,0.31364,6,2
+Colombia,Society & Culture,2804,39867,0.07033,6,3
+Colombia,Engineering,3349,39867,0.084,6,4
+Colombia,Education,1947,39867,0.04884,6,5
+Colombia,Health,321,39867,0.00805,6,6
+Colombia,Hospitality & Services,2379,39867,0.05967,6,7
+Colombia,Architecture & Building,1594,39867,0.03998,6,8
+Colombia,"Sciences, Arts & Agriculture",893,39867,0.0224,6,9
+Colombia,School & other,221,39867,0.00554,6,10
+Bangladesh,Business & Commerce,6437,32525,0.19791,7,0
+Bangladesh,IT,12319,32525,0.37875,7,1
+Bangladesh,English language,982,32525,0.03019,7,2
+Bangladesh,Society & Culture,2540,32525,0.07809,7,3
+Bangladesh,Engineering,3916,32525,0.1204,7,4
+Bangladesh,Education,1496,32525,0.046,7,5
+Bangladesh,Health,1129,32525,0.03471,7,6
+Bangladesh,Hospitality & Services,784,32525,0.0241,7,7
+Bangladesh,Architecture & Building,921,32525,0.02832,7,8
+Bangladesh,"Sciences, Arts & Agriculture",1264,32525,0.03886,7,9
+Bangladesh,School & other,737,32525,0.02266,7,10
+Pakistan,Business & Commerce,5971,31801,0.18776,8,0
+Pakistan,IT,5262,31801,0.16547,8,1
+Pakistan,English language,258,31801,0.00811,8,2
+Pakistan,Society & Culture,2289,31801,0.07198,8,3
+Pakistan,Engineering,7148,31801,0.22477,8,4
+Pakistan,Education,2360,31801,0.07421,8,5
+Pakistan,Health,1023,31801,0.03217,8,6
+Pakistan,Hospitality & Services,1023,31801,0.03217,8,7
+Pakistan,Architecture & Building,5286,31801,0.16622,8,8
+Pakistan,"Sciences, Arts & Agriculture",737,31801,0.02318,8,9
+Pakistan,School & other,444,31801,0.01396,8,10
+Indonesia,Business & Commerce,13652,31579,0.43231,9,0
+Indonesia,IT,2448,31579,0.07752,9,1
+Indonesia,English language,706,31579,0.02236,9,2
+Indonesia,Society & Culture,2244,31579,0.07106,9,3
+Indonesia,Engineering,1660,31579,0.05257,9,4
+Indonesia,Education,1831,31579,0.05798,9,5
+Indonesia,Health,695,31579,0.02201,9,6
+Indonesia,Hospitality & Services,3628,31579,0.11489,9,7
+Indonesia,Architecture & Building,700,31579,0.02217,9,8
+Indonesia,"Sciences, Arts & Agriculture",2802,31579,0.08873,9,9
+Indonesia,School & other,1213,31579,0.03841,9,10
+Brazil,Business & Commerce,9485,30345,0.31257,10,0
+Brazil,IT,2021,30345,0.0666,10,1
+Brazil,English language,9986,30345,0.32908,10,2
+Brazil,Society & Culture,1751,30345,0.0577,10,3
+Brazil,Engineering,1402,30345,0.0462,10,4
+Brazil,Education,1398,30345,0.04607,10,5
+Brazil,Health,296,30345,0.00975,10,6
+Brazil,Hospitality & Services,1369,30345,0.04511,10,7
+Brazil,Architecture & Building,1335,30345,0.04399,10,8
+Brazil,"Sciences, Arts & Agriculture",711,30345,0.02343,10,9
+Brazil,School & other,591,30345,0.01948,10,10
