@@ -1,0 +1,44 @@
+institution,short_name,state,group,domestic,overseas,total,overseas_share,campus,lat,lon
+Murdoch University,Murdoch,WA,Other public,10624,14157,24781,0.5713,Perth (Murdoch),-32.067,115.835
+The University of Sydney,Sydney,NSW,Group of Eight,38771,40111,78882,0.5085,Camperdown,-33.888,151.187
+RMIT University,RMIT,VIC,Other public,37911,37998,75909,0.5006,Melbourne City,-37.808,144.963
+University of New South Wales,UNSW,NSW,Group of Eight,43839,38444,82283,0.4672,Kensington,-33.918,151.231
+University of Wollongong,Wollongong,NSW,Other public,19018,15924,34942,0.4557,Wollongong,-34.406,150.879
+Victoria University,Victoria,VIC,Other public,18911,15724,34635,0.454,Footscray Park,-37.793,144.899
+Monash University,Monash,VIC,Group of Eight,50957,42270,93227,0.4534,Clayton,-37.911,145.134
+Torrens University Australia,Torrens,SA,Private,14112,11333,25445,0.4454,Adelaide,-34.928,138.6
+The University of Melbourne,Melbourne,VIC,Group of Eight,42585,32987,75572,0.4365,Parkville,-37.798,144.961
+The Australian National University,ANU,ACT,Group of Eight,13537,9402,22939,0.4099,Acton,-35.278,149.12
+James Cook University,James Cook,QLD,Other public,12151,7748,19899,0.3894,Townsville,-19.329,146.758
+The University of Queensland,Queensland,QLD,Group of Eight,34969,22270,57239,0.3891,St Lucia,-27.497,153.013
+Bond University,Bond,QLD,Private,3643,2302,5945,0.3872,Gold Coast (Robina),-28.074,153.414
+Swinburne University of Technology,Swinburne,VIC,Other public,29104,16292,45396,0.3589,Hawthorn,-37.822,145.039
+The University of Western Australia,Western Australia,WA,Group of Eight,19674,9895,29569,0.3346,Crawley,-31.98,115.818
+The University of Adelaide,Adelaide,SA,Group of Eight,20411,10171,30582,0.3326,North Terrace,-34.92,138.604
+Federation University Australia,Federation,VIC,Other public,8454,3996,12450,0.321,Ballarat (Mt Helen),-37.626,143.89
+Edith Cowan University,Edith Cowan,WA,Other public,21392,9467,30859,0.3068,Joondalup,-31.752,115.77
+Southern Cross University,Southern Cross,NSW,Other public,12885,5536,18421,0.3005,Lismore,-28.818,153.297
+Curtin University,Curtin,WA,Other public,39816,17012,56828,0.2994,Bentley,-32.006,115.894
+Charles Darwin University,Charles Darwin,NT,Other public,9118,3656,12774,0.2862,Casuarina,-12.372,130.869
+Deakin University,Deakin,VIC,Other public,43318,16137,59455,0.2714,Burwood,-37.847,145.115
+University of Technology Sydney,UTS,NSW,Other public,37302,13085,50387,0.2597,Ultimo,-33.884,151.199
+University of Canberra,Canberra,ACT,Other public,12463,4290,16753,0.2561,Bruce,-35.238,149.084
+Flinders University,Flinders,SA,Other public,18679,6283,24962,0.2517,Bedford Park,-35.021,138.572
+CQUniversity,CQU,QLD,Other public,16512,5523,22035,0.2506,Rockhampton,-23.322,150.522
+Macquarie University,Macquarie,NSW,Other public,33834,11127,44961,0.2475,North Ryde,-33.774,151.113
+La Trobe University,La Trobe,VIC,Other public,28304,9155,37459,0.2444,Bundoora,-37.721,145.048
+Western Sydney University,Western Sydney,NSW,Other public,36197,11698,47895,0.2442,Parramatta,-33.815,151.003
+Griffith University,Griffith,QLD,Other public,35928,8755,44683,0.1959,Nathan,-27.553,153.053
+University of South Australia,UniSA,SA,Other public,27713,6261,33974,0.1843,City West,-34.921,138.592
+Queensland University of Technology,QUT,QLD,Other public,42895,9669,52564,0.1839,Gardens Point,-27.477,153.028
+The University of Newcastle,Newcastle,NSW,Other public,29076,5798,34874,0.1663,Callaghan,-32.893,151.704
+Australian Catholic University,ACU,NSW,Other public,29038,5755,34793,0.1654,North Sydney,-33.839,151.208
+University of Tasmania,Tasmania,TAS,Other public,26946,5154,32100,0.1606,Sandy Bay,-42.903,147.326
+University of the Sunshine Coast,UniSC,QLD,Other public,16645,2226,18871,0.118,Sippy Downs,-26.718,153.062
+Charles Sturt University,Charles Sturt,NSW,Other public,31468,3602,35070,0.1027,Bathurst,-33.418,149.556
+University of Southern Queensland,UniSQ,QLD,Other public,18523,2049,20572,0.0996,Toowoomba,-27.605,151.932
+University of Divinity,Divinity,VIC,Private,1121,124,1245,0.0996,Parkville,-37.794,144.966
+The University of Notre Dame Australia,Notre Dame,WA,Private,10963,1043,12006,0.0869,Fremantle,-32.055,115.747
+Avondale University,Avondale,NSW,Private,1019,87,1106,0.0787,Cooranbong,-33.075,151.453
+The University of New England,New England,NSW,Other public,18224,1163,19387,0.06,Armidale,-30.488,151.643
+Batchelor Institute of Indigenous Tertiary Education,Batchelor Institute,NT,Other public,22,0,22,0.0,Batchelor,-13.05,131.03

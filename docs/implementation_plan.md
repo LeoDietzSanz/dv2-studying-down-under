@@ -121,8 +121,8 @@ Two KPI numerals, tabular, ochre:
 **Chart 1 · Waffle / isotype grid** — ADVANCED · load-bearing
 - **Title:** More than one in three
 - **Subtitle:** Share of all Australian higher-education students who are overseas students, 2024
-- **Caption:** 1 · Isotype grid — each square is 1% of the 1,676,077 students enrolled in Australian higher education in 2024; 35 are overseas. Source: Department of Education, Higher Education Student Data (perturbed), 2024.
-- **Data:** `he_institution_2024.csv`, aggregated to two numbers
+- **Caption:** 1 · Isotype grid. Each square is 1% of the 1,676,077 students enrolled in Australian higher education in 2024, and 35 of them are overseas students. At universities alone (excluding private colleges) the share is 33%. Figures are perturbed for confidentiality. Source: Department of Education, Higher Education Student Data, 2024.
+- **Data:** `he_summary_2024.csv`, row "All higher-education providers" (35.2%). The "Universities only" row (32.7%) is for the caption. Either way "one in three" is accurate; "more than one in three" applies only to all providers, so keep the headline and the scope consistent.
 - **How:** 10×10 grid of `square` marks. 35 filled accent, 65 filled `#E2DCD3`. Position on a derived row/column; colour is the only other channel. No legend — the subtitle carries it.
 
 **Chart 2 · Annotated line chart** — basic
@@ -150,23 +150,25 @@ Two KPI numerals, tabular, ochre:
 - **Title:** Where they come from
 - **Subtitle:** International student enrolments by country of citizenship, 2025
 - **Caption:** 4 · Proportional-symbol map, Equal Earth projection — circle area encodes enrolments; colour encodes world region. Source: Department of Education, PRISMS.
-- **Data:** `nationality_by_year.csv` (2025) + `geo/country_centroids.csv` + `geo/ne_110m_admin_0_countries.topo.json`
+- **Data:** `country_2025.csv` (has `enrolments`, `region_group`, `lat`, `lon` already joined) + `geo/world_countries.topo.json` (layer `countries`) for the basemap.
 - **How:** `geoshape` basemap in `#F0EDE7` with `#E2DCD3` borders, `equalEarth` projection rotated so the Pacific isn't split. `circle` marks at centroids; **size scaled by `sqrt`** (area, not radius — the bubble-plot guidance is explicit), `opacity: 0.85`, thin white stroke. Colour = region categorical.
 
 **Chart 5 · MAP 2 — Per-capita choropleth** — ADVANCED · load-bearing
-- **Title:** …and where that's a big deal
-- **Subtitle:** Students in Australia per 100,000 people of the sending country, 2025
-- **Caption:** 5 · Choropleth, Equal Earth projection — Nepal sends more students to Australia per head than any large country on Earth. China's raw total is the largest; its rate is unremarkable. Sources: Department of Education, PRISMS; World Bank, total population (SP.POP.TOTL).
-- **Data:** `nationality_by_year.csv` + `country_population.csv`, joined on ISO3
+- **Title:** …and where it's a big deal
+- **Subtitle:** Enrolments in Australia per 100,000 people in the home country, 2025
+- **Caption:** 5 · Choropleth, Equal Earth projection. Bhutan's enrolments in Australia equal almost 2% of its population (1,943 per 100,000), and Fiji's and Nepal's are 727 and 302. China sends the most students but ranks 32nd by rate (16 per 100,000); India ranks 39th (12.5). Countries under 200,000 people are shaded but not ranked; Taiwan's population is from its Ministry of the Interior because the World Bank doesn't publish it. Sources: Department of Education, PRISMS; World Bank, SP.POP.TOTL (2025).
+- **Data:** `country_2025.csv` (`per_100k`, `small_population`, `rank_per_100k`), looked up onto `geo/world_countries.topo.json` by `iso3`. Cook Islands and St Helena have no population figure and stay grey.
+- **Changed in v4.5:** the headline is now Bhutan rather than Nepal. Earlier versions expected Nepal to have the highest rate; it's third. Annotate Bhutan, Nepal and China directly on the map.
 - **How:** `geoshape`, colour = Sequential B (ochre), **quantile or threshold bins, not linear** — the distribution is severely right-skewed and a linear ramp will show one dark country and 200 pale ones. Same projection and size as Map 4 so the pair reads as a genuine comparison.
 - **This is the analytical core of the page.** It is the chart that makes the second data source do real work rather than sit there satisfying a rule.
 
 **Chart 6 · Bump chart** — advanced (surplus)
-- **Title:** The order keeps changing
-- **Subtitle:** Rank of the top 10 source countries, 2010–2025
-- **Caption:** 6 · Bump chart — encodes rank, not volume; a line that stays flat is a country holding position, not a country holding still. Source: Department of Education, PRISMS.
-- **Data:** `nationality_by_year.csv`
-- **How:** `line` + `point` per country. y = rank, **reversed scale, 1 at top**, integer ticks. Grey all lines except China, India and Nepal; direct-label those three at both ends. No legend.
+- **Title:** Below the top two, everything moved
+- **Subtitle:** Rank among source countries, positions 3–15, 2010–2025. China and India held first and second place in every year.
+- **Caption:** 6 · Bump chart. It encodes rank, not volume. Nepal rose from 7th to 3rd, the Philippines from 22nd to 4th and Bangladesh from 19th to 7th, while South Korea fell from 3rd to 14th. Source: Department of Education, PRISMS.
+- **Data:** `nationality_by_year.csv` (already has a `rank` column). Filter to countries that reached the top 15 in any year from 2010 onward, then clip the y-axis to ranks 3–15.
+- **How:** `line` + `point` per country. y = rank, **reversed scale, 3 at top**, integer ticks. Colour four lines (Nepal, Philippines and Bangladesh in accent tones, Korea in counterpoint teal) and grey the rest; direct-label the four at both ends. No legend. China and India go in the subtitle rather than on the chart: two flat lines at the top would add data-ink without adding information.
+- **Changed in v4.3:** earlier versions expected India to overtake China. The data shows it never did, in any year, so the chart now focuses on ranks 3–15, where the real changes happened.
 
 ---
 
@@ -174,24 +176,26 @@ Two KPI numerals, tabular, ochre:
 *Standfirst: your passport predicts your degree more than you'd expect.*
 
 **Chart 7 · Marimekko / mosaic** — ADVANCED · load-bearing
-- **Title:** Two fields carry the whole system
-- **Subtitle:** Enrolments by broad field of education, split by sector, 2025
-- **Caption:** 7 · Marimekko chart — column width encodes the size of each field; the vertical split shows sector composition within it. Management & Commerce and IT together account for a disproportionate share. Source: Department of Education, PRISMS (detailed).
-- **Data:** `field_by_sector_2025.csv`
-- **How:** `rect` marks on derived cumulative x-extents (`x`/`x2`) and stacked y-shares (`y`/`y2`). Colour = sector categorical. Both `transform` steps computed in Python, not in Vega-Lite — keep the spec readable.
+- **Title:** Four in ten study business or IT
+- **Subtitle:** Enrolments by field of study, split by sector, 2025
+- **Caption:** 7 · Marimekko chart. Column width encodes each field's share of all enrolments and the vertical split shows which sector teaches it. Business & Commerce alone is 29%, taught almost equally by universities and VET colleges; IT adds 12%. English-language courses are shown as their own field, although the Department files them under Society & Culture. Source: Department of Education, PRISMS (detailed).
+- **Data:** `field_by_sector_2025.csv`, 11 field columns, rectangle edges already computed (`x0`, `x1`, `y0`, `y1`, all 0–1).
+- **How:** `rect` with `x: x0`, `x2: x1`, `y: y0`, `y2: y1`; colour = sector categorical. White 1–2 px stroke between rectangles. Label the columns along the top. Labels for narrow columns (under about 5%) go in the tooltip only.
+- **Field regrouping (v4.4, in `prep/labels.py`):** ELICOS gets its own "English language" column, and school and foundation students form "School & other". Sciences, Creative Arts and Agriculture merge into one column; separately they'd be too narrow to read.
 
 **Chart 8 · Dumbbell plot** — ADVANCED · load-bearing
 - **Title:** The two cohorts study different things
 - **Subtitle:** Share of enrolments in each field: domestic vs overseas students, higher education, 2024
-- **Caption:** 8 · Dumbbell plot — each row compares one field's share of domestic enrolments (teal) with its share of overseas enrolments (ochre). The gap is the point. Figures are perturbed for confidentiality. Source: Department of Education, Higher Education Student Data.
-- **Data:** `he_field_citizenship_2024.csv`
+- **Caption:** 8 · Dumbbell plot. Each row compares a field's share of domestic enrolments (teal) with its share of overseas enrolments (ochre). A third of overseas students study business (33.7%), against one in seven domestic students (14.5%). Domestic students are far more likely to study health (20.9% vs 8.9%) or society and culture (23.2% vs 10.2%). Combined degrees count in both fields. Figures are perturbed. Source: Department of Education, Higher Education Student Data, 2024.
+- **Data:** `he_field_citizenship_2024.csv`: 10 rows, already sorted by `gap_pp`, from most overseas-leaning to most domestic-leaning.
 - **How:** `rule` from domestic to overseas share, then two `circle` marks. Rows sorted by gap size, not alphabetically. Colour-coded words in the subtitle instead of a legend.
 
 **Chart 9 · Country × field heatmap** — ADVANCED · load-bearing
 - **Title:** Your passport predicts your degree
 - **Subtitle:** Share of each country's enrolments by broad field, top 10 source countries, 2025
-- **Caption:** 9 · Heatmap — colour encodes each field's share *within* a country, so rows are comparable despite very different totals. Source: Department of Education, PRISMS (detailed).
-- **Data:** `country_field_2025.csv`
+- **Caption:** 9 · Heatmap. Colour encodes each field's share *within* a country's enrolments, so rows are comparable despite very different totals. A third of Colombian and Brazilian enrolments are English-language courses. Bangladeshi students lean heavily towards IT (38%), Pakistani students towards engineering and architecture (39% combined), and Filipino students towards hospitality and community services. Source: Department of Education, PRISMS (detailed).
+- **Data:** `country_field_2025.csv`: 10 countries × 11 fields, with `share` already normalised within each country.
+- **Annotate three cells:** Brazil × English (33%), Bangladesh × IT (38%), Indonesia × Business (43%). These cells carry the title.
 - **How:** `rect`, colour = Sequential A. **Normalise within row** — without it the map just re-shows that China and India are large. Countries sorted by total; fields in a fixed order shared with chart 7.
 
 ---
@@ -201,25 +205,27 @@ Two KPI numerals, tabular, ochre:
 
 **Chart 10 · MAP 3 — Flow map** — ADVANCED · load-bearing
 - **Title:** Different origins, different states
-- **Subtitle:** Enrolments from the top 12 source countries to Australian states and territories, 2025
-- **Caption:** 10 · Flow map — line thickness encodes enrolment volume; colour encodes origin region. Straight geodesic rules, Equal Earth projection. Source: Department of Education, PRISMS.
-- **Data:** `nationality_state_2025.csv` + `geo/country_centroids.csv` + state centroids
+- **Subtitle:** Enrolments from the 12 largest source countries to each state's capital, 2025 (flows under 500 omitted)
+- **Caption:** 10 · Flow map. Line thickness encodes enrolments and colour encodes origin region. 47% of Chinese students are in NSW, while 43% of Indian students are in Victoria; 62% of Nepali students are in NSW. Straight lines, Equal Earth projection. Source: Department of Education, PRISMS.
+- **Data:** `flows_2025.csv`: 75 rows with `origin_lat/lon`, `dest_lat/lon` (state capital), `region_group` and `share_of_origin`, already filtered to the top 12 origins and flows of 500 or more.
 - **How:** `rule` marks with `longitude`/`latitude` and `longitude2`/`latitude2`. `strokeWidth` scaled by `sqrt`, `opacity: 0.55`, `strokeCap: "round"`. Filter to the top 12 origins and drop flows below a threshold or it becomes a hairball. **The lines must visibly fan to different state endpoints** — that fanning is the chart's entire justification.
 
 **Charts 11 + 12 build as one `hconcat` spec — clicking a state filters the beeswarm.**
 
 **Chart 11 · MAP 4 — Australia hybrid** — ADVANCED · load-bearing
 - **Title:** Two states take the lion's share
-- **Subtitle:** State fill: international enrolments per 1,000 residents. Circles: enrolments by city.
-- **Caption:** 11 · Choropleth with proportional symbols, Albers conic equal-area projection — an equal-area projection is required because the comparison is of areas and densities. Sources: Department of Education, PRISMS; ABS, National, state and territory population, Dec 2025.
-- **Data:** `state_by_year.csv` + `state_population.csv` + `geo/au_university_cities.csv` + `geo/au_states.topo.json`
+- **Subtitle:** State fill: international enrolments per 1,000 residents, 2025. Circles: overseas students at each university, 2024.
+- **Caption:** 11 · Choropleth with proportional symbols, Albers conic equal-area projection. An equal-area projection is needed because the map compares areas and densities. Sources: Department of Education, PRISMS and Higher Education Student Data; ABS, National, state and territory population, Dec 2025.
+- **Data:** `state_2025.csv` (fill: `per_1000`) + `he_institution_geo_2024.csv` (circles: `overseas`, `lat`, `lon`) + `geo/au_states.topo.json` (layer `states`, joined on `state`).
+- **Verified (v4.5):** NSW and Victoria hold 69% of enrolments (403,139 and 322,347), but by rate the ACT (44.6 per 1,000) is level with NSW (46.7) and Victoria (45.3). Say this in the caption: the rate tells a different story from the raw count.
+- **Changed in v4.4:** no source has enrolments by city, so the circles are now **universities at their main campus**, sized by overseas enrolments. The circles on Map 4 and the dots in the beeswarm are now the same 43 providers, so clicking a state highlights the same institutions in both views. `au_university_cities.csv` is replaced by `au_university_locations.csv` (43 rows: institution, lat, lon).
 - **How:** `geoshape` with Sequential A fill, layered `circle` marks at city coordinates with `sqrt` size. `conicEqualArea`, parallels ≈ −18 and −36, rotate ≈ [−134, 0]. `params: [{name: "stateSel", select: {type: "point", fields: ["state"]}}]`.
 
 **Chart 12 · Beeswarm** — advanced (surplus)
 - **Title:** Some campuses are more international than others
 - **Subtitle:** Each dot is one higher-education provider, 2024
 - **Caption:** 12 · Beeswarm / unit chart — x encodes the overseas share of a provider's enrolments; dot area encodes total size. Murdoch (57%), Sydney (51%) and RMIT (50%) sit at one end; New England (6%) at the other. Figures are perturbed. Source: Department of Education, Higher Education Student Data.
-- **Data:** `he_institution_2024.csv`
+- **Data:** `he_institution_geo_2024.csv` (same rows as `he_institution_2024.csv` plus campus coordinates, so Map 4 and the beeswarm share one dataset): 43 providers, with `state` (home state, used by the filter), `group` (Group of Eight / Other public / Private) and `short_name` for labels. The bucket rows are already excluded. ACU reports all enrolments as "Multi-State", so it's assigned to NSW, its head-office state.
 - **How:** `circle` with a force-free jitter (`yOffset` from a `random()` transform, or a computed dodge in Python). x = overseas share, size = total enrolments (`sqrt`), colour = Go8 / other public / private. Filter `stateSel`. Direct-label the four named extremes only.
 - **Note:** exclude the aggregate "Non-University Higher Education Providers" row — it is a bucket, not a provider, and it would sit at 58% and mislead.
 
@@ -231,7 +237,8 @@ Two KPI numerals, tabular, ochre:
 **Chart 13 · Calendar heatmap** — ADVANCED · load-bearing
 - **Title:** The rhythm, and the hole in it
 - **Subtitle:** Monthly commencements, 2015–2025
-- **Caption:** 13 · Calendar heatmap — colour encodes commencements in each month. The February and July intake peaks are visible every year except 2020–21. Monthly values derived by differencing year-to-date totals. Source: Department of Education, PRISMS.
+- **Caption:** 13 · Calendar heatmap — colour encodes commencements in each month. The February and July intakes recur every year. In 2020 the February intake still arrived (81,000) because borders closed in March; the July intake halved, and 2021 stayed low all year. Monthly values derived by differencing year-to-date totals. Source: Department of Education, PRISMS.
+- **Verified values (v4.3):** February intake: 92,876 (2019) → 81,112 (2020) → 47,699 (2021) → 115,034 (2024) → 88,816 (2025). July intake: 96,796 → 50,926 → 43,551 → 110,593 → 85,639. The fall from 2024 to 2025 shows up in both intakes, which supports Act 5's ending.
 - **Data:** `monthly_commencements.csv`
 - **How:** `rect`, x = month (Jan–Dec, fixed order), y = year (descending), colour = Sequential A with `scale: {type: "sqrt"}`. Thin `--paper` stroke between cells.
 - **Prep warning:** the source field is **YTD cumulative**. Monthly value = YTD(m) − YTD(m−1) within each year, with January taken as-is. Getting this wrong produces a heatmap that just gets darker left to right, which is a plausible-looking and completely wrong chart.
@@ -284,7 +291,7 @@ Two KPI numerals, tabular, ochre:
 
 `2024_Section2`, `2024_Section7` and `31010do001` were uploaded a second time on 3 October. They're byte-identical to the first copies, so they don't change anything.
 
-### One gap remaining (built in code, nothing to download)
+### No gaps remaining
 
 **1. ~~World Bank population~~ Resolved 3 October 2026.** See above.
 
@@ -294,13 +301,12 @@ DFAT publishes this table only as a one-page PDF, which is why it was hard to fi
 - Download the PDF into `raw/` too. If a tutor asks where the CSV came from, you can show them the original.
 - Footnote (c) in the PDF says how student fees are classified in the services data changed from January 2020 because of COVID-19. Mention it in the caption only if you also use the 2022–23 values.
 
-**3. Coordinate lookups — block charts 4, 10 and 11.** Nothing to download. These are built in `50_lookups.py`.
-Three small CSVs you build once in `50_lookups.py`:
-- `country_centroids.csv` — country name, ISO3, lat, lon. Derivable from the Natural Earth 110m TopoJSON, or from any public centroid list.
-- `au_university_cities.csv` — city, lat, lon. Roughly 12 rows: Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart, Darwin, Gold Coast, Newcastle, Wollongong, Geelong.
-- An **ISO3 mapping from DoE nationality names to World Bank/Natural Earth names**. This is the fiddly one: "Hong Kong SAR", "Korea, Republic of (South)", "Taiwan", "China", "Macau" and the "not stated" categories all need manual handling. Build it once, print the unmatched rows, fix them by hand, and reuse the same file everywhere. Budget an hour and do it before you touch a map spec.
-
-TopoJSON (`world-110m`, Australian states) loads from a CDN or is committed to `geo/` — no sourcing needed.
+**3. ~~Coordinate lookups~~ Resolved 4 October 2026.** `prep/50_lookups.py` plus the committed files in `geo/` (provenance in `geo/README.md`):
+- `world_countries.topo.json`: Natural Earth 1:50m, simplified to 119 KB. 1:110m was rejected because it has no Hong Kong, Singapore, Macau or Mauritius.
+- `au_states.topo.json`: 28 KB. `au_state_capitals.csv`: flow-line endpoints.
+- `country_points.csv`: one point per country, with three hand overrides (Malaysia, Indonesia, New Zealand).
+- `au_university_locations.csv`: 43 main campuses.
+- All 220 Department of Education nationality names resolve to ISO3; 99.996% of 2025 enrolments are placed on a country, and the remaining 47 are in "Other".
 
 ---
 
@@ -342,3 +348,6 @@ Use these to check your prep pipeline. If `10_basic.py` reproduces them, the ext
 - **v4** — written against the real data. Hook corrected from "1 in 4" to "more than 1 in 3" (35.2%); chart 2 series starts 2005; Act 5 gains the 2025 decline as its ending; region lookup derived from the detailed workbook instead of a new source; chart 14 flagged as blocked on a wrong trade file; palette, type scale and layout grid fixed to specific values; verified figures appendix added.
 - **v4.1** (3 October) — World Bank population received and verified. Per-capita reveal confirmed: Nepal ≈290 per 100k vs China ≈16. Name-join issues catalogued, and Taiwan flagged for manual handling. Remaining gaps: DFAT commodity table and coordinate lookups.
 - **v4.2** (3 October) — DFAT top-25 exports found; it's only published as a PDF, so it was transcribed to CSV. The chart 14 title "Bigger than gold" is confirmed: education $53.6 billion vs gold $46.9 billion, ranked 4th. The direction-of-trade workbook is marked unused. All external data is now in hand.
+- **v4.3** (3 October) — `pivotcache.py` and `10_basic.py` were built and validated against the appendix figures. Three findings changed the plan. (1) China and India held ranks 1 and 2 in every year, so the bump chart now covers ranks 3–15 (Nepal, the Philippines and Bangladesh rising; Korea falling). (2) The 2020 February intake largely arrived before borders closed; the gap starts with July 2020, so the chart 13 caption was rewritten. (3) The flow-map premise is confirmed: in 2025 China enrolments are concentrated in NSW (106,094 vs 67,069 in VIC), India's in VIC (78,367 vs 44,632 in NSW), and Nepal's in NSW (55,279).
+- **v4.4** (3 October) — `labels.py`, `20_detailed.py` and `30_higher_ed.py` were built and validated. The detailed workbook's Dec 2025 total matches the basic one (1,058,040). Changes: (1) English-language courses and school students are separated from the official field categories, and small fields are merged (11 display fields). (2) Chart 7 is retitled "Four in ten study business or IT" to match the data (29% + 12%). (3) Chart 1 scope is clarified: 35.2% for all providers, 32.7% for universities only. (4) Captions for charts 8 and 9 now use real figures. (5) Map 4 circles are now universities, not cities, because no source has city-level data; this also links Map 4 to the beeswarm.
+- **v4.5** (4 October) — `50_lookups.py` and `geo/` were built and validated. All data prep is complete. Findings: (1) **Bhutan, not Nepal, has the highest per-capita rate** (1,943 per 100k vs Nepal's 302, 3rd after Fiji), so chart 5 is re-captioned around Bhutan. The small-population cutoff for ranking is set at 200,000 so Bhutan counts but Nauru doesn't. (2) Flow map confirmed: China 47% NSW, India 43% VIC, Nepal 62% NSW. (3) By rate per 1,000 residents, the ACT matches NSW and VIC; the Map 4 caption now says so. (4) Maps use pre-joined CSVs (`country_2025`, `flows_2025`, `state_2025`, `he_institution_geo_2024`) so the Vega-Lite specs contain no lookups beyond geometry.

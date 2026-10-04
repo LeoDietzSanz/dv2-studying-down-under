@@ -1,0 +1,9 @@
+state,name,city,lat,lon,population,enrolments,per_1000,share
+NSW,New South Wales,Sydney,-33.869,151.209,8641085,403139,46.7,0.381
+VIC,Victoria,Melbourne,-37.814,144.963,7121913,322347,45.3,0.3047
+QLD,Queensland,Brisbane,-27.47,153.026,5712124,148589,26.0,0.1404
+WA,Western Australia,Perth,-31.952,115.861,3076528,89530,29.1,0.0846
+SA,South Australia,Adelaide,-34.929,138.601,1910553,57327,30.0,0.0542
+ACT,Australian Capital Territory,Canberra,-35.281,149.13,487202,21714,44.6,0.0205
+TAS,Tasmania,Hobart,-42.882,147.327,579110,9427,16.3,0.0089
+NT,Northern Territory,Darwin,-12.463,130.846,267478,5967,22.3,0.0056

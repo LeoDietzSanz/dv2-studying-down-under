@@ -1,0 +1,76 @@
+nationality,state,enrolments,iso3,region_group,origin_lat,origin_lon,city,dest_lat,dest_lon,share_of_origin
+China,NSW,106094,CHN,North-East Asia,32.525,106.322,Sydney,-33.869,151.209,0.4664
+India,VIC,78367,IND,South & Central Asia,22.66,78.594,Melbourne,-37.814,144.963,0.4297
+China,VIC,67069,CHN,North-East Asia,32.525,106.322,Melbourne,-37.814,144.963,0.2949
+Nepal,NSW,55279,NPL,South & Central Asia,28.301,83.594,Sydney,-33.869,151.209,0.6174
+India,NSW,44632,IND,South & Central Asia,22.66,78.594,Sydney,-33.869,151.209,0.2447
+China,QLD,24937,CHN,North-East Asia,32.525,106.322,Brisbane,-27.47,153.026,0.1096
+India,QLD,22199,IND,South & Central Asia,22.66,78.594,Brisbane,-27.47,153.026,0.1217
+Vietnam,VIC,18325,VNM,South-East Asia,21.684,105.448,Melbourne,-37.814,144.963,0.404
+Sri Lanka,VIC,17319,LKA,South & Central Asia,7.562,80.701,Melbourne,-37.814,144.963,0.6758
+Philippines,NSW,16420,PHL,South-East Asia,16.949,121.425,Sydney,-33.869,151.209,0.3445
+Indonesia,NSW,16361,IDN,South-East Asia,-7.3,110.4,Sydney,-33.869,151.209,0.5181
+India,SA,15844,IND,South & Central Asia,22.66,78.594,Adelaide,-34.929,138.601,0.0869
+Bangladesh,NSW,15762,BGD,South & Central Asia,24.073,90.047,Sydney,-33.869,151.209,0.4846
+Vietnam,NSW,15624,VNM,South-East Asia,21.684,105.448,Sydney,-33.869,151.209,0.3445
+India,WA,15044,IND,South & Central Asia,22.66,78.594,Perth,-31.952,115.861,0.0825
+Nepal,VIC,14071,NPL,South & Central Asia,28.301,83.594,Melbourne,-37.814,144.963,0.1572
+Thailand,NSW,13600,THA,South-East Asia,15.478,101.015,Sydney,-33.869,151.209,0.4684
+Colombia,VIC,13438,COL,Americas,3.529,-73.169,Melbourne,-37.814,144.963,0.3371
+Brazil,NSW,13028,BRA,Americas,-11.901,-49.552,Sydney,-33.869,151.209,0.4293
+Philippines,VIC,12717,PHL,South-East Asia,16.949,121.425,Melbourne,-37.814,144.963,0.2668
+Pakistan,NSW,12549,PAK,South & Central Asia,29.299,68.531,Sydney,-33.869,151.209,0.3946
+Colombia,NSW,12281,COL,Americas,3.529,-73.169,Sydney,-33.869,151.209,0.308
+Brazil,QLD,10772,BRA,Americas,-11.901,-49.552,Brisbane,-27.47,153.026,0.355
+China,SA,10630,CHN,North-East Asia,32.525,106.322,Adelaide,-34.929,138.601,0.0467
+Thailand,VIC,9846,THA,South-East Asia,15.478,101.015,Melbourne,-37.814,144.963,0.3391
+Indonesia,VIC,9576,IDN,South-East Asia,-7.3,110.4,Melbourne,-37.814,144.963,0.3032
+Philippines,QLD,9538,PHL,South-East Asia,16.949,121.425,Brisbane,-27.47,153.026,0.2001
+Pakistan,VIC,9295,PAK,South & Central Asia,29.299,68.531,Melbourne,-37.814,144.963,0.2923
+China,WA,9015,CHN,North-East Asia,32.525,106.322,Perth,-31.952,115.861,0.0396
+Colombia,QLD,8648,COL,Americas,3.529,-73.169,Brisbane,-27.47,153.026,0.2169
+China,ACT,8487,CHN,North-East Asia,32.525,106.322,Canberra,-35.281,149.13,0.0373
+Bangladesh,VIC,7744,BGD,South & Central Asia,24.073,90.047,Melbourne,-37.814,144.963,0.2381
+Nepal,QLD,5716,NPL,South & Central Asia,28.301,83.594,Brisbane,-27.47,153.026,0.0638
+Pakistan,WA,5450,PAK,South & Central Asia,29.299,68.531,Perth,-31.952,115.861,0.1714
+Philippines,WA,5199,PHL,South-East Asia,16.949,121.425,Perth,-31.952,115.861,0.1091
+Nepal,WA,4777,NPL,South & Central Asia,28.301,83.594,Perth,-31.952,115.861,0.0534
+Nepal,SA,4229,NPL,South & Central Asia,28.301,83.594,Adelaide,-34.929,138.601,0.0472
+Thailand,QLD,3803,THA,South-East Asia,15.478,101.015,Brisbane,-27.47,153.026,0.131
+Bangladesh,WA,3731,BGD,South & Central Asia,24.073,90.047,Perth,-31.952,115.861,0.1147
+Vietnam,SA,3699,VNM,South-East Asia,21.684,105.448,Adelaide,-34.929,138.601,0.0816
+India,ACT,3649,IND,South & Central Asia,22.66,78.594,Canberra,-35.281,149.13,0.02
+Vietnam,QLD,3486,VNM,South-East Asia,21.684,105.448,Brisbane,-27.47,153.026,0.0769
+Colombia,WA,2872,COL,Americas,3.529,-73.169,Perth,-31.952,115.861,0.072
+Vietnam,WA,2835,VNM,South-East Asia,21.684,105.448,Perth,-31.952,115.861,0.0625
+Brazil,VIC,2607,BRA,Americas,-11.901,-49.552,Melbourne,-37.814,144.963,0.0859
+Sri Lanka,WA,2310,LKA,South & Central Asia,7.562,80.701,Perth,-31.952,115.861,0.0901
+Indonesia,WA,2306,IDN,South-East Asia,-7.3,110.4,Perth,-31.952,115.861,0.073
+Brazil,WA,2295,BRA,Americas,-11.901,-49.552,Perth,-31.952,115.861,0.0756
+Philippines,SA,2246,PHL,South-East Asia,16.949,121.425,Adelaide,-34.929,138.601,0.0471
+Nepal,ACT,2168,NPL,South & Central Asia,28.301,83.594,Canberra,-35.281,149.13,0.0242
+Colombia,SA,2114,COL,Americas,3.529,-73.169,Adelaide,-34.929,138.601,0.053
+Indonesia,QLD,1982,IDN,South-East Asia,-7.3,110.4,Brisbane,-27.47,153.026,0.0628
+Sri Lanka,NSW,1970,LKA,South & Central Asia,7.562,80.701,Sydney,-33.869,151.209,0.0769
+Bangladesh,SA,1869,BGD,South & Central Asia,24.073,90.047,Adelaide,-34.929,138.601,0.0575
+Pakistan,QLD,1844,PAK,South & Central Asia,29.299,68.531,Brisbane,-27.47,153.026,0.058
+Sri Lanka,QLD,1773,LKA,South & Central Asia,7.562,80.701,Brisbane,-27.47,153.026,0.0692
+Nepal,TAS,1733,NPL,South & Central Asia,28.301,83.594,Hobart,-42.882,147.327,0.0194
+Bangladesh,QLD,1635,BGD,South & Central Asia,24.073,90.047,Brisbane,-27.47,153.026,0.0503
+Nepal,NT,1557,NPL,South & Central Asia,28.301,83.594,Darwin,-12.463,130.846,0.0174
+Sri Lanka,SA,1557,LKA,South & Central Asia,7.562,80.701,Adelaide,-34.929,138.601,0.0608
+India,TAS,1457,IND,South & Central Asia,22.66,78.594,Hobart,-42.882,147.327,0.008
+Brazil,SA,1366,BRA,Americas,-11.901,-49.552,Adelaide,-34.929,138.601,0.045
+India,NT,1177,IND,South & Central Asia,22.66,78.594,Darwin,-12.463,130.846,0.0065
+Pakistan,SA,1096,PAK,South & Central Asia,29.299,68.531,Adelaide,-34.929,138.601,0.0345
+China,TAS,912,CHN,North-East Asia,32.525,106.322,Hobart,-42.882,147.327,0.004
+Thailand,WA,799,THA,South-East Asia,15.478,101.015,Perth,-31.952,115.861,0.0275
+Pakistan,TAS,769,PAK,South & Central Asia,29.299,68.531,Hobart,-42.882,147.327,0.0242
+Bangladesh,TAS,716,BGD,South & Central Asia,24.073,90.047,Hobart,-42.882,147.327,0.022
+Thailand,SA,709,THA,South-East Asia,15.478,101.015,Adelaide,-34.929,138.601,0.0244
+Bangladesh,NT,682,BGD,South & Central Asia,24.073,90.047,Darwin,-12.463,130.846,0.021
+Philippines,ACT,654,PHL,South-East Asia,16.949,121.425,Canberra,-35.281,149.13,0.0137
+Indonesia,SA,639,IDN,South-East Asia,-7.3,110.4,Adelaide,-34.929,138.601,0.0202
+Vietnam,ACT,599,VNM,South-East Asia,21.684,105.448,Canberra,-35.281,149.13,0.0132
+Philippines,NT,553,PHL,South-East Asia,16.949,121.425,Darwin,-12.463,130.846,0.0116
+Pakistan,ACT,514,PAK,South & Central Asia,29.299,68.531,Canberra,-35.281,149.13,0.0162

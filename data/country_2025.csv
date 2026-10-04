@@ -1,0 +1,194 @@
+iso3,country,enrolments,region_group,lat,lon,population,per_100k,small_population,rank_enrolments,rank_per_100k
+CHN,China,227460,North-East Asia,32.525,106.322,1406585000.0,16.17,False,1,32
+IND,India,182369,South & Central Asia,22.66,78.594,1463865525.0,12.46,False,2,39
+NPL,Nepal,89530,South & Central Asia,28.301,83.594,29618118.0,302.28,False,3,3
+PHL,Philippines,47666,South-East Asia,16.949,121.425,116786962.0,40.81,False,4,15
+VNM,Vietnam,45356,South-East Asia,21.684,105.448,101598527.0,44.64,False,5,14
+COL,Colombia,39867,Americas,3.529,-73.169,53425635.0,74.62,False,6,10
+BGD,Bangladesh,32525,South & Central Asia,24.073,90.047,175686899.0,18.51,False,7,30
+PAK,Pakistan,31801,South & Central Asia,29.299,68.531,255219554.0,12.46,False,8,39
+IDN,Indonesia,31579,South-East Asia,-7.3,110.4,285721236.0,11.05,False,9,44
+BRA,Brazil,30345,Americas,-11.901,-49.552,212812405.0,14.26,False,10,35
+THA,Thailand,29038,South-East Asia,15.478,101.015,71619863.0,40.54,False,11,16
+LKA,Sri Lanka,25627,South & Central Asia,7.562,80.701,21756000.0,117.79,False,12,8
+MYS,Malaysia,17798,South-East Asia,3.6,101.7,35977838.0,49.47,False,13,13
+KOR,"Korea, Republic of (South)",17229,North-East Asia,36.519,128.008,51684564.0,33.33,False,14,20
+BTN,Bhutan,15483,South & Central Asia,27.477,90.387,796682.0,1943.44,False,15,1
+TWN,Taiwan,15260,North-East Asia,23.829,120.954,23400000.0,65.21,False,16,11
+JPN,Japan,14179,North-East Asia,36.126,138.434,123366734.0,11.49,False,17,42
+HKG,Hong Kong SAR,13226,North-East Asia,22.458,114.192,7498900.0,176.37,False,18,6
+KEN,Kenya,11897,Sub-Saharan Africa,0.488,37.868,57532493.0,20.68,False,19,26
+MNG,Mongolia,8455,North-East Asia,46.032,104.165,3568978.0,236.9,False,20,4
+USA,United States of America,8121,Americas,38.507,-97.198,341784857.0,2.38,False,21,79
+SGP,Singapore,7223,South-East Asia,1.349,103.815,6111175.0,118.19,False,22,7
+CHL,Chile,7222,Americas,-38.249,-72.36,19859921.0,36.36,False,23,18
+FJI,Fiji,6784,"Europe, Middle East & Oceania",-17.819,177.984,933154.0,727.0,False,24,2
+TUR,Turkiye,6320,"Europe, Middle East & Oceania",39.192,35.281,85878556.0,7.36,False,25,55
+ESP,Spain,5614,"Europe, Middle East & Oceania",40.114,-3.478,49355143.0,11.37,False,26,43
+KHM,Cambodia,5330,South-East Asia,12.742,104.603,17847982.0,29.86,False,27,21
+MEX,Mexico,5111,Americas,23.927,-102.296,131946900.0,3.87,False,28,72
+GBR,United Kingdom,4886,"Europe, Middle East & Oceania",52.799,-1.484,69487000.0,7.03,False,29,57
+SAU,Saudi Arabia,4657,"Europe, Middle East & Oceania",23.27,45.251,36973555.0,12.6,False,30,36
+DEU,Germany,4577,"Europe, Middle East & Oceania",51.103,9.837,83491249.0,5.48,False,31,62
+ITA,Italy,4467,"Europe, Middle East & Oceania",43.532,11.667,58915656.0,7.58,False,32,53
+FRA,France,4428,"Europe, Middle East & Oceania",46.734,2.464,68720337.0,6.44,False,33,59
+ARG,Argentina,4169,Americas,-33.534,-64.18,45851378.0,9.09,False,34,50
+CAN,Canada,4045,Americas,58.342,-112.363,41651653.0,9.71,False,35,45
+ECU,Ecuador,3820,Americas,-1.201,-78.43,18289896.0,20.89,False,36,25
+IRN,Iran,3688,"Europe, Middle East & Oceania",32.133,54.91,92417681.0,3.99,False,37,70
+PER,Peru,3357,Americas,-12.989,-72.904,34576665.0,9.71,False,38,45
+NGA,Nigeria,2562,Sub-Saharan Africa,9.611,7.963,237527782.0,1.08,False,39,101
+MUS,Mauritius,2386,Sub-Saharan Africa,-20.23,57.601,1243741.0,191.84,False,40,5
+ZWE,Zimbabwe,2118,Sub-Saharan Africa,-18.925,29.925,16950795.0,12.49,False,41,38
+PNG,Papua New Guinea,2072,"Europe, Middle East & Oceania",-5.829,143.348,10762817.0,19.25,False,42,28
+NOR,Norway,1995,"Europe, Middle East & Oceania",61.288,9.658,5610870.0,35.56,False,43,19
+LAO,Laos,1652,South-East Asia,19.657,102.512,7873046.0,20.98,False,44,24
+ZAF,South Africa,1186,Sub-Saharan Africa,-30.057,23.226,64747319.0,1.83,False,45,85
+RUS,Russian Federation,1166,"Europe, Middle East & Oceania",63.134,92.696,143513328.0,0.81,False,46,106
+ARE,United Arab Emirates,1109,"Europe, Middle East & Oceania",23.485,54.339,11513149.0,9.63,False,47,47
+IRL,Ireland,1069,"Europe, Middle East & Oceania",53.138,-8.118,5484367.0,19.49,False,48,27
+SWE,Sweden,1005,"Europe, Middle East & Oceania",64.225,16.309,10596620.0,9.48,False,49,49
+MMR,Myanmar,985,South-East Asia,21.625,95.819,54850648.0,1.8,False,50,86
+NLD,Netherlands,877,"Europe, Middle East & Oceania",52.352,5.494,18087633.0,4.85,False,51,66
+CHE,Switzerland,872,"Europe, Middle East & Oceania",46.818,7.848,9092436.0,9.59,False,52,48
+EGY,Egypt,834,"Europe, Middle East & Oceania",26.446,29.261,118365995.0,0.7,False,53,112
+KWT,Kuwait,771,"Europe, Middle East & Oceania",29.487,47.465,4865298.0,15.85,False,54,34
+DNK,Denmark,754,"Europe, Middle East & Oceania",56.241,9.075,6009169.0,12.55,False,55,37
+POL,Poland,669,"Europe, Middle East & Oceania",52.016,19.459,36435861.0,1.84,False,56,84
+PRT,Portugal,660,"Europe, Middle East & Oceania",39.148,-8.274,10804871.0,6.11,False,57,60
+MAC,Macau,630,North-East Asia,22.231,113.5,685900.0,91.85,False,58,9
+BEL,Belgium,591,"Europe, Middle East & Oceania",50.505,5.16,11941781.0,4.95,False,59,65
+LTU,Lithuania,542,"Europe, Middle East & Oceania",55.111,24.092,2888774.0,18.76,False,60,29
+GHA,Ghana,538,Sub-Saharan Africa,7.573,-1.002,35064272.0,1.53,False,61,89
+JOR,Jordan,520,"Europe, Middle East & Oceania",30.727,36.416,11520684.0,4.51,False,62,68
+UZB,Uzbekistan,518,South & Central Asia,41.322,63.977,37053428.0,1.4,False,63,93
+ETH,Ethiopia,516,Sub-Saharan Africa,8.028,38.868,135472051.0,0.38,False,64,123
+CZE,Czech Republic,504,"Europe, Middle East & Oceania",49.836,15.3,10886878.0,4.63,False,65,67
+LBN,Lebanon,431,"Europe, Middle East & Oceania",34.114,36.02,5849421.0,7.37,False,66,54
+UGA,Uganda,347,Sub-Saharan Africa,0.896,32.417,51384894.0,0.68,False,67,115
+SVK,Slovakia,275,"Europe, Middle East & Oceania",48.803,19.058,5413813.0,5.08,False,68,64
+ISR,Israel,271,"Europe, Middle East & Oceania",31.103,34.847,10122800.0,2.68,False,69,76
+AUT,Austria,265,"Europe, Middle East & Oceania",47.534,14.128,9208163.0,2.88,False,70,74
+KAZ,Kazakhstan,265,South & Central Asia,48.34,68.983,20843754.0,1.27,False,70,94
+BRN,Brunei Darussalam,261,South-East Asia,4.44,114.55,466330.0,55.97,False,72,12
+ZMB,Zambia,254,Sub-Saharan Africa,-14.899,25.914,21913874.0,1.16,False,73,98
+OMN,Oman,248,"Europe, Middle East & Oceania",22.126,57.386,5494691.0,4.51,False,74,68
+URY,Uruguay,248,Americas,-32.871,-56.014,3384688.0,7.33,False,74,56
+GRC,Greece,240,"Europe, Middle East & Oceania",39.371,21.752,10413962.0,2.3,False,76,80
+BWA,Botswana,223,Sub-Saharan Africa,-22.149,24.179,2562122.0,8.7,False,77,51
+VEN,Venezuela,223,Americas,7.126,-64.501,28516896.0,0.78,False,77,108
+FIN,Finland,222,"Europe, Middle East & Oceania",63.258,27.282,5646436.0,3.93,False,79,71
+MKD,North Macedonia,221,"Europe, Middle East & Oceania",41.546,21.427,1820909.0,12.14,False,80,41
+EST,Estonia,218,"Europe, Middle East & Oceania",58.734,25.853,1366475.0,15.95,False,81,33
+PRY,Paraguay,210,Americas,-21.678,-60.148,7013078.0,2.99,False,82,73
+BOL,Bolivia,195,Americas,-16.629,-64.69,12581843.0,1.55,False,83,88
+MDV,Maldives,195,South & Central Asia,4.198,73.503,529676.0,36.81,False,83,17
+HUN,Hungary,190,"Europe, Middle East & Oceania",47.114,19.466,9514251.0,2.0,False,85,83
+SLB,Solomon Islands,188,"Europe, Middle East & Oceania",-9.636,160.156,838645.0,22.42,False,86,22
+GTM,Guatemala,160,Americas,14.992,-90.562,18687881.0,0.86,False,87,105
+TON,Tonga,146,"Europe, Middle East & Oceania",-21.176,-175.224,103742.0,140.73,True,88,
+NRU,Nauru,132,"Europe, Middle East & Oceania",-0.52,166.929,12025.0,1097.71,True,89,
+MAR,Morocco,127,"Europe, Middle East & Oceania",31.67,-7.259,38430770.0,0.33,False,90,129
+UKR,Ukraine,119,"Europe, Middle East & Oceania",49.426,31.977,38980376.0,0.31,False,91,131
+TZA,Tanzania,118,Sub-Saharan Africa,-5.984,34.692,70545865.0,0.17,False,92,142
+ROU,Romania,116,"Europe, Middle East & Oceania",45.726,24.972,19020271.0,0.61,False,93,117
+TLS,Timor-Leste,113,South-East Asia,-8.83,125.767,1418517.0,7.97,False,94,52
+MWI,Malawi,102,Sub-Saharan Africa,-11.422,33.983,22216120.0,0.46,False,95,120
+SLV,El Salvador,80,Americas,13.736,-88.857,6365503.0,1.26,False,96,95
+IRQ,Iraq,78,"Europe, Middle East & Oceania",33.099,43.256,47020774.0,0.17,False,97,142
+CRI,Costa Rica,74,Americas,10.083,-84.063,5152950.0,1.44,False,98,92
+BGR,Bulgaria,72,"Europe, Middle East & Oceania",42.469,25.27,6433302.0,1.12,False,99,99
+SRB,Serbia,70,"Europe, Middle East & Oceania",44.116,20.611,6549143.0,1.07,False,100,102
+PAN,Panama,68,Americas,8.259,-81.019,4571189.0,1.49,False,101,91
+AZE,Azerbaijan,59,South & Central Asia,40.344,47.208,10246996.0,0.58,False,102,118
+KGZ,Kyrgyzstan,57,South & Central Asia,41.651,74.457,7343064.0,0.78,False,103,108
+RWA,Rwanda,55,Sub-Saharan Africa,-1.859,29.999,14569341.0,0.38,False,104,123
+VUT,Vanuatu,55,"Europe, Middle East & Oceania",-15.369,166.875,335169.0,16.41,False,104,31
+LVA,Latvia,53,"Europe, Middle East & Oceania",57.079,25.422,1847785.0,2.87,False,106,75
+SVN,Slovenia,52,"Europe, Middle East & Oceania",46.044,15.057,2130986.0,2.44,False,107,78
+ALB,Albania,50,"Europe, Middle East & Oceania",40.798,20.064,2349580.0,2.13,False,108,82
+WSM,Samoa,49,"Europe, Middle East & Oceania",-13.647,-172.454,219306.0,22.34,False,109,23
+DZA,Algeria,43,"Europe, Middle East & Oceania",27.934,3.315,47435312.0,0.09,False,110,151
+MOZ,Mozambique,43,Sub-Saharan Africa,-13.929,37.818,35631653.0,0.12,False,110,146
+SDN,Sudan,42,"Europe, Middle East & Oceania",16.327,29.268,51662147.0,0.08,False,112,154
+AFG,Afghanistan,42,South & Central Asia,34.172,66.5,43844111.0,0.1,False,112,148
+HND,Honduras,40,Americas,14.772,-86.817,11005850.0,0.36,False,114,126
+LUX,Luxembourg,40,"Europe, Middle East & Oceania",49.778,6.092,686970.0,5.82,False,114,61
+ARM,Armenia,39,South & Central Asia,40.485,44.775,3086700.0,1.26,False,116,95
+HRV,Croatia,39,"Europe, Middle East & Oceania",45.82,16.463,3876200.0,1.01,False,116,103
+YEM,Yemen,38,"Europe, Middle East & Oceania",15.319,45.897,41773878.0,0.09,False,118,151
+SYR,Syria,37,"Europe, Middle East & Oceania",34.983,38.222,25620427.0,0.14,False,119,144
+TUN,Tunisia,35,"Europe, Middle East & Oceania",33.866,9.013,12348573.0,0.28,False,120,136
+COD,"Congo, Democratic Republic of",33,Sub-Saharan Africa,-2.3,23.5,112832473.0,0.03,False,121,160
+DOM,Dominican Republic,33,Americas,19.013,-70.513,11520487.0,0.29,False,121,134
+KIR,Kiribati,32,"Europe, Middle East & Oceania",1.8,-157.345,136488.0,23.45,True,123,
+NAM,Namibia,31,Sub-Saharan Africa,-20.588,17.11,3092816.0,1.0,False,124,104
+CYP,Cyprus,31,"Europe, Middle East & Oceania",35.007,33.073,1370754.0,2.26,False,124,81
+PSE,Gaza Strip and West Bank,30,"Europe, Middle East & Oceania",31.99,35.261,5413596.0,0.55,False,126,119
+MLT,Malta,30,"Europe, Middle East & Oceania",35.88,14.453,579704.0,5.18,False,126,63
+BLR,Belarus,30,"Europe, Middle East & Oceania",53.8,28.423,9085991.0,0.33,False,126,129
+SYC,Seychelles,28,Sub-Saharan Africa,-4.611,55.452,122730.0,22.81,True,129,
+ISL,Iceland,27,"Europe, Middle East & Oceania",64.794,-18.873,392404.0,6.88,False,130,58
+CMR,Cameroon,26,Sub-Saharan Africa,4.596,12.482,29879337.0,0.09,False,131,151
+SLE,Sierra Leone,26,Sub-Saharan Africa,8.628,-11.748,8819794.0,0.29,False,131,134
+BHR,Bahrain,24,"Europe, Middle East & Oceania",26.041,50.535,1600366.0,1.5,False,133,90
+MDG,Madagascar,23,Sub-Saharan Africa,-18.284,46.7,32740678.0,0.07,False,134,155
+BIH,Bosnia and Herzegovina,23,"Europe, Middle East & Oceania",44.138,17.787,3140095.0,0.73,False,134,110
+BDI,Burundi,20,Sub-Saharan Africa,-3.36,29.867,14390003.0,0.14,False,136,144
+JAM,Jamaica,20,Americas,18.155,-77.404,2837077.0,0.7,False,136,112
+TTO,Trinidad and Tobago,17,Americas,10.351,-61.27,1367764.0,1.24,False,138,97
+GEO,Georgia,15,South & Central Asia,41.982,43.481,3935766.0,0.38,False,139,123
+NIC,Nicaragua,15,Americas,12.594,-85.055,7007502.0,0.21,False,139,140
+LBR,Liberia,13,Sub-Saharan Africa,6.48,-9.45,5731206.0,0.23,False,141,137
+CUB,Cuba,11,Americas,21.288,-77.708,10937203.0,0.1,False,142,148
+XKX,Kosovo,11,"Europe, Middle East & Oceania",42.549,20.889,1576876.0,0.7,False,142,112
+DMA,Dominica,11,Americas,15.478,-61.371,65871.0,16.7,True,142,
+SWZ,Swaziland,10,Sub-Saharan Africa,-26.59,31.429,1256174.0,0.8,False,145,107
+BHS,Bahamas,10,Americas,24.723,-78.027,403033.0,2.48,False,145,77
+LSO,Lesotho,10,Sub-Saharan Africa,-29.51,28.155,2363325.0,0.42,False,145,121
+KNA,St Kitts and Nevis,9,Americas,17.333,-62.744,46922.0,19.18,True,148,
+QAT,Qatar,9,"Europe, Middle East & Oceania",25.296,51.164,2972215.0,0.3,False,148,132
+TUV,Tuvalu,8,"Europe, Middle East & Oceania",-8.503,179.206,9492.0,84.28,True,150,
+ERI,Eritrea,8,Sub-Saharan Africa,15.793,38.278,3607003.0,0.22,False,150,139
+TKM,Turkmenistan,8,South & Central Asia,38.927,60.679,7618847.0,0.11,False,150,147
+MDA,Moldova,7,"Europe, Middle East & Oceania",47.424,28.483,2360527.0,0.3,False,153,132
+MNE,Montenegro,7,"Europe, Middle East & Oceania",42.861,19.111,623129.0,1.12,False,153,99
+GAB,Gabon,6,Sub-Saharan Africa,-0.619,11.491,2593130.0,0.23,False,155,137
+TJK,Tajikistan,5,South & Central Asia,38.225,72.553,10786734.0,0.05,False,156,156
+LCA,St Lucia,5,Americas,13.915,-60.947,180149.0,2.78,True,156,
+SSD,South Sudan,5,"Europe, Middle East & Oceania",7.227,30.338,12188788.0,0.04,False,156,157
+DJI,Djibouti,5,Sub-Saharan Africa,11.54,42.335,1184076.0,0.42,False,156,121
+GMB,Gambia,5,Sub-Saharan Africa,13.371,-16.213,2822093.0,0.18,False,156,141
+BRB,Barbados,5,Americas,13.163,-59.536,282623.0,1.77,False,156,87
+TCD,Chad,4,Sub-Saharan Africa,15.196,18.746,21003705.0,0.02,False,162,161
+SUR,Suriname,4,Americas,4.188,-55.952,639850.0,0.63,False,162,116
+MHL,Marshall Islands,4,"Europe, Middle East & Oceania",7.103,171.154,36282.0,11.02,True,162,
+LIE,Liechtenstein,4,"Europe, Middle East & Oceania",47.11,9.532,41024.0,9.75,True,162,
+CIV,Cote d'Ivoire,4,Sub-Saharan Africa,7.554,-5.617,32711547.0,0.01,False,162,164
+GUY,Guyana,3,Americas,5.69,-58.813,835986.0,0.36,False,167,126
+PRK,"Korea, Democratic People's Republic of (North)",3,North-East Asia,39.853,126.425,26571036.0,0.01,False,167,164
+GRD,Grenada,3,Americas,12.122,-61.668,117303.0,2.56,True,167,
+LBY,Libya,3,"Europe, Middle East & Oceania",26.643,18.011,7458555.0,0.04,False,167,157
+AND,Andorra,3,"Europe, Middle East & Oceania",42.505,1.527,82904.0,3.62,True,167,
+BLZ,Belize,3,Americas,17.159,-88.733,422924.0,0.71,False,167,111
+BEN,Benin,2,Sub-Saharan Africa,10.126,2.35,14814460.0,0.01,False,173,164
+ATG,Antigua and Barbuda,2,Americas,17.07,-61.798,94209.0,2.12,True,173,
+GNQ,Equatorial Guinea,2,Sub-Saharan Africa,1.592,10.476,1938431.0,0.1,False,173,148
+HTI,Haiti,2,Americas,19.199,-72.179,11906095.0,0.02,False,173,161
+FSM,"Micronesia, Federated States of",2,"Europe, Middle East & Oceania",6.877,158.232,113683.0,1.76,True,173,
+MLI,Mali,2,Sub-Saharan Africa,18.711,-2.033,25198821.0,0.01,False,173,164
+NER,Niger,2,Sub-Saharan Africa,17.445,9.506,27917831.0,0.01,False,173,164
+SMR,San Marino,2,"Europe, Middle East & Oceania",43.943,12.459,34109.0,5.86,True,173,
+MCO,Monaco,2,"Europe, Middle East & Oceania",43.753,7.413,38341.0,5.22,True,173,
+BFA,Burkina Faso,1,Sub-Saharan Africa,12.697,-1.17,24074580.0,0.0,False,182,171
+AGO,Angola,1,Sub-Saharan Africa,-12.152,17.978,39040039.0,0.0,False,182,171
+BMU,Bermuda,1,Americas,32.31,-64.744,64555.0,1.55,True,182,
+COK,Cook Islands,1,"Europe, Middle East & Oceania",-21.218,-159.791,,,False,182,
+GNB,Guinea-Bissau,1,Sub-Saharan Africa,12.074,-14.966,2249515.0,0.04,False,182,157
+GIN,Guinea,1,Sub-Saharan Africa,10.635,-9.971,15099727.0,0.01,False,182,164
+COG,"Congo, Republic of",1,Sub-Saharan Africa,-0.033,15.885,6484437.0,0.02,False,182,161
+NCL,New Caledonia,1,"Europe, Middle East & Oceania",-21.16,165.228,295333.0,0.34,False,182,128
+SEN,Senegal,1,Sub-Saharan Africa,14.435,-14.243,18931966.0,0.01,False,182,164
+SHN,St Helena,1,Sub-Saharan Africa,-15.952,-5.726,,,False,182,
+VGB,"Virgin Islands, British",1,Americas,18.494,-64.39,39732.0,2.52,True,182,
+VCT,St Vincent and the Grenadines,1,Americas,13.25,-61.192,99924.0,1.0,True,182,

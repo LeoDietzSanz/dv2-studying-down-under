@@ -50,35 +50,43 @@ dv2-studying-down-under/
 │   ├── 13-calendar-heat.vl.json
 │   └── 14-export-bar.vl.json
 │
-├── data/                       ← COMMITTED. The output of Stage 1.
-│   ├── totals_by_year.csv
-│   ├── sector_by_year.csv
-│   ├── nationality_by_year.csv
-│   ├── nationality_state_2025.csv
-│   ├── state_by_year.csv
-│   ├── monthly_commencements.csv
-│   ├── field_by_sector_2025.csv
-│   ├── country_field_2025.csv
-│   ├── he_institution_2024.csv
-│   ├── he_field_citizenship_2024.csv
-│   ├── state_population.csv
-│   ├── country_population.csv
-│   └── exports_by_commodity.csv
+├── data/                       ← COMMITTED. The output of Stage 1. (chart numbers →)
+│   ├── totals_by_year.csv            2
+│   ├── sector_by_year.csv            3
+│   ├── nationality_by_year.csv       6   (also feeds 50_lookups)
+│   ├── state_by_year.csv             (feeds 50_lookups)
+│   ├── nationality_state_2025.csv    (feeds 50_lookups)
+│   ├── monthly_commencements.csv     13
+│   ├── field_by_sector_2025.csv      7
+│   ├── country_field_2025.csv        9
+│   ├── nationality_region.csv        (feeds 50_lookups)
+│   ├── he_summary_2024.csv           1
+│   ├── he_institution_2024.csv       (feeds 50_lookups)
+│   ├── he_field_citizenship_2024.csv 8
+│   ├── country_lookup.csv            (reference: every name → ISO3)
+│   ├── country_2025.csv              4, 5
+│   ├── flows_2025.csv                10
+│   ├── state_2025.csv                11
+│   ├── he_institution_geo_2024.csv   11, 12
+│   └── exports_by_commodity.csv      14  (transcribed from DFAT PDF)
 │
-├── geo/                        ← COMMITTED. Small geometry + lookups.
-│   ├── ne_110m_admin_0_countries.topo.json
-│   ├── au_states.topo.json
-│   ├── country_centroids.csv
-│   └── au_university_cities.csv
+├── geo/                        ← COMMITTED. Geometry + hand-entered coordinates.
+│   ├── README.md               ← provenance and the exact mapshaper commands
+│   ├── world_countries.topo.json   (Natural Earth 1:50m, simplified, 119 KB)
+│   ├── au_states.topo.json         (28 KB)
+│   ├── country_points.csv
+│   ├── au_state_capitals.csv
+│   └── au_university_locations.csv
 │
 ├── prep/                       ← Stage 1. Python.
-│   ├── pivotcache.py           ← shared streaming reader for Excel pivot caches
+│   ├── check_setup.py          ← confirms environment + raw files
+│   ├── pivotcache.py           ← shared: streaming reader for Excel pivot caches
+│   ├── labels.py               ← shared: field / region / university-group names
 │   ├── 10_basic.py             ← Pivot_Basic_All_web.xlsx      → 6 CSVs
-│   ├── 20_detailed.py          ← Pivot_Detailed_Latest_web2025 → 2 CSVs + region lookup
-│   ├── 30_higher_ed.py         ← Perturbed_Student_Enrolments  → 2 CSVs
-│   ├── 40_reference.py         ← ABS ERP, World Bank, DFAT exports
-│   ├── 50_lookups.py           ← ISO3 join table, centroids, city coords
-│   └── build.py                ← runs 10→50 in order, prints a validation report
+│   ├── 20_detailed.py          ← Pivot_Detailed_Latest_web2025 → 3 CSVs
+│   ├── 30_higher_ed.py         ← Perturbed_Student_Enrolments  → 3 CSVs
+│   ├── 50_lookups.py           ← World Bank + ABS joins, coordinates → 5 CSVs
+│   └── build.py                ← runs 10 → 20 → 30 → 50 in order, stops on the first failure
 │
 ├── raw/                        ← GIT-IGNORED. Drop the seven .xlsx files here.
 │   └── .gitkeep
