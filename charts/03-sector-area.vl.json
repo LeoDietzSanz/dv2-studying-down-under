@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 3. Stacked area: international enrolments by sector, 2005-2025 (December year-to-date). Sector colours are the page-wide stamp-ink order; a crosshair tooltip lists every sector for the hovered year.",
+
+  "width": "container",
+  "height": 300,
+
+  "data": { "url": "data/sector_by_year.csv", "format": { "parse": { "year": "number", "enrolments": "number" } } },
+  "transform": [
+    { "calculate": "indexof(['Higher Education','VET','ELICOS','Schools','Non-award'], datum.sector)", "as": "order" },
+    { "stack": "enrolments", "groupby": ["year"], "sort": [{ "field": "order", "order": "ascending" }], "as": ["y0", "y1"] }
+  ],
+
+  "encoding": {
+    "x": {
+      "field": "year", "type": "quantitative",
+      "scale": { "domain": [2005, 2025], "nice": false },
+      "axis": { "title": null, "format": "d", "values": [2005, 2010, 2015, 2020, 2025] }
+    }
+  },
+
+  "layer": [
+    {
+      "mark": { "type": "area", "stroke": "#EEF1EC", "strokeWidth": 1.2, "opacity": 0.92 },
+      "encoding": {
+        "y": {
+          "field": "y0", "type": "quantitative",
+          "scale": { "domain": [0, 1200000], "nice": false },
+          "axis": { "title": null, "values": [0, 300000, 600000, 900000, 1200000],
+                    "labelExpr": "datum.value === 0 ? '0' : datum.value < 1e6 ? format(datum.value / 1e3, 'd') + 'k' : format(datum.value / 1e6, '.1f') + 'M'" }
+        },
+        "y2": { "field": "y1" },
+        "color": {
+          "field": "sector", "type": "nominal", "title": null,
+          "scale": { "domain": ["Higher Education", "VET", "ELICOS", "Schools", "Non-award"],
+                     "range": ["#2F5FA7", "#C8371F", "#6E4BA8", "#2E8754", "#9A9C94"] },
+          "legend": { "orient": "top", "direction": "horizontal", "symbolType": "square", "columnPadding": 14, "labelFontSize": 10.5, "offset": 10 }
+        },
+        "order": { "field": "order" }
+      }
+    },
+    {
+      "$comment": "Annotation inside the VET band at its 2009 peak.",
+      "transform": [{ "filter": "datum.sector === 'VET' && datum.year === 2009" }, { "calculate": "(datum.y0 + datum.y1) / 2", "as": "mid" }],
+      "mark": { "type": "text", "color": "#FFFFFF", "fontSize": 10, "fontWeight": 600, "letterSpacing": 0.6, "lineHeight": 12,
+                "text": ["VET ×4.1", "2005–09"] },
+      "encoding": { "y": { "field": "mid", "type": "quantitative" } }
+    },
+    {
+      "$comment": "Crosshair with every sector in one tooltip: pivot one row per year.",
+      "transform": [
+        { "pivot": "sector", "value": "enrolments", "groupby": ["year"] },
+        { "calculate": "datum['Higher Education'] + datum['VET'] + datum['ELICOS'] + datum['Schools'] + datum['Non-award']", "as": "Total" }
+      ],
+      "params": [{ "name": "hover", "select": { "type": "point", "fields": ["year"], "on": "pointerover", "nearest": true, "clear": "pointerout" } }],
+      "mark": { "type": "rule", "color": "#14213D", "strokeWidth": 1, "strokeDash": [2, 2] },
+      "encoding": {
+        "opacity": { "condition": { "param": "hover", "empty": false, "value": 0.7 }, "value": 0 },
+        "tooltip": [
+          { "field": "year", "title": "Year", "format": "d" },
+          { "field": "Higher Education", "format": "," },
+          { "field": "VET", "format": "," },
+          { "field": "ELICOS", "format": "," },
+          { "field": "Schools", "format": "," },
+          { "field": "Non-award", "format": "," },
+          { "field": "Total", "format": "," }
+        ]
+      }
+    }
+  ]
+}

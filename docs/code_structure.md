@@ -29,24 +29,27 @@ dv2-studying-down-under/
 ├── css/
 │   ├── tokens.css              ← colour + type + spacing variables. Single source of truth.
 │   ├── type.css                ← the typographic scale
-│   └── layout.css              ← grid, bands, responsive rules
+│   ├── layout.css              ← grid, sight-line, rhythm, responsive rules
+│   └── ornaments.css           ← stamps, split-flap tiles, boarding-pass tooltip
 │
 ├── js/
-│   ├── manifest.js             ← array: which spec renders into which div
-│   └── embed.js                ← loads theme, iterates manifest, calls vegaEmbed
+│   ├── ornaments.js            ← guilloche print, split-flap animation, stamps landing
+│   └── embed.js                ← finds every [data-spec] slot, loads theme, draws lazily
 │
 ├── charts/
 │   ├── theme.json              ← shared Vega-Lite config: fonts, colours, axis style
 │   ├── 01-waffle.vl.json
 │   ├── 02-total-line.vl.json
 │   ├── 03-sector-area.vl.json
-│   ├── 04-05-origin-maps.vl.json      ← hconcat: Map 1 + Map 2, linked
+│   ├── 04-origins-symbols.vl.json     ← Map 1 ┐ linked by hover (js/embed.js bridge)
+│   ├── 05-origins-percapita.vl.json   ← Map 2 ┘
 │   ├── 06-bump.vl.json
 │   ├── 07-marimekko.vl.json
 │   ├── 08-dumbbell.vl.json
 │   ├── 09-country-field-heat.vl.json
 │   ├── 10-flow-map.vl.json
-│   ├── 11-12-landing.vl.json          ← hconcat: Map 4 + beeswarm, linked
+│   ├── 11-australia.vl.json           ← Map 4 ┐ linked by click, both ways
+│   ├── 12-beeswarm.vg.json            ← plain Vega (force transform) ┘
 │   ├── 13-calendar-heat.vl.json
 │   └── 14-export-bar.vl.json
 │
@@ -164,8 +167,9 @@ Measured on this container: **44 seconds for a full pass** over the basic cache.
 `index.html` contains the narrative — headings, standfirsts, body paragraphs, captions, footer — and an empty `<div>` where each chart goes:
 
 ```html
-<figure class="chart chart--full">
-  <div id="vis-02"></div>
+<figure class="chart" id="fig-02">
+  <header class="chart__head"><h3 class="chart__title">…</h3><p class="chart__sub">…</p></header>
+  <div class="chart__vis" data-spec="charts/02-total-line.vl.json"></div>
   <figcaption>
     <b>2 · Annotated line chart</b> — Total international enrolments,
     December snapshot, 2005–2025. Source: Department of Education, PRISMS.
@@ -173,26 +177,25 @@ Measured on this container: **44 seconds for a full pass** over the basic cache.
 </figure>
 ```
 
-`js/manifest.js` is a flat list:
+Each chart slot names its own spec with a `data-spec` attribute, so the markup and the spec it loads sit together (v4.6 replaced the separate `manifest.js` list, which was one more file to keep in sync). A slot with `data-pending` instead is a placeholder for a chart not built yet: same size, dashed border, clearly unfinished.
 
-```js
-export const CHARTS = [
-  { el: "#vis-01", spec: "charts/01-waffle.vl.json" },
-  { el: "#vis-02", spec: "charts/02-total-line.vl.json" },
-  // …
-];
+```html
+<div class="chart__vis" style="--vis-h: 336px" data-spec="charts/02-total-line.vl.json"
+     role="img" aria-label="Line chart: enrolments rose from 346,000 in 2005 ..."></div>
 ```
 
 `js/embed.js` does four things:
 
-1. Fetches `charts/theme.json` once.
-2. For each manifest entry, registers an `IntersectionObserver` on the target div.
-3. When a div comes within ~400 px of the viewport, calls `vegaEmbed(el, specUrl, { config: theme, actions: false, renderer: "svg" })`.
-4. Logs any failure to the console with the chart id, so a broken spec doesn't silently blank.
+1. Waits for the web fonts, because Vega measures label widths as it draws.
+2. Registers an `IntersectionObserver` on every `[data-spec]` slot.
+3. When a slot comes within ~400 px of the viewport, fetches its spec and calls `vegaEmbed(slot, spec, { config: theme, renderer: "svg" })`, with `theme` fetched once from `charts/theme.json`.
+4. On failure, logs the spec path and writes the error into the slot, so a broken chart never silently blanks.
+
+**Titles, subtitles and captions are HTML, not Vega.** They share the page's type scale, they're selectable and readable by screen readers, and the specs stay purely about encoding.
 
 Lazy loading matters here. Fourteen specs, four of them maps with TopoJSON, all parsed at page load is a visibly janky first paint. Deferring until near-viewport makes the page feel instant, and the scroll-triggered appearance suits a narrative page. `renderer: "svg"` gives crisp text at any zoom and makes it easy to screenshot panels for your report; switch a specific map to `"canvas"` only if it stutters.
 
-`actions: false` hides the "…" export menu in the deployed version. Keep it `true` while developing — the "Open in Vega Editor" link is the fastest debugging path you have.
+The "…" action menu (with "Open in Vega Editor") appears automatically on `localhost` and is hidden on GitHub Pages. You get the debugging shortcut while building, and markers see a clean page.
 
 ---
 

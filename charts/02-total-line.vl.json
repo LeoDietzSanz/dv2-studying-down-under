@@ -1,0 +1,355 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 2. Annotated line chart: total international student enrolments (December year-to-date), 2005-2025. Title, subtitle and caption are in index.html.",
+  "$comment_style": "Stamp red = international. Annotations in ink: mono caps, dashed rings like a hand-drawn stamp circle. The border closure is a shaded band, not just a point: it was a period, not an event.",
+  "$comment_narrow": "Below 520px wide the annotations switch to short labels so they don't collide.",
+  "params": [
+    {
+      "name": "narrow",
+      "expr": "width < 520"
+    }
+  ],
+  "width": "container",
+  "height": 320,
+  "data": {
+    "url": "data/totals_by_year.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "enrolments": "number",
+        "commencements": "number"
+      }
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          2005,
+          2025
+        ],
+        "nice": false
+      },
+      "axis": {
+        "title": null,
+        "format": "d",
+        "values": [
+          2005,
+          2010,
+          2015,
+          2020,
+          2025
+        ]
+      }
+    },
+    "y": {
+      "field": "enrolments",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          1200000
+        ],
+        "nice": false,
+        "zero": true
+      },
+      "axis": {
+        "title": null,
+        "values": [
+          0,
+          300000,
+          600000,
+          900000,
+          1200000
+        ],
+        "labelExpr": "datum.value === 0 ? '0' : datum.value < 1e6 ? format(datum.value / 1e3, 'd') + 'k' : format(datum.value / 1e6, '.1f') + 'M'"
+      }
+    }
+  },
+  "layer": [
+    {
+      "$comment": "Borders closed: 20 March 2020 to 15 December 2021. The data row carries year/enrolments only because Vega-Lite applies the top-level encoding's validity filter to every layer; without them the band is filtered out.",
+      "data": {
+        "values": [
+          {
+            "year": 2021,
+            "enrolments": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "color": "#C8371F",
+        "opacity": 0.1,
+        "strokeWidth": 0
+      },
+      "encoding": {
+        "x": {
+          "datum": 2020.21,
+          "type": "quantitative"
+        },
+        "x2": {
+          "datum": 2021.95
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 1200000
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 2021.08,
+            "y": 1200000
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "baseline": "top",
+        "align": "center",
+        "dy": 6,
+        "fontSize": 9.5,
+        "fontWeight": 600,
+        "letterSpacing": 1.2,
+        "color": "#C8371F",
+        "text": {
+          "expr": "narrow ? ['BORDERS', 'CLOSED'] : ['BORDERS', 'CLOSED']"
+        },
+        "lineHeight": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "color": "#C8371F",
+        "opacity": 0.045
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#C8371F"
+      }
+    },
+    {
+      "$comment": "Crosshair: an invisible rule per year catches the pointer; the visible rule and point appear for the nearest year.",
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "year"
+            ],
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "#14213D",
+        "strokeWidth": 1,
+        "strokeDash": [
+          2,
+          2
+        ]
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 0.6
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments",
+            "format": ","
+          },
+          {
+            "field": "commencements",
+            "title": "Started that year",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "color": "#C8371F",
+        "size": 80,
+        "stroke": "#EEF1EC",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "$comment": "Annotation 1: the 2009 peak and the 2010-12 fall.",
+      "data": {
+        "values": [
+          {
+            "year": 2009,
+            "enrolments": 632969
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": false,
+            "size": 260,
+            "color": "#14213D",
+            "strokeWidth": 1.5,
+            "strokeDash": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "bottom",
+            "dx": -12,
+            "dy": -10,
+            "lineHeight": 14,
+            "fontSize": 10.5,
+            "letterSpacing": 0.6,
+            "color": "#14213D",
+            "text": {
+              "expr": "narrow ? '2009 PEAK' : ['2009 PEAK, THEN −19%', 'AS MIGRATION PATHWAYS TIGHTEN']"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$comment": "Annotation 2: the trough, two years below 2019.",
+      "data": {
+        "values": [
+          {
+            "year": 2021,
+            "enrolments": 715790
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": false,
+            "size": 260,
+            "color": "#14213D",
+            "strokeWidth": 1.5,
+            "strokeDash": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": {
+              "expr": "narrow ? 'center' : 'left'"
+            },
+            "baseline": "top",
+            "dx": {
+              "expr": "narrow ? 0 : 14"
+            },
+            "dy": {
+              "expr": "narrow ? 14 : 10"
+            },
+            "lineHeight": 14,
+            "fontSize": 10.5,
+            "letterSpacing": 0.6,
+            "color": "#14213D",
+            "text": {
+              "expr": "narrow ? '−25%' : ['2021 · 25% BELOW 2019']"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$comment": "Annotation 3: 2025, the first fall outside the pandemic. Doubles as the end-of-line label.",
+      "data": {
+        "values": [
+          {
+            "year": 2025,
+            "enrolments": 1058040
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "filled": false,
+            "size": 260,
+            "color": "#14213D",
+            "strokeWidth": 1.5,
+            "strokeDash": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "top",
+            "dx": -2,
+            "dy": 20,
+            "lineHeight": 14,
+            "fontSize": 10.5,
+            "letterSpacing": 0.6,
+            "color": "#14213D",
+            "text": "2025 · −2.8%"
+          }
+        }
+      ]
+    }
+  ]
+}

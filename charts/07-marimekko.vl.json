@@ -1,0 +1,263 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 7. Marimekko (mosaic): column width = each field's share of all 2025 enrolments; vertical split = which sector teaches it. Rectangle edges (x0, x1, y0, y1) are computed in prep/20_detailed.py so this spec only draws. Field names run up inside each column; the field's share sits above it.",
+  "width": "container",
+  "height": 360,
+  "data": {
+    "url": "data/field_by_sector_2025.csv",
+    "format": {
+      "parse": {
+        "x0": "number",
+        "x1": "number",
+        "y0": "number",
+        "y1": "number",
+        "enrolments": "number",
+        "field_total": "number",
+        "field_share": "number",
+        "sector_share": "number",
+        "field_order": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.6
+      },
+      "encoding": {
+        "x2": {
+          "field": "x1"
+        },
+        "y2": {
+          "field": "y1"
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "Non-award"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#6E4BA8",
+              "#2E8754",
+              "#9A9C94"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "labelFontSize": 10,
+            "columnPadding": 10,
+            "symbolSize": 90
+          }
+        },
+        "tooltip": [
+          {
+            "field": "field",
+            "title": "Field"
+          },
+          {
+            "field": "sector",
+            "title": "Sector"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments",
+            "format": ","
+          },
+          {
+            "field": "sector_share",
+            "title": "Share of this field",
+            "format": ".0%"
+          },
+          {
+            "field": "field_share",
+            "title": "Field's share of all",
+            "format": ".1%"
+          }
+        ],
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "nice": false,
+            "padding": 0
+          },
+          "axis": null
+        },
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1.075
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              0,
+              0.5,
+              1
+            ],
+            "format": "%",
+            "grid": false,
+            "title": null
+          }
+        }
+      }
+    },
+    {
+      "$comment": "One label per column: the field name running upward from the base, white on the ink.",
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "min",
+              "field": "x0",
+              "as": "x0"
+            },
+            {
+              "op": "max",
+              "field": "x1",
+              "as": "x1"
+            },
+            {
+              "op": "max",
+              "field": "field_share",
+              "as": "field_share"
+            }
+          ],
+          "groupby": [
+            "field"
+          ]
+        },
+        {
+          "calculate": "(datum.x0 + datum.x1) / 2",
+          "as": "xm"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "angle": 270,
+            "align": "left",
+            "baseline": "middle",
+            "dx": 0,
+            "dy": 0,
+            "fontSize": 10,
+            "fontWeight": 600,
+            "letterSpacing": 0.3,
+            "color": "#FFFFFF"
+          },
+          "encoding": {
+            "x": {
+              "field": "xm",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  1
+                ],
+                "nice": false,
+                "padding": 0
+              },
+              "axis": null
+            },
+            "y": {
+              "datum": 0.02,
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  1.075
+                ],
+                "nice": false
+              },
+              "axis": {
+                "values": [
+                  0,
+                  0.5,
+                  1
+                ],
+                "format": "%",
+                "grid": false,
+                "title": null
+              }
+            },
+            "text": {
+              "field": "field"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "baseline": "bottom",
+            "dy": -4,
+            "fontSize": 10,
+            "fontWeight": 600,
+            "color": "#14213D"
+          },
+          "encoding": {
+            "x": {
+              "field": "xm",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  1
+                ],
+                "nice": false,
+                "padding": 0
+              },
+              "axis": null
+            },
+            "y": {
+              "datum": 1,
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  1.075
+                ],
+                "nice": false
+              },
+              "axis": {
+                "values": [
+                  0,
+                  0.5,
+                  1
+                ],
+                "format": "%",
+                "grid": false,
+                "title": null
+              }
+            },
+            "text": {
+              "field": "field_share",
+              "format": ".0%"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "$comment_layers": "x/y live on each layer, not at the top: a top-level encoding's validity filter would otherwise remove the aggregated label rows (they have no y0)."
+}

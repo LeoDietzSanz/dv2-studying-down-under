@@ -1,0 +1,356 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 6. Bump chart: rank among source countries, 3rd to 15th place, 2010-2025. China and India (1st and 2nd every year) are named in the subtitle instead of drawn as two flat lines. Lines leaving the 3-15 window are clipped at the edge. Line ends carry the ISO code on a navy tile, echoing the header's split-flap board.",
+  "width": "container",
+  "height": 360,
+  "data": {
+    "url": "data/nationality_by_year.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "enrolments": "number",
+        "rank": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 2010 && datum.nationality !== 'China' && datum.nationality !== 'India'"
+    },
+    {
+      "lookup": "nationality",
+      "from": {
+        "data": {
+          "url": "data/country_lookup.csv"
+        },
+        "key": "nationality",
+        "fields": [
+          "iso3"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.year === 2025 ? datum.rank : 99",
+      "as": "r25"
+    },
+    {
+      "calculate": "datum.year === 2010 ? datum.rank : 99",
+      "as": "r10"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "min",
+          "field": "r25",
+          "as": "end_rank"
+        },
+        {
+          "op": "min",
+          "field": "r10",
+          "as": "start_rank"
+        }
+      ],
+      "groupby": [
+        "nationality"
+      ]
+    },
+    {
+      "filter": "datum.end_rank <= 15 || datum.start_rank <= 15"
+    },
+    {
+      "calculate": "{'Nepal': 'Nepal', 'Philippines': 'Philippines', 'Bangladesh': 'Bangladesh', 'Korea, Republic of (South)': 'South Korea'}[datum.nationality] || 'Other'",
+      "as": "story"
+    },
+    {
+      "calculate": "datum.story === 'Other' ? 0 : 1",
+      "as": "is_story"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "_rn"
+        }
+      ],
+      "sort": [
+        {
+          "field": "is_story"
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          2010,
+          2028.2
+        ],
+        "nice": false
+      },
+      "axis": {
+        "title": null,
+        "format": "d",
+        "values": [
+          2010,
+          2013,
+          2016,
+          2019,
+          2022,
+          2025
+        ],
+        "grid": true,
+        "gridColor": "#DCE2DA",
+        "gridDash": []
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          2.5,
+          15.5
+        ],
+        "reverse": true,
+        "nice": false,
+        "zero": false
+      },
+      "axis": {
+        "title": null,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "grid": false,
+        "labelExpr": "datum.value + (datum.value === 3 ? 'rd' : 'th')"
+      }
+    },
+    "color": {
+      "field": "story",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Nepal",
+          "Philippines",
+          "Bangladesh",
+          "South Korea",
+          "Other"
+        ],
+        "range": [
+          "#C8371F",
+          "#6E4BA8",
+          "#2E8754",
+          "#2F5FA7",
+          "#BAC0B8"
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "clip": true,
+        "strokeCap": "round",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "detail": {
+          "field": "nationality"
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.is_story === 1",
+            "value": 3
+          },
+          "value": 1.4
+        },
+        "order": {
+          "field": "year"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.is_story === 1 && datum.rank >= 3 && datum.rank <= 15"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 34,
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "$comment": "Invisible hit targets on every point, for the tooltip.",
+      "transform": [
+        {
+          "filter": "datum.rank >= 3 && datum.rank <= 15"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "size": 160,
+        "opacity": 0
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "nationality",
+            "title": "Citizenship"
+          },
+          {
+            "field": "year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "$comment": "End labels for every line still in the window in 2025: an ISO code on a flap tile, plus the name for the four story lines.",
+      "transform": [
+        {
+          "filter": "datum.year === 2025 && datum.rank >= 3 && datum.rank <= 15"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "point",
+            "shape": "M-1.45,-0.82H1.45V0.82H-1.45Z",
+            "size": 330,
+            "filled": true,
+            "opacity": 1,
+            "xOffset": 26
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "datum.is_story === 1",
+                "value": "#14213D"
+              },
+              "value": "#5D6878"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "color": "#F3F1E8",
+            "fontSize": 9.5,
+            "fontWeight": 600,
+            "letterSpacing": 0.8,
+            "dx": 26
+          },
+          "encoding": {
+            "text": {
+              "field": "iso3"
+            },
+            "color": {
+              "value": "#F3F1E8"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.is_story === 1"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 46,
+            "fontSize": 10.5,
+            "fontWeight": 600,
+            "fontFamily": "IBM Plex Sans"
+          },
+          "encoding": {
+            "text": {
+              "field": "story"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$comment": "Start labels for the story lines that begin inside the window (Nepal 7th, South Korea 3rd).",
+      "transform": [
+        {
+          "filter": "datum.year === 2010 && datum.is_story === 1 && datum.rank >= 3 && datum.rank <= 15"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "dy": -11,
+        "fontSize": 10,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "iso3"
+        }
+      }
+    },
+    {
+      "$comment": "Where the Philippines and Bangladesh enter from below the window.",
+      "data": {
+        "values": [
+          {
+            "year": 2010.25,
+            "rank": 15.35,
+            "t": "PHL ↑ from 22nd in 2010",
+            "c": "#6E4BA8"
+          },
+          {
+            "year": 2019.6,
+            "rank": 15.35,
+            "t": "BGD ↑ 17th → 7th in two years",
+            "c": "#2E8754"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "fontSize": 9.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        },
+        "color": {
+          "field": "c",
+          "type": "nominal",
+          "scale": null
+        }
+      }
+    }
+  ]
+}

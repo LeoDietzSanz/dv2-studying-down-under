@@ -1,0 +1,185 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 9. Heatmap: share of each country's 2025 enrolments by field, ten largest source countries. Normalised within each row so rows are comparable. Cells over 10% carry their value; the three cells the title and caption rely on are ringed with a dashed ink outline, like a hand-circled field on a form.",
+  "width": "container",
+  "height": 360,
+  "data": {
+    "url": "data/country_field_2025.csv",
+    "format": {
+      "parse": {
+        "share": "number",
+        "enrolments": "number",
+        "country_rank": "number",
+        "field_order": "number",
+        "country_total": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "{'Business & Commerce': 'Business', 'IT': 'IT', 'English language': 'English', 'Society & Culture': 'Society &|culture', 'Engineering': 'Engineering', 'Education': 'Education', 'Health': 'Health', 'Hospitality & Services': 'Hospitality', 'Architecture & Building': 'Architecture', 'Sciences, Arts & Agriculture': 'Sciences,|arts, agri.', 'School & other': 'School &|other'}[datum.field]",
+      "as": "col"
+    },
+    {
+      "calculate": "datum.nationality === 'Korea, Republic of (South)' ? 'South Korea' : datum.nationality",
+      "as": "row"
+    },
+    {
+      "calculate": "(datum.nationality === 'Brazil' && datum.field === 'English language') || (datum.nationality === 'Bangladesh' && datum.field === 'IT') || (datum.nationality === 'Indonesia' && datum.field === 'Business & Commerce')",
+      "as": "ringed"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "nominal",
+      "sort": {
+        "field": "field_order"
+      },
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": {
+          "expr": "width < 640 ? -90 : 0"
+        },
+        "labelExpr": "width < 640 ? replace(datum.label, '|', ' ') : split(datum.label, '|')",
+        "labelFontSize": 10.5,
+        "labelColor": "#14213D",
+        "labelPadding": 8,
+        "labelLineHeight": 13,
+        "grid": false,
+        "labelAlign": {
+          "expr": "width < 640 ? 'left' : 'center'"
+        },
+        "labelBaseline": {
+          "expr": "width < 640 ? 'middle' : 'bottom'"
+        }
+      }
+    },
+    "y": {
+      "field": "row",
+      "type": "nominal",
+      "sort": {
+        "field": "country_rank"
+      },
+      "title": null,
+      "axis": {
+        "labelFont": "IBM Plex Sans",
+        "labelFontSize": 11.5,
+        "labelColor": "#14213D",
+        "labelPadding": 10,
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 2,
+        "cornerRadius": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "SHARE OF COUNTRY",
+          "scale": {
+            "domain": [
+              0,
+              0.45
+            ],
+            "range": [
+              "#F1F4F8",
+              "#C3D1E8",
+              "#8FA9D3",
+              "#5B7FBD",
+              "#2F5FA7",
+              "#1C3C70"
+            ],
+            "clamp": true
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "format": "%",
+            "gradientLength": 220,
+            "values": [
+              0,
+              0.1,
+              0.2,
+              0.3,
+              0.4
+            ],
+            "titleOrient": "left",
+            "offset": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "nationality",
+            "title": "Citizenship"
+          },
+          {
+            "field": "field",
+            "title": "Field"
+          },
+          {
+            "field": "share",
+            "title": "Share of country",
+            "format": ".1%"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.share >= 0.1"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 10.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "share",
+          "format": ".0%"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.share >= 0.24",
+            "value": "#FFFFFF"
+          },
+          "value": "#14213D"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.ringed"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "fill": null,
+        "stroke": "#C8371F",
+        "strokeWidth": 2.2,
+        "strokeDash": [
+          4,
+          3
+        ],
+        "cornerRadius": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 5 (Map 2). Choropleth: enrolments in Australia per 100,000 people in the home country, 2025 (World Bank population; Taiwan from its Ministry of the Interior). Threshold bins, not a linear ramp: the distribution is extremely skewed (median a few per 100k, Bhutan 1,943). Stamp-red ramp = a rate, never a count. Linked with chart 4 via 'hl'.",
+  "width": "container",
+  "height": 270,
+  "projection": {
+    "type": "equalEarth",
+    "rotate": [
+      -150,
+      0,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "hl",
+      "value": ""
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "geo/world_countries.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.iso3",
+          "as": "iso3"
+        },
+        {
+          "lookup": "iso3",
+          "from": {
+            "data": {
+              "url": "data/country_2025.csv",
+              "format": {
+                "parse": {
+                  "per_100k": "number",
+                  "enrolments": "number",
+                  "rank_per_100k": "number"
+                }
+              }
+            },
+            "key": "iso3",
+            "fields": [
+              "country",
+              "per_100k",
+              "enrolments",
+              "rank_per_100k",
+              "small_population"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "name": "hov",
+          "select": {
+            "type": "point",
+            "fields": [
+              "iso3"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 0.5,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "!isValid(datum.per_100k)",
+            "value": "#DCE2DA"
+          },
+          "field": "per_100k",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              5,
+              20,
+              50,
+              150,
+              500
+            ],
+            "range": [
+              "#F4E3DD",
+              "#EBBFB1",
+              "#DC9078",
+              "#C8371F",
+              "#9A2914",
+              "#5E180B"
+            ]
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "test": "hl === '' || datum.iso3 === hl",
+            "value": 1
+          },
+          "value": 0.25
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.iso3 === hl",
+            "value": 1.6
+          },
+          "value": 0.5
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.iso3 === hl",
+            "value": "#14213D"
+          },
+          "value": "#EEF1EC"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "title": "Citizenship"
+          },
+          {
+            "field": "per_100k",
+            "title": "Per 100,000 at home",
+            "format": ",.1f"
+          },
+          {
+            "field": "rank_per_100k",
+            "title": "Rank by rate"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments 2025",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "$comment": "Direct labels on the four countries the caption names: ISO code + rate, placed away from the crowd with a leader line, atlas style.",
+      "data": {
+        "url": "data/country_2025.csv",
+        "format": {
+          "parse": {
+            "per_100k": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "indexof(['BTN','NPL','FJI','CHN','MNG'], datum.iso3) >= 0"
+        },
+        {
+          "calculate": "datum.iso3 + ' ' + format(datum.per_100k, ',.0f')",
+          "as": "label"
+        },
+        {
+          "calculate": "{'BTN': 104, 'NPL': 68, 'FJI': -172, 'CHN': 128, 'MNG': 118}[datum.iso3]",
+          "as": "llon"
+        },
+        {
+          "calculate": "{'BTN': 14, 'NPL': 40, 'FJI': -30, 'CHN': 26, 'MNG': 56}[datum.iso3]",
+          "as": "llat"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#14213D",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "llon"
+            },
+            "latitude2": {
+              "field": "llat"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 14,
+            "color": "#14213D"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.iso3 !== 'NPL'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 3,
+            "fontSize": 9.5,
+            "fontWeight": 600,
+            "letterSpacing": 0.4,
+            "color": "#14213D"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "llon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "llat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.iso3 === 'NPL'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -3,
+            "fontSize": 9.5,
+            "fontWeight": 600,
+            "letterSpacing": 0.4,
+            "color": "#14213D"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "llon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "llat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "usermeta": {
+    "aspect": 0.53
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 1. Isotype grid (waffle): 100 squares, one per 1% of Australian higher-education students, 2024. Squares are drawn as boxes on a form: overseas boxes stamped red, domestic boxes inked blue. The totals sit beside the grid in HTML.",
+  "$comment_data": "Built from one row of he_summary_2024.csv: sequence(0,100) is flattened into 100 rows, and the first round(share*100) are overseas. Change the source and the grid redraws itself.",
+
+  "width": 290,
+  "height": 290,
+  "autosize": { "type": "pad" },
+
+  "data": { "url": "data/he_summary_2024.csv", "format": { "parse": { "overseas": "number", "domestic": "number", "total": "number", "overseas_share": "number" } } },
+  "transform": [
+    { "filter": "datum.scope === 'All higher-education providers'" },
+    { "calculate": "sequence(0, 100)", "as": "i" },
+    { "flatten": ["i"] },
+    { "calculate": "datum.i < round(datum.overseas_share * 100) ? 'Overseas' : 'Domestic'", "as": "who" },
+    { "calculate": "floor(datum.i / 10)", "as": "row" },
+    { "calculate": "datum.i % 10", "as": "col" },
+    { "calculate": "datum.total / 100", "as": "per_square" }
+  ],
+
+  "mark": { "type": "rect", "cornerRadius": 1.5, "strokeWidth": 1.6 },
+  "encoding": {
+    "x": { "field": "col", "type": "ordinal", "axis": null, "scale": { "paddingInner": 0.22, "paddingOuter": 0 } },
+    "y": { "field": "row", "type": "ordinal", "axis": null, "scale": { "paddingInner": 0.22, "paddingOuter": 0 } },
+    "fill": {
+      "field": "who", "type": "nominal", "legend": null,
+      "scale": { "domain": ["Overseas", "Domestic"], "range": ["#C8371F", "#DCE4F1"] }
+    },
+    "stroke": {
+      "field": "who", "type": "nominal", "legend": null,
+      "scale": { "domain": ["Overseas", "Domestic"], "range": ["#C8371F", "#2F5FA7"] }
+    },
+    "tooltip": [
+      { "field": "who", "title": "Each square" },
+      { "field": "per_square", "title": "Students per square", "format": ",.0f" },
+      { "field": "overseas", "title": "Overseas, total", "format": "," },
+      { "field": "domestic", "title": "Domestic, total", "format": "," }
+    ]
+  }
+}

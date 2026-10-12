@@ -1,0 +1,402 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 10 (Map 3). Flow map drawn like an airline route chart: straight routes from the 12 largest source countries to each state capital, 2025 (flows under 500 omitted). Line width = enrolments; colour = origin region. The map is framed on the region the routes cross (azimuthal equidistant, centred on 110°E), so Australia is large enough to see the routes FAN OUT to different capitals, the chart's whole point. Colombia and Brazil sit on the far side of the globe: their routes enter dashed from the right edge, 'via the Pacific'. Origins carry their ISO code on a flap tile; capitals carry their airport code.",
+  "usermeta": {
+    "aspect": 0.62
+  },
+  "width": "container",
+  "height": 640,
+  "projection": {
+    "type": "azimuthalEquidistant",
+    "rotate": [
+      -110,
+      2,
+      0
+    ],
+    "fit": {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            64,
+            40
+          ],
+          [
+            164,
+            40
+          ],
+          [
+            164,
+            -44
+          ],
+          [
+            64,
+            -44
+          ]
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "graticule": {
+          "step": [
+            15,
+            15
+          ]
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#C9D0D8",
+        "strokeWidth": 0.6,
+        "strokeDash": [
+          2,
+          3
+        ],
+        "filled": false,
+        "clip": true
+      }
+    },
+    {
+      "data": {
+        "url": "geo/world_countries.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.iso3 !== 'AUS'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#DCE2DA",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 0.6,
+        "clip": true
+      }
+    },
+    {
+      "data": {
+        "url": "geo/au_states.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#D1D8CE",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.2,
+        "clip": true
+      }
+    },
+    {
+      "data": {
+        "url": "data/flows_2025.csv",
+        "format": {
+          "parse": {
+            "enrolments": "number",
+            "origin_lat": "number",
+            "origin_lon": "number",
+            "dest_lat": "number",
+            "dest_lon": "number",
+            "share_of_origin": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.enrolments >= 1500"
+        },
+        {
+          "calculate": "datum.region_group === 'Americas' ? 163 : datum.origin_lon",
+          "as": "o_lon"
+        },
+        {
+          "calculate": "datum.iso3 === 'COL' ? -9 : datum.iso3 === 'BRA' ? -19 : datum.origin_lat",
+          "as": "o_lat"
+        },
+        {
+          "calculate": "{'NSW':'SYD','VIC':'MEL','QLD':'BNE','WA':'PER','SA':'ADL','ACT':'CBR','TAS':'HBA','NT':'DRW'}[datum.state]",
+          "as": "code"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeCap": "round",
+            "opacity": 0.5,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "o_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "o_lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "dest_lon"
+            },
+            "latitude2": {
+              "field": "dest_lat"
+            },
+            "strokeWidth": {
+              "field": "enrolments",
+              "type": "quantitative",
+              "scale": {
+                "type": "sqrt",
+                "domain": [
+                  0,
+                  106094
+                ],
+                "range": [
+                  0.6,
+                  15
+                ]
+              },
+              "legend": {
+                "title": "ENROLMENTS",
+                "values": [
+                  2000,
+                  20000,
+                  100000
+                ],
+                "orient": "bottom-left",
+                "direction": "horizontal",
+                "labelExpr": "format(datum.value / 1000, 'd') + 'k'",
+                "symbolType": "stroke",
+                "symbolStrokeColor": "#4D5A70",
+                "symbolSize": 400
+              }
+            },
+            "color": {
+              "field": "region_group",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "South & Central Asia",
+                  "East & South-East Asia",
+                  "Americas",
+                  "Rest of world"
+                ],
+                "range": [
+                  "#C8371F",
+                  "#2F5FA7",
+                  "#C99400",
+                  "#9A9C94"
+                ]
+              }
+            },
+            "strokeDash": {
+              "condition": {
+                "test": "datum.region_group === 'Americas'",
+                "value": [
+                  6,
+                  4
+                ]
+              },
+              "value": [
+                1,
+                0
+              ]
+            },
+            "order": {
+              "field": "enrolments",
+              "sort": "descending"
+            },
+            "tooltip": [
+              {
+                "field": "nationality",
+                "title": "From"
+              },
+              {
+                "field": "city",
+                "title": "To"
+              },
+              {
+                "field": "enrolments",
+                "title": "Enrolments",
+                "format": ","
+              },
+              {
+                "field": "share_of_origin",
+                "title": "Share of that country",
+                "format": ".0%"
+              }
+            ]
+          }
+        },
+        {
+          "$comment": "Capitals: a ring and the airport code, once per state.",
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "enrolments",
+                  "as": "in"
+                }
+              ],
+              "groupby": [
+                "state",
+                "code",
+                "city",
+                "dest_lon",
+                "dest_lat"
+              ]
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "circle",
+                "size": 46,
+                "fill": "#EEF1EC",
+                "stroke": "#14213D",
+                "strokeWidth": 1.6
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 10,
+                "fontWeight": 600,
+                "letterSpacing": 0.8,
+                "color": "#14213D",
+                "align": "left",
+                "dx": 7,
+                "dy": 9
+              },
+              "encoding": {
+                "text": {
+                  "field": "code"
+                }
+              }
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "dest_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "dest_lat",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "title": "Capital"
+              },
+              {
+                "field": "in",
+                "title": "Enrolments from these 12",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "$comment": "Origins: the ISO code on a navy flap tile (the header board's vocabulary).",
+          "transform": [
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "enrolments",
+                  "as": "out"
+                }
+              ],
+              "groupby": [
+                "iso3",
+                "nationality",
+                "o_lon",
+                "o_lat",
+                "region_group"
+              ]
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "point",
+                "shape": "M-1.5,-0.85H1.5V0.85H-1.5Z",
+                "size": 360,
+                "filled": true,
+                "color": "#14213D",
+                "opacity": 1
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "fontSize": 9.5,
+                "fontWeight": 600,
+                "letterSpacing": 0.8,
+                "color": "#F3F1E8"
+              },
+              "encoding": {
+                "text": {
+                  "field": "iso3"
+                }
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.region_group === 'Americas'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -22,
+                "fontSize": 9,
+                "fontWeight": 600,
+                "color": "#8A6A00"
+              },
+              "encoding": {
+                "text": {
+                  "value": "via the Pacific"
+                }
+              }
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "o_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "o_lat",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "nationality",
+                "title": "From"
+              },
+              {
+                "field": "out",
+                "title": "Enrolments mapped",
+                "format": ","
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

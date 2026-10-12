@@ -1,0 +1,156 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 14. Horizontal bar chart: Australia's ten largest exports, 2024-25, A$ billion (DFAT top-25 table, transcribed from PDF). Education in stamp red; gold in flap amber because the title compares the two; everything else neutral. Values printed at the bar ends, so no x-axis is needed. Closes the loop with the page title ('the export that walks in').",
+  "width": "container",
+  "height": 330,
+  "data": {
+    "url": "data/exports_by_commodity.csv",
+    "format": {
+      "parse": {
+        "rank": "number",
+        "fy2024_25": "number",
+        "fy2022_23": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.rank <= 10"
+    },
+    {
+      "calculate": "{'Iron ore & concentrates':'Iron ore','Coal':'Coal','Natural gas':'Natural gas','Education-related travel services':'Education','Gold':'Gold','Personal travel (excl. education)':'Tourism','Professional/technical/business services':'Business services','Beef, fresh, chilled or frozen':'Beef','Aluminium ores & concentrates (incl. alumina)':'Alumina','Intellectual property charges n.i.e.':'IP charges'}[datum.commodity]",
+      "as": "label"
+    },
+    {
+      "calculate": "datum.fy2024_25 / 1000",
+      "as": "bn"
+    },
+    {
+      "calculate": "datum.commodity === 'Gold' ? 'gold' : (datum.is_education === 'true' || datum.is_education === true) ? 'edu' : 'other'",
+      "as": "kind"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "label",
+      "type": "nominal",
+      "sort": {
+        "field": "rank",
+        "op": "min"
+      },
+      "title": null,
+      "axis": {
+        "labelFont": "IBM Plex Sans",
+        "labelFontSize": 12,
+        "labelColor": "#14213D",
+        "labelPadding": 10,
+        "labelFontWeight": {
+          "expr": "datum.value === 'Education' || datum.value === 'Gold' ? 600 : 400"
+        },
+        "grid": false
+      },
+      "scale": {
+        "paddingInner": 0.28
+      }
+    },
+    "x": {
+      "field": "bn",
+      "type": "quantitative",
+      "axis": null,
+      "scale": {
+        "domain": [
+          0,
+          135
+        ],
+        "nice": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "kind",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "edu",
+              "gold",
+              "other"
+            ],
+            "range": [
+              "#C8371F",
+              "#C99400",
+              "#BAC0B8"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "commodity",
+            "title": "Export"
+          },
+          {
+            "field": "fy2024_25",
+            "title": "A$ million, 2024–25",
+            "format": ","
+          },
+          {
+            "field": "fy2022_23",
+            "title": "A$ million, 2022–23",
+            "format": ","
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 10.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "bn",
+          "format": "$.1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.kind === 'edu'",
+            "value": "#C8371F"
+          },
+          "value": "#4D5A70"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.kind === 'edu'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 52,
+        "fontSize": 10,
+        "fontWeight": 600,
+        "color": "#14213D",
+        "text": {
+          "expr": "width < 420 ? '← $36.3bn in 2022–23' : '← up from $36.3bn in 2022–23'"
+        }
+      }
+    }
+  ]
+}

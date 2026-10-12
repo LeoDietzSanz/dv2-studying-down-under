@@ -1,0 +1,361 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 11 (Map 4). Australia, Albers-style conic equal-area projection (parallels 18°S and 36°S). State fill = international enrolments per 1,000 residents, 2025 (ABS ERP Dec 2025); circles = overseas students at each university's main campus, 2024 (area linear from zero). Click a state to filter chart 12 (via the 'st' signal bridge in js/embed.js); the pick is mirrored back from the beeswarm.",
+  "usermeta": {
+    "aspect": 0.86
+  },
+  "width": "container",
+  "height": 440,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "st",
+      "value": ""
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "geo/au_states.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.state",
+          "as": "state"
+        },
+        {
+          "lookup": "state",
+          "from": {
+            "data": {
+              "url": "data/state_2025.csv",
+              "format": {
+                "parse": {
+                  "per_1000": "number",
+                  "enrolments": "number",
+                  "population": "number",
+                  "share": "number"
+                }
+              }
+            },
+            "key": "state",
+            "fields": [
+              "name",
+              "per_1000",
+              "enrolments",
+              "population",
+              "share"
+            ]
+          }
+        }
+      ],
+      "params": [
+        {
+          "name": "pick",
+          "select": {
+            "type": "point",
+            "fields": [
+              "state"
+            ],
+            "on": "click",
+            "clear": "dblclick"
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.5,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "color": {
+          "field": "per_1000",
+          "type": "quantitative",
+          "legend": null,
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              20,
+              30,
+              40
+            ],
+            "range": [
+              "#E6ECF5",
+              "#C3D1E8",
+              "#8FA9D3",
+              "#5B7FBD"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": "st === '' || datum.state === st",
+            "value": 1
+          },
+          "value": 0.3
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.state === st",
+            "value": "#14213D"
+          },
+          "value": "#EEF1EC"
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "State"
+          },
+          {
+            "field": "per_1000",
+            "title": "Per 1,000 residents",
+            "format": ".1f"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments 2025",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "title": "Share of Australia",
+            "format": ".0%"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/he_institution_geo_2024.csv",
+        "format": {
+          "parse": {
+            "overseas": "number",
+            "total": "number",
+            "overseas_share": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "mark": {
+        "type": "circle",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "overseas",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "zero": true,
+            "range": [
+              0,
+              900
+            ]
+          },
+          "legend": {
+            "title": "OVERSEAS STUDENTS PER CAMPUS",
+            "values": [
+              5000,
+              20000,
+              40000
+            ],
+            "orient": "bottom-left",
+            "direction": "horizontal",
+            "symbolType": "circle",
+            "symbolFillColor": "#C8371F",
+            "symbolOpacity": 0.7,
+            "symbolStrokeWidth": 0,
+            "labelExpr": "format(datum.value / 1000, 'd') + 'k'"
+          }
+        },
+        "color": {
+          "value": "#C8371F"
+        },
+        "opacity": {
+          "condition": {
+            "test": "st === '' || datum.state === st",
+            "value": 0.72
+          },
+          "value": 0.1
+        },
+        "order": {
+          "field": "overseas",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "institution",
+            "title": "Provider"
+          },
+          {
+            "field": "campus",
+            "title": "Main campus"
+          },
+          {
+            "field": "overseas",
+            "title": "Overseas students",
+            "format": ","
+          },
+          {
+            "field": "overseas_share",
+            "title": "Overseas share",
+            "format": ".0%"
+          }
+        ]
+      }
+    },
+    {
+      "$comment": "State labels: code + rate, at hand-placed points inside each state (ACT is labelled offshore with a leader).",
+      "data": {
+        "url": "data/state_2025.csv",
+        "format": {
+          "parse": {
+            "per_1000": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "{'NSW':146.6,'VIC':141.4,'QLD':144,'WA':121.5,'SA':135,'TAS':146.6,'NT':133.4,'ACT':151.9}[datum.state]",
+          "as": "llon"
+        },
+        {
+          "calculate": "{'NSW':-31.6,'VIC':-36.2,'QLD':-22.5,'WA':-26,'SA':-29.5,'TAS':-42.1,'NT':-19.5,'ACT':-39.4}[datum.state]",
+          "as": "llat"
+        },
+        {
+          "calculate": "datum.state + ' · ' + format(datum.per_1000, '.1f')",
+          "as": "label"
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'ACT'"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#14213D",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "llon"
+            },
+            "latitude2": {
+              "field": "llat"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state !== 'ACT'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 10,
+            "fontWeight": 600,
+            "letterSpacing": 0.5,
+            "color": "#14213D",
+            "align": "left",
+            "dx": 2
+          },
+          "encoding": {
+            "longitude": {
+              "field": "llon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "llat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            },
+            "opacity": {
+              "condition": {
+                "test": "st === '' || datum.state === st",
+                "value": 1
+              },
+              "value": 0.3
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'ACT'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 10,
+            "fontWeight": 600,
+            "letterSpacing": 0.5,
+            "color": "#14213D",
+            "align": "right",
+            "dx": 0,
+            "baseline": "top"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "llon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "llat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            },
+            "opacity": {
+              "condition": {
+                "test": "st === '' || datum.state === st",
+                "value": 1
+              },
+              "value": 0.3
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

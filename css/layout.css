@@ -1,0 +1,154 @@
+/* ==========================================================================
+   layout.css: one left sight-line, generous rhythm, charts on the paper.
+
+   Every field label, headline, paragraph, chart and caption starts on the
+   same left edge (DV1 feedback: "no obvious vertical sightlines"). Charts
+   sit directly on the paper, not in boxed cards: the page is the document.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; background: var(--paper); }
+
+.wrap {
+  max-width: calc(var(--content-max) + 2 * var(--page-pad));
+  margin: 0 auto;
+  padding: 0 var(--page-pad);
+}
+
+/* ---- header: the data page of the passport --------------------------- */
+.site-header { position: relative; padding: 40px 0 0; overflow: hidden; }
+.site-header > .wrap { position: relative; }   /* sits above the guilloche */
+.doc-strip {
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 56px;
+}
+.site-header__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 40px;
+  align-items: start;
+}
+.site-header__text { grid-column: 1 / span 7; display: grid; gap: 26px; }
+.site-header__text .field { margin-bottom: -10px; }
+.site-header__board { grid-column: 8 / span 5; position: relative; min-height: 330px; padding-top: 6px; }
+.site-header .mrz { margin-top: 56px; padding: 18px 0 20px; border-top: 1px solid var(--rule); }
+
+.guilloche {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+}
+
+/* ---- acts ------------------------------------------------------------- */
+.act { position: relative; margin-top: var(--space-act); }
+main > .act:first-child { margin-top: 104px; }
+.act__intro { position: relative; margin-bottom: var(--space-chart); }
+.act__intro .field { margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+/* the field number sits in a small box, like a numbered field on a form */
+.act__intro .field .num {
+  display: inline-grid; place-items: center; min-width: 2.4em; height: 2em;
+  border: 1.5px solid currentColor; color: var(--intl); font-weight: 600; letter-spacing: 0.04em;
+}
+/* each act carries one stamp in its right margin; the stamp holds a real figure */
+.act__intro .act__stamp { position: absolute; right: 12px; top: 56px; }
+
+/* ---- charts -------------------------------------------------------------- */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: calc(var(--gutter) * 1.6);
+  row-gap: var(--space-chart);
+}
+.chart { margin: 0; grid-column: span 12; display: flex; flex-direction: column; }
+.chart--half { grid-column: span 6; }
+
+.chart__head { margin-bottom: 18px; }
+.chart__vis { width: 100%; min-height: var(--vis-h, 320px); flex: 1 0 auto; }
+.chart__vis .vega-embed { width: 100%; display: block; }
+.chart__vis .vega-embed svg { display: block; max-width: 100%; height: auto; }
+
+/* Caption below a perforation: the tear line of a boarding pass. */
+.chart figcaption {
+  margin-top: var(--space-cap);
+  padding-top: 12px;
+  max-width: 82ch;
+  background:
+    radial-gradient(circle, var(--rule) 1.2px, transparent 1.6px) 0 0 / 8px 3px repeat-x;
+}
+
+/* A chart not yet built: a reserved visa page. */
+.chart__vis[data-pending] {
+  display: grid; place-items: center; text-align: center;
+  border: 1.5px dashed var(--rule);
+  background: var(--paper-hi);
+  color: var(--ink-faint);
+  font-family: var(--font-mono); font-size: var(--fs-field);
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+
+/* Linked chart pairs share one sheet, marked with corner crop-marks. */
+.chart--linked .chart__vis { position: relative; }
+
+/* ---- footer: the observations page -------------------------------------- */
+.site-footer { position: relative; margin-top: var(--space-act); padding: 48px 0 0; overflow: hidden; border-top: 2px solid var(--ink); }
+.site-footer > .wrap { position: relative; }
+.site-footer__grid {
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter); row-gap: 28px;
+}
+.site-footer__sources { grid-column: 1 / span 7; }
+.site-footer__meta    { grid-column: 9 / span 4; display: grid; gap: 14px; align-content: start; }
+.site-footer ul { margin: 10px 0 0; padding-left: 1.1em; font-size: var(--fs-caption); line-height: 1.55; color: var(--ink-muted); }
+.site-footer li + li { margin-top: 6px; }
+.data-field { display: grid; gap: 2px; }
+.data-field .value { font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--ink); text-transform: uppercase; letter-spacing: 0.06em; }
+.site-footer .mrz { margin-top: 48px; padding: 18px 0 40px; border-top: 1px solid var(--rule); }
+
+/* ---- responsive ---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .site-header__text, .site-header__board,
+  .site-footer__sources, .site-footer__meta { grid-column: 1 / -1; }
+  .site-header__board { min-height: 0; }
+  .site-header__board .stamp { position: relative !important; top: auto !important; right: auto !important; margin: 28px 0 0 auto; display: grid; width: max-content; }
+  .flap[data-flap="1,058,040"] { --flap-size: 31px !important; }
+  .chart--half { grid-column: span 12; }
+  /* 11 gutters of a 12-column grid are wider than a phone; collapse to one column */
+  .charts, .site-header__grid, .site-footer__grid { grid-template-columns: minmax(0, 1fr); }
+  .chart, .chart--half, .site-header__text, .site-header__board, .site-footer__sources, .site-footer__meta { grid-column: 1 / -1; }
+  .act__intro .act__stamp { position: relative; right: auto; top: auto; margin-top: 22px; }
+}
+@media (max-width: 640px) {
+  :root { --space-act: 96px; --space-chart: 56px; }
+  .doc-strip .field:last-child { display: none; }
+}
+
+/* ---- chart 1: waffle grid + slab tally ---------------------------------- */
+.waffle { display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px; }
+.waffle__grid { width: auto; flex: 0 0 auto; min-height: 290px; }
+.tally { margin: 0; display: grid; gap: 22px; }
+.tally__row { display: grid; gap: 0; }
+.tally dd { margin: 0; }
+.tally__n { font-family: var(--font-display); font-weight: 700; font-size: 64px; line-height: 0.95; letter-spacing: -0.02em; }
+.tally__n::after { content: " in 100"; font-size: 0.32em; letter-spacing: 0; color: var(--ink-muted); font-weight: 600; }
+.tally__sub { font-family: var(--font-mono); font-size: var(--fs-small); color: var(--ink-muted); }
+
+/* ---- linked pairs (maps 4+5, map 11 + beeswarm 12) ---------------------- */
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px calc(var(--gutter) * 1.4); }
+.pair__item { min-width: 0; display: flex; flex-direction: column; }
+.pair__label { margin-bottom: 8px; }
+.pair__key { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-muted); margin: 6px 0 0; line-height: 1.8; }
+.key-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--c); border: 1px solid var(--ink); margin: 0 4px -1px 10px; }
+.key-dot:first-child { margin-left: 0; }
+.pair--wide-left { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+@media (max-width: 900px) {
+  .pair, .pair--wide-left { grid-template-columns: 1fr; }
+  .tally { grid-template-columns: 1fr 1fr; }
+}
+.key-sq { display: inline-block; width: 11px; height: 11px; background: var(--c); margin: 0 4px -1px 10px; }
+.key-sq:first-child { margin-left: 0; }
+/* space is reserved until a chart draws; afterwards the chart sets its own height */
+.chart__vis.is-drawn { min-height: 0; }
+.key-line { display: inline-block; width: 18px; height: 0; border-top: 3px solid var(--c); margin: 0 5px 3px 10px; }
+.key-line:first-child { margin-left: 0; }
+.key-line--dash { border-top-style: dashed; }

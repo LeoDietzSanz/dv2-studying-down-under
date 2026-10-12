@@ -1,0 +1,278 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Chart 12. Beeswarm: one dot per higher-education provider (43), x = overseas share of its enrolments, dot area = total enrolments, colour = provider group. Written in plain Vega because a true beeswarm needs Vega's force transform (collision + attraction to x), which Vega-Lite does not expose. Linked with chart 11 through the 'st' signal: clicking a dot picks its state; the map's pick fades providers in other states.",
+  "background": null,
+  "padding": {
+    "left": 6,
+    "right": 14,
+    "top": 8,
+    "bottom": 46
+  },
+  "autosize": {
+    "type": "none"
+  },
+  "height": 330,
+  "signals": [
+    {
+      "name": "width",
+      "init": "max(containerSize()[0] - 20, 260)",
+      "on": [
+        {
+          "events": "window:resize",
+          "update": "max(containerSize()[0] - 20, 260)"
+        }
+      ]
+    },
+    {
+      "name": "st",
+      "value": ""
+    },
+    {
+      "name": "pickdot",
+      "value": "",
+      "on": [
+        {
+          "events": "@dots:click",
+          "update": "datum.datum.state === pickdot ? '' : datum.datum.state"
+        },
+        {
+          "events": "dblclick",
+          "update": "''"
+        }
+      ]
+    },
+    {
+      "name": "cy",
+      "update": "height / 2"
+    }
+  ],
+  "data": [
+    {
+      "name": "providers",
+      "url": "data/he_institution_geo_2024.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "overseas_share": "number",
+          "total": "number",
+          "overseas": "number",
+          "domestic": "number"
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": [
+        0,
+        0.6
+      ],
+      "range": [
+        0,
+        {
+          "signal": "width"
+        }
+      ],
+      "nice": false,
+      "zero": true
+    },
+    {
+      "name": "r",
+      "type": "sqrt",
+      "domain": {
+        "data": "providers",
+        "field": "total"
+      },
+      "range": [
+        3,
+        15
+      ],
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Group of Eight",
+        "Other public",
+        "Private"
+      ],
+      "range": [
+        "#6E4BA8",
+        "#2F5FA7",
+        "#2E8754"
+      ]
+    }
+  ],
+  "axes": [
+    {
+      "orient": "bottom",
+      "scale": "x",
+      "values": [
+        0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "format": "%",
+      "domain": true,
+      "domainColor": "#14213D",
+      "ticks": true,
+      "tickColor": "#14213D",
+      "tickSize": 4,
+      "labelFont": "IBM Plex Mono",
+      "labelFontSize": 10.5,
+      "labelColor": "#4D5A70",
+      "title": "OVERSEAS SHARE OF ENROLMENTS",
+      "titleFont": "IBM Plex Mono",
+      "titleFontSize": 10,
+      "titleFontWeight": 500,
+      "titleColor": "#4D5A70",
+      "titlePadding": 8,
+      "grid": true,
+      "gridColor": "#C9D0D8",
+      "gridDash": [
+        2,
+        3
+      ],
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "orient": "top-left",
+      "direction": "horizontal",
+      "symbolType": "circle",
+      "symbolSize": 90,
+      "labelFont": "IBM Plex Mono",
+      "labelFontSize": 10.5,
+      "labelColor": "#4D5A70",
+      "columnPadding": 12,
+      "offset": 0
+    }
+  ],
+  "marks": [
+    {
+      "name": "dots",
+      "type": "symbol",
+      "from": {
+        "data": "providers"
+      },
+      "encode": {
+        "enter": {
+          "fill": {
+            "scale": "color",
+            "field": "group"
+          },
+          "stroke": {
+            "value": "#EEF1EC"
+          },
+          "strokeWidth": {
+            "value": 1
+          },
+          "xfocus": {
+            "scale": "x",
+            "field": "overseas_share"
+          },
+          "yfocus": {
+            "signal": "cy"
+          },
+          "cursor": {
+            "value": "pointer"
+          },
+          "tooltip": {
+            "signal": "{'Provider': datum.institution, 'State': datum.state, 'Group': datum.group, 'Overseas share': format(datum.overseas_share, '.0%'), 'Overseas students': format(datum.overseas, ','), 'All students': format(datum.total, ',')}"
+          }
+        },
+        "update": {
+          "size": {
+            "signal": "PI * pow(scale('r', datum.total), 2)"
+          },
+          "opacity": {
+            "signal": "st === '' || datum.state === st ? 0.9 : 0.12"
+          },
+          "xfocus": {
+            "scale": "x",
+            "field": "overseas_share"
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "static": true,
+          "iterations": 300,
+          "forces": [
+            {
+              "force": "collide",
+              "radius": {
+                "expr": "sqrt(datum.size / PI) + 1"
+              },
+              "iterations": 2
+            },
+            {
+              "force": "x",
+              "x": "xfocus",
+              "strength": 0.9
+            },
+            {
+              "force": "y",
+              "y": "yfocus",
+              "strength": 0.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$comment": "Name the four providers the caption cites: the three most international and New England at the other end.",
+      "type": "text",
+      "from": {
+        "data": "dots"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x"
+          },
+          "y": {
+            "field": "y"
+          },
+          "text": {
+            "signal": "indexof(['Murdoch University','The University of Sydney','RMIT University','The University of New England'], datum.datum.institution) >= 0 ? datum.datum.short_name + ' ' + format(datum.datum.overseas_share, '.0%') : ''"
+          },
+          "dy": {
+            "signal": "-(sqrt(datum.size / PI) + 5)"
+          },
+          "align": {
+            "value": "center"
+          },
+          "baseline": {
+            "value": "bottom"
+          },
+          "font": {
+            "value": "IBM Plex Mono"
+          },
+          "fontSize": {
+            "value": 10
+          },
+          "fontWeight": {
+            "value": 600
+          },
+          "fill": {
+            "value": "#14213D"
+          },
+          "opacity": {
+            "signal": "st === '' || datum.datum.state === st ? 1 : 0.15"
+          }
+        }
+      }
+    }
+  ]
+}

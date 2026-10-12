@@ -23,83 +23,63 @@ Every previous version said "1 in 4 university students is international." The 2
 
 ---
 
-## Part B — The design system
+## Part B — The design system (v5: "Entry Stamp × Arrivals")
 
-### Palette
+**v5 replaces the v4 "editorial" look**, which was rejected as generic: beige paper, Source Serif with Inter, uppercase kickers, charts in boxed cards. It was a template that could have been about any topic. Following DV1, the new system takes its whole identity from the subject. **The paperwork of crossing a border** (passport security paper, ink stamps, visa field labels, the machine-readable zone) **meets the airport** (split-flap arrivals board, condensed signage type). Light background throughout.
 
-One accent, one counterpoint, two sequential ramps, one categorical set. Nothing else. The accent is reserved — throughout the whole page, **ochre means "international"** and nothing else ever uses it.
+### The rule every ornament obeys
+**Nothing is purely decorative.** Every stamp holds a real figure, every flap tile shows real data, and the passport code lines carry real ICAO 9303 check digits. Decoration sits *around* charts and never replaces a mark that has to be read exactly. That was DV1's postbox-lollipop lesson.
 
-| Role | Hex | Used for |
+### Colour (all sets validated with the dataviz palette checker on `--paper`)
+
+| Role | Hex | Meaning |
 |---|---|---|
-| Paper | `#FAF7F2` | Page background — warm off-white, not pure white |
-| Panel | `#FFFFFF` | Chart plotting areas, to lift them off the paper |
-| Ink | `#14212B` | Headings, chart titles, annotation text |
-| Ink-muted | `#5C6670` | Body text, captions, axis labels |
-| Rule | `#E2DCD3` | Hairlines, grid, figure borders |
-| **Accent — international** | `#C2701C` | Every mark representing international students |
-| **Counterpoint — domestic** | `#2A6B70` | Every mark representing domestic students |
-| Highlight | `#8C2F1B` | Annotation leader lines, the 2025 decline marker. Sparingly |
+| Paper | `#EEF1EC` | passport security paper: pale, cool |
+| Ink | `#14213D` | passport-cover navy; all primary text, annotation rings |
+| Ink-muted | `#4D5A70` | secondary text, axes (6.2:1) |
+| Rule | `#C9D0D8` | gridlines (dashed), hairlines |
+| **Stamp red** | `#C8371F` | **international students**: the subject; headline keywords |
+| **Ink blue** | `#2F5FA7` | **domestic students** where compared; also the guilloche print |
+| Other | `#9A9C94` | everything that isn't the point |
 
-**Sequential A — counts** (choropleths and heatmaps of raw volume):
-`#EDF4F4 → #C5DEDE → #8FC0C2 → #4E9296 → #226568 → #0D4247`
+- **Sector (adjacent pairs, all pass):** Higher Education `#2F5FA7` · VET `#C8371F` · ELICOS `#6E4BA8` · Schools `#2E8754` · Non-award `#9A9C94`.
+- **Region (all pairs, for maps):** South & Central Asia `#C8371F` · East & SE Asia `#2F5FA7` · Americas **flap amber** `#C99400` · Rest of world grey. Amber's contrast is under 3:1, so map circles get a 1px ink outline and direct labels.
+- **Sequential:** counts use an ink-blue ramp `#E6ECF5 → #1C3C70`; rates use a stamp-red ramp.
 
-**Sequential B — rates** (the per-capita map, so a reader can never confuse a rate with a count):
-`#FBF1E3 → #F1D6AE → #E0B074 → #C2701C → #9A5411 → #6B390A`
+### Type: three voices
 
-**Categorical — sector** (five values, one page-wide assignment, never re-shuffled):
+| Voice | Face | Used for |
+|---|---|---|
+| Display (the printed document) | **Zilla Slab** 600/700, sentence case | page title, act headlines, chart titles, stamp numerals |
+| Field (the visa) | **IBM Plex Mono** 400–600 | field labels, subtitles, axes, annotations, flap tiles, tooltips, MRZ |
+| Text (reading) | **IBM Plex Sans** 400/600 | body, deck, captions |
 
-| Sector | Hex |
-|---|---|
-| Higher Education | `#1D4E5C` |
-| VET | `#C2701C` |
-| ELICOS | `#7FA8B8` |
-| Schools | `#86A96E` |
-| Non-award | `#A79B8E` |
+Plex Sans and Plex Mono are one family, so the two small voices sit together and the display face is the deliberate contrast. The heavy slab also carries on DV1's slab headlines, which scored HD for typography. (Big Shoulders Display was tried in v5.0 and dropped in v5.1.) **Headline keywords take the colour of the marks they refer to**, so the title works as the legend (DV1's best-scoring device).
 
-**Categorical — region** (Map 1 symbol fill, six classes): `#1D4E5C` North-East Asia · `#C2701C` Southern & Central Asia · `#7FA8B8` South-East Asia · `#86A96E` Americas · `#B5794E` Sub-Saharan Africa · `#8C93A1` Europe / Middle East / Oceania.
-
-**Why this survives scrutiny.** Teal–ochre is the standard colourblind-safe opposition: it separates cleanly under deuteranopia and protanopia, where red–green does not. Both sequential ramps are single-hue with monotonic lightness, so they read correctly in greyscale and satisfy the ordered-channel requirement from the marks-and-channels notes. Categorical hue is used only where the attribute is genuinely categorical. The accent is reserved for one meaning, which is the "one accent colour" principle from the data-ink material.
-
-### Typography
-
-| Role | Family | Size / line-height | Weight |
-|---|---|---|---|
-| Page title | Source Serif 4 | 56 / 1.05 | 700 |
-| Standfirst | Inter | 21 / 1.5 | 400, `--ink-muted` |
-| KPI numeral | Source Serif 4 | 68 / 1.0, tabular figures | 700, accent |
-| Act heading | Source Serif 4 | 32 / 1.2 | 600 |
-| Act standfirst | Inter | 19 / 1.5 | 500 |
-| Body | Inter | 17 / 1.65 | 400 |
-| Chart title | Inter | 16 / 1.3 | 600 |
-| Chart subtitle | Inter | 13.5 / 1.4 | 400, muted |
-| Axis / legend label | Inter | 11.5 | 400, muted |
-| Annotation | Inter | 12.5 | 600, highlight |
-| Caption | Inter | 12.5 / 1.45 | 400, muted |
-| Footer | Inter | 12 / 1.5 | 400, muted |
-
-Both are free on Google Fonts. One `<link>`, subset to the weights above.
-
-**Why.** A serif display face against a sans text face gives you hierarchy through contrast in *form*, not just size — which is the point the typography notes make about weight, size and colour contrast guiding the eye. Inter is used for everything small because humanist sans faces with large x-heights outperform serifs at 11–12 px on screen, and every chart label sits in that range. Tabular figures on the KPI numerals stop digits jittering. Body measure is capped at **62 characters**, matching the seven-to-ten-words-per-line guidance; body text is left-aligned, never justified, never centred.
+### Ornaments (`css/ornaments.css`, `js/ornaments.js`)
+- **Guilloche:** generated interference-wave security print behind the header and footer.
+- **Split-flap tiles:** the headline figure 1 058 040 and the header's departures-style board. Thousands are separated by a **wider gap**, not a comma tile (v5.2). Each tile is built like the real mechanism: fixed top and bottom halves, a hinge line with notches. A flip is two moving leaves: the old character's top leaf folds down (0 → −90°) and darkens as it turns away from the light, then the new character's bottom leaf falls into place (90° → 0). Each tile steps through its own character drum (blank, 0–9 or A–Z) from a random start until it reaches its character, so tiles stop at different moments.
+- **Ink stamps:** rect and round shapes in four inks, roughened by an SVG ink filter, and they land with a "thunk" on first view. One per act, each holding a figure: ×3.1, 1 in 51, 41%, 69%, −2.8%.
+- **Machine-readable zone:** two TD3 passport code lines in the header and visa-style lines in the footer, with real check digits.
+- **Act labels as numbered visa fields:** 01 Entries · 02 Country of citizenship · 03 Course of study · 04 Address in Australia · 05 Conditions.
+- **Captions** sit under a perforated tear line, like a boarding pass. **Tooltips** are boarding-pass stubs: ink border, heavy left edge, mono keys.
+- **Footer** as the passport's observations page: holder, authority, date of issue and sources as data fields.
+- All motion respects `prefers-reduced-motion`.
 
 ### Layout
+Single column, one left sight-line (DV1's weakest mark: Credit for sightlines, centred text). Act gap 136px and chart gap 72px, up from 96 and 48, after DV1's white-space feedback. Charts sit directly on the paper, with no boxes. Headlines max 19ch; prose max 60ch. Below 900px everything stacks and the header stamp drops below the board.
 
-- **Single scrolling page.** Content column **1120 px** max, centred, 12 columns, 24 px gutters.
-- **The left sight-line is the spine.** Every act heading, every body paragraph, every chart's left edge and every caption starts on column 1. One vertical line down the whole page. This single decision carries most of the layout mark.
-- **Three chart widths only:** full (12 col, ~1072 px), half (6 col, ~524 px), and wide (8 col) for the flow map's world outline. No other widths.
-- **Vertical rhythm:** 96 px between acts, 48 px between charts inside an act, 12 px from chart to its caption. Body paragraphs sit in a 7-column block (~62ch) so text never runs the full width even though charts do — that asymmetry creates the white space the layout notes call for.
-- **Act headings** get a 1 px `--rule` hairline above them, full content width. Cheap, and it makes the five-act structure legible at a glance while scrolling.
-- **Responsive:** below 900 px, half-width charts stack to full width; the two `hconcat` pairs stack vertically. Below 640 px, reduce title to 38 px. Don't over-engineer this — it's marked on the desktop view.
-- **Footer:** hairline, then author, date, all five sources with URLs, and the AI-use acknowledgement.
+### Writing voice (from DV1)
+Short declarative claims in pairs ("Bigger than gold. Easier to lose."), one human-scale comparison per act (Bhutan: if Australia did the same, more than half a million Australians would be studying in one foreign country), and an ending that returns to the opening ("the export that walks in" → "Education out-earns gold"). **Proofread with Code Spell Checker (en-AU)**: grammar was a Distinction in DV1, from typos.
 
-### Interaction — three things only
-
-1. **Tooltips on every chart.** Formatted numbers (`,.0f`), full category names, never raw field codes.
-2. **Hover a country in the Act 2 map pair** → highlights in both Map 1 and Map 2. One `hconcat` spec, one shared `param`.
-3. **Click a state on Map 4** → filters the beeswarm to that state's institutions. One `hconcat` spec.
-
-No year sliders. A slider is an exploration control; this is a presentation piece, and the rubric distinguishes them. Optional fourth if testers find the per-capita map confusing: a `bind: {input: "radio"}` raw/per-100k toggle on Map 2.
-
----
+### Detail backlog: themed touches for charts still to build
+- **Country labels as three-letter codes in flap tiles** (CHN, IND, NPL), as on the header board, on the bump chart's line ends and the heatmap's rows. The ISO3 codes already exist in `country_lookup.csv`.
+- **Calendar heatmap as an arrivals board:** month columns headed like a departures board, cells as tiles with tile gaps; the 2020–21 rows visibly "blank".
+- **Flow map as an airline route map:** thin ink coastlines, routes with round caps, origin dots like airport markers, destination labels as city codes (SYD, MEL, BNE, PER, ADL, CBR, HBA, DRW).
+- **Waffle squares as stamp cells:** overseas squares filled stamp red, domestic as ink-blue outlines, like unstamped boxes on a form.
+- **Map legends styled as a stamp** (a bordered mono key), never as a default Vega legend.
+- **Page numbers in the act margins** ("PAGE 04"), as on visa pages.
+- **Print stylesheet:** the page prints as a passport booklet, one act per page.
 
 ## Part C — The fourteen charts
 
@@ -109,9 +89,9 @@ Numbering matches `charts/NN-*.vl.json` and the sketch panels.
 
 Title **STUDYING DOWN UNDER**. Standfirst: one sentence establishing that this is Australia's largest services export and that the people behind the number are 1.06 million individuals from 200-plus countries.
 
-Two KPI numerals, tabular, ochre:
-- **1 in 3** — university students in Australia is from overseas
-- **#3** — Australia's rank as a destination for internationally mobile students *(UNESCO, cite in footer)*
+Header figures (v5: the main figure is split-flap tiles 1,058,040 plus a departures board of four countries; "1 in 3" is a round stamp) (v4.6: the UNESCO "#3 destination" figure was dropped because it was never verified against a source in hand; it's replaced by a figure already in the data):
+- **1 in 3**: students at Australian universities and colleges is from overseas (35.2%, `he_summary_2024.csv`)
+- **$53.6bn**: earned from education in 2024–25, Australia's fourth-largest export (`exports_by_commodity.csv`)
 
 ---
 
@@ -149,9 +129,9 @@ Two KPI numerals, tabular, ochre:
 **Chart 4 · MAP 1 — Proportional-symbol map** — advanced (surplus)
 - **Title:** Where they come from
 - **Subtitle:** International student enrolments by country of citizenship, 2025
-- **Caption:** 4 · Proportional-symbol map, Equal Earth projection — circle area encodes enrolments; colour encodes world region. Source: Department of Education, PRISMS.
+- **Caption:** 4 · Proportional-symbol map, Equal Earth projection — circle area encodes enrolments; colour encodes region (South & Central Asia, East & South-East Asia, Americas, rest of world). Source: Department of Education, PRISMS.
 - **Data:** `country_2025.csv` (has `enrolments`, `region_group`, `lat`, `lon` already joined) + `geo/world_countries.topo.json` (layer `countries`) for the basemap.
-- **How:** `geoshape` basemap in `#F0EDE7` with `#E2DCD3` borders, `equalEarth` projection rotated so the Pacific isn't split. `circle` marks at centroids; **size scaled by `sqrt`** (area, not radius — the bubble-plot guidance is explicit), `opacity: 0.85`, thin white stroke. Colour = region categorical.
+- **How:** `geoshape` basemap in `#F0EDE7` with `#E2DCD3` borders, `equalEarth` projection rotated so the Pacific isn't split. `circle` marks at centroids; **size scaled by `sqrt`** (area, not radius — the bubble-plot guidance is explicit), `opacity: 0.85`, thin white stroke. Colour = the 3-hue + grey region palette.
 
 **Chart 5 · MAP 2 — Per-capita choropleth** — ADVANCED · load-bearing
 - **Title:** …and where it's a big deal
@@ -340,6 +320,29 @@ Use these to check your prep pipeline. If `10_basic.py` reproduces them, the ext
 
 ---
 
+## Part H: As built (v5.2, 7 October 2026)
+
+All 14 charts are built, rendered and checked at 390, 800 and 1280px: 14/14 draw, no console errors, no horizontal overflow. Where the build differs from Part C:
+
+| Fig. | File | What changed in the build, and why |
+|---|---|---|
+| 01 | `01-waffle.vl.json` | Squares drawn as **form boxes**: overseas stamped red, domestic inked blue outlines. Totals sit beside the grid in HTML (slab numerals "35 in 100", "65 in 100"). |
+| 02 | `02-total-line.vl.json` | Unchanged from v5.1. |
+| 03 | `03-sector-area.vl.json` | Crosshair tooltip lists all five sectors for the hovered year (pivot); "VET ×4.1 · 2005–09" annotation inside the band. |
+| 04 + 05 | `04-origins-symbols`, `05-origins-percapita` | **Two separate specs**, not one hconcat, so they stack on phones. Linked hover through a small bridge in `js/embed.js` (`data-link` attributes). Map 2 labels BTN, NPL, CHN, FJI and **MNG** (237 per 100k: dark enough to be mistaken for China without a label), each with an atlas-style leader. Legends are HTML keys, not Vega legends. Height follows width (`usermeta.aspect`). |
+| 06 | `06-bump.vl.json` | Line ends carry **ISO codes on navy flap tiles**; story lines also carry the name. PHL and BGD entry notes at the bottom edge. |
+| 07 | `07-marimekko.vl.json` | Field names run up inside each column; each field's share sits above it. |
+| 08 | `08-dumbbell.vl.json` | Values labelled where the gap is over 5 points; the subtitle says "sorted by gap" (DV1 feedback: unexplained sort order). |
+| 09 | `09-country-field-heat.vl.json` | Values printed in cells of 10% or more; the three cells the title relies on are ringed with dashed stamp red. Column headers turn vertical below 640px. |
+| 10 | `10-flow-map.vl.json` | **Projection changed** from world Equal Earth to **azimuthal equidistant centred on 110°E, framed on the region the routes cross**. On a world map Australia is about 150px wide and the routes could not visibly fan out to different capitals, which is the chart's whole point. Colombia and Brazil enter dashed from the right edge, "via the Pacific". Routes under 1,500 omitted (60 routes, 98.4% of mapped volume). Origins on flap tiles, capitals as airport codes (SYD MEL BNE PER ADL CBR HBA DRW). |
+| 11 + 12 | `11-australia.vl.json`, `12-beeswarm.vg.json` | Separate specs, linked both ways: click a state **or a dot** to pick a state, double-click to clear. **Chart 12 is plain Vega**, because a true beeswarm needs Vega's force transform (collision + attraction to x), which Vega-Lite does not expose. Map state labels show code and rate per 1,000. |
+| 13 | `13-calendar-heat.vl.json` | Built as an arrivals board: FEB and JUL flagged in red in the header row, their values printed on the tiles, July 2020 ringed. |
+| 14 | `14-export-bar.vl.json` | Education in stamp red, **gold in amber** (the title compares the two), all else neutral; values at bar ends; note "up from $36.3bn in 2022–23". |
+
+**Vega-Lite gotcha worth knowing for the interview:** a top-level `encoding` is inherited by every layer, including its validity filter. A layer with its own small data (an annotation band, aggregated labels) that lacks those fields is silently filtered to nothing. Either give such rows the fields (chart 2's border band) or move the encodings into the layers (chart 7).
+
+---
+
 ## Part G — Change log
 
 - **v1** — original integrated proposal, 16 charts.
@@ -351,3 +354,7 @@ Use these to check your prep pipeline. If `10_basic.py` reproduces them, the ext
 - **v4.3** (3 October) — `pivotcache.py` and `10_basic.py` were built and validated against the appendix figures. Three findings changed the plan. (1) China and India held ranks 1 and 2 in every year, so the bump chart now covers ranks 3–15 (Nepal, the Philippines and Bangladesh rising; Korea falling). (2) The 2020 February intake largely arrived before borders closed; the gap starts with July 2020, so the chart 13 caption was rewritten. (3) The flow-map premise is confirmed: in 2025 China enrolments are concentrated in NSW (106,094 vs 67,069 in VIC), India's in VIC (78,367 vs 44,632 in NSW), and Nepal's in NSW (55,279).
 - **v4.4** (3 October) — `labels.py`, `20_detailed.py` and `30_higher_ed.py` were built and validated. The detailed workbook's Dec 2025 total matches the basic one (1,058,040). Changes: (1) English-language courses and school students are separated from the official field categories, and small fields are merged (11 display fields). (2) Chart 7 is retitled "Four in ten study business or IT" to match the data (29% + 12%). (3) Chart 1 scope is clarified: 35.2% for all providers, 32.7% for universities only. (4) Captions for charts 8 and 9 now use real figures. (5) Map 4 circles are now universities, not cities, because no source has city-level data; this also links Map 4 to the beeswarm.
 - **v4.5** (4 October) — `50_lookups.py` and `geo/` were built and validated. All data prep is complete. Findings: (1) **Bhutan, not Nepal, has the highest per-capita rate** (1,943 per 100k vs Nepal's 302, 3rd after Fiji), so chart 5 is re-captioned around Bhutan. The small-population cutoff for ranking is set at 200,000 so Bhutan counts but Nauru doesn't. (2) Flow map confirmed: China 47% NSW, India 43% VIC, Nepal 62% NSW. (3) By rate per 1,000 residents, the ACT matches NSW and VIC; the Map 4 caption now says so. (4) Maps use pre-joined CSVs (`country_2025`, `flows_2025`, `state_2025`, `he_institution_geo_2024`) so the Vega-Lite specs contain no lookups beyond geometry.
+- **v4.6** (4 October) — Page skeleton and chart 2 built. (1) All categorical palettes re-picked and validated (see Part B). (2) Regions regrouped to 3 + grey in `labels.py`, so 20 and 50 must be re-run. (3) The UNESCO header figure was replaced by $53.6bn. (4) Chart titles, subtitles and captions live in the HTML, not the Vega specs, so every chart shares the page's typography. (5) Chart 2's annotations switch to short labels below 520px so they don't collide on phones. (6) Charts attach with a `data-spec` attribute on their slot; `manifest.js` is dropped.
+- **v5.0** (7 October) — **Visual identity rebuilt** after DV1 review (DV1 scored 20.78/25: HD everywhere except sightlines, Credit, and grammar, Distinction). New system "Entry Stamp × Arrivals" (Part B): security paper, ink stamps, visa fields, MRZ with real check digits, split-flap figures, Big Shoulders Display with IBM Plex Mono and Sans. Palettes re-picked from stamp inks and re-validated. Every headline rewritten as a claim with colour-coded keywords. Chart 2 restyled: border-closure band (20 Mar 2020 – 15 Dec 2021), dashed-ring annotations in mono, boarding-pass tooltip. Page title is now "The Export That Walks In". Author: Leo Dietz Sanz.
+- **v5.1** (7 October) — Headline face changed back to **Zilla Slab** (sentence case) from Big Shoulders Display. Split-flap redone so every character, commas included, has its own tile, with flap shading, hinge line and notches.
+- **v5.2** (7 October) — Split-flap rebuilt as a true two-leaf mechanism, with thousands separated by gaps instead of comma tiles. **All remaining charts built** (1, 3–14); see Part H for how the build differs from the plan. `js/embed.js` gained a linked-view bridge and aspect-ratio sizing; the chart grid collapses to one column under 900px.

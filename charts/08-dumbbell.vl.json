@@ -1,0 +1,256 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 8. Dumbbell plot: each field's share of domestic enrolments (ink blue) vs overseas enrolments (stamp red), higher education 2024. Rows sorted by the gap, from fields overseas students lean towards (top) to fields domestic students lean towards (bottom); the sort is stated in the subtitle. Values are labelled where the gap is more than 5 points.",
+  "width": "container",
+  "height": 330,
+  "data": {
+    "url": "data/he_field_citizenship_2024.csv",
+    "format": {
+      "parse": {
+        "domestic_share": "number",
+        "overseas_share": "number",
+        "gap_pp": "number",
+        "domestic": "number",
+        "overseas": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "order"
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "field",
+      "type": "nominal",
+      "sort": {
+        "field": "order"
+      },
+      "title": null,
+      "axis": {
+        "labelFontSize": 11,
+        "labelFont": "IBM Plex Sans",
+        "labelColor": "#14213D",
+        "labelPadding": 10,
+        "grid": true,
+        "gridColor": "#DCE2DA",
+        "gridDash": []
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2.5,
+        "color": "#9AA2AE"
+      },
+      "encoding": {
+        "x": {
+          "field": "domestic_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              0.4
+            ],
+            "nice": false
+          },
+          "axis": {
+            "format": "%",
+            "values": [
+              0,
+              0.1,
+              0.2,
+              0.3
+            ],
+            "title": null,
+            "grid": true,
+            "gridDash": [
+              2,
+              3
+            ],
+            "gridColor": "#C9D0D8"
+          }
+        },
+        "x2": {
+          "field": "overseas_share"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "domestic_share",
+            "overseas_share"
+          ],
+          "as": [
+            "cohort",
+            "share"
+          ]
+        },
+        {
+          "calculate": "datum.cohort === 'domestic_share' ? 'Domestic' : 'Overseas'",
+          "as": "who"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 120,
+            "opacity": 1,
+            "stroke": "#EEF1EC",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "share",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "who",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "Domestic",
+                  "Overseas"
+                ],
+                "range": [
+                  "#2F5FA7",
+                  "#C8371F"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "field",
+                "title": "Field"
+              },
+              {
+                "field": "who",
+                "title": "Cohort"
+              },
+              {
+                "field": "share",
+                "title": "Share of cohort",
+                "format": ".1%"
+              },
+              {
+                "field": "domestic",
+                "title": "Domestic enrolments",
+                "format": ","
+              },
+              {
+                "field": "overseas",
+                "title": "Overseas enrolments",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "$comment": "Value labels on the outside of each dumbbell, only where the gap is wider than 5 points.",
+          "transform": [
+            {
+              "filter": "abs(datum.gap_pp) > 5"
+            },
+            {
+              "calculate": "(datum.who === 'Overseas') === (datum.gap_pp > 0)",
+              "as": "is_right"
+            },
+            {
+              "filter": "datum.is_right"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 10,
+            "fontSize": 10.5,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "x": {
+              "field": "share",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "share",
+              "format": ".0%"
+            },
+            "color": {
+              "field": "who",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "Domestic",
+                  "Overseas"
+                ],
+                "range": [
+                  "#2F5FA7",
+                  "#C8371F"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "abs(datum.gap_pp) > 5"
+            },
+            {
+              "calculate": "(datum.who === 'Overseas') === (datum.gap_pp > 0)",
+              "as": "is_right"
+            },
+            {
+              "filter": "!datum.is_right"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -10,
+            "fontSize": 10.5,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "x": {
+              "field": "share",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "share",
+              "format": ".0%"
+            },
+            "color": {
+              "field": "who",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "Domestic",
+                  "Overseas"
+                ],
+                "range": [
+                  "#2F5FA7",
+                  "#C8371F"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

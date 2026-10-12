@@ -1,0 +1,67 @@
+/* ==========================================================================
+   tokens.css: every colour, size and space on the page.
+
+   Visual identity: the paperwork of crossing a border (passport security
+   paper, ink stamps, visa field labels, machine-readable zone) meets the
+   airport (split-flap arrivals board, condensed signage type).
+
+   Hex values are mirrored in charts/theme.json. Change one, change both.
+   All categorical sets validated with the dataviz palette checker against
+   --paper, 7 Oct 2026 (adjacent pairs for bars/areas, all pairs for maps).
+   ========================================================================== */
+:root {
+  color-scheme: light;
+
+  /* ---- paper & ink --------------------------------------------------- */
+  --paper:      #EEF1EC;   /* passport security paper: pale, cool, faintly green */
+  --paper-hi:   #F7F8F4;   /* lighter sheet: tooltips, placeholders           */
+  --ink:        #14213D;   /* passport-cover navy: all primary text          */
+  --ink-muted:  #4D5A70;   /* secondary text, axis labels (6.2:1 on paper)   */
+  --ink-faint:  #7C8798;   /* tertiary: MRZ, placeholder text                */
+  --rule:       #C9D0D8;   /* hairlines, gridlines                            */
+  --guilloche:  #2F5FA7;   /* security-print line colour (used at ~5% alpha)   */
+
+  /* ---- meaning: one colour, one job, page-wide ----------------------- */
+  --intl:       #C8371F;   /* STAMP RED: international students, the subject */
+  --dom:        #2F5FA7;   /* INK BLUE: domestic students, where compared     */
+  --other:      #9A9C94;   /* everything that isn't the point                 */
+  --annot:      #14213D;   /* annotation text = ink; rings are dashed ink     */
+
+  /* ---- stamp inks: categorical (sector order is fixed) --------------- */
+  --ink-blue:   #2F5FA7;   /* Higher Education            */
+  --ink-red:    #C8371F;   /* VET                         */
+  --ink-violet: #6E4BA8;   /* ELICOS                      */
+  --ink-green:  #2E8754;   /* Schools                     */
+  --ink-grey:   #9A9C94;   /* Non-award / Rest of world   */
+  --flap-amber: #C99400;   /* Americas; the arrivals-board amber */
+
+  /* ---- split-flap board ---------------------------------------------- */
+  --flap-tile:  #14213D;
+  --flap-digit: #F3F1E8;
+  --flap-hinge: #0A1226;
+
+  /* ---- type ------------------------------------------------------------ */
+  --font-display: "Zilla Slab", "Rockwell", Georgia, serif;
+  --font-text:    "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --fs-title:      clamp(3rem, 7vw, 5.75rem);    /* 92px desktop */
+  --fs-act:        clamp(2.1rem, 4.2vw, 3.25rem);/* 52px  */
+  --fs-chart-title: clamp(1.3rem, 2vw, 1.6rem); /* 26px  */
+  --fs-deck:       1.3125rem;                    /* 21px  */
+  --fs-lede:       1.1875rem;                    /* 19px  */
+  --fs-body:       1.0625rem;                    /* 17px  */
+  --fs-field:      0.71875rem;                   /* 11.5px mono labels */
+  --fs-caption:    0.8125rem;                    /* 13px  */
+  --fs-small:      0.75rem;                      /* 12px  */
+
+  /* ---- layout ---------------------------------------------------------- */
+  --content-max:  1120px;
+  --gutter:       28px;
+  --page-pad:     clamp(18px, 4vw, 48px);
+  --measure:      60ch;
+
+  --space-act:    136px;   /* DV1 feedback: more white space between sections */
+  --space-chart:  72px;
+  --space-cap:    14px;
+}

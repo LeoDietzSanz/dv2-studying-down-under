@@ -1,0 +1,157 @@
+/* ==========================================================================
+   ornaments.css: stamps, the split-flap board, the tooltip.
+   Rule for every ornament on this page: it must carry a real figure or a
+   real label. Nothing is purely decorative (DV1 principle).
+   ========================================================================== */
+
+/* ---- ink stamps -----------------------------------------------------------
+   Two shapes (rect, round), four inks. The #ink SVG filter (index.html)
+   erodes the edges so the stamp reads as pressed ink, not a CSS border.   */
+.stamp {
+  --c: var(--ink-red);
+  --rot: -4deg;
+  position: relative;
+  display: inline-grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 12px 18px 13px;
+  color: var(--c);
+  border: 3px solid currentColor;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  transform: rotate(var(--rot));
+  mix-blend-mode: multiply;
+  filter: url(#ink);
+  opacity: 0.92;
+}
+.stamp::after { content: ""; position: absolute; inset: 4px; border: 1px solid currentColor; pointer-events: none; }
+.stamp .big {
+  font-family: var(--font-display); font-weight: 700; font-size: 44px;
+  letter-spacing: -0.01em; line-height: 0.95; margin: 4px 0 2px;
+}
+.stamp--round { border-radius: 50%; aspect-ratio: 1; align-content: center; padding: 26px; min-width: 168px; }
+.stamp--round::after { border-radius: 50%; }
+.stamp--blue   { --c: var(--ink-blue); }
+.stamp--violet { --c: var(--ink-violet); }
+.stamp--green  { --c: var(--ink-green); }
+.stamp--navy   { --c: var(--ink); }
+
+/* The stamp lands once, when it first scrolls into view. */
+.js .stamp[data-stamp] { opacity: 0; }
+.js .stamp[data-stamp].is-stamped { animation: thunk 380ms cubic-bezier(.2,.9,.25,1.1) forwards; }
+@keyframes thunk {
+  0%   { opacity: 0;    transform: rotate(var(--rot)) scale(1.55); }
+  60%  { opacity: 0.95; transform: rotate(var(--rot)) scale(0.97); }
+  100% { opacity: 0.92; transform: rotate(var(--rot)) scale(1); }
+}
+
+/* ---- split-flap board -------------------------------------------------------
+   Each tile is built like the real mechanism: a fixed TOP half and BOTTOM
+   half, plus two moving LEAVES during a flip.
+     1. the old character's top leaf folds down (0 -> -90deg, hinge at its
+        bottom edge), revealing the next character's top half behind it;
+     2. the next character's bottom leaf falls into place (90 -> 0deg,
+        hinge at its top edge), covering the old bottom half.
+   Leaves darken as they turn away from the light. Thousands are separated
+   by a wider gap, as on real boards, not by a comma tile.               */
+.board { display: grid; gap: 10px; }
+.flap {
+  display: inline-flex; gap: max(2px, 0.07em);
+  font-family: var(--font-mono); font-weight: 600;
+  font-size: var(--flap-size, 40px);
+}
+.flap__cell {
+  position: relative;
+  display: inline-block;
+  width: 0.92em; height: 1.36em;
+  line-height: 1;
+  color: var(--flap-digit);
+  background: var(--flap-hinge);           /* shows through as the hinge line */
+  border-radius: 0.09em;
+  box-shadow: 0 0.04em 0 rgba(20,33,61,.35);
+  perspective: 2.6em;
+}
+.flap__cell--gap { margin-left: 0.3em; }   /* thousands separator */
+
+.flap__half, .flap__leaf {
+  position: absolute; left: 0; right: 0;
+  height: calc(50% - 0.018em);             /* the hairline between is the hinge */
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.flap__half--top, .flap__leaf--top {
+  top: 0;
+  border-radius: 0.09em 0.09em 0 0;
+  background: linear-gradient(#24355E, #1B2A4D);
+  transform-origin: 50% 100%;
+}
+.flap__half--bot, .flap__leaf--bot {
+  bottom: 0;
+  border-radius: 0 0 0.09em 0.09em;
+  background: linear-gradient(#15223F, #0F1A31);
+  transform-origin: 50% 0%;
+}
+/* the glyph is a full-height box; each half shows its own slice of it */
+.flap__glyph {
+  position: absolute; left: 0; right: 0;
+  height: calc(1.36em);
+  display: grid; place-items: center;
+}
+.flap__half--top .flap__glyph, .flap__leaf--top .flap__glyph { top: 0; }
+.flap__half--bot .flap__glyph, .flap__leaf--bot .flap__glyph { bottom: 0; }
+
+.flap__leaf { z-index: 2; }
+.flap__leaf--top { animation: leaf-fall var(--t, 60ms) ease-in forwards; }
+.flap__leaf--bot { transform: rotateX(90deg); animation: leaf-land var(--t, 60ms) ease-out var(--t, 60ms) forwards; }
+@keyframes leaf-fall { from { transform: rotateX(0);     filter: brightness(1);   } to { transform: rotateX(-90deg); filter: brightness(.55); } }
+@keyframes leaf-land { from { transform: rotateX(90deg); filter: brightness(.6);  } to { transform: rotateX(0);      filter: brightness(1);   } }
+
+/* hinge notches, on top of everything */
+.flap__cell::before, .flap__cell::after {
+  content: ""; position: absolute; z-index: 3; top: calc(50% - 0.045em);
+  width: 0.035em; height: 0.09em; background: rgba(238, 241, 236, 0.5);
+}
+.flap__cell::before { left: 0; }
+.flap__cell::after  { right: 0; }
+
+.flap--sm { --flap-size: 15px; }
+.flap--sm .flap__cell::before, .flap--sm .flap__cell::after { display: none; }   /* too small for notches */
+
+/* the departures-style list (Act 2 intro, header) */
+.board-rows { display: grid; grid-template-columns: auto 1fr auto auto; gap: 7px 14px; align-items: center; }
+.board-rows .who { font-family: var(--font-text); font-size: 14px; }
+.board-rows .status { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+.status--up { color: var(--ink-green); }
+.status--down { color: var(--ink-red); }
+
+/* ---- tooltip: a boarding-pass stub --------------------------------------- */
+#vg-tooltip-element.vg-tooltip.custom-theme {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink);
+  background: var(--paper-hi);
+  border: 1px solid var(--ink);
+  border-left: 6px solid var(--ink);
+  border-radius: 2px;
+  box-shadow: 4px 4px 0 rgba(20, 33, 61, 0.12);
+  padding: 8px 12px 8px 10px;
+}
+#vg-tooltip-element.custom-theme td.key {
+  color: var(--ink-muted); font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.08em; font-size: 10px; text-align: left; padding-right: 14px;
+}
+#vg-tooltip-element.custom-theme td.value { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* ---- motion off, everything simply present ----------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .js .stamp[data-stamp] { opacity: 0.92; animation: none !important; }
+  .flap__leaf { display: none; }
+}
+@media print {
+  .js .stamp[data-stamp] { opacity: 0.92; }
+}

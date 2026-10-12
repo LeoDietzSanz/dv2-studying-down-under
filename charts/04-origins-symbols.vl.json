@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 4 (Map 1). Proportional-symbol map: international enrolments by country of citizenship, 2025. Circle AREA encodes enrolments (linear size scale from zero, so area is proportional). Colour = origin region (3 stamp inks + grey). Linked with chart 5 through the 'hl' signal (see js/embed.js).",
+  "width": "container",
+  "height": 270,
+  "projection": {
+    "type": "equalEarth",
+    "rotate": [
+      -150,
+      0,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "hl",
+      "value": ""
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "geo/world_countries.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#DCE2DA",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "data/country_2025.csv",
+        "format": {
+          "parse": {
+            "enrolments": "number",
+            "lat": "number",
+            "lon": "number",
+            "per_100k": "number",
+            "rank_enrolments": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum.lat)"
+        }
+      ],
+      "params": [
+        {
+          "name": "hov",
+          "select": {
+            "type": "point",
+            "fields": [
+              "iso3"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "stroke": "#14213D",
+        "strokeWidth": 0.6,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "enrolments",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "zero": true,
+            "range": [
+              0,
+              1500
+            ]
+          },
+          "legend": {
+            "title": "ENROLMENTS",
+            "values": [
+              10000,
+              100000,
+              200000
+            ],
+            "format": "~s",
+            "orient": "bottom-left",
+            "direction": "horizontal",
+            "symbolFillColor": "#B8BDB4",
+            "symbolStrokeColor": "#14213D",
+            "symbolStrokeWidth": 0.6,
+            "labelExpr": "format(datum.value / 1000, 'd') + 'k'",
+            "symbolType": "circle"
+          }
+        },
+        "color": {
+          "field": "region_group",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "South & Central Asia",
+              "East & South-East Asia",
+              "Americas",
+              "Rest of world"
+            ],
+            "range": [
+              "#C8371F",
+              "#2F5FA7",
+              "#C99400",
+              "#9A9C94"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": "hl === '' || datum.iso3 === hl",
+            "value": 0.85
+          },
+          "value": 0.12
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.iso3 === hl",
+            "value": 2
+          },
+          "value": 0.6
+        },
+        "order": {
+          "field": "enrolments",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "title": "Citizenship"
+          },
+          {
+            "field": "enrolments",
+            "title": "Enrolments 2025",
+            "format": ","
+          },
+          {
+            "field": "rank_enrolments",
+            "title": "Rank by enrolments"
+          },
+          {
+            "field": "per_100k",
+            "title": "Per 100,000 at home",
+            "format": ",.1f"
+          },
+          {
+            "field": "region_group",
+            "title": "Region"
+          }
+        ]
+      }
+    }
+  ],
+  "usermeta": {
+    "aspect": 0.53
+  }
+}

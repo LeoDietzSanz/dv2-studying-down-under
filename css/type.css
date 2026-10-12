@@ -1,0 +1,89 @@
+/* ==========================================================================
+   type.css: three voices.
+     DISPLAY  Zilla Slab: the printed document. Headlines only.
+     FIELD    IBM Plex Mono: the visa. Labels, figures, axes, annotations.
+     TEXT     IBM Plex Sans: reading. Body and captions.
+   Plex Sans and Plex Mono are one family, so the two smaller voices
+   sit together; the display face is the deliberate contrast.
+   ========================================================================== */
+
+body {
+  font-family: var(--font-text);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--ink);
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- display ---------------------------------------------------------
+   Zilla Slab: a heavy slab, the voice of a printed document (and the
+   continuity with DV1's slab headlines). Sentence case, tight tracking.  */
+.display, .page-title, .act__title, .chart__title {
+  font-family: var(--font-display);
+  letter-spacing: -0.012em;
+}
+.page-title  { font-size: var(--fs-title); font-weight: 700; line-height: 0.95; margin: 0; }
+.act__title  { font-size: var(--fs-act);   font-weight: 700; line-height: 1.02; margin: 0 0 22px; max-width: 22ch; }
+.chart__title { font-size: var(--fs-chart-title); font-weight: 700; line-height: 1.12; margin: 0 0 6px; }
+
+/* Keywords in headlines take the colour of the marks they refer to:
+   the title doubles as the legend (DV1 principle). */
+.k-intl  { color: var(--intl); }
+.k-dom   { color: var(--dom); }
+.k-red   { color: var(--ink-red); }
+.k-blue  { color: var(--ink-blue); }
+.k-violet{ color: var(--ink-violet); }
+.k-green { color: var(--ink-green); }
+.k-amber { color: var(--flap-amber); }
+em.k, strong.k { font-style: normal; }
+
+/* ---- field labels (the visa voice) ----------------------------------- */
+.field {
+  font-family: var(--font-mono);
+  font-size: var(--fs-field);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin: 0;
+}
+.field--red { color: var(--intl); }
+.field b { color: var(--ink); font-weight: 600; }
+
+.chart__sub {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* ---- reading text ------------------------------------------------------ */
+.deck { font-size: var(--fs-deck); line-height: 1.5; max-width: 30em; margin: 0; }
+.act__lede { font-size: var(--fs-lede); font-weight: 600; line-height: 1.45; max-width: var(--measure); margin: 0 0 14px; }
+.prose p { max-width: var(--measure); margin: 0 0 1em; }
+.prose p:last-child { margin-bottom: 0; }
+.deck b, .prose b { font-weight: 600; }
+.deck .k-intl, .prose .k-intl, .prose [class^="k-"] { font-weight: 600; }
+
+.chart figcaption { font-size: var(--fs-caption); line-height: 1.5; color: var(--ink-muted); }
+.chart figcaption .ref {
+  font-family: var(--font-mono); font-size: var(--fs-field); font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); margin-right: 0.6em;
+}
+
+/* ---- machine-readable zone ------------------------------------------- */
+.mrz {
+  font-family: var(--font-mono);
+  font-size: clamp(0.6rem, 1.45vw, 1.05rem);
+  letter-spacing: 0.22em;
+  line-height: 1.55;
+  color: var(--ink-faint);
+  white-space: pre;
+  overflow: hidden;
+  margin: 0;
+  user-select: all;   /* click to select the whole line, as a scanner would read it */
+}
+
+a { color: var(--dom); text-underline-offset: 3px; text-decoration-thickness: 1px; }

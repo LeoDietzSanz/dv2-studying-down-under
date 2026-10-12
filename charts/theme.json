@@ -1,0 +1,55 @@
+{
+  "$comment": "Shared Vega-Lite config, applied to every chart by js/embed.js. Hex values mirror css/tokens.css. Axes and annotations speak in the visa voice (IBM Plex Mono); titles live in the HTML.",
+
+  "background": null,
+  "padding": 0,
+  "autosize": { "type": "fit-x", "contains": "padding" },
+  "font": "IBM Plex Mono, ui-monospace, monospace",
+
+  "view": { "stroke": null },
+
+  "axis": {
+    "domain": false,
+    "ticks": false,
+    "grid": false,
+    "labelColor": "#4D5A70",
+    "labelFont": "IBM Plex Mono",
+    "labelFontSize": 11,
+    "labelPadding": 7,
+    "titleColor": "#4D5A70",
+    "titleFont": "IBM Plex Mono",
+    "titleFontSize": 10.5,
+    "titleFontWeight": 500,
+    "titlePadding": 10
+  },
+  "axisY": { "grid": true, "gridColor": "#C9D0D8", "gridDash": [2, 3], "gridWidth": 1 },
+  "axisX": { "labelFlush": true },
+
+  "legend": {
+    "labelColor": "#4D5A70",
+    "labelFont": "IBM Plex Mono",
+    "labelFontSize": 11,
+    "titleColor": "#14213D",
+    "titleFont": "IBM Plex Mono",
+    "titleFontSize": 10.5,
+    "titleFontWeight": 600,
+    "symbolType": "square",
+    "symbolSize": 110,
+    "orient": "top",
+    "direction": "horizontal",
+    "offset": 14
+  },
+
+  "line":  { "strokeWidth": 3, "strokeCap": "round", "strokeJoin": "round" },
+  "point": { "filled": true, "size": 40 },
+  "bar":   { "cornerRadiusEnd": 2 },
+  "rect":  { "stroke": "#EEF1EC", "strokeWidth": 1.5 },
+  "text":  { "color": "#14213D", "font": "IBM Plex Mono", "fontSize": 11 },
+
+  "range": {
+    "category": ["#2F5FA7", "#C8371F", "#6E4BA8", "#2E8754", "#9A9C94"],
+    "ramp":     ["#E6ECF5", "#C3D1E8", "#8FA9D3", "#5B7FBD", "#2F5FA7", "#1C3C70"]
+  },
+
+  "tooltip": { "content": "encoding" }
+}

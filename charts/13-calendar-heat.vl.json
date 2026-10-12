@@ -1,0 +1,179 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 13. Calendar heatmap built like an arrivals board: one tile per month, 2015-2025, colour = new enrolments that month (monthly values derived from year-to-date totals in prep/10_basic.py). The two intake months are flagged in red in the header; their values are printed on the tiles, board-style. July 2020 is ringed in stamp red: the second intake halved after borders closed in March (96.8k in July 2019, 50.9k in July 2020; both values are printed on their tiles).",
+  "width": "container",
+  "height": 330,
+  "data": {
+    "url": "data/monthly_commencements.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "month_num": "number",
+        "monthly": "number",
+        "ytd": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year >= 2015"
+    },
+    {
+      "calculate": "upper(datum.month)",
+      "as": "mon"
+    },
+    {
+      "calculate": "datum.month_num === 2 || datum.month_num === 7",
+      "as": "intake"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "month_num",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelExpr": "upper(slice(timeFormat(datetime(2000, datum.value - 1, 1), '%b'), 0, 3))",
+        "labelColor": {
+          "expr": "datum.value === 2 || datum.value === 7 ? '#C8371F' : '#4D5A70'"
+        },
+        "labelFontWeight": {
+          "expr": "datum.value === 2 || datum.value === 7 ? 700 : 500"
+        },
+        "labelAngle": 0,
+        "labelFontSize": 10.5,
+        "labelPadding": 8,
+        "grid": false
+      },
+      "scale": {
+        "paddingInner": 0.1,
+        "paddingOuter": 0
+      }
+    },
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelFontSize": 10.5,
+        "labelPadding": 8,
+        "grid": false
+      },
+      "scale": {
+        "paddingInner": 0.14,
+        "paddingOuter": 0
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 2.5,
+        "stroke": null
+      },
+      "encoding": {
+        "color": {
+          "field": "monthly",
+          "type": "quantitative",
+          "title": "NEW ENROLMENTS",
+          "scale": {
+            "type": "sqrt",
+            "domain": [
+              0,
+              120000
+            ],
+            "range": [
+              "#EEF2F8",
+              "#C3D1E8",
+              "#8FA9D3",
+              "#5B7FBD",
+              "#2F5FA7",
+              "#14213D"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 220,
+            "values": [
+              10000,
+              40000,
+              80000,
+              120000
+            ],
+            "labelExpr": "format(datum.value / 1000, 'd') + 'k'",
+            "titleOrient": "left",
+            "offset": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "month",
+            "title": "Month"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "monthly",
+            "title": "New enrolments",
+            "format": ","
+          },
+          {
+            "field": "ytd",
+            "title": "Year to date",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "$comment": "Board-style values on the two intake columns.",
+      "transform": [
+        {
+          "filter": "datum.intake"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 9.5,
+        "fontWeight": 600,
+        "letterSpacing": 0.3
+      },
+      "encoding": {
+        "text": {
+          "field": "monthly",
+          "format": ".3~s"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.monthly >= 40000",
+            "value": "#F3F1E8"
+          },
+          "value": "#14213D"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2020 && datum.month_num === 7"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "fill": null,
+        "stroke": "#C8371F",
+        "strokeWidth": 2.4,
+        "strokeDash": [
+          4,
+          3
+        ],
+        "cornerRadius": 4
+      }
+    }
+  ]
+}
