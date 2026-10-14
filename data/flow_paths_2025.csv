@@ -1,0 +1,1897 @@
+iso3,nationality,grp,route,part,state,city,enrolments,share_of_origin,i,lon,lat,code
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,0,90.047,24.073,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,1,93.233,20.665,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,2,96.42,17.257,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,3,99.606,13.849,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,4,102.793,10.441,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,5,105.979,7.033,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,6,109.166,3.625,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,7,112.352,0.217,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,8,115.539,-3.191,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,9,118.725,-6.599,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,10,121.912,-10.007,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,11,125.098,-13.415,
+BGD,Bangladesh,South & Central Asia,BGD-trunk,trunk,,all capitals,30741,,12,128.284,-16.823,
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,0,128.393,-16.722,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,1,128.994,-17.344,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,2,129.615,-17.948,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,3,130.256,-18.535,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,4,130.919,-19.104,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,5,131.602,-19.656,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,6,132.306,-20.19,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,7,133.03,-20.706,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,8,133.775,-21.205,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,9,134.541,-21.686,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,10,135.328,-22.149,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,11,136.135,-22.595,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,12,136.963,-23.023,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,13,137.812,-23.433,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,14,138.681,-23.826,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,15,139.571,-24.201,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,16,140.482,-24.558,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,17,141.414,-24.898,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,18,142.366,-25.22,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,19,143.339,-25.524,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,20,144.332,-25.811,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,21,145.347,-26.08,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,22,146.382,-26.332,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,23,147.437,-26.566,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,24,148.514,-26.782,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,25,149.611,-26.98,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,26,150.728,-27.161,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,27,151.867,-27.324,BNE
+BGD,Bangladesh,South & Central Asia,BGD-QLD,branch,QLD,Brisbane,1635,0.0503,28,153.026,-27.47,BNE
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,0,128.328,-16.782,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,1,128.962,-17.451,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,2,129.609,-18.115,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,3,130.27,-18.774,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,4,130.944,-19.43,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,5,131.633,-20.081,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,6,132.334,-20.728,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,7,133.049,-21.37,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,8,133.778,-22.009,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,9,134.521,-22.642,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,10,135.277,-23.272,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,11,136.046,-23.897,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,12,136.829,-24.518,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,13,137.626,-25.135,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,14,138.437,-25.747,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,15,139.261,-26.355,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,16,140.098,-26.959,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,17,140.949,-27.559,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,18,141.814,-28.154,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,19,142.692,-28.745,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,20,143.584,-29.331,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,21,144.49,-29.914,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,22,145.409,-30.492,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,23,146.342,-31.065,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,24,147.288,-31.635,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,25,148.248,-32.2,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,26,149.221,-32.76,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,27,150.208,-33.317,SYD
+BGD,Bangladesh,South & Central Asia,BGD-NSW,branch,NSW,Sydney,15762,0.4846,28,151.209,-33.869,SYD
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,0,128.24,-16.865,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,1,128.829,-17.498,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,2,129.418,-18.14,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,3,130.008,-18.791,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,4,130.599,-19.45,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,5,131.19,-20.117,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,6,131.782,-20.794,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,7,132.375,-21.478,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,8,132.968,-22.171,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,9,133.562,-22.873,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,10,134.156,-23.583,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,11,134.751,-24.301,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,12,135.347,-25.028,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,13,135.943,-25.764,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,14,136.54,-26.507,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,15,137.138,-27.26,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,16,137.736,-28.021,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,17,138.335,-28.79,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,18,138.934,-29.568,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,19,139.534,-30.355,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,20,140.135,-31.149,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,21,140.736,-31.953,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,22,141.338,-32.765,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,23,141.941,-33.585,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,24,142.544,-34.414,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,25,143.148,-35.251,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,26,143.752,-36.097,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,27,144.357,-36.951,MEL
+BGD,Bangladesh,South & Central Asia,BGD-VIC,branch,VIC,Melbourne,7744,0.2381,28,144.963,-37.814,MEL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,0,128.204,-16.898,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,1,128.658,-17.392,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,2,129.106,-17.898,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,3,129.548,-18.414,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,4,129.983,-18.942,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,5,130.412,-19.48,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,6,130.836,-20.03,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,7,131.253,-20.591,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,8,131.664,-21.163,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,9,132.069,-21.746,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,10,132.468,-22.34,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,11,132.86,-22.945,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,12,133.247,-23.561,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,13,133.627,-24.188,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,14,134.002,-24.827,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,15,134.37,-25.476,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,16,134.732,-26.137,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,17,135.088,-26.808,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,18,135.438,-27.491,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,19,135.782,-28.185,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,20,136.12,-28.89,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,21,136.451,-29.606,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,22,136.777,-30.333,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,23,137.096,-31.071,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,24,137.409,-31.821,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,25,137.716,-32.581,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,26,138.017,-33.353,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,27,138.312,-34.135,ADL
+BGD,Bangladesh,South & Central Asia,BGD-SA,branch,SA,Adelaide,1869,0.0575,28,138.601,-34.929,ADL
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,0,128.183,-16.918,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,1,128.579,-17.377,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,2,128.913,-17.842,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,3,129.185,-18.313,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,4,129.395,-18.789,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,5,129.543,-19.272,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,6,129.629,-19.76,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,7,129.654,-20.254,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,8,129.616,-20.753,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,9,129.516,-21.258,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,10,129.355,-21.769,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,11,129.132,-22.286,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,12,128.846,-22.809,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,13,128.499,-23.337,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,14,128.09,-23.871,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,15,127.619,-24.411,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,16,127.086,-24.957,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,17,126.491,-25.508,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,18,125.834,-26.065,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,19,125.116,-26.628,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,20,124.335,-27.196,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,21,123.492,-27.771,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,22,122.588,-28.351,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,23,121.622,-28.937,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,24,120.593,-29.528,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,25,119.503,-30.125,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,26,118.351,-30.729,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,27,117.137,-31.337,PER
+BGD,Bangladesh,South & Central Asia,BGD-WA,branch,WA,Perth,3731,0.1147,28,115.861,-31.952,PER
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,0,171.0,-20.0,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,1,170.062,-20.486,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,2,169.125,-20.973,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,3,168.187,-21.459,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,4,167.25,-21.945,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,5,166.312,-22.432,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,6,165.374,-22.918,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,7,164.437,-23.404,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,8,163.499,-23.891,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,9,162.561,-24.377,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,10,161.624,-24.864,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,11,160.686,-25.35,
+BRA,Brazil,Americas,BRA-trunk,trunk,,all capitals,28702,,12,159.749,-25.836,
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,0,159.81,-25.955,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,1,159.268,-26.241,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,2,158.727,-26.538,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,3,158.187,-26.844,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,4,157.648,-27.161,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,5,157.11,-27.488,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,6,156.572,-27.825,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,7,156.036,-28.173,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,8,155.5,-28.53,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,9,154.965,-28.898,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,10,154.431,-29.275,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,11,153.898,-29.663,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,12,153.365,-30.062,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,13,152.834,-30.47,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,14,152.303,-30.888,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,15,151.773,-31.317,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,16,151.244,-31.756,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,17,150.716,-32.205,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,18,150.189,-32.664,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,19,149.662,-33.133,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,20,149.137,-33.612,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,21,148.612,-34.102,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,22,148.088,-34.602,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,23,147.565,-35.112,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,24,147.043,-35.632,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,25,146.522,-36.162,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,26,146.001,-36.703,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,27,145.482,-37.253,MEL
+BRA,Brazil,Americas,BRA-VIC,branch,VIC,Melbourne,2607,0.0859,28,144.963,-37.814,MEL
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,0,159.773,-25.884,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,1,159.44,-26.061,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,2,159.109,-26.246,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,3,158.78,-26.44,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,4,158.453,-26.641,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,5,158.128,-26.85,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,6,157.805,-27.067,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,7,157.484,-27.293,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,8,157.165,-27.526,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,9,156.848,-27.767,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,10,156.533,-28.016,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,11,156.22,-28.274,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,12,155.909,-28.539,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,13,155.6,-28.812,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,14,155.293,-29.093,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,15,154.989,-29.382,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,16,154.686,-29.68,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,17,154.385,-29.985,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,18,154.086,-30.298,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,19,153.789,-30.619,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,20,153.495,-30.948,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,21,153.202,-31.285,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,22,152.911,-31.63,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,23,152.622,-31.984,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,24,152.336,-32.345,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,25,152.051,-32.714,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,26,151.768,-33.091,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,27,151.488,-33.476,SYD
+BRA,Brazil,Americas,BRA-NSW,branch,NSW,Sydney,13028,0.4293,28,151.209,-33.869,SYD
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,0,159.717,-25.776,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,1,159.519,-25.876,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,2,159.317,-25.974,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,3,159.113,-26.069,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,4,158.905,-26.16,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,5,158.695,-26.249,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,6,158.481,-26.335,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,7,158.265,-26.418,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,8,158.046,-26.498,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,9,157.823,-26.575,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,10,157.598,-26.648,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,11,157.369,-26.719,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,12,157.138,-26.787,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,13,156.903,-26.852,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,14,156.666,-26.914,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,15,156.425,-26.973,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,16,156.182,-27.029,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,17,155.935,-27.082,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,18,155.686,-27.133,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,19,155.433,-27.18,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,20,155.178,-27.224,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,21,154.919,-27.265,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,22,154.658,-27.303,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,23,154.393,-27.338,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,24,154.126,-27.371,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,25,153.855,-27.4,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,26,153.582,-27.426,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,27,153.305,-27.45,BNE
+BRA,Brazil,Americas,BRA-QLD,branch,QLD,Brisbane,10772,0.355,28,153.026,-27.47,BNE
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,0,159.686,-25.716,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,1,158.412,-26.356,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,2,157.117,-26.965,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,3,155.8,-27.543,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,4,154.461,-28.09,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,5,153.101,-28.606,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,6,151.72,-29.091,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,7,150.316,-29.546,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,8,148.891,-29.969,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,9,147.445,-30.362,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,10,145.977,-30.723,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,11,144.487,-31.054,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,12,142.976,-31.354,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,13,141.443,-31.623,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,14,139.889,-31.861,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,15,138.313,-32.069,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,16,136.715,-32.245,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,17,135.096,-32.39,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,18,133.455,-32.505,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,19,131.793,-32.589,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,20,130.109,-32.641,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,21,128.404,-32.663,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,22,126.677,-32.654,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,23,124.928,-32.615,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,24,123.158,-32.544,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,25,121.366,-32.442,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,26,119.552,-32.31,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,27,117.718,-32.146,PER
+BRA,Brazil,Americas,BRA-WA,branch,WA,Perth,2295,0.0756,28,115.861,-31.952,PER
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,0,106.322,32.525,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,1,108.704,28.655,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,2,111.085,24.784,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,3,113.467,20.914,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,4,115.848,17.044,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,5,118.23,13.173,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,6,120.611,9.303,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,7,122.993,5.432,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,8,125.375,1.562,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,9,127.756,-2.308,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,10,130.138,-6.179,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,11,132.519,-10.049,
+CHN,China,East & South-East Asia,CHN-trunk,trunk,,all capitals,226232,,12,134.901,-13.919,
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,0,135.779,-13.379,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,1,136.163,-13.985,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,2,136.564,-14.583,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,3,136.982,-15.174,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,4,137.417,-15.757,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,5,137.87,-16.333,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,6,138.339,-16.9,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,7,138.826,-17.461,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,8,139.331,-18.013,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,9,139.852,-18.558,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,10,140.391,-19.096,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,11,140.946,-19.626,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,12,141.519,-20.148,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,13,142.109,-20.663,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,14,142.717,-21.17,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,15,143.341,-21.669,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,16,143.983,-22.161,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,17,144.642,-22.645,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,18,145.318,-23.122,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,19,146.012,-23.591,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,20,146.722,-24.052,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,21,147.45,-24.506,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,22,148.195,-24.952,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,23,148.957,-25.391,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,24,149.737,-25.822,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,25,150.533,-26.245,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,26,151.347,-26.661,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,27,152.178,-27.069,BNE
+CHN,China,East & South-East Asia,CHN-QLD,branch,QLD,Brisbane,24937,0.1096,28,153.026,-27.47,BNE
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,0,135.207,-13.731,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,1,135.646,-14.435,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,2,136.094,-15.141,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,3,136.552,-15.848,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,4,137.02,-16.556,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,5,137.497,-17.265,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,6,137.985,-17.975,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,7,138.482,-18.686,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,8,138.99,-19.398,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,9,139.507,-20.112,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,10,140.034,-20.826,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,11,140.571,-21.541,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,12,141.118,-22.258,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,13,141.674,-22.976,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,14,142.241,-23.694,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,15,142.817,-24.414,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,16,143.403,-25.135,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,17,144.0,-25.857,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,18,144.606,-26.58,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,19,145.222,-27.304,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,20,145.847,-28.029,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,21,146.483,-28.755,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,22,147.129,-29.483,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,23,147.784,-30.211,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,24,148.449,-30.94,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,25,149.124,-31.671,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,26,149.809,-32.403,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,27,150.504,-33.135,SYD
+CHN,China,East & South-East Asia,CHN-NSW,branch,NSW,Sydney,106094,0.4664,28,151.209,-33.869,SYD
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,0,134.708,-14.038,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,1,135.143,-14.743,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,2,135.585,-15.452,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,3,136.032,-16.165,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,4,136.485,-16.882,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,5,136.944,-17.603,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,6,137.409,-18.327,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,7,137.88,-19.056,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,8,138.357,-19.789,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,9,138.839,-20.526,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,10,139.328,-21.266,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,11,139.822,-22.011,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,12,140.322,-22.76,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,13,140.829,-23.513,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,14,141.341,-24.269,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,15,141.859,-25.03,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,16,142.383,-25.794,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,17,142.913,-26.563,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,18,143.448,-27.336,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,19,143.99,-28.112,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,20,144.538,-28.893,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,21,145.091,-29.677,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,22,145.65,-30.466,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,23,146.215,-31.259,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,24,146.787,-32.055,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,25,147.364,-32.856,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,26,147.946,-33.66,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,27,148.535,-34.469,CBR
+CHN,China,East & South-East Asia,CHN-ACT,branch,ACT,Canberra,8487,0.0373,28,149.13,-35.281,CBR
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,0,134.378,-14.241,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,1,134.811,-14.953,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,2,135.241,-15.675,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,3,135.666,-16.406,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,4,136.087,-17.147,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,5,136.503,-17.898,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,6,136.916,-18.658,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,7,137.325,-19.428,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,8,137.73,-20.208,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,9,138.13,-20.997,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,10,138.527,-21.795,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,11,138.919,-22.604,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,12,139.307,-23.421,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,13,139.691,-24.249,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,14,140.071,-25.086,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,15,140.447,-25.933,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,16,140.819,-26.789,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,17,141.187,-27.655,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,18,141.551,-28.53,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,19,141.91,-29.416,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,20,142.266,-30.31,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,21,142.617,-31.215,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,22,142.965,-32.129,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,23,143.308,-33.052,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,24,143.647,-33.985,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,25,143.982,-34.928,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,26,144.313,-35.88,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,27,144.64,-36.842,MEL
+CHN,China,East & South-East Asia,CHN-VIC,branch,VIC,Melbourne,67069,0.2949,28,144.963,-37.814,MEL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,0,134.039,-14.45,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,1,134.386,-15.03,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,2,134.719,-15.621,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,3,135.038,-16.223,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,4,135.344,-16.837,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,5,135.636,-17.462,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,6,135.915,-18.098,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,7,136.18,-18.745,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,8,136.431,-19.403,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,9,136.669,-20.073,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,10,136.893,-20.754,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,11,137.104,-21.446,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,12,137.301,-22.15,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,13,137.484,-22.864,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,14,137.654,-23.59,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,15,137.81,-24.327,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,16,137.952,-25.075,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,17,138.081,-25.835,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,18,138.197,-26.605,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,19,138.298,-27.387,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,20,138.386,-28.18,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,21,138.461,-28.985,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,22,138.522,-29.8,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,23,138.569,-30.627,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,24,138.603,-31.465,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,25,138.623,-32.314,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,26,138.629,-33.175,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,27,138.622,-34.046,ADL
+CHN,China,East & South-East Asia,CHN-SA,branch,SA,Adelaide,10630,0.0467,28,138.601,-34.929,ADL
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,0,133.954,-14.502,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,1,134.339,-15.188,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,2,134.648,-15.869,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,3,134.88,-16.546,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,4,135.036,-17.218,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,5,135.116,-17.885,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,6,135.119,-18.548,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,7,135.046,-19.205,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,8,134.896,-19.859,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,9,134.67,-20.508,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,10,134.368,-21.152,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,11,133.989,-21.791,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,12,133.534,-22.426,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,13,133.002,-23.056,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,14,132.394,-23.682,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,15,131.71,-24.302,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,16,130.949,-24.919,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,17,130.112,-25.53,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,18,129.199,-26.137,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,19,128.209,-26.74,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,20,127.142,-27.337,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,21,126.0,-27.93,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,22,124.78,-28.519,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,23,123.485,-29.103,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,24,122.113,-29.682,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,25,120.664,-30.256,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,26,119.14,-30.826,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,27,117.539,-31.391,PER
+CHN,China,East & South-East Asia,CHN-WA,branch,WA,Perth,9015,0.0396,28,115.861,-31.952,PER
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,0,171.0,-10.0,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,1,169.967,-10.989,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,2,168.935,-11.977,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,3,167.902,-12.966,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,4,166.87,-13.954,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,5,165.837,-14.943,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,6,164.805,-15.932,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,7,163.772,-16.92,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,8,162.739,-17.909,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,9,161.707,-18.898,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,10,160.674,-19.886,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,11,159.642,-20.875,
+COL,Colombia,Americas,COL-trunk,trunk,,all capitals,39353,,12,158.609,-21.863,
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,0,158.705,-21.964,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,1,158.381,-22.28,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,2,158.06,-22.605,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,3,157.744,-22.938,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,4,157.432,-23.279,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,5,157.125,-23.628,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,6,156.821,-23.985,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,7,156.522,-24.35,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,8,156.227,-24.723,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,9,155.936,-25.104,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,10,155.649,-25.493,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,11,155.367,-25.89,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,12,155.088,-26.295,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,13,154.814,-26.708,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,14,154.545,-27.129,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,15,154.279,-27.558,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,16,154.018,-27.996,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,17,153.76,-28.441,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,18,153.507,-28.894,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,19,153.259,-29.355,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,20,153.014,-29.825,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,21,152.774,-30.302,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,22,152.538,-30.788,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,23,152.306,-31.281,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,24,152.078,-31.783,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,25,151.854,-32.292,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,26,151.635,-32.81,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,27,151.42,-33.335,SYD
+COL,Colombia,Americas,COL-NSW,branch,NSW,Sydney,12281,0.308,28,151.209,-33.869,SYD
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,0,158.614,-21.868,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,1,158.127,-22.339,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,2,157.639,-22.816,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,3,157.152,-23.301,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,4,156.665,-23.794,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,5,156.177,-24.293,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,6,155.69,-24.8,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,7,155.202,-25.315,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,8,154.715,-25.836,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,9,154.227,-26.366,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,10,153.74,-26.902,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,11,153.252,-27.446,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,12,152.765,-27.997,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,13,152.277,-28.555,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,14,151.79,-29.121,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,15,151.302,-29.694,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,16,150.815,-30.275,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,17,150.327,-30.863,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,18,149.84,-31.458,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,19,149.352,-32.06,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,20,148.864,-32.67,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,21,148.377,-33.288,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,22,147.889,-33.912,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,23,147.401,-34.544,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,24,146.914,-35.183,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,25,146.426,-35.83,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,26,145.938,-36.484,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,27,145.451,-37.145,MEL
+COL,Colombia,Americas,COL-VIC,branch,VIC,Melbourne,13438,0.3371,28,144.963,-37.814,MEL
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,0,158.536,-21.787,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,1,158.352,-21.964,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,2,158.166,-22.143,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,3,157.98,-22.323,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,4,157.793,-22.506,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,5,157.605,-22.691,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,6,157.416,-22.877,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,7,157.227,-23.066,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,8,157.036,-23.256,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,9,156.844,-23.449,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,10,156.652,-23.643,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,11,156.458,-23.839,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,12,156.264,-24.037,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,13,156.068,-24.237,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,14,155.872,-24.439,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,15,155.675,-24.643,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,16,155.476,-24.849,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,17,155.277,-25.057,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,18,155.077,-25.267,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,19,154.876,-25.478,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,20,154.675,-25.692,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,21,154.472,-25.907,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,22,154.268,-26.125,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,23,154.063,-26.344,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,24,153.858,-26.565,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,25,153.651,-26.789,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,26,153.444,-27.014,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,27,153.235,-27.241,BNE
+COL,Colombia,Americas,COL-QLD,branch,QLD,Brisbane,8648,0.2169,28,153.026,-27.47,BNE
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,0,158.498,-21.747,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,1,157.938,-22.275,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,2,157.367,-22.8,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,3,156.785,-23.319,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,4,156.192,-23.835,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,5,155.587,-24.346,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,6,154.972,-24.853,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,7,154.345,-25.356,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,8,153.707,-25.855,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,9,153.058,-26.349,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,10,152.398,-26.839,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,11,151.726,-27.325,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,12,151.043,-27.806,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,13,150.35,-28.283,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,14,149.645,-28.756,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,15,148.928,-29.225,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,16,148.201,-29.689,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,17,147.463,-30.149,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,18,146.713,-30.605,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,19,145.952,-31.057,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,20,145.18,-31.504,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,21,144.397,-31.947,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,22,143.602,-32.386,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,23,142.797,-32.821,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,24,141.98,-33.251,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,25,141.152,-33.677,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,26,140.313,-34.098,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,27,139.462,-34.516,ADL
+COL,Colombia,Americas,COL-SA,branch,SA,Adelaide,2114,0.053,28,138.601,-34.929,ADL
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,0,158.48,-21.729,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,1,157.444,-22.681,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,2,156.373,-23.59,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,3,155.265,-24.456,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,4,154.121,-25.277,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,5,152.942,-26.056,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,6,151.726,-26.791,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,7,150.474,-27.482,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,8,149.186,-28.13,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,9,147.862,-28.735,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,10,146.502,-29.296,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,11,145.107,-29.813,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,12,143.674,-30.287,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,13,142.206,-30.717,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,14,140.702,-31.104,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,15,139.162,-31.448,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,16,137.586,-31.747,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,17,135.974,-32.004,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,18,134.326,-32.217,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,19,132.641,-32.386,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,20,130.921,-32.512,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,21,129.165,-32.594,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,22,127.372,-32.633,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,23,125.544,-32.628,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,24,123.679,-32.58,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,25,121.779,-32.488,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,26,119.842,-32.353,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,27,117.87,-32.174,PER
+COL,Colombia,Americas,COL-WA,branch,WA,Perth,2872,0.072,28,115.861,-31.952,PER
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,0,110.4,-7.3,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,1,111.911,-8.436,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,2,113.421,-9.571,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,3,114.932,-10.707,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,4,116.442,-11.842,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,5,117.953,-12.978,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,6,119.463,-14.113,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,7,120.974,-15.249,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,8,122.484,-16.384,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,9,123.995,-17.52,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,10,125.505,-18.655,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,11,127.016,-19.791,
+IDN,Indonesia,East & South-East Asia,IDN-trunk,trunk,,all capitals,30225,,12,128.526,-20.926,
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,0,128.613,-20.811,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,1,129.271,-21.291,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,2,129.945,-21.753,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,3,130.635,-22.196,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,4,131.34,-22.623,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,5,132.062,-23.031,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,6,132.799,-23.421,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,7,133.552,-23.793,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,8,134.321,-24.147,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,9,135.106,-24.484,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,10,135.907,-24.802,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,11,136.723,-25.103,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,12,137.555,-25.385,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,13,138.403,-25.65,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,14,139.267,-25.897,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,15,140.147,-26.126,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,16,141.043,-26.337,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,17,141.954,-26.53,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,18,142.882,-26.705,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,19,143.825,-26.862,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,20,144.784,-27.001,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,21,145.759,-27.123,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,22,146.749,-27.226,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,23,147.756,-27.311,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,24,148.778,-27.379,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,25,149.816,-27.429,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,26,150.87,-27.46,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,27,151.94,-27.474,BNE
+IDN,Indonesia,East & South-East Asia,IDN-QLD,branch,QLD,Brisbane,1982,0.0628,28,153.026,-27.47,BNE
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,0,128.557,-20.886,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,1,129.232,-21.389,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,2,129.918,-21.889,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,3,130.614,-22.386,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,4,131.319,-22.88,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,5,132.034,-23.371,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,6,132.759,-23.859,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,7,133.494,-24.345,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,8,134.239,-24.827,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,9,134.994,-25.307,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,10,135.758,-25.784,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,11,136.533,-26.258,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,12,137.317,-26.729,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,13,138.111,-27.197,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,14,138.915,-27.662,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,15,139.729,-28.124,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,16,140.553,-28.583,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,17,141.387,-29.04,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,18,142.23,-29.493,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,19,143.084,-29.944,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,20,143.947,-30.392,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,21,144.82,-30.836,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,22,145.703,-31.278,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,23,146.596,-31.717,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,24,147.499,-32.154,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,25,148.412,-32.587,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,26,149.334,-33.017,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,27,150.267,-33.444,SYD
+IDN,Indonesia,East & South-East Asia,IDN-NSW,branch,NSW,Sydney,16361,0.5181,28,151.209,-33.869,SYD
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,0,128.477,-20.992,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,1,129.081,-21.452,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,2,129.685,-21.923,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,3,130.287,-22.404,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,4,130.888,-22.895,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,5,131.488,-23.397,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,6,132.087,-23.909,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,7,132.684,-24.432,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,8,133.281,-24.965,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,9,133.876,-25.508,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,10,134.47,-26.062,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,11,135.063,-26.627,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,12,135.655,-27.201,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,13,136.245,-27.787,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,14,136.834,-28.382,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,15,137.423,-28.988,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,16,138.01,-29.604,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,17,138.596,-30.231,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,18,139.18,-30.869,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,19,139.764,-31.516,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,20,140.346,-32.174,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,21,140.927,-32.843,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,22,141.507,-33.522,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,23,142.086,-34.211,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,24,142.664,-34.911,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,25,143.24,-35.621,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,26,143.816,-36.342,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,27,144.39,-37.073,MEL
+IDN,Indonesia,East & South-East Asia,IDN-VIC,branch,VIC,Melbourne,9576,0.3032,28,144.963,-37.814,MEL
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,0,128.44,-21.041,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,1,128.837,-21.365,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,2,129.171,-21.694,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,3,129.442,-22.028,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,4,129.65,-22.366,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,5,129.796,-22.71,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,6,129.88,-23.058,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,7,129.9,-23.411,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,8,129.858,-23.769,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,9,129.754,-24.132,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,10,129.586,-24.5,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,11,129.356,-24.873,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,12,129.064,-25.25,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,13,128.708,-25.633,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,14,128.29,-26.02,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,15,127.81,-26.412,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,16,127.267,-26.809,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,17,126.661,-27.211,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,18,125.992,-27.618,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,19,125.261,-28.029,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,20,124.467,-28.446,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,21,123.611,-28.867,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,22,122.691,-29.293,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,23,121.71,-29.724,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,24,120.665,-30.16,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,25,119.558,-30.601,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,26,118.388,-31.046,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,27,117.156,-31.497,PER
+IDN,Indonesia,East & South-East Asia,IDN-WA,branch,WA,Perth,2306,0.073,28,115.861,-31.952,PER
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,0,78.594,22.66,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,1,82.585,19.188,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,2,86.577,15.715,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,3,90.568,12.243,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,4,94.56,8.771,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,5,98.551,5.298,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,6,102.542,1.826,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,7,106.534,-1.646,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,8,110.525,-5.119,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,9,114.517,-8.591,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,10,118.508,-12.063,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,11,122.499,-15.536,
+IND,India,South & Central Asia,IND-trunk,trunk,,all capitals,179735,,12,126.491,-19.008,
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,0,127.02,-18.399,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,1,127.697,-18.971,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,2,128.393,-19.525,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,3,129.108,-20.06,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,4,129.841,-20.577,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,5,130.593,-21.075,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,6,131.363,-21.555,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,7,132.152,-22.017,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,8,132.96,-22.46,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,9,133.786,-22.885,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,10,134.631,-23.292,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,11,135.495,-23.68,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,12,136.377,-24.05,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,13,137.278,-24.401,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,14,138.197,-24.734,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,15,139.135,-25.049,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,16,140.092,-25.346,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,17,141.067,-25.624,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,18,142.061,-25.883,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,19,143.074,-26.125,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,20,144.105,-26.348,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,21,145.155,-26.552,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,22,146.224,-26.738,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,23,147.311,-26.906,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,24,148.416,-27.056,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,25,149.541,-27.187,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,26,150.684,-27.3,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,27,151.846,-27.394,BNE
+IND,India,South & Central Asia,IND-QLD,branch,QLD,Brisbane,22199,0.1217,28,153.026,-27.47,BNE
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,0,126.796,-18.658,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,1,127.499,-19.262,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,2,128.216,-19.862,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,3,128.944,-20.458,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,4,129.685,-21.049,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,5,130.439,-21.635,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,6,131.205,-22.217,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,7,131.984,-22.794,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,8,132.775,-23.367,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,9,133.578,-23.935,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,10,134.394,-24.499,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,11,135.222,-25.058,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,12,136.063,-25.613,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,13,136.916,-26.163,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,14,137.782,-26.708,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,15,138.66,-27.249,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,16,139.551,-27.786,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,17,140.454,-28.318,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,18,141.369,-28.845,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,19,142.297,-29.368,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,20,143.237,-29.886,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,21,144.19,-30.4,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,22,145.156,-30.909,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,23,146.133,-31.414,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,24,147.124,-31.914,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,25,148.126,-32.41,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,26,149.141,-32.901,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,27,150.169,-33.387,SYD
+IND,India,South & Central Asia,IND-NSW,branch,NSW,Sydney,44632,0.2447,28,151.209,-33.869,SYD
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,0,126.633,-18.844,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,1,127.314,-19.432,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,2,128.003,-20.02,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,3,128.701,-20.607,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,4,129.409,-21.195,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,5,130.126,-21.782,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,6,130.852,-22.37,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,7,131.587,-22.957,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,8,132.331,-23.545,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,9,133.084,-24.132,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,10,133.846,-24.719,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,11,134.618,-25.307,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,12,135.398,-25.894,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,13,136.188,-26.481,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,14,136.987,-27.068,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,15,137.795,-27.655,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,16,138.612,-28.242,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,17,139.439,-28.829,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,18,140.274,-29.416,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,19,141.118,-30.002,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,20,141.972,-30.589,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,21,142.835,-31.176,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,22,143.707,-31.762,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,23,144.588,-32.349,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,24,145.478,-32.935,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,25,146.377,-33.522,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,26,147.286,-34.108,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,27,148.203,-34.695,CBR
+IND,India,South & Central Asia,IND-ACT,branch,ACT,Canberra,3649,0.02,28,149.13,-35.281,CBR
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,0,126.358,-19.161,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,1,126.997,-19.721,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,2,127.639,-20.288,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,3,128.283,-20.864,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,4,128.928,-21.447,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,5,129.575,-22.039,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,6,130.224,-22.638,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,7,130.875,-23.245,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,8,131.527,-23.86,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,9,132.182,-24.483,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,10,132.838,-25.113,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,11,133.496,-25.752,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,12,134.156,-26.398,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,13,134.818,-27.053,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,14,135.481,-27.715,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,15,136.147,-28.385,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,16,136.814,-29.063,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,17,137.483,-29.749,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,18,138.154,-30.443,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,19,138.826,-31.144,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,20,139.501,-31.854,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,21,140.177,-32.571,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,22,140.856,-33.297,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,23,141.536,-34.03,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,24,142.217,-34.771,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,25,142.901,-35.52,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,26,143.587,-36.277,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,27,144.274,-37.041,MEL
+IND,India,South & Central Asia,IND-VIC,branch,VIC,Melbourne,78367,0.4297,28,144.963,-37.814,MEL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,0,126.041,-19.525,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,1,126.522,-19.949,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,2,127.0,-20.382,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,3,127.476,-20.825,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,4,127.95,-21.277,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,5,128.421,-21.738,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,6,128.89,-22.209,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,7,129.356,-22.689,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,8,129.821,-23.179,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,9,130.282,-23.677,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,10,130.742,-24.185,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,11,131.199,-24.703,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,12,131.653,-25.23,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,13,132.105,-25.766,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,14,132.555,-26.311,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,15,133.002,-26.866,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,16,133.447,-27.43,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,17,133.89,-28.004,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,18,134.33,-28.587,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,19,134.768,-29.179,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,20,135.203,-29.78,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,21,135.636,-30.391,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,22,136.067,-31.011,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,23,136.495,-31.641,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,24,136.921,-32.28,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,25,137.345,-32.928,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,26,137.766,-33.586,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,27,138.185,-34.253,ADL
+IND,India,South & Central Asia,IND-SA,branch,SA,Adelaide,15844,0.0869,28,138.601,-34.929,ADL
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,0,125.937,-19.644,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,1,126.296,-19.984,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,2,126.602,-20.33,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,3,126.855,-20.684,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,4,127.054,-21.046,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,5,127.2,-21.415,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,6,127.293,-21.791,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,7,127.333,-22.175,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,8,127.319,-22.567,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,9,127.252,-22.965,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,10,127.132,-23.371,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,11,126.958,-23.785,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,12,126.732,-24.206,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,13,126.452,-24.634,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,14,126.118,-25.07,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,15,125.732,-25.514,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,16,125.292,-25.964,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,17,124.799,-26.422,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,18,124.253,-26.888,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,19,123.653,-27.361,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,20,123.0,-27.841,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,21,122.294,-28.329,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,22,121.535,-28.824,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,23,120.723,-29.327,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,24,119.857,-29.837,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,25,118.938,-30.355,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,26,117.965,-30.88,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,27,116.94,-31.412,PER
+IND,India,South & Central Asia,IND-WA,branch,WA,Perth,15044,0.0825,28,115.861,-31.952,PER
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,0,80.701,7.562,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,1,84.249,5.076,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,2,87.798,2.59,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,3,91.346,0.104,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,4,94.894,-2.382,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,5,98.442,-4.869,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,6,101.991,-7.355,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,7,105.539,-9.841,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,8,109.087,-12.327,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,9,112.636,-14.813,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,10,116.184,-17.299,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,11,119.732,-19.785,
+LKA,Sri Lanka,South & Central Asia,LKA-trunk,trunk,,all capitals,24929,,12,123.28,-22.271,
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,0,123.349,-22.174,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,1,124.152,-22.717,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,2,124.974,-23.234,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,3,125.815,-23.724,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,4,126.675,-24.189,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,5,127.554,-24.627,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,6,128.452,-25.039,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,7,129.37,-25.424,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,8,130.306,-25.784,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,9,131.261,-26.117,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,10,132.236,-26.424,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,11,133.229,-26.705,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,12,134.241,-26.96,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,13,135.273,-27.188,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,14,136.323,-27.39,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,15,137.392,-27.566,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,16,138.481,-27.716,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,17,139.588,-27.84,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,18,140.715,-27.937,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,19,141.86,-28.009,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,20,143.025,-28.054,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,21,144.208,-28.072,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,22,145.411,-28.065,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,23,146.633,-28.031,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,24,147.873,-27.971,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,25,149.133,-27.885,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,26,150.412,-27.773,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,27,151.709,-27.635,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-QLD,branch,QLD,Brisbane,1773,0.0692,28,153.026,-27.47,BNE
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,0,123.338,-22.19,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,1,124.14,-22.742,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,2,124.957,-23.285,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,3,125.788,-23.817,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,4,126.634,-24.339,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,5,127.494,-24.852,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,6,128.368,-25.354,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,7,129.256,-25.846,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,8,130.159,-26.328,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,9,131.075,-26.801,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,10,132.007,-27.263,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,11,132.952,-27.715,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,12,133.912,-28.157,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,13,134.886,-28.589,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,14,135.874,-29.011,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,15,136.877,-29.424,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,16,137.893,-29.826,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,17,138.924,-30.218,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,18,139.97,-30.6,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,19,141.029,-30.972,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,20,142.103,-31.334,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,21,143.192,-31.686,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,22,144.294,-32.028,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,23,145.411,-32.36,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,24,146.542,-32.682,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,25,147.687,-32.993,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,26,148.847,-33.295,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,27,150.021,-33.587,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-NSW,branch,NSW,Sydney,1970,0.0769,28,151.209,-33.869,SYD
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,0,123.281,-22.271,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,1,123.986,-22.765,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,2,124.696,-23.264,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,3,125.411,-23.767,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,4,126.131,-24.275,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,5,126.857,-24.788,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,6,127.587,-25.304,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,7,128.323,-25.826,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,8,129.064,-26.351,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,9,129.81,-26.882,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,10,130.561,-27.417,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,11,131.317,-27.956,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,12,132.079,-28.5,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,13,132.846,-29.048,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,14,133.617,-29.601,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,15,134.394,-30.158,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,16,135.176,-30.72,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,17,135.964,-31.287,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,18,136.756,-31.858,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,19,137.553,-32.433,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,20,138.356,-33.013,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,21,139.164,-33.597,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,22,139.977,-34.186,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,23,140.795,-34.779,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,24,141.618,-35.377,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,25,142.447,-35.98,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,26,143.28,-36.587,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,27,144.119,-37.198,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-VIC,branch,VIC,Melbourne,17319,0.6758,28,144.963,-37.814,MEL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,0,123.225,-22.35,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,1,123.749,-22.719,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,2,124.275,-23.095,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,3,124.803,-23.476,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,4,125.332,-23.863,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,5,125.863,-24.256,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,6,126.397,-24.655,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,7,126.932,-25.06,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,8,127.469,-25.471,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,9,128.008,-25.887,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,10,128.548,-26.31,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,11,129.091,-26.739,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,12,129.635,-27.173,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,13,130.182,-27.613,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,14,130.73,-28.06,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,15,131.28,-28.512,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,16,131.832,-28.97,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,17,132.386,-29.434,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,18,132.941,-29.904,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,19,133.499,-30.38,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,20,134.058,-30.862,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,21,134.62,-31.349,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,22,135.183,-31.843,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,23,135.748,-32.343,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,24,136.315,-32.848,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,25,136.883,-33.359,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,26,137.454,-33.877,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,27,138.027,-34.4,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-SA,branch,SA,Adelaide,1557,0.0608,28,138.601,-34.929,ADL
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,0,123.214,-22.366,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,1,123.511,-22.593,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,2,123.767,-22.829,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,3,123.981,-23.073,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,4,124.154,-23.326,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,5,124.286,-23.587,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,6,124.376,-23.857,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,7,124.424,-24.135,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,8,124.431,-24.422,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,9,124.397,-24.718,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,10,124.321,-25.021,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,11,124.203,-25.334,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,12,124.044,-25.655,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,13,123.844,-25.984,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,14,123.602,-26.323,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,15,123.319,-26.669,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,16,122.994,-27.024,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,17,122.627,-27.388,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,18,122.22,-27.76,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,19,121.77,-28.141,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,20,121.28,-28.53,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,21,120.748,-28.928,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,22,120.174,-29.334,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,23,119.559,-29.749,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,24,118.902,-30.173,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,25,118.204,-30.605,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,26,117.465,-31.045,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,27,116.684,-31.494,PER
+LKA,Sri Lanka,South & Central Asia,LKA-WA,branch,WA,Perth,2310,0.0901,28,115.861,-31.952,PER
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,0,83.594,28.301,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,1,87.477,24.516,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,2,91.361,20.732,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,3,95.244,16.947,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,4,99.127,13.163,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,5,103.011,9.378,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,6,106.894,5.593,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,7,110.778,1.809,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,8,114.661,-1.976,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,9,118.544,-5.76,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,10,122.428,-9.545,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,11,126.311,-13.329,
+NPL,Nepal,South & Central Asia,NPL-trunk,trunk,,all capitals,89530,,12,130.194,-17.114,
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,0,130.494,-16.807,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,1,131.076,-17.36,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,2,131.675,-17.9,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,3,132.29,-18.427,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,4,132.921,-18.942,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,5,133.569,-19.444,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,6,134.234,-19.933,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,7,134.915,-20.409,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,8,135.612,-20.873,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,9,136.326,-21.324,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,10,137.057,-21.762,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,11,137.804,-22.187,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,12,138.567,-22.6,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,13,139.347,-23.0,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,14,140.144,-23.387,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,15,140.957,-23.762,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,16,141.786,-24.123,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,17,142.632,-24.472,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,18,143.495,-24.809,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,19,144.373,-25.132,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,20,145.269,-25.443,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,21,146.181,-25.741,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,22,147.109,-26.026,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,23,148.054,-26.299,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,24,149.016,-26.558,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,25,149.993,-26.805,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,26,150.988,-27.04,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,27,151.999,-27.261,BNE
+NPL,Nepal,South & Central Asia,NPL-QLD,branch,QLD,Brisbane,5716,0.0638,28,153.026,-27.47,BNE
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,0,130.468,-16.833,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,1,130.566,-16.923,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,2,130.657,-16.994,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,3,130.743,-17.047,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,4,130.822,-17.082,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,5,130.895,-17.098,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,6,130.961,-17.097,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,7,131.022,-17.077,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,8,131.076,-17.039,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,9,131.124,-16.983,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,10,131.165,-16.909,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,11,131.201,-16.816,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,12,131.23,-16.705,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,13,131.253,-16.577,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,14,131.269,-16.43,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,15,131.28,-16.264,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,16,131.284,-16.081,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,17,131.282,-15.88,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,18,131.273,-15.66,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,19,131.259,-15.422,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,20,131.238,-15.166,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,21,131.211,-14.892,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,22,131.177,-14.599,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,23,131.138,-14.289,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,24,131.092,-13.96,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,25,131.04,-13.613,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,26,130.981,-13.248,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,27,130.917,-12.864,DRW
+NPL,Nepal,South & Central Asia,NPL-NT,branch,NT,Darwin,1557,0.0174,28,130.846,-12.463,DRW
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,0,130.265,-17.042,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,1,130.888,-17.644,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,2,131.52,-18.247,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,3,132.162,-18.849,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,4,132.813,-19.452,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,5,133.473,-20.054,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,6,134.142,-20.656,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,7,134.821,-21.258,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,8,135.509,-21.86,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,9,136.206,-22.461,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,10,136.912,-23.063,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,11,137.628,-23.664,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,12,138.353,-24.265,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,13,139.087,-24.867,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,14,139.83,-25.468,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,15,140.583,-26.069,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,16,141.345,-26.669,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,17,142.116,-27.27,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,18,142.896,-27.871,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,19,143.686,-28.471,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,20,144.485,-29.071,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,21,145.293,-29.671,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,22,146.11,-30.271,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,23,146.937,-30.871,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,24,147.773,-31.471,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,25,148.618,-32.071,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,26,149.472,-32.67,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,27,150.336,-33.27,SYD
+NPL,Nepal,South & Central Asia,NPL-NSW,branch,NSW,Sydney,55279,0.6174,28,151.209,-33.869,SYD
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,0,130.06,-17.252,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,1,130.666,-17.843,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,2,131.279,-18.438,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,3,131.897,-19.036,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,4,132.52,-19.639,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,5,133.149,-20.245,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,6,133.783,-20.856,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,7,134.423,-21.47,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,8,135.068,-22.088,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,9,135.719,-22.711,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,10,136.375,-23.337,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,11,137.037,-23.967,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,12,137.705,-24.601,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,13,138.378,-25.239,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,14,139.056,-25.881,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,15,139.74,-26.527,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,16,140.429,-27.176,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,17,141.124,-27.83,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,18,141.824,-28.488,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,19,142.53,-29.149,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,20,143.241,-29.815,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,21,143.958,-30.484,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,22,144.681,-31.158,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,23,145.408,-31.835,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,24,146.142,-32.516,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,25,146.881,-33.202,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,26,147.625,-33.891,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,27,148.375,-34.584,CBR
+NPL,Nepal,South & Central Asia,NPL-ACT,branch,ACT,Canberra,2168,0.0242,28,149.13,-35.281,CBR
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,0,130.001,-17.312,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,1,130.584,-17.887,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,2,131.163,-18.474,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,3,131.738,-19.073,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,4,132.31,-19.683,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,5,132.878,-20.304,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,6,133.443,-20.938,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,7,134.004,-21.583,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,8,134.561,-22.239,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,9,135.115,-22.908,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,10,135.666,-23.587,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,11,136.213,-24.279,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,12,136.756,-24.982,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,13,137.295,-25.697,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,14,137.832,-26.423,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,15,138.364,-27.161,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,16,138.893,-27.911,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,17,139.419,-28.672,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,18,139.94,-29.445,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,19,140.459,-30.23,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,20,140.973,-31.026,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,21,141.485,-31.834,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,22,141.992,-32.653,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,23,142.496,-33.484,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,24,142.997,-34.327,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,25,143.494,-35.181,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,26,143.987,-36.047,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,27,144.477,-36.925,MEL
+NPL,Nepal,South & Central Asia,NPL-VIC,branch,VIC,Melbourne,14071,0.1572,28,144.963,-37.814,MEL
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,0,129.945,-17.37,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,1,130.652,-18.07,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,2,131.353,-18.786,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,3,132.048,-19.518,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,4,132.736,-20.265,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,5,133.418,-21.028,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,6,134.093,-21.806,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,7,134.762,-22.6,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,8,135.425,-23.41,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,9,136.081,-24.235,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,10,136.73,-25.076,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,11,137.374,-25.933,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,12,138.01,-26.805,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,13,138.641,-27.692,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,14,139.265,-28.596,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,15,139.882,-29.515,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,16,140.494,-30.449,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,17,141.098,-31.4,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,18,141.697,-32.365,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,19,142.289,-33.347,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,20,142.874,-34.344,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,21,143.453,-35.356,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,22,144.026,-36.385,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,23,144.592,-37.428,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,24,145.152,-38.488,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,25,145.705,-39.563,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,26,146.252,-40.654,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,27,146.793,-41.76,HBA
+NPL,Nepal,South & Central Asia,NPL-TAS,branch,TAS,Hobart,1733,0.0194,28,147.327,-42.882,HBA
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,0,129.924,-17.392,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,1,130.369,-17.838,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,2,130.804,-18.297,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,3,131.23,-18.769,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,4,131.645,-19.255,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,5,132.05,-19.754,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,6,132.445,-20.266,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,7,132.831,-20.792,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,8,133.206,-21.332,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,9,133.571,-21.884,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,10,133.926,-22.451,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,11,134.271,-23.03,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,12,134.606,-23.623,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,13,134.931,-24.229,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,14,135.246,-24.849,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,15,135.551,-25.482,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,16,135.846,-26.128,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,17,136.13,-26.788,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,18,136.405,-27.461,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,19,136.67,-28.148,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,20,136.925,-28.848,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,21,137.169,-29.561,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,22,137.404,-30.288,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,23,137.629,-31.028,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,24,137.843,-31.781,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,25,138.048,-32.548,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,26,138.242,-33.328,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,27,138.427,-34.122,ADL
+NPL,Nepal,South & Central Asia,NPL-SA,branch,SA,Adelaide,4229,0.0472,28,138.601,-34.929,ADL
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,0,129.891,-17.425,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,1,130.322,-17.88,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,2,130.683,-18.34,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,3,130.976,-18.805,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,4,131.199,-19.275,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,5,131.354,-19.749,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,6,131.439,-20.228,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,7,131.455,-20.712,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,8,131.403,-21.2,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,9,131.281,-21.693,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,10,131.091,-22.191,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,11,130.831,-22.693,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,12,130.502,-23.2,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,13,130.105,-23.712,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,14,129.638,-24.228,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,15,129.103,-24.749,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,16,128.498,-25.275,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,17,127.824,-25.806,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,18,127.082,-26.341,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,19,126.27,-26.881,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,20,125.39,-27.426,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,21,124.44,-27.975,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,22,123.422,-28.529,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,23,122.334,-29.088,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,24,121.177,-29.651,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,25,119.952,-30.219,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,26,118.657,-30.792,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,27,117.294,-31.37,PER
+NPL,Nepal,South & Central Asia,NPL-WA,branch,WA,Perth,4777,0.0534,28,115.861,-31.952,PER
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,0,68.531,29.299,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,1,73.196,25.296,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,2,77.86,21.293,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,3,82.525,17.291,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,4,87.19,13.288,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,5,91.854,9.285,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,6,96.519,5.282,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,7,101.183,1.279,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,8,105.848,-2.723,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,9,110.513,-6.726,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,10,115.177,-10.729,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,11,119.842,-14.732,
+PAK,Pakistan,South & Central Asia,PAK-trunk,trunk,,all capitals,29138,,12,124.507,-18.735,
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,0,124.598,-18.629,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,1,125.334,-19.241,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,2,126.091,-19.831,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,3,126.869,-20.399,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,4,127.668,-20.946,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,5,128.487,-21.47,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,6,129.327,-21.972,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,7,130.187,-22.453,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,8,131.068,-22.911,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,9,131.97,-23.348,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,10,132.892,-23.762,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,11,133.835,-24.155,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,12,134.799,-24.526,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,13,135.783,-24.874,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,14,136.788,-25.201,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,15,137.814,-25.506,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,16,138.86,-25.789,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,17,139.927,-26.05,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,18,141.015,-26.289,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,19,142.123,-26.506,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,20,143.252,-26.701,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,21,144.401,-26.874,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,22,145.571,-27.025,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,23,146.762,-27.154,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,24,147.974,-27.261,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,25,149.206,-27.346,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,26,150.459,-27.409,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,27,151.732,-27.451,BNE
+PAK,Pakistan,South & Central Asia,PAK-QLD,branch,QLD,Brisbane,1844,0.058,28,153.026,-27.47,BNE
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,0,124.55,-18.685,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,1,125.305,-19.323,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,2,126.076,-19.955,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,3,126.86,-20.579,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,4,127.66,-21.196,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,5,128.473,-21.806,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,6,129.302,-22.409,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,7,130.145,-23.005,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,8,131.002,-23.594,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,9,131.874,-24.175,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,10,132.761,-24.75,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,11,133.662,-25.317,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,12,134.578,-25.877,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,13,135.508,-26.43,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,14,136.453,-26.976,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,15,137.413,-27.515,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,16,138.387,-28.046,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,17,139.375,-28.571,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,18,140.378,-29.088,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,19,141.396,-29.598,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,20,142.428,-30.101,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,21,143.475,-30.597,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,22,144.536,-31.086,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,23,145.612,-31.568,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,24,146.702,-32.042,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,25,147.807,-32.51,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,26,148.926,-32.97,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,27,150.06,-33.423,SYD
+PAK,Pakistan,South & Central Asia,PAK-NSW,branch,NSW,Sydney,12549,0.3946,28,151.209,-33.869,SYD
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,0,124.477,-18.769,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,1,125.161,-19.358,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,2,125.848,-19.954,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,3,126.54,-20.556,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,4,127.234,-21.166,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,5,127.932,-21.781,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,6,128.634,-22.404,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,7,129.339,-23.034,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,8,130.048,-23.67,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,9,130.76,-24.313,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,10,131.476,-24.962,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,11,132.195,-25.619,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,12,132.918,-26.282,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,13,133.645,-26.952,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,14,134.374,-27.629,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,15,135.108,-28.313,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,16,135.845,-29.003,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,17,136.585,-29.7,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,18,137.329,-30.404,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,19,138.077,-31.114,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,20,138.828,-31.832,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,21,139.582,-32.556,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,22,140.34,-33.287,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,23,141.102,-34.024,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,24,141.867,-34.769,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,25,142.636,-35.52,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,26,143.408,-36.278,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,27,144.184,-37.043,MEL
+PAK,Pakistan,South & Central Asia,PAK-VIC,branch,VIC,Melbourne,9295,0.2923,28,144.963,-37.814,MEL
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,0,124.428,-18.827,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,1,124.785,-19.16,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,2,125.094,-19.503,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,3,125.353,-19.856,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,4,125.564,-20.219,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,5,125.725,-20.593,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,6,125.837,-20.976,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,7,125.899,-21.369,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,8,125.913,-21.773,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,9,125.877,-22.186,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,10,125.793,-22.61,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,11,125.659,-23.044,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,12,125.476,-23.487,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,13,125.244,-23.941,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,14,124.962,-24.405,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,15,124.632,-24.878,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,16,124.252,-25.362,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,17,123.823,-25.856,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,18,123.345,-26.36,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,19,122.818,-26.874,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,20,122.242,-27.398,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,21,121.616,-27.932,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,22,120.941,-28.476,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,23,120.218,-29.03,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,24,119.445,-29.595,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,25,118.622,-30.169,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,26,117.751,-30.753,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,27,116.831,-31.348,PER
+PAK,Pakistan,South & Central Asia,PAK-WA,branch,WA,Perth,5450,0.1714,28,115.861,-31.952,PER
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,0,121.425,16.949,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,1,122.557,14.556,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,2,123.688,12.162,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,3,124.82,9.769,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,4,125.952,7.375,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,5,127.083,4.982,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,6,128.215,2.588,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,7,129.347,0.195,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,8,130.478,-2.198,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,9,131.61,-4.592,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,10,132.742,-6.985,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,11,133.873,-9.379,
+PHL,Philippines,East & South-East Asia,PHL-trunk,trunk,,all capitals,46120,,12,135.005,-11.772,
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,0,135.174,-11.692,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,1,135.513,-12.38,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,2,135.873,-13.058,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,3,136.256,-13.727,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,4,136.661,-14.388,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,5,137.088,-15.039,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,6,137.537,-15.68,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,7,138.009,-16.313,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,8,138.502,-16.936,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,9,139.018,-17.55,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,10,139.556,-18.155,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,11,140.116,-18.751,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,12,140.698,-19.337,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,13,141.302,-19.915,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,14,141.929,-20.483,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,15,142.577,-21.042,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,16,143.248,-21.591,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,17,143.941,-22.132,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,18,144.656,-22.663,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,19,145.393,-23.185,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,20,146.153,-23.698,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,21,146.934,-24.202,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,22,147.738,-24.696,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,23,148.564,-25.182,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,24,149.412,-25.658,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,25,150.282,-26.125,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,26,151.175,-26.582,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,27,152.089,-27.031,BNE
+PHL,Philippines,East & South-East Asia,PHL-QLD,branch,QLD,Brisbane,9538,0.2001,28,153.026,-27.47,BNE
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,0,135.054,-11.749,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,1,135.438,-12.544,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,2,135.836,-13.34,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,3,136.248,-14.135,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,4,136.674,-14.929,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,5,137.115,-15.723,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,6,137.57,-16.517,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,7,138.04,-17.31,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,8,138.523,-18.103,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,9,139.022,-18.895,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,10,139.534,-19.687,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,11,140.061,-20.479,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,12,140.602,-21.27,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,13,141.157,-22.06,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,14,141.727,-22.85,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,15,142.311,-23.64,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,16,142.91,-24.43,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,17,143.523,-25.219,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,18,144.15,-26.007,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,19,144.791,-26.795,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,20,145.447,-27.583,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,21,146.117,-28.37,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,22,146.801,-29.157,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,23,147.5,-29.943,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,24,148.213,-30.729,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,25,148.941,-31.515,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,26,149.683,-32.3,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,27,150.439,-33.085,SYD
+PHL,Philippines,East & South-East Asia,PHL-NSW,branch,NSW,Sydney,16420,0.3445,28,151.209,-33.869,SYD
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,0,134.919,-11.813,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,1,135.301,-12.627,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,2,135.682,-13.449,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,3,136.06,-14.281,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,4,136.437,-15.12,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,5,136.812,-15.968,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,6,137.186,-16.825,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,7,137.558,-17.69,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,8,137.928,-18.564,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,9,138.296,-19.446,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,10,138.662,-20.336,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,11,139.027,-21.235,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,12,139.39,-22.142,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,13,139.751,-23.058,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,14,140.111,-23.983,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,15,140.469,-24.916,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,16,140.825,-25.857,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,17,141.179,-26.807,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,18,141.532,-27.765,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,19,141.883,-28.732,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,20,142.232,-29.707,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,21,142.579,-30.691,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,22,142.925,-31.683,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,23,143.269,-32.684,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,24,143.611,-33.693,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,25,143.952,-34.71,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,26,144.291,-35.736,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,27,144.628,-36.771,MEL
+PHL,Philippines,East & South-East Asia,PHL-VIC,branch,VIC,Melbourne,12717,0.2668,28,144.963,-37.814,MEL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,0,134.85,-11.845,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,1,135.165,-12.53,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,2,135.466,-13.225,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,3,135.754,-13.931,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,4,136.028,-14.646,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,5,136.289,-15.372,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,6,136.537,-16.109,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,7,136.771,-16.856,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,8,136.992,-17.613,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,9,137.2,-18.38,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,10,137.394,-19.158,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,11,137.575,-19.947,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,12,137.742,-20.745,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,13,137.896,-21.554,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,14,138.037,-22.373,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,15,138.164,-23.203,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,16,138.278,-24.043,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,17,138.379,-24.893,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,18,138.466,-25.754,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,19,138.54,-26.625,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,20,138.6,-27.506,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,21,138.647,-28.398,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,22,138.68,-29.3,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,23,138.701,-30.212,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,24,138.708,-31.135,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,25,138.701,-32.068,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,26,138.681,-33.011,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,27,138.648,-33.965,ADL
+PHL,Philippines,East & South-East Asia,PHL-SA,branch,SA,Adelaide,2246,0.0471,28,138.601,-34.929,ADL
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,0,134.816,-11.862,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,1,135.157,-12.661,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,2,135.424,-13.455,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,3,135.614,-14.242,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,4,135.73,-15.023,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,5,135.77,-15.799,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,6,135.734,-16.568,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,7,135.623,-17.331,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,8,135.437,-18.088,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,9,135.175,-18.839,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,10,134.837,-19.584,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,11,134.425,-20.323,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,12,133.936,-21.055,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,13,133.373,-21.782,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,14,132.733,-22.502,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,15,132.019,-23.217,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,16,131.229,-23.925,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,17,130.363,-24.628,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,18,129.422,-25.324,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,19,128.405,-26.014,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,20,127.313,-26.698,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,21,126.146,-27.376,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,22,124.903,-28.048,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,23,123.585,-28.714,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,24,122.191,-29.374,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,25,120.722,-30.027,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,26,119.177,-30.675,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,27,117.557,-31.317,PER
+PHL,Philippines,East & South-East Asia,PHL-WA,branch,WA,Perth,5199,0.1091,28,115.861,-31.952,PER
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,0,101.015,15.478,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,1,103.641,12.76,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,2,106.267,10.041,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,3,108.894,7.323,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,4,111.52,4.605,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,5,114.146,1.887,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,6,116.772,-0.832,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,7,119.399,-3.55,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,8,122.025,-6.268,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,9,124.651,-8.986,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,10,127.277,-11.705,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,11,129.904,-14.423,
+THA,Thailand,East & South-East Asia,THA-trunk,trunk,,all capitals,27249,,12,132.53,-17.141,
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,0,132.616,-17.058,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,1,133.136,-17.582,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,2,133.671,-18.095,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,3,134.221,-18.596,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,4,134.787,-19.086,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,5,135.369,-19.565,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,6,135.966,-20.033,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,7,136.578,-20.489,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,8,137.206,-20.934,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,9,137.85,-21.368,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,10,138.509,-21.791,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,11,139.184,-22.202,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,12,139.874,-22.602,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,13,140.579,-22.991,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,14,141.301,-23.368,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,15,142.037,-23.735,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,16,142.79,-24.09,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,17,143.557,-24.433,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,18,144.34,-24.766,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,19,145.139,-25.087,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,20,145.953,-25.397,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,21,146.783,-25.695,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,22,147.629,-25.983,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,23,148.489,-26.259,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,24,149.366,-26.524,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,25,150.257,-26.777,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,26,151.165,-27.019,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,27,152.088,-27.25,BNE
+THA,Thailand,East & South-East Asia,THA-QLD,branch,QLD,Brisbane,3803,0.131,28,153.026,-27.47,BNE
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,0,132.552,-17.12,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,1,133.116,-17.7,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,2,133.687,-18.281,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,3,134.266,-18.864,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,4,134.853,-19.449,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,5,135.447,-20.034,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,6,136.049,-20.621,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,7,136.658,-21.209,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,8,137.275,-21.799,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,9,137.899,-22.39,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,10,138.532,-22.982,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,11,139.171,-23.575,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,12,139.819,-24.17,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,13,140.474,-24.767,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,14,141.136,-25.364,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,15,141.806,-25.963,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,16,142.484,-26.563,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,17,143.169,-27.165,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,18,143.862,-27.767,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,19,144.563,-28.372,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,20,145.271,-28.977,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,21,145.986,-29.584,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,22,146.71,-30.192,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,23,147.441,-30.802,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,24,148.179,-31.412,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,25,148.925,-32.025,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,26,149.679,-32.638,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,27,150.44,-33.253,SYD
+THA,Thailand,East & South-East Asia,THA-NSW,branch,NSW,Sydney,13600,0.4684,28,151.209,-33.869,SYD
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,0,132.466,-17.203,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,1,133.001,-17.767,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,2,133.529,-18.343,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,3,134.051,-18.932,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,4,134.566,-19.534,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,5,135.075,-20.149,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,6,135.577,-20.776,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,7,136.073,-21.417,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,8,136.562,-22.07,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,9,137.045,-22.735,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,10,137.52,-23.414,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,11,137.99,-24.105,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,12,138.453,-24.81,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,13,138.909,-25.526,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,14,139.358,-26.256,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,15,139.801,-26.999,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,16,140.238,-27.754,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,17,140.668,-28.522,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,18,141.091,-29.303,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,19,141.508,-30.096,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,20,141.918,-30.903,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,21,142.322,-31.722,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,22,142.719,-32.554,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,23,143.109,-33.399,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,24,143.493,-34.256,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,25,143.87,-35.126,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,26,144.241,-36.01,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,27,144.605,-36.905,MEL
+THA,Thailand,East & South-East Asia,THA-VIC,branch,VIC,Melbourne,9846,0.3391,28,144.963,-37.814,MEL
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,0,105.448,21.684,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,1,107.625,18.597,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,2,109.803,15.51,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,3,111.98,12.423,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,4,114.158,9.336,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,5,116.335,6.249,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,6,118.512,3.162,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,7,120.69,0.075,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,8,122.867,-3.012,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,9,125.044,-6.098,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,10,127.222,-9.185,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,11,129.399,-12.272,
+VNM,Vietnam,East & South-East Asia,VNM-trunk,trunk,,all capitals,43969,,12,131.577,-15.359,
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,0,131.746,-15.24,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,1,132.212,-15.877,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,2,132.699,-16.499,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,3,133.208,-17.107,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,4,133.739,-17.7,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,5,134.292,-18.278,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,6,134.867,-18.841,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,7,135.463,-19.389,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,8,136.082,-19.922,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,9,136.722,-20.441,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,10,137.384,-20.944,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,11,138.067,-21.433,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,12,138.773,-21.907,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,13,139.5,-22.366,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,14,140.249,-22.81,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,15,141.02,-23.239,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,16,141.813,-23.654,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,17,142.627,-24.054,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,18,143.464,-24.439,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,19,144.322,-24.808,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,20,145.202,-25.164,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,21,146.103,-25.504,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,22,147.027,-25.829,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,23,147.972,-26.14,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,24,148.939,-26.436,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,25,149.928,-26.716,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,26,150.939,-26.982,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,27,151.972,-27.234,BNE
+VNM,Vietnam,East & South-East Asia,VNM-QLD,branch,QLD,Brisbane,3486,0.0769,28,153.026,-27.47,BNE
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,0,131.666,-15.296,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,1,132.173,-16.003,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,2,132.693,-16.706,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,3,133.228,-17.406,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,4,133.777,-18.103,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,5,134.341,-18.797,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,6,134.918,-19.487,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,7,135.51,-20.175,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,8,136.116,-20.859,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,9,136.736,-21.54,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,10,137.37,-22.218,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,11,138.018,-22.892,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,12,138.681,-23.563,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,13,139.357,-24.232,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,14,140.048,-24.896,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,15,140.753,-25.558,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,16,141.473,-26.217,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,17,142.206,-26.872,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,18,142.954,-27.524,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,19,143.715,-28.173,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,20,144.491,-28.819,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,21,145.281,-29.461,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,22,146.086,-30.101,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,23,146.904,-30.737,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,24,147.737,-31.369,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,25,148.584,-31.999,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,26,149.444,-32.626,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,27,150.32,-33.249,SYD
+VNM,Vietnam,East & South-East Asia,VNM-NSW,branch,NSW,Sydney,15624,0.3445,28,151.209,-33.869,SYD
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,0,131.524,-15.396,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,1,132.008,-16.087,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,2,132.492,-16.786,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,3,132.975,-17.493,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,4,133.459,-18.208,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,5,133.941,-18.931,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,6,134.424,-19.662,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,7,134.906,-20.402,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,8,135.388,-21.149,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,9,135.87,-21.905,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,10,136.351,-22.669,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,11,136.832,-23.441,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,12,137.313,-24.222,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,13,137.793,-25.01,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,14,138.273,-25.806,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,15,138.753,-26.611,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,16,139.233,-27.424,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,17,139.712,-28.245,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,18,140.191,-29.074,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,19,140.669,-29.912,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,20,141.148,-30.757,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,21,141.626,-31.611,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,22,142.103,-32.472,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,23,142.581,-33.342,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,24,143.058,-34.22,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,25,143.535,-35.106,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,26,144.011,-36.001,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,27,144.487,-36.903,MEL
+VNM,Vietnam,East & South-East Asia,VNM-VIC,branch,VIC,Melbourne,18325,0.404,28,144.963,-37.814,MEL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,0,131.432,-15.461,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,1,131.812,-16.012,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,2,132.182,-16.573,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,3,132.544,-17.144,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,4,132.896,-17.727,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,5,133.239,-18.32,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,6,133.573,-18.924,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,7,133.898,-19.539,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,8,134.213,-20.164,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,9,134.52,-20.801,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,10,134.817,-21.448,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,11,135.105,-22.105,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,12,135.384,-22.774,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,13,135.654,-23.453,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,14,135.915,-24.143,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,15,136.166,-24.843,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,16,136.408,-25.555,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,17,136.641,-26.277,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,18,136.865,-27.01,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,19,137.08,-27.753,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,20,137.286,-28.508,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,21,137.482,-29.273,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,22,137.67,-30.049,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,23,137.848,-30.835,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,24,138.017,-31.632,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,25,138.177,-32.44,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,26,138.327,-33.259,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,27,138.469,-34.089,ADL
+VNM,Vietnam,East & South-East Asia,VNM-SA,branch,SA,Adelaide,3699,0.0816,28,138.601,-34.929,ADL
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,0,131.404,-15.481,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,1,131.789,-16.075,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,2,132.104,-16.669,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,3,132.35,-17.263,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,4,132.526,-17.856,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,5,132.632,-18.449,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,6,132.669,-19.041,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,7,132.636,-19.633,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,8,132.533,-20.224,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,9,132.361,-20.815,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,10,132.119,-21.406,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,11,131.808,-21.996,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,12,131.427,-22.585,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,13,130.976,-23.174,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,14,130.456,-23.763,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,15,129.866,-24.351,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,16,129.206,-24.938,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,17,128.477,-25.525,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,18,127.678,-26.112,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,19,126.81,-26.698,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,20,125.872,-27.284,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,21,124.864,-27.869,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,22,123.787,-28.454,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,23,122.64,-29.038,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,24,121.423,-29.622,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,25,120.137,-30.205,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,26,118.781,-30.788,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,27,117.356,-31.37,PER
+VNM,Vietnam,East & South-East Asia,VNM-WA,branch,WA,Perth,2835,0.0625,28,115.861,-31.952,PER

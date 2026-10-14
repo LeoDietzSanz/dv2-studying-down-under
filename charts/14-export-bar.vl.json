@@ -50,7 +50,8 @@
         "grid": false
       },
       "scale": {
-        "paddingInner": 0.28
+        "paddingInner": 0.28,
+        "paddingOuter": 0
       }
     },
     "x": {

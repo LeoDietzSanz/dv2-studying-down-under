@@ -34,7 +34,7 @@
           "field": "sector", "type": "nominal", "title": null,
           "scale": { "domain": ["Higher Education", "VET", "ELICOS", "Schools", "Non-award"],
                      "range": ["#2F5FA7", "#C8371F", "#6E4BA8", "#2E8754", "#9A9C94"] },
-          "legend": { "orient": "top", "direction": "horizontal", "symbolType": "square", "columnPadding": 14, "labelFontSize": 10.5, "offset": 10 }
+          "legend": null
         },
         "order": { "field": "order" }
       }

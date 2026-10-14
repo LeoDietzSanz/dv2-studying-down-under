@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 9. Heatmap: share of each country's 2025 enrolments by field, ten largest source countries. Normalised within each row so rows are comparable. Cells over 10% carry their value; the three cells the title and caption rely on are ringed with a dashed ink outline, like a hand-circled field on a form.",
+  "description": "Chart 9. Heatmap: share of each country's 2025 enrolments by field, ten largest source countries. Normalised within each row so rows are comparable. Cells over 10% carry their value. Each row's largest field is ringed: solid ink where it is business (six of ten countries), dashed stamp red where a country breaks ranks (Bangladesh IT, Pakistan engineering, Colombia and Brazil English). Column labels are one line so they never run into the cells.",
   "width": "container",
   "height": 360,
   "data": {
@@ -17,7 +17,7 @@
   },
   "transform": [
     {
-      "calculate": "{'Business & Commerce': 'Business', 'IT': 'IT', 'English language': 'English', 'Society & Culture': 'Society &|culture', 'Engineering': 'Engineering', 'Education': 'Education', 'Health': 'Health', 'Hospitality & Services': 'Hospitality', 'Architecture & Building': 'Architecture', 'Sciences, Arts & Agriculture': 'Sciences,|arts, agri.', 'School & other': 'School &|other'}[datum.field]",
+      "calculate": "{'Business & Commerce': 'Business', 'IT': 'IT', 'English language': 'English', 'Society & Culture': 'Society', 'Engineering': 'Engineering', 'Education': 'Education', 'Health': 'Health', 'Hospitality & Services': 'Hospitality', 'Architecture & Building': 'Architecture', 'Sciences, Arts & Agriculture': 'Sciences', 'School & other': 'Other'}[datum.field]",
       "as": "col"
     },
     {
@@ -25,8 +25,24 @@
       "as": "row"
     },
     {
-      "calculate": "(datum.nationality === 'Brazil' && datum.field === 'English language') || (datum.nationality === 'Bangladesh' && datum.field === 'IT') || (datum.nationality === 'Indonesia' && datum.field === 'Business & Commerce')",
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "share",
+          "as": "row_max"
+        }
+      ],
+      "groupby": [
+        "row"
+      ]
+    },
+    {
+      "calculate": "datum.share === datum.row_max",
       "as": "ringed"
+    },
+    {
+      "calculate": "datum.field === 'Business & Commerce'",
+      "as": "is_biz"
     }
   ],
   "encoding": {
@@ -42,7 +58,7 @@
         "labelAngle": {
           "expr": "width < 640 ? -90 : 0"
         },
-        "labelExpr": "width < 640 ? replace(datum.label, '|', ' ') : split(datum.label, '|')",
+        "labelExpr": "datum.label",
         "labelFontSize": 10.5,
         "labelColor": "#14213D",
         "labelPadding": 8,
@@ -53,6 +69,9 @@
         },
         "labelBaseline": {
           "expr": "width < 640 ? 'middle' : 'bottom'"
+        },
+        "labelFontWeight": {
+          "expr": "datum.value === 'Business' ? 700 : 500"
         }
       }
     },
@@ -166,14 +185,28 @@
     {
       "transform": [
         {
-          "filter": "datum.ringed"
+          "filter": "datum.ringed && datum.is_biz"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "fill": null,
+        "stroke": "#14213D",
+        "strokeWidth": 2.2,
+        "cornerRadius": 4
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.ringed && !datum.is_biz"
         }
       ],
       "mark": {
         "type": "rect",
         "fill": null,
         "stroke": "#C8371F",
-        "strokeWidth": 2.2,
+        "strokeWidth": 2.4,
         "strokeDash": [
           4,
           3

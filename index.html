@@ -20,6 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <script type="module" src="js/ornaments.js"></script>
   <script type="module" src="js/embed.js"></script>
+  <script type="module" src="js/boards.js"></script>
 </head>
 <body>
 
@@ -90,7 +91,7 @@
       <h2 class="act__title" id="act-1-title">Twenty years of arrivals. Three times the gate <span class="k-intl">closed</span>.</h2>
       <div class="prose">
         <!-- DRAFT -->
-        <p>In 2005 Australia counted <b>346,000</b> international enrolments. In 2025 it counted <b class="k-intl">1.06&nbsp;million</b>. The line between them is not a ramp. It stalled after 2009, fell off a cliff when the borders shut in March 2020, and in 2025 fell again, this time with the borders wide open.</p>
+        <p>In 2005 Australia counted <b>346,000</b> international enrolments. In 2025 it counted <b class="k-intl">1.06&nbsp;million</b>. The line between them is not a ramp. It stalled after 2009, fell off a cliff when the borders shut in March 2020, and in 2025 fell again, this time with the borders wide open. That fall was policy, not a pandemic: visa fees nearly tripled and new students were capped.</p>
       </div>
       <div class="act__stamp stamp stamp--navy" data-stamp style="--rot: 5deg">Entries 2005–2025<span class="big">×3.1</span>346k → 1.06m</div>
     </div>
@@ -103,33 +104,33 @@
         </header>
         <div class="chart__vis" style="--vis-h: 340px" data-spec="charts/02-total-line.vl.json"
              role="img" aria-label="Line chart: enrolments rose from 346,000 in 2005 to a 2009 peak of 633,000, fell to 513,000 by 2012, climbed to 952,000 in 2019, dropped to 716,000 in 2021 while borders were closed, peaked at 1.09 million in 2024 and fell to 1.06 million in 2025."></div>
-        <figcaption><span class="ref">Fig. 02 · Annotated line chart</span>Enrolments count courses, not people: a student who takes an English course and then a degree counts twice. The shaded band marks the border closure, 20 March 2020 to 15 December 2021. December year-to-date figures. Source: Department of Education, international student data (PRISMS).</figcaption>
+        <figcaption>Enrolments count courses, not people: a student who takes an English course and then a degree counts twice. The shaded band marks the border closure, 20 March 2020 to 15 December 2021. The 2025 fall followed the visa fee rising from $710 to $1,600 (July 2024) and $2,000 (July 2025), and caps on new students (Ministerial Direction 111, December 2024). December year-to-date figures. Source: Department of Education, international student data (PRISMS).</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-01">
         <header class="chart__head">
           <h3 class="chart__title">One in three uni students came on a <span class="k-intl">visa</span></h3>
-          <p class="chart__sub">Each square = 1% of 1,676,077 students · <span class="k-intl">overseas</span> / <span class="k-dom">domestic</span> · 2024</p>
+          <p class="chart__sub">Higher education students · 2024<br>Each square = 1% of 1,676,077 · <span class="k-intl">overseas</span> / <span class="k-dom">domestic</span></p>
         </header>
         <div class="waffle">
-          <div class="chart__vis waffle__grid" style="--vis-h: 290px" data-spec="charts/01-waffle.vl.json"
+          <div class="chart__vis waffle__grid" style="--vis-h: 300px" data-spec="charts/01-waffle.vl.json"
                role="img" aria-label="Grid of 100 squares: 35 red squares for overseas students and 65 blue squares for domestic students, Australian higher education 2024."></div>
           <dl class="tally">
             <div class="tally__row"><dt class="field">Overseas</dt><dd class="tally__n k-intl">35</dd><dd class="tally__sub">589,355 students</dd></div>
             <div class="tally__row"><dt class="field">Domestic</dt><dd class="tally__n k-dom">65</dd><dd class="tally__sub">1,086,722 students</dd></div>
           </dl>
         </div>
-        <figcaption><span class="ref">Fig. 01 · Isotype grid</span>35 of every 100 students in Australian higher education in 2024 were overseas students; at universities alone, 33. Figures are perturbed for confidentiality. Source: Department of Education, Higher Education Student Data.</figcaption>
+        <figcaption>35 of every 100 students in Australian higher education in 2024 were overseas students; at universities alone, 33. Figures are perturbed for confidentiality. Source: Department of Education, Higher Education Student Data.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-03">
         <header class="chart__head">
           <h3 class="chart__title">The boom was never only <span class="k-blue">universities</span></h3>
-          <p class="chart__sub">Enrolments by sector · 2005–2025</p>
+          <p class="chart__sub">Enrolments by sector · 2005–2025<br><span class="key-sq" style="--c:#2F5FA7"></span>Higher education <span class="key-sq" style="--c:#C8371F"></span>VET <span class="key-sq" style="--c:#6E4BA8"></span>ELICOS <span class="key-sq" style="--c:#2E8754"></span>Schools <span class="key-sq" style="--c:#9A9C94"></span>Non-award</p>
         </header>
         <div class="chart__vis" style="--vis-h: 330px" data-spec="charts/03-sector-area.vl.json"
              role="img" aria-label="Stacked area chart of enrolments by sector. Higher education grew steadily to the largest share; VET rose from 51,000 in 2005 to 209,000 in 2009, then fell by a third; ELICOS, schools and non-award are smaller bands."></div>
-        <figcaption><span class="ref">Fig. 03 · Stacked area chart</span>Vocational (VET) enrolments quadrupled between 2005 and 2009, then fell by a third. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption><b>VET</b> is vocational education and training: practical, job-focused courses such as cookery, hairdressing or business diplomas, taught by TAFEs and private colleges. <b>ELICOS</b> is English-language courses for overseas students. VET enrolments quadrupled between 2005 and 2009, then fell by a third; in 2025 ELICOS fell by 35%. Source: Department of Education, PRISMS.</figcaption>
       </figure>
     </div>
   </section>
@@ -150,27 +151,27 @@
       <figure class="chart chart--linked" id="fig-04-05">
         <header class="chart__head">
           <h3 class="chart__title">Where they come from, and where it <span class="k-intl">matters most</span></h3>
-          <p class="chart__sub">Left: enrolments by citizenship · Right: per 100,000 people at home · 2025 · Hover to find a country in both</p>
+          <p class="chart__sub">International enrolments by country of citizenship · 2025 · Hover a country to find it on both maps</p>
         </header>
-        <div class="pair">
+        <div class="stack">
           <div class="pair__item">
-            <p class="field pair__label"><b>Fig. 04</b> · Enrolments · circle area</p>
-            <div class="chart__vis" style="--vis-h: 330px" data-spec="charts/04-origins-symbols.vl.json"
+            <p class="field pair__label"><b>Enrolments</b> · by citizenship</p>
+            <div class="chart__vis" style="--vis-h: 560px" data-spec="charts/04-origins-symbols.vl.json"
                  data-link="countries" data-link-capture="hov" data-link-field="iso3" data-link-signal="hl"
                  role="img" aria-label="World map with circles sized by enrolments. China (227,000) and India (182,000) are by far the largest, followed by Nepal, the Philippines, Vietnam and Colombia."></div>
             <p class="pair__key"><span class="key-dot" style="--c:#C8371F"></span>South &amp; Central Asia <span class="key-dot" style="--c:#2F5FA7"></span>East &amp; South-East Asia <span class="key-dot" style="--c:#C99400"></span>Americas <span class="key-dot" style="--c:#9A9C94"></span>Rest of world</p>
           </div>
           <div class="pair__item">
-            <p class="field pair__label"><b>Fig. 05</b> · Per 100,000 people at home</p>
-            <div class="chart__vis" style="--vis-h: 330px" data-spec="charts/05-origins-percapita.vl.json"
+            <p class="field pair__label"><b>Per 100,000 people</b> · in the home country</p>
+            <div class="chart__vis" style="--vis-h: 560px" data-spec="charts/05-origins-percapita.vl.json"
                  data-link="countries" data-link-capture="hov" data-link-field="iso3" data-link-signal="hl"
                  role="img" aria-label="World choropleth of enrolments per 100,000 people. Bhutan is darkest at 1,943, then Fiji at 727 and Nepal at 302; China (16) and India (12.5) are pale."></div>
             <p class="pair__key">
-              <span class="key-sq" style="--c:#F4E3DD"></span>&lt;5 <span class="key-sq" style="--c:#EBBFB1"></span>5–20 <span class="key-sq" style="--c:#DC9078"></span>20–50 <span class="key-sq" style="--c:#C8371F"></span>50–150 <span class="key-sq" style="--c:#9A2914"></span>150–500 <span class="key-sq" style="--c:#5E180B"></span>500+ <span class="key-sq" style="--c:#DCE2DA"></span>no data
+              <span class="key-sq" style="--c:#F4E3DD"></span>&lt;5 <span class="key-sq" style="--c:#EBBFB1"></span>5–20 <span class="key-sq" style="--c:#DC9078"></span>20–50 <span class="key-sq" style="--c:#C8371F"></span>50–150 <span class="key-sq" style="--c:#9A2914"></span>150–500 <span class="key-sq" style="--c:#5E180B"></span>500+ <span class="key-sq" style="--c:#DCE2DA"></span>no data <span class="key-sq key-sq--outline"></span>Australia
             </p>
           </div>
         </div>
-        <figcaption><span class="ref">Figs. 04–05 · Proportional symbols · Choropleth</span>Equal Earth projection. Bhutan (1,943 per 100,000), Fiji (727) and Nepal (302) lead by rate; China ranks 32nd (16) and India 39th (12.5). Countries under 200,000 people are shaded but not ranked. Sources: Department of Education, PRISMS; World Bank, SP.POP.TOTL (2025); Taiwan: Ministry of the Interior.</figcaption>
+        <figcaption>Equal Earth projection. Bhutan (1,943 per 100,000), Fiji (727) and Nepal (302) lead by rate; China ranks 32nd (16) and India 39th (12.5). Countries under 200,000 people are shaded but not ranked. Sources: Department of Education, PRISMS; World Bank, SP.POP.TOTL (2025); Taiwan: Ministry of the Interior.</figcaption>
       </figure>
 
       <figure class="chart" id="fig-06">
@@ -180,7 +181,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 370px" data-spec="charts/06-bump.vl.json"
              role="img" aria-label="Bump chart of source-country ranks 3rd to 15th, 2010 to 2025. Nepal climbs from 7th to 3rd; the Philippines from 22nd to 4th; Bangladesh from 19th to 7th; South Korea falls from 3rd to 14th."></div>
-        <figcaption><span class="ref">Fig. 06 · Bump chart</span>Encodes rank, not size. Nepal rose from 7th to 3rd, the Philippines from 22nd to 4th and Bangladesh from 19th to 7th; South Korea fell from 3rd to 14th. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Encodes rank, not size. Nepal rose from 7th to 3rd, the Philippines from 22nd to 4th and Bangladesh from 19th to 7th; South Korea fell from 3rd to 14th. Source: Department of Education, PRISMS.</figcaption>
       </figure>
     </div>
   </section>
@@ -205,7 +206,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 400px" data-spec="charts/07-marimekko.vl.json"
              role="img" aria-label="Marimekko chart of enrolments by field and sector. Business and Commerce is the widest column at 29%, split almost evenly between universities and VET; IT is 12%, mostly universities; English-language courses are 9%."></div>
-        <figcaption><span class="ref">Fig. 07 · Marimekko chart</span>Column width encodes each field's share of enrolments; the vertical split shows which sector teaches it. English-language courses are shown as their own field. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Column width encodes each field's share of enrolments; the vertical split shows which sector teaches it. English-language courses are shown as their own field. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-08">
@@ -215,17 +216,17 @@
         </header>
         <div class="chart__vis" style="--vis-h: 380px" data-spec="charts/08-dumbbell.vl.json"
              role="img" aria-label="Dumbbell plot comparing field shares. Overseas students: business 34%, IT 18%. Domestic students: business 15%, IT 5%, health 21%, society and culture 23%."></div>
-        <figcaption><span class="ref">Fig. 08 · Dumbbell plot</span>A third of overseas students study business (33.7%), against one in seven domestic students (14.5%). Combined degrees count in both fields. Figures are perturbed. Source: Department of Education, Higher Education Student Data.</figcaption>
+        <figcaption>A third of overseas students study business (33.7%), against one in seven domestic students (14.5%). Combined degrees count in both fields. Figures are perturbed. Source: Department of Education, Higher Education Student Data.</figcaption>
       </figure>
 
       <figure class="chart" id="fig-09">
         <header class="chart__head">
-          <h3 class="chart__title">Bangladesh studies <span class="k-intl">IT</span>. Brazil studies <span class="k-intl">English</span>.</h3>
-          <p class="chart__sub">Share of each country's enrolments by field · ten largest source countries · 2025</p>
+          <h3 class="chart__title">Nearly everyone comes for <span class="k-blue">business</span>. Four countries break ranks.</h3>
+          <p class="chart__sub">Share of each country's enrolments by field · ten largest source countries · 2025 · ringed: each country's largest field</p>
         </header>
         <div class="chart__vis" style="--vis-h: 420px" data-spec="charts/09-country-field-heat.vl.json"
              role="img" aria-label="Heatmap of field shares for the ten largest source countries. Indonesia 43% business; Bangladesh 38% IT; Brazil 33% and Colombia 31% English language; Pakistan 22% engineering."></div>
-        <figcaption><span class="ref">Fig. 09 · Heatmap</span>Colour encodes each field's share within a country, so rows are comparable despite very different totals. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Business is the largest field for six of the ten countries and takes at least 19% of every one. The exceptions: Bangladesh (IT, 38%), Pakistan (engineering, 22%), and Colombia and Brazil (English, 31% and 33%). Each row adds to 100%, so countries of very different sizes compare directly. Source: Department of Education, PRISMS.</figcaption>
       </figure>
     </div>
   </section>
@@ -246,36 +247,79 @@
       <figure class="chart" id="fig-10">
         <header class="chart__head">
           <h3 class="chart__title">China lands in <span class="k-blue">NSW</span>. India lands in <span class="k-intl">Victoria</span>.</h3>
-          <p class="chart__sub">Enrolments from the 12 largest source countries to each state capital · 2025 · routes under 1,500 omitted</p>
+          <p class="chart__sub">Where each country's students live, by state capital · 2025 · pick flights on the board to put them on the map</p>
         </header>
-        <div class="chart__vis" style="--vis-h: 560px" data-spec="charts/10-flow-map.vl.json"
-             role="img" aria-label="Route map from the 12 largest source countries to Australian state capitals. The thickest routes run China to Sydney and India to Melbourne; Nepal's routes run mostly to Sydney; Colombia and Brazil enter from the Pacific."></div>
-        <p class="pair__key" style="margin-top:10px"><span class="key-line" style="--c:#C8371F"></span>South &amp; Central Asia <span class="key-line" style="--c:#2F5FA7"></span>East &amp; South-East Asia <span class="key-line key-line--dash" style="--c:#C99400"></span>Americas (via the Pacific) · capitals: SYD MEL BNE PER ADL CBR HBA DRW</p>
-        <figcaption><span class="ref">Fig. 10 · Flow map</span>Line thickness encodes enrolments; colour encodes origin region. 47% of Chinese students are in NSW and 43% of Indian students in Victoria; 62% of Nepali students are in NSW. Azimuthal equidistant projection centred on 110°E, framed on the region the routes cross; Colombia's and Brazil's routes are shown entering from the Pacific. Source: Department of Education, PRISMS.</figcaption>
+        <div class="flow">
+        <div class="chart__vis flow__map" style="--vis-h: 560px" data-spec="charts/10-flow-map.vl.json"
+             role="img" aria-label="Flow map. China's route to Australia splits with 47% going to Sydney; India's splits with 43% going to Melbourne. Selecting another country shows its routes: Nepal's run 62% to Sydney."></div>
+        <aside class="departures" aria-label="Departures board: choose which countries to show on the map">
+          <header class="departures__head">
+            <span class="departures__title">Departures</span>
+            <span class="field">To Australia · 2025</span>
+          </header>
+          <div class="dep dep--cols" aria-hidden="true"><span>Flt</span><span>From</span><span class="dep__n">Students</span><span class="dep__gate">Main gate</span><span class="dep__statushead">Status</span></div>
+          <ol class="departures__rows">
+          <li><button type="button" class="dep" data-iso="CHN" aria-pressed="true"><span class="flap flap--sm dep__iso" data-flap="CHN"></span><span class="dep__who">China</span><span class="dep__n">227,460</span><span class="dep__gate">SYD 47%</span><span class="flap flap--sm dep__status" data-flap="ON MAP" data-label="on map"></span></button></li>
+          <li><button type="button" class="dep" data-iso="IND" aria-pressed="true"><span class="flap flap--sm dep__iso" data-flap="IND"></span><span class="dep__who">India</span><span class="dep__n">182,369</span><span class="dep__gate">MEL 43%</span><span class="flap flap--sm dep__status" data-flap="ON MAP" data-label="on map"></span></button></li>
+          <li><button type="button" class="dep" data-iso="NPL" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="NPL"></span><span class="dep__who">Nepal</span><span class="dep__n">89,530</span><span class="dep__gate">SYD 62%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="PHL" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="PHL"></span><span class="dep__who">Philippines</span><span class="dep__n">47,666</span><span class="dep__gate">SYD 34%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="VNM" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="VNM"></span><span class="dep__who">Vietnam</span><span class="dep__n">45,356</span><span class="dep__gate">MEL 40%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="COL" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="COL"></span><span class="dep__who">Colombia</span><span class="dep__n">39,867</span><span class="dep__gate">MEL 34%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="BGD" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="BGD"></span><span class="dep__who">Bangladesh</span><span class="dep__n">32,525</span><span class="dep__gate">SYD 48%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="PAK" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="PAK"></span><span class="dep__who">Pakistan</span><span class="dep__n">31,801</span><span class="dep__gate">SYD 39%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="IDN" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="IDN"></span><span class="dep__who">Indonesia</span><span class="dep__n">31,579</span><span class="dep__gate">SYD 52%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="BRA" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="BRA"></span><span class="dep__who">Brazil</span><span class="dep__n">30,345</span><span class="dep__gate">SYD 43%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="THA" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="THA"></span><span class="dep__who">Thailand</span><span class="dep__n">29,038</span><span class="dep__gate">SYD 47%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="LKA" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="LKA"></span><span class="dep__who">Sri Lanka</span><span class="dep__n">25,627</span><span class="dep__gate">MEL 68%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="MYS" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="MYS"></span><span class="dep__who">Malaysia</span><span class="dep__n">17,798</span><span class="dep__gate">MEL 49%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="KOR" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="KOR"></span><span class="dep__who">South Korea</span><span class="dep__n">17,229</span><span class="dep__gate">SYD 47%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="BTN" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="BTN"></span><span class="dep__who">Bhutan</span><span class="dep__n">15,483</span><span class="dep__gate">PER 73%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="TWN" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="TWN"></span><span class="dep__who">Taiwan</span><span class="dep__n">15,260</span><span class="dep__gate">SYD 30%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="JPN" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="JPN"></span><span class="dep__who">Japan</span><span class="dep__n">14,179</span><span class="dep__gate">BNE 33%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="HKG" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="HKG"></span><span class="dep__who">Hong Kong</span><span class="dep__n">13,226</span><span class="dep__gate">SYD 31%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="KEN" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="KEN"></span><span class="dep__who">Kenya</span><span class="dep__n">11,897</span><span class="dep__gate">MEL 27%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          <li><button type="button" class="dep" data-iso="MNG" aria-pressed="false"><span class="flap flap--sm dep__iso" data-flap="MNG"></span><span class="dep__who">Mongolia</span><span class="dep__n">8,455</span><span class="dep__gate">SYD 77%</span><span class="flap flap--sm dep__status" data-flap="      " data-label="not shown"></span></button></li>
+          </ol>
+          <p class="departures__foot">Tap a flight to put it on the map or take it off · five at a time · tiles and ribbons on the map work too</p>
+        </aside>
+        </div>
+        <figcaption>Each country's route is as wide as its students and splits near Australia into one branch per state capital, each as wide as the students who go there. 47% of Chinese students are in NSW and 43% of Indian students in Victoria; 62% of Nepali students are in NSW. Routes under 1,000 students are left out. Azimuthal equidistant projection centred on 110°E; routes from Colombia, Brazil and the United States enter from the Pacific edge, and Kenya's from the Indian Ocean edge. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--linked" id="fig-11-12">
         <header class="chart__head">
           <h3 class="chart__title">Two states take the most. Canberra <span class="k-intl">keeps pace</span> per head.</h3>
-          <p class="chart__sub">Left: enrolments per 1,000 residents, overseas students per campus · Right: each provider's overseas share · Click a state to filter</p>
+          <p class="chart__sub">Enrolments per 1,000 residents and overseas students per campus · each provider's overseas share</p>
         </header>
+        <fieldset class="residence">
+          <legend class="field"><span class="residence__num">4.1</span> Address in Australia · state or territory <span class="residence__hint">(tick one to zoom in)</span></legend>
+          <label><input type="checkbox" name="state" value=""><span class="box"></span>All</label>
+          <label><input type="checkbox" name="state" value="NSW"><span class="box"></span>NSW</label>
+          <label><input type="checkbox" name="state" value="VIC"><span class="box"></span>VIC</label>
+          <label><input type="checkbox" name="state" value="QLD"><span class="box"></span>QLD</label>
+          <label><input type="checkbox" name="state" value="WA"><span class="box"></span>WA</label>
+          <label><input type="checkbox" name="state" value="SA"><span class="box"></span>SA</label>
+          <label><input type="checkbox" name="state" value="TAS"><span class="box"></span>TAS</label>
+          <label><input type="checkbox" name="state" value="ACT"><span class="box"></span>ACT</label>
+          <label><input type="checkbox" name="state" value="NT"><span class="box"></span>NT</label>
+        </fieldset>
         <div class="pair pair--wide-left">
           <div class="pair__item">
-            <p class="field pair__label"><b>Fig. 11</b> · Per 1,000 residents · campuses</p>
+            <p class="field pair__label"><b>Per 1,000 residents</b> · by state</p>
             <div class="chart__vis" style="--vis-h: 420px" data-spec="charts/11-australia.vl.json"
                  data-link="states" data-link-capture="pick" data-link-field="state" data-link-signal="st"
                  role="img" aria-label="Map of Australia shaded by international enrolments per 1,000 residents: NSW 46.7, Victoria 45.3, ACT 44.6, SA 30.0, WA 29.1, Queensland 26.0, NT 22.3, Tasmania 16.3. Red circles mark overseas students at each university campus, largest in Sydney and Melbourne."></div>
-            <p class="pair__key"><span class="key-sq" style="--c:#E6ECF5"></span>&lt;20 <span class="key-sq" style="--c:#C3D1E8"></span>20–30 <span class="key-sq" style="--c:#8FA9D3"></span>30–40 <span class="key-sq" style="--c:#5B7FBD"></span>40+ enrolments per 1,000 residents · click a state</p>
+            <p class="pair__key"><span class="key-sq" style="--c:#E6ECF5"></span>&lt;20 <span class="key-sq" style="--c:#C3D1E8"></span>20–30 <span class="key-sq" style="--c:#8FA9D3"></span>30–40 <span class="key-sq" style="--c:#5B7FBD"></span>40+ enrolments per 1,000 residents · lines join moved circles to their campus</p>
           </div>
           <div class="pair__item">
-            <p class="field pair__label"><b>Fig. 12</b> · One dot per provider</p>
+            <p class="field pair__label"><b>Overseas share</b> · by provider</p>
             <div class="chart__vis" style="--vis-h: 360px" data-spec="charts/12-beeswarm.vg.json"
                  data-link="states" data-link-capture="pickdot" data-link-field="state" data-link-signal="st"
                  role="img" aria-label="Beeswarm of 43 higher-education providers by overseas share of enrolments. Murdoch 57%, Sydney 51% and RMIT 50% are the most international; New England 6% and Batchelor Institute 0% the least."></div>
             <p class="pair__key">Dot area = all students · click a dot to pick its state · double-click to clear</p>
           </div>
         </div>
-        <figcaption><span class="ref">Figs. 11–12 · Choropleth with symbols · Beeswarm</span>Albers equal-area projection. NSW and Victoria hold 69% of enrolments, but per resident the ACT (44.6 per 1,000) is level with both. Murdoch (57%), Sydney (51%) and RMIT (50%) are the most international providers. Sources: Department of Education; ABS, National, state and territory population, Dec 2025.</figcaption>
+        <figcaption>Conic equal-area projection. Circles that would overlap are nudged apart, with a line to their true campus. NSW and Victoria hold 69% of enrolments, but per resident the ACT (44.6 per 1,000) is level with both. Murdoch (57%), Sydney (51%) and RMIT (50%) are the most international providers. Sources: Department of Education; ABS, National, state and territory population, Dec 2025.</figcaption>
       </figure>
     </div>
   </section>
@@ -300,7 +344,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 400px" data-spec="charts/13-calendar-heat.vl.json"
              role="img" aria-label="Calendar heatmap of new enrolments each month, 2015 to 2025. February and July are the darkest columns every year. In 2020 the July intake halved, to 51,000 from 97,000 the year before, and 2021 is pale throughout."></div>
-        <figcaption><span class="ref">Fig. 13 · Calendar heatmap</span>Each tile is one month; the February and July intakes carry their values. July 2020 (ringed) fell to 50,900 from 96,800 a year earlier, and all of 2021 stayed pale. Monthly values derived from year-to-date totals. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Each tile is one month; the February and July intakes carry their values. July 2020 (ringed) fell to 50,900 from 96,800 a year earlier, and all of 2021 stayed pale. Monthly values derived from year-to-date totals. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-14">
@@ -310,7 +354,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 360px" data-spec="charts/14-export-bar.vl.json"
              role="img" aria-label="Bar chart of Australia's ten largest exports in 2024-25: iron ore $116.4 billion, coal $71.3 billion, natural gas $64.7 billion, education $53.6 billion, gold $46.9 billion, then tourism, business services, beef, alumina and IP charges."></div>
-        <figcaption><span class="ref">Fig. 14 · Bar chart</span>Education-related travel services earned $53.6 billion, behind only iron ore, coal and natural gas. Source: DFAT, Australia's top 25 exports, goods &amp; services 2024–25 (from ABS data).</figcaption>
+        <figcaption>Education-related travel services earned $53.6 billion, behind only iron ore, coal and natural gas. Source: DFAT, Australia's top 25 exports, goods &amp; services 2024–25 (from ABS data).</figcaption>
       </figure>
     </div>
   </section>

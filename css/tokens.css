@@ -61,7 +61,7 @@
   --page-pad:     clamp(18px, 4vw, 48px);
   --measure:      60ch;
 
-  --space-act:    136px;   /* DV1 feedback: more white space between sections */
-  --space-chart:  72px;
+  --space-act:    104px;   /* room between acts, without leaving the reader stranded */
+  --space-chart:  60px;
   --space-cap:    14px;
 }

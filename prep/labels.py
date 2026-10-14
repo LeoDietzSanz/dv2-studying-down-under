@@ -69,25 +69,25 @@ HE_FIELD_LABEL = {
 SECTOR_ORDER = ["Higher Education", "VET", "ELICOS", "Schools", "Non-award"]
 
 # --------------------------------------------------------------- regions
-# The Department's 9 regions (+ Unknown), merged to 6 colour classes for
-# Map 1. Four small regions share one class; a 10-colour categorical
-# palette is unreadable.
+# The Department's 9 regions (+ Unknown), merged to 3 colour classes plus a
+# grey "Rest of world" for Maps 1 and 3. On a map every colour sits beside
+# every other, and only about three hues stay distinguishable under colour-
+# blindness that way (validated with the dataviz palette checker,
+# --pairs all). The three groups are also the story: South Asia rising,
+# East/South-East Asia established, Latin America arriving.
 REGION_GROUP = {
-    "North-East Asia": "North-East Asia",
     "Southern and Central Asia": "South & Central Asia",
-    "South-East Asia": "South-East Asia",
+    "North-East Asia": "East & South-East Asia",
+    "South-East Asia": "East & South-East Asia",
     "Americas": "Americas",
-    "Sub-Saharan Africa": "Sub-Saharan Africa",
-    "North-West Europe": "Europe, Middle East & Oceania",
-    "Southern and Eastern Europe": "Europe, Middle East & Oceania",
-    "North Africa and the Middle East": "Europe, Middle East & Oceania",
-    "Oceania and Antarctica": "Europe, Middle East & Oceania",
-    "Unknown": "Europe, Middle East & Oceania",
+    "Sub-Saharan Africa": "Rest of world",
+    "North-West Europe": "Rest of world",
+    "Southern and Eastern Europe": "Rest of world",
+    "North Africa and the Middle East": "Rest of world",
+    "Oceania and Antarctica": "Rest of world",
+    "Unknown": "Rest of world",
 }
-REGION_ORDER = [
-    "North-East Asia", "South & Central Asia", "South-East Asia",
-    "Americas", "Sub-Saharan Africa", "Europe, Middle East & Oceania",
-]
+REGION_ORDER = ["South & Central Asia", "East & South-East Asia", "Americas", "Rest of world"]
 
 # ---------------------------------------------------------------- states
 STATE_ABBR = {

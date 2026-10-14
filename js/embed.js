@@ -45,16 +45,25 @@ function link(slot, view) {
   if (!name) return;
   const { linkCapture: capture, linkField: field, linkSignal: target } = slot.dataset;
   const g = groups.get(name) ?? { views: new Set(), value: "", target };
+  g.target ??= target;
   groups.set(name, g);
   g.views.add(view);
   view.signal(target, g.value).runAsync();               // catch up if a partner already has a selection
-  view.addSignalListener(capture, (_, value) => {
-    const next = readSelection(value, field);
-    if (next === g.value) return;
-    g.value = next;
-    for (const v of g.views) v.signal(g.target, next).runAsync();
-  });
+  view.addSignalListener(capture, (_, value) => setLink(name, readSelection(value, field)));
 }
+
+/* Set a link group's value from outside the charts too (the state tick-boxes
+   in js/boards.js use this). Every chart in the group updates, and a
+   "link:change" event lets HTML controls mirror the choice. */
+function setLink(name, next) {
+  const g = groups.get(name) ?? { views: new Set(), value: "", target: null };
+  groups.set(name, g);
+  if (next === g.value) return;
+  g.value = next;
+  for (const v of g.views) v.signal(g.target, next).runAsync();
+  document.dispatchEvent(new CustomEvent("link:change", { detail: { name, value: next } }));
+}
+window.dv2 = { setLink, linkValue: (name) => groups.get(name)?.value ?? "" };
 
 async function draw(slot) {
   const specUrl = slot.dataset.spec;
@@ -81,6 +90,8 @@ async function draw(slot) {
     });
     link(slot, result.view);
     slot.classList.add("is-drawn");
+    // Other scripts (js/boards.js) attach their controls once a chart exists.
+    slot.dispatchEvent(new CustomEvent("chart:ready", { bubbles: true, detail: { view: result.view } }));
   } catch (err) {
     console.error(`[chart] ${specUrl} failed:`, err);
     slot.textContent = `Chart failed to load (${specUrl}): ${err.message}`;

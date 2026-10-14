@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 4 (Map 1). Proportional-symbol map: international enrolments by country of citizenship, 2025. Circle AREA encodes enrolments (linear size scale from zero, so area is proportional). Colour = origin region (3 stamp inks + grey). Linked with chart 5 through the 'hl' signal (see js/embed.js).",
+  "description": "Chart 4 (Map 1). Proportional-symbol map: international enrolments by country of citizenship, 2025. Circle AREA encodes enrolments (linear size scale from zero, so area is proportional). Colour = origin region (3 stamp inks + grey). Linked with chart 5 through the 'hl' signal (see js/embed.js). Colour group is derived from region_group by pattern (robust to label variants); Australia is outlined as the destination.",
   "width": "container",
   "height": 270,
   "projection": {
@@ -35,6 +35,26 @@
     },
     {
       "data": {
+        "url": "geo/world_countries.topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.iso3 === 'AUS'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F7F8F4",
+        "stroke": "#14213D",
+        "strokeWidth": 1.1
+      }
+    },
+    {
+      "data": {
         "url": "data/country_2025.csv",
         "format": {
           "parse": {
@@ -49,6 +69,10 @@
       "transform": [
         {
           "filter": "isValid(datum.lat)"
+        },
+        {
+          "calculate": "{'CHN':'East & South-East Asia','PHL':'East & South-East Asia','VNM':'East & South-East Asia','IDN':'East & South-East Asia','THA':'East & South-East Asia','MYS':'East & South-East Asia','KOR':'East & South-East Asia','JPN':'East & South-East Asia','HKG':'East & South-East Asia','TWN':'East & South-East Asia','IND':'South & Central Asia','NPL':'South & Central Asia','BGD':'South & Central Asia','PAK':'South & Central Asia','LKA':'South & Central Asia','BTN':'South & Central Asia','COL':'Americas','BRA':'Americas','USA':'Americas','CAN':'Americas','CHL':'Americas','MEX':'Americas','PER':'Americas'}[datum.iso3] || (test(/central|south asia/i, datum.region_group) ? 'South & Central Asia' : test(/east/i, datum.region_group) ? 'East & South-East Asia' : test(/america/i, datum.region_group) ? 'Americas' : 'Rest of world')",
+          "as": "grp"
         }
       ],
       "params": [
@@ -87,8 +111,15 @@
             "zero": true,
             "range": [
               0,
-              1500
-            ]
+              {
+                "expr": "1500 * pow(width / 560, 2)"
+              }
+            ],
+            "domain": [
+              0,
+              227460
+            ],
+            "nice": false
           },
           "legend": {
             "title": "ENROLMENTS",
@@ -108,7 +139,7 @@
           }
         },
         "color": {
-          "field": "region_group",
+          "field": "grp",
           "type": "nominal",
           "legend": null,
           "scale": {
@@ -164,10 +195,103 @@
             "format": ",.1f"
           },
           {
-            "field": "region_group",
+            "field": "grp",
             "title": "Region"
           }
         ]
+      }
+    },
+    {
+      "$comment": "Direct labels on the eight largest senders: ISO code beside the circle.",
+      "data": {
+        "url": "data/country_2025.csv",
+        "format": {
+          "parse": {
+            "enrolments": "number",
+            "lat": "number",
+            "lon": "number",
+            "per_100k": "number",
+            "rank_enrolments": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "indexof(['CHN','IND','NPL','PHL','VNM','COL','PAK','IDN','BRA'], datum.iso3) >= 0"
+        },
+        {
+          "calculate": "sqrt(1500 * pow(width / 560, 2) * datum.enrolments / 227460 / PI)",
+          "as": "r"
+        },
+        {
+          "calculate": "{'CHN':[1,0,'left'],'IND':[-1,0.6,'right'],'NPL':[0,-1,'center'],'PHL':[1,0,'left'],'VNM':[0.7,0.9,'left'],'COL':[1,0,'left'],'PAK':[-1,0,'right'],'IDN':[1,0,'left'],'BRA':[1,0,'left']}[datum.iso3]",
+          "as": "p"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": {
+          "expr": "datum.p[2]"
+        },
+        "baseline": "middle",
+        "fontSize": 10.5,
+        "fontWeight": 600,
+        "letterSpacing": 0.6,
+        "color": "#14213D",
+        "dx": {
+          "expr": "datum.p[0] * (datum.r + 4)"
+        },
+        "dy": {
+          "expr": "datum.p[1] * (datum.r + 7)"
+        }
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "iso3"
+        },
+        "opacity": {
+          "condition": {
+            "test": "hl === '' || datum.iso3 === hl",
+            "value": 1
+          },
+          "value": 0.15
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 134,
+            "lat": -47.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "text": "AUSTRALIA",
+        "fontSize": 8.5,
+        "fontWeight": 600,
+        "letterSpacing": 1.2,
+        "color": "#14213D"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
       }
     }
   ],

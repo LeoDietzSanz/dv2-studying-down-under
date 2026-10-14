@@ -33,7 +33,7 @@ body { margin: 0; background: var(--paper); }
 .site-header__text { grid-column: 1 / span 7; display: grid; gap: 26px; }
 .site-header__text .field { margin-bottom: -10px; }
 .site-header__board { grid-column: 8 / span 5; position: relative; min-height: 330px; padding-top: 6px; }
-.site-header .mrz { margin-top: 56px; padding: 18px 0 20px; border-top: 1px solid var(--rule); }
+.site-header .mrz { margin-top: 40px; padding: 18px 0 20px; border-top: 1px solid var(--rule); }
 
 .guilloche {
   position: absolute; inset: 0; width: 100%; height: 100%;
@@ -42,16 +42,23 @@ body { margin: 0; background: var(--paper); }
 
 /* ---- acts ------------------------------------------------------------- */
 .act { position: relative; margin-top: var(--space-act); }
-main > .act:first-child { margin-top: 104px; }
-.act__intro { position: relative; margin-bottom: var(--space-chart); }
+main > .act:first-child { margin-top: 56px; }
+.act__intro {
+  position: relative; margin-bottom: 52px;
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter);
+  align-items: center;
+}
+.act__intro > * { grid-column: 1 / -1; }
+.act__intro > .prose { grid-column: 1 / span 7; }
 .act__intro .field { margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
 /* the field number sits in a small box, like a numbered field on a form */
 .act__intro .field .num {
   display: inline-grid; place-items: center; min-width: 2.4em; height: 2em;
   border: 1.5px solid currentColor; color: var(--intl); font-weight: 600; letter-spacing: 0.04em;
 }
-/* each act carries one stamp in its right margin; the stamp holds a real figure */
-.act__intro .act__stamp { position: absolute; right: 12px; top: 56px; }
+/* each act carries one stamp beside its text; the stamp holds a real figure.
+   It spans every row of the intro and sits centred in the right-hand third. */
+.act__intro .act__stamp { grid-column: 8 / span 4; grid-row: 3; justify-self: center; align-self: center; }
 
 /* ---- charts -------------------------------------------------------------- */
 .charts {
@@ -116,7 +123,9 @@ main > .act:first-child { margin-top: 104px; }
   /* 11 gutters of a 12-column grid are wider than a phone; collapse to one column */
   .charts, .site-header__grid, .site-footer__grid { grid-template-columns: minmax(0, 1fr); }
   .chart, .chart--half, .site-header__text, .site-header__board, .site-footer__sources, .site-footer__meta { grid-column: 1 / -1; }
-  .act__intro .act__stamp { position: relative; right: auto; top: auto; margin-top: 22px; }
+  .act__intro { grid-template-columns: minmax(0, 1fr); }
+  .act__intro > *, .act__intro > .prose, .act__intro .act__stamp { grid-column: 1 / -1; }
+  .act__intro .act__stamp { grid-row: auto; justify-self: start; margin: 24px 0 0 12px; }
 }
 @media (max-width: 640px) {
   :root { --space-act: 96px; --space-chart: 56px; }
@@ -125,7 +134,7 @@ main > .act:first-child { margin-top: 104px; }
 
 /* ---- chart 1: waffle grid + slab tally ---------------------------------- */
 .waffle { display: flex; flex-wrap: wrap; align-items: center; gap: 28px 40px; }
-.waffle__grid { width: auto; flex: 0 0 auto; min-height: 290px; }
+.waffle__grid { width: auto; flex: 0 0 auto; min-height: 300px; margin-top: 3px; }
 .tally { margin: 0; display: grid; gap: 22px; }
 .tally__row { display: grid; gap: 0; }
 .tally dd { margin: 0; }
@@ -152,3 +161,79 @@ main > .act:first-child { margin-top: 104px; }
 .key-line { display: inline-block; width: 18px; height: 0; border-top: 3px solid var(--c); margin: 0 5px 3px 10px; }
 .key-line:first-child { margin-left: 0; }
 .key-line--dash { border-top-style: dashed; }
+.key-sq--outline { background: #F7F8F4; outline: 1.2px solid var(--ink); outline-offset: -1.2px; }
+
+/* ---- paired charts share edges ---------------------------------------------
+   Half-width charts sit on a subgrid: title block, chart and caption each get
+   a shared row, so neighbours' titles, plots and captions start level however
+   their text wraps. */
+.charts > .chart--half { display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 0; align-content: start; }
+.pair--wide-left { grid-template-rows: auto auto auto; }
+.pair--wide-left > .pair__item { display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 0; }
+.pair--wide-left > .pair__item:last-child > .chart__vis { align-self: center; }   /* beeswarm centred on the map */
+.chart--half > .chart__vis, .chart--half > .waffle { align-self: start; }
+
+/* ---- world maps stacked, each full width ---------------------------------- */
+.stack { display: grid; gap: 40px; }
+
+/* ---- flow map + departures board ------------------------------------------ */
+.flow { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 20px 28px; align-items: start; }
+@media (max-width: 1000px) { .flow { grid-template-columns: minmax(0, 1fr); } }
+
+.departures { border-top: 3px solid var(--ink); padding-top: 10px; font-family: var(--font-mono); }
+.departures__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+.departures__title { font-family: var(--font-display); font-weight: 700; font-size: 26px; letter-spacing: -0.01em; color: var(--ink); }
+.departures__rows { list-style: none; margin: 0; padding: 0; }
+.departures__rows li + li { background: radial-gradient(circle, var(--rule) 1px, transparent 1.4px) 0 0 / 6px 2px repeat-x; }
+.dep {
+  --ink-pick: transparent;
+  width: 100%; display: grid; grid-template-columns: 3.6em minmax(0, 1fr) 5.6em 6.2em 6.6em; gap: 8px; align-items: center;
+  padding: 4px 6px 4px 8px; margin: 0; border: 0; border-left: 5px solid var(--ink-pick);
+  background: transparent; color: var(--ink); font: inherit; font-size: 11px; text-align: left; cursor: pointer;
+  user-select: none; -webkit-user-select: none; transition: background .15s;
+}
+.dep:hover { background: rgba(20, 33, 61, 0.05); }
+.dep:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+.dep--cols { cursor: default; color: var(--ink-muted); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; padding-bottom: 6px; border-left-color: transparent; }
+.dep--cols:hover { background: none; }
+.dep__who { font-family: var(--font-text); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dep[aria-pressed="true"] .dep__who { color: var(--ink-pick); font-weight: 600; }
+.dep__n { text-align: right; font-variant-numeric: tabular-nums; }
+.dep__gate { letter-spacing: 0.06em; }
+.dep__status { --flap-size: 12px; justify-self: end; }
+.dep__statushead { justify-self: end; }
+.dep .flap--sm.dep__iso { --flap-size: 12px; }
+.departures__foot { margin: 10px 0 0; font-size: 10px; line-height: 1.5; color: var(--ink-muted); letter-spacing: 0.04em; }
+@media (max-width: 560px) {
+  .dep { grid-template-columns: 3.4em minmax(0, 1fr) auto auto; gap: 6px; }
+  .dep__n { display: none; }
+  .dep__status, .dep .flap--sm.dep__iso { --flap-size: 10px; }
+}
+
+/* ---- residence tick-boxes (chart 11) ----------------------------------------
+   The address field of a visa form: printed boxes, a stamped-red cross in
+   the one that's ticked. */
+.residence { border: 0; margin: 0 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+.residence legend { padding: 0; margin-bottom: 10px; width: 100%; }
+.residence__num { display: inline-grid; place-items: center; min-width: 2.6em; height: 1.8em; margin-right: 8px; border: 1.5px solid var(--intl); color: var(--intl); font-weight: 600; }
+.residence__hint { text-transform: none; letter-spacing: 0.02em; color: var(--ink-faint); }
+.residence label { display: inline-flex; align-items: center; gap: 7px; cursor: pointer; font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; color: var(--ink); user-select: none; -webkit-user-select: none; }
+.residence input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.residence .box { position: relative; width: 20px; height: 20px; border: 1.5px solid var(--ink); background: var(--paper-hi); }
+.residence input:focus-visible + .box { outline: 2px solid var(--intl); outline-offset: 2px; }
+.residence input:checked + .box::before, .residence input:checked + .box::after {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 3px; height: 24px; margin: -12px 0 0 -1.5px;
+  background: var(--intl); border-radius: 2px; filter: url(#ink); opacity: 0.9;
+}
+.residence input:checked + .box::before { transform: rotate(42deg); }
+.residence input:checked + .box::after  { transform: rotate(-48deg); height: 21px; margin-top: -10px; }
+/* fine alignment, measured: the heatmap's month labels sit above its tiles,
+   so the bar chart drops by their height to share top and bottom edges; the
+   beeswarm's legend and axis are uneven, so its dots are nudged to sit on
+   the map's midline. */
+#fig-14 > .chart__vis { margin-top: 18px; }
+.pair--wide-left > .pair__item:last-child > .chart__vis { position: relative; top: 76px; }
+@media (max-width: 900px) {
+  #fig-14 > .chart__vis { margin-top: 0; }
+  .pair--wide-left > .pair__item:last-child > .chart__vis { top: 0; }
+}

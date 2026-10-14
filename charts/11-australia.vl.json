@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 11 (Map 4). Australia, Albers-style conic equal-area projection (parallels 18°S and 36°S). State fill = international enrolments per 1,000 residents, 2025 (ABS ERP Dec 2025); circles = overseas students at each university's main campus, 2024 (area linear from zero). Click a state to filter chart 12 (via the 'st' signal bridge in js/embed.js); the pick is mirrored back from the beeswarm.",
+  "description": "Chart 11 (Map 4). Australia, conic equal-area projection (parallels 18°S and 36°S). State fill = international enrolments per 1,000 residents, 2025 (ABS ERP Dec 2025); circles = overseas students at each university's main campus, 2024 (area linear from zero). Picking a state (form boxes above the map, or a click on the map) zooms the projection to that state through a 'fit' expression, and campus circles move to positions precomputed by prep/70_campus_dodge.py for that view so none overlap; a leader line joins each moved circle to its true campus. The pick is shared with chart 12 through the 'st' signal bridge in js/embed.js.",
   "usermeta": {
     "aspect": 0.86
   },
@@ -16,7 +16,10 @@
       -134,
       0,
       0
-    ]
+    ],
+    "fit": {
+      "expr": "{'ALL':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[112.5,-9.5],[157.5,-44.0]]}},'NSW':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[140.8,-28.0],[155.0,-37.6]]}},'VIC':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[140.8,-33.9],[150.2,-39.3]]}},'QLD':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[137.8,-10.5],[153.8,-29.3]]}},'WA':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[112.8,-13.5],[129.2,-35.3]]}},'SA':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[128.8,-25.8],[141.2,-38.2]]}},'TAS':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[143.6,-39.4],[148.6,-43.8]]}},'NT':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[128.8,-10.8],[138.2,-26.2]]}},'ACT':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[148.7,-35.05],[149.45,-36.0]]}}}[st === '' ? 'ALL' : st]"
+    }
   },
   "params": [
     {
@@ -80,7 +83,8 @@
         "type": "geoshape",
         "stroke": "#EEF1EC",
         "strokeWidth": 1.5,
-        "cursor": "pointer"
+        "cursor": "pointer",
+        "clip": true
       },
       "encoding": {
         "color": {
@@ -140,30 +144,108 @@
       }
     },
     {
+      "$comment": "Leader lines and true-location dots for circles that were nudged apart.",
       "data": {
-        "url": "data/he_institution_geo_2024.csv",
+        "url": "data/campus_dodge_2024.csv",
         "format": {
           "parse": {
             "overseas": "number",
             "total": "number",
             "overseas_share": "number",
             "lat": "number",
-            "lon": "number"
+            "lon": "number",
+            "dlat": "number",
+            "dlon": "number",
+            "moved_px": "number",
+            "lab_lon": "number",
+            "lab_lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.view === (st === '' ? 'ALL' : st)"
+        },
+        {
+          "filter": "datum.moved_px > 3"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#14213D",
+            "strokeWidth": 0.7,
+            "opacity": 0.7,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "dlon"
+            },
+            "latitude2": {
+              "field": "dlat"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 7,
+            "color": "#14213D",
+            "opacity": 1,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "data/campus_dodge_2024.csv",
+        "format": {
+          "parse": {
+            "overseas": "number",
+            "total": "number",
+            "overseas_share": "number",
+            "lat": "number",
+            "lon": "number",
+            "dlat": "number",
+            "dlon": "number",
+            "moved_px": "number"
           }
         }
       },
       "mark": {
         "type": "circle",
         "stroke": "#EEF1EC",
-        "strokeWidth": 0.8
+        "strokeWidth": 0.8,
+        "clip": true
       },
       "encoding": {
         "longitude": {
-          "field": "lon",
+          "field": "dlon",
           "type": "quantitative"
         },
         "latitude": {
-          "field": "lat",
+          "field": "dlat",
           "type": "quantitative"
         },
         "size": {
@@ -171,11 +253,18 @@
           "type": "quantitative",
           "scale": {
             "type": "linear",
-            "zero": true,
+            "domain": [
+              0,
+              45000
+            ],
             "range": [
               0,
-              900
-            ]
+              {
+                "expr": "900 * pow(width / 640, 2) * (st === '' ? 1 : 2.2)"
+              }
+            ],
+            "zero": true,
+            "nice": false
           },
           "legend": {
             "title": "OVERSEAS STUDENTS PER CAMPUS",
@@ -197,11 +286,7 @@
           "value": "#C8371F"
         },
         "opacity": {
-          "condition": {
-            "test": "st === '' || datum.state === st",
-            "value": 0.72
-          },
-          "value": 0.1
+          "value": 0.78
         },
         "order": {
           "field": "overseas",
@@ -227,7 +312,98 @@
             "format": ".0%"
           }
         ]
-      }
+      },
+      "transform": [
+        {
+          "filter": "datum.view === (st === '' ? 'ALL' : st)"
+        }
+      ]
+    },
+    {
+      "$comment": "State views: every provider named. Lone campuses are labelled beside their circle; city clusters get a stacked column of names with leader lines (positions from prep/70_campus_dodge.py).",
+      "data": {
+        "url": "data/campus_dodge_2024.csv",
+        "format": {
+          "parse": {
+            "overseas": "number",
+            "total": "number",
+            "overseas_share": "number",
+            "lat": "number",
+            "lon": "number",
+            "dlat": "number",
+            "dlon": "number",
+            "moved_px": "number",
+            "lab_lon": "number",
+            "lab_lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "st !== '' && datum.view === st && isValid(datum.lab_lon)"
+        }
+      ],
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.lab_lead === 'True' || datum.lab_lead === true"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#14213D",
+            "strokeWidth": 0.6,
+            "opacity": 0.55,
+            "clip": true
+          },
+          "encoding": {
+            "longitude": {
+              "field": "dlon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "dlat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "lab_lon"
+            },
+            "latitude2": {
+              "field": "lab_lat"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "baseline": "middle",
+            "fontSize": 10.5,
+            "fontWeight": 600,
+            "color": "#14213D",
+            "clip": true,
+            "align": {
+              "expr": "datum.lab_align"
+            },
+            "dx": {
+              "expr": "(datum.lab_lead === 'True' || datum.lab_lead === true) ? (datum.lab_align === 'left' ? 3 : -3) : 0"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lab_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lab_lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "short_name"
+            }
+          }
+        }
+      ]
     },
     {
       "$comment": "State labels: code + rate, at hand-placed points inside each state (ACT is labelled offshore with a leader).",
@@ -258,6 +434,9 @@
           "transform": [
             {
               "filter": "datum.state === 'ACT'"
+            },
+            {
+              "filter": "st === ''"
             }
           ],
           "mark": {
@@ -286,6 +465,9 @@
           "transform": [
             {
               "filter": "datum.state !== 'ACT'"
+            },
+            {
+              "filter": "st === ''"
             }
           ],
           "mark": {
@@ -322,6 +504,9 @@
           "transform": [
             {
               "filter": "datum.state === 'ACT'"
+            },
+            {
+              "filter": "st === ''"
             }
           ],
           "mark": {

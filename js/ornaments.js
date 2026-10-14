@@ -107,13 +107,28 @@ function flipOnce(cell, next) {
 }
 
 async function runCell(cell, delay) {
+  if (cell._running) return;            // a running drum picks up the new target itself
+  cell._running = true;
   await new Promise((r) => setTimeout(r, delay));
   const drum = cell.dataset.drum;
   while (cell.dataset.cur !== cell.dataset.final) {
     const next = drum[(drum.indexOf(cell.dataset.cur) + 1) % drum.length];
     await flipOnce(cell, next);
   }
+  cell._running = false;
 }
+
+/* Re-flap a board to new text of the same length, e.g. a status column
+   changing from "      " to "ON MAP" (used by js/boards.js). */
+window.flapTo = (el, text) => {
+  const cells = [...el.querySelectorAll(".flap__cell")];
+  [...text.padEnd(cells.length)].slice(0, cells.length).forEach((ch, i) => {
+    const cell = cells[i];
+    cell.dataset.final = ch;
+    if (REDUCED) setCell(cell, ch);
+    else runCell(cell, i * 22);
+  });
+};
 
 function runFlap(el) {
   if (REDUCED) return;

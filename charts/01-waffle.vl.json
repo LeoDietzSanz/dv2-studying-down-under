@@ -3,8 +3,8 @@
   "description": "Chart 1. Isotype grid (waffle): 100 squares, one per 1% of Australian higher-education students, 2024. Squares are drawn as boxes on a form: overseas boxes stamped red, domestic boxes inked blue. The totals sit beside the grid in HTML.",
   "$comment_data": "Built from one row of he_summary_2024.csv: sequence(0,100) is flattened into 100 rows, and the first round(share*100) are overseas. Change the source and the grid redraws itself.",
 
-  "width": 290,
-  "height": 290,
+  "width": 300,
+  "height": 300,
   "autosize": { "type": "pad" },
 
   "data": { "url": "data/he_summary_2024.csv", "format": { "parse": { "overseas": "number", "domestic": "number", "total": "number", "overseas_share": "number" } } },

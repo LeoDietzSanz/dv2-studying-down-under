@@ -1,0 +1,21 @@
+rank,iso3,country,grp,lon,lat,students,top_code,top_city,top_share,top_lon,top_lat,via
+1,CHN,China,East & South-East Asia,106.322,32.525,227460,SYD,Sydney,0.4664,151.209,-33.869,
+2,IND,India,South & Central Asia,78.594,22.66,182369,MEL,Melbourne,0.4297,144.963,-37.814,
+3,NPL,Nepal,South & Central Asia,83.594,28.301,89530,SYD,Sydney,0.6174,151.209,-33.869,
+4,PHL,Philippines,East & South-East Asia,121.425,16.949,47666,SYD,Sydney,0.3445,151.209,-33.869,
+5,VNM,Vietnam,East & South-East Asia,105.448,21.684,45356,MEL,Melbourne,0.404,144.963,-37.814,
+6,COL,Colombia,Americas,166.0,-9.0,39867,MEL,Melbourne,0.3371,144.963,-37.814,via the Pacific
+7,BGD,Bangladesh,South & Central Asia,90.047,24.073,32525,SYD,Sydney,0.4846,151.209,-33.869,
+8,PAK,Pakistan,South & Central Asia,68.531,29.299,31801,SYD,Sydney,0.3946,151.209,-33.869,
+9,IDN,Indonesia,East & South-East Asia,110.4,-7.3,31579,SYD,Sydney,0.5181,151.209,-33.869,
+10,BRA,Brazil,Americas,166.0,-19.0,30345,SYD,Sydney,0.4293,151.209,-33.869,via the Pacific
+11,THA,Thailand,East & South-East Asia,101.015,15.478,29038,SYD,Sydney,0.4684,151.209,-33.869,
+12,LKA,Sri Lanka,South & Central Asia,80.701,7.562,25627,MEL,Melbourne,0.6758,144.963,-37.814,
+13,MYS,Malaysia,East & South-East Asia,101.7,3.6,17798,MEL,Melbourne,0.4862,144.963,-37.814,
+14,KOR,South Korea,East & South-East Asia,128.008,36.519,17229,SYD,Sydney,0.4658,151.209,-33.869,
+15,BTN,Bhutan,South & Central Asia,92.887,29.977,15483,PER,Perth,0.7275,115.861,-31.952,
+16,TWN,Taiwan,East & South-East Asia,122.954,23.829,15260,SYD,Sydney,0.2952,151.209,-33.869,
+17,JPN,Japan,East & South-East Asia,138.434,36.126,14179,BNE,Brisbane,0.3277,153.026,-27.47,
+18,HKG,Hong Kong,East & South-East Asia,116.692,20.958,13226,SYD,Sydney,0.3114,151.209,-33.869,
+19,KEN,Kenya,Rest of world,72.0,-8.0,11897,MEL,Melbourne,0.2654,144.963,-37.814,via the Indian Ocean
+20,MNG,Mongolia,East & South-East Asia,104.165,46.032,8455,SYD,Sydney,0.7703,151.209,-33.869,

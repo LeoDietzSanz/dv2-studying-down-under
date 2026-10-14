@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 6. Bump chart: rank among source countries, 3rd to 15th place, 2010-2025. China and India (1st and 2nd every year) are named in the subtitle instead of drawn as two flat lines. Lines leaving the 3-15 window are clipped at the edge. Line ends carry the ISO code on a navy tile, echoing the header's split-flap board.",
+  "description": "Chart 6. Bump chart: rank among source countries, 3rd to 15th place, 2010-2025. China and India (1st and 2nd every year) are named in the subtitle instead of drawn as two flat lines. Ranks below 15th are pinned to a shaded 'below 15th' strip at the foot of the chart, so lines that enter or leave the top 15 visibly come from or drop into it instead of being cut off at the frame. Line ends carry the ISO code on a navy tile, echoing the header's split-flap board.",
   "width": "container",
-  "height": 360,
+  "height": 380,
   "data": {
     "url": "data/nationality_by_year.csv",
     "format": {
@@ -77,6 +77,10 @@
           "field": "is_story"
         }
       ]
+    },
+    {
+      "calculate": "min(datum.rank, 16.9)",
+      "as": "rc"
     }
   ],
   "encoding": {
@@ -107,12 +111,12 @@
       }
     },
     "y": {
-      "field": "rank",
+      "field": "rc",
       "type": "quantitative",
       "scale": {
         "domain": [
           2.5,
-          15.5
+          17.3
         ],
         "reverse": true,
         "nice": false,
@@ -192,6 +196,69 @@
         "stroke": "#EEF1EC",
         "strokeWidth": 1.2
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y0": 15.6,
+            "y1": 17.3,
+            "year": 2010,
+            "rc": 16.45
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "fill": "#E6EAE3",
+            "opacity": 0.82
+          },
+          "encoding": {
+            "y": {
+              "field": "y0",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "y1"
+            },
+            "x": {
+              "datum": 2010
+            },
+            "x2": {
+              "datum": 2025
+            },
+            "color": {
+              "value": "#E6EAE3"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 10,
+            "fontSize": 9.5,
+            "fontWeight": 600,
+            "letterSpacing": 1,
+            "color": "#4D5A70",
+            "text": "BELOW 15TH"
+          },
+          "encoding": {
+            "y": {
+              "datum": 16.45
+            },
+            "x": {
+              "datum": 2025
+            },
+            "color": {
+              "value": "#4D5A70"
+            }
+          }
+        }
+      ]
     },
     {
       "$comment": "Invisible hit targets on every point, for the tooltip.",
@@ -321,14 +388,14 @@
       "data": {
         "values": [
           {
-            "year": 2010.25,
-            "rank": 15.35,
+            "year": 2010.3,
+            "rank": 16.15,
             "t": "PHL ↑ from 22nd in 2010",
             "c": "#6E4BA8"
           },
           {
-            "year": 2019.6,
-            "rank": 15.35,
+            "year": 2019.35,
+            "rank": 16.15,
             "t": "BGD ↑ 17th → 7th in two years",
             "c": "#2E8754"
           }
@@ -337,7 +404,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "baseline": "bottom",
+        "baseline": "middle",
         "fontSize": 9.5,
         "fontWeight": 600
       },
@@ -349,6 +416,10 @@
           "field": "c",
           "type": "nominal",
           "scale": null
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
         }
       }
     }
