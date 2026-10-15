@@ -109,3 +109,113 @@ Brazil,Hospitality & Services,1369,30345,0.04511,10,7
 Brazil,Architecture & Building,1335,30345,0.04399,10,8
 Brazil,"Sciences, Arts & Agriculture",711,30345,0.02343,10,9
 Brazil,School & other,591,30345,0.01948,10,10
+Thailand,Business & Commerce,15077,29038,0.51922,11,0
+Thailand,IT,991,29038,0.03413,11,1
+Thailand,English language,3581,29038,0.12332,11,2
+Thailand,Society & Culture,1630,29038,0.05613,11,3
+Thailand,Engineering,706,29038,0.02431,11,4
+Thailand,Education,1271,29038,0.04377,11,5
+Thailand,Health,523,29038,0.01801,11,6
+Thailand,Hospitality & Services,3776,29038,0.13004,11,7
+Thailand,Architecture & Building,315,29038,0.01085,11,8
+Thailand,"Sciences, Arts & Agriculture",651,29038,0.02242,11,9
+Thailand,School & other,517,29038,0.0178,11,10
+Sri Lanka,Business & Commerce,5756,25627,0.22461,12,0
+Sri Lanka,IT,5035,25627,0.19647,12,1
+Sri Lanka,English language,257,25627,0.01003,12,2
+Sri Lanka,Society & Culture,1450,25627,0.05658,12,3
+Sri Lanka,Engineering,4855,25627,0.18945,12,4
+Sri Lanka,Education,1864,25627,0.07274,12,5
+Sri Lanka,Health,1518,25627,0.05923,12,6
+Sri Lanka,Hospitality & Services,1725,25627,0.06731,12,7
+Sri Lanka,Architecture & Building,835,25627,0.03258,12,8
+Sri Lanka,"Sciences, Arts & Agriculture",1393,25627,0.05436,12,9
+Sri Lanka,School & other,939,25627,0.03664,12,10
+Malaysia,Business & Commerce,6484,17798,0.36431,13,0
+Malaysia,IT,1359,17798,0.07636,13,1
+Malaysia,English language,318,17798,0.01787,13,2
+Malaysia,Society & Culture,1389,17798,0.07804,13,3
+Malaysia,Engineering,1114,17798,0.06259,13,4
+Malaysia,Education,1179,17798,0.06624,13,5
+Malaysia,Health,1129,17798,0.06343,13,6
+Malaysia,Hospitality & Services,927,17798,0.05208,13,7
+Malaysia,Architecture & Building,587,17798,0.03298,13,8
+Malaysia,"Sciences, Arts & Agriculture",1792,17798,0.10069,13,9
+Malaysia,School & other,1520,17798,0.0854,13,10
+"Korea, Republic of (South)",Business & Commerce,4186,17229,0.24296,14,0
+"Korea, Republic of (South)",IT,967,17229,0.05613,14,1
+"Korea, Republic of (South)",English language,3029,17229,0.17581,14,2
+"Korea, Republic of (South)",Society & Culture,1132,17229,0.0657,14,3
+"Korea, Republic of (South)",Engineering,614,17229,0.03564,14,4
+"Korea, Republic of (South)",Education,658,17229,0.03819,14,5
+"Korea, Republic of (South)",Health,1854,17229,0.10761,14,6
+"Korea, Republic of (South)",Hospitality & Services,1622,17229,0.09414,14,7
+"Korea, Republic of (South)",Architecture & Building,509,17229,0.02954,14,8
+"Korea, Republic of (South)","Sciences, Arts & Agriculture",725,17229,0.04208,14,9
+"Korea, Republic of (South)",School & other,1933,17229,0.11219,14,10
+Bhutan,Business & Commerce,5673,15483,0.3664,15,0
+Bhutan,IT,1323,15483,0.08545,15,1
+Bhutan,English language,362,15483,0.02338,15,2
+Bhutan,Society & Culture,2506,15483,0.16185,15,3
+Bhutan,Engineering,1289,15483,0.08325,15,4
+Bhutan,Education,999,15483,0.06452,15,5
+Bhutan,Health,1533,15483,0.09901,15,6
+Bhutan,Hospitality & Services,647,15483,0.04179,15,7
+Bhutan,Architecture & Building,307,15483,0.01983,15,8
+Bhutan,"Sciences, Arts & Agriculture",644,15483,0.04159,15,9
+Bhutan,School & other,200,15483,0.01292,15,10
+Taiwan,Business & Commerce,4760,15260,0.31193,16,0
+Taiwan,IT,881,15260,0.05773,16,1
+Taiwan,English language,2788,15260,0.1827,16,2
+Taiwan,Society & Culture,913,15260,0.05983,16,3
+Taiwan,Engineering,724,15260,0.04744,16,4
+Taiwan,Education,892,15260,0.05845,16,5
+Taiwan,Health,739,15260,0.04843,16,6
+Taiwan,Hospitality & Services,1135,15260,0.07438,16,7
+Taiwan,Architecture & Building,530,15260,0.03473,16,8
+Taiwan,"Sciences, Arts & Agriculture",766,15260,0.0502,16,9
+Taiwan,School & other,1132,15260,0.07418,16,10
+Japan,Business & Commerce,2072,14179,0.14613,17,0
+Japan,IT,447,14179,0.03153,17,1
+Japan,English language,5828,14179,0.41103,17,2
+Japan,Society & Culture,1109,14179,0.07821,17,3
+Japan,Engineering,293,14179,0.02066,17,4
+Japan,Education,655,14179,0.0462,17,5
+Japan,Health,418,14179,0.02948,17,6
+Japan,Hospitality & Services,630,14179,0.04443,17,7
+Japan,Architecture & Building,198,14179,0.01396,17,8
+Japan,"Sciences, Arts & Agriculture",620,14179,0.04373,17,9
+Japan,School & other,1909,14179,0.13464,17,10
+Hong Kong SAR,Business & Commerce,2543,13226,0.19227,18,0
+Hong Kong SAR,IT,708,13226,0.05353,18,1
+Hong Kong SAR,English language,504,13226,0.03811,18,2
+Hong Kong SAR,Society & Culture,997,13226,0.07538,18,3
+Hong Kong SAR,Engineering,785,13226,0.05935,18,4
+Hong Kong SAR,Education,524,13226,0.03962,18,5
+Hong Kong SAR,Health,2348,13226,0.17753,18,6
+Hong Kong SAR,Hospitality & Services,565,13226,0.04272,18,7
+Hong Kong SAR,Architecture & Building,521,13226,0.03939,18,8
+Hong Kong SAR,"Sciences, Arts & Agriculture",1262,13226,0.09542,18,9
+Hong Kong SAR,School & other,2469,13226,0.18668,18,10
+Kenya,Business & Commerce,2164,11897,0.18189,19,0
+Kenya,IT,1348,11897,0.11331,19,1
+Kenya,English language,257,11897,0.0216,19,2
+Kenya,Society & Culture,3349,11897,0.2815,19,3
+Kenya,Engineering,958,11897,0.08052,19,4
+Kenya,Education,794,11897,0.06674,19,5
+Kenya,Health,1526,11897,0.12827,19,6
+Kenya,Hospitality & Services,434,11897,0.03648,19,7
+Kenya,Architecture & Building,308,11897,0.02589,19,8
+Kenya,"Sciences, Arts & Agriculture",432,11897,0.03631,19,9
+Kenya,School & other,327,11897,0.02749,19,10
+Mongolia,Business & Commerce,3791,8455,0.44837,20,0
+Mongolia,IT,647,8455,0.07652,20,1
+Mongolia,English language,1881,8455,0.22247,20,2
+Mongolia,Society & Culture,327,8455,0.03868,20,3
+Mongolia,Engineering,266,8455,0.03146,20,4
+Mongolia,Education,667,8455,0.07889,20,5
+Mongolia,Health,113,8455,0.01336,20,6
+Mongolia,Hospitality & Services,234,8455,0.02768,20,7
+Mongolia,Architecture & Building,171,8455,0.02022,20,8
+Mongolia,"Sciences, Arts & Agriculture",182,8455,0.02153,20,9
+Mongolia,School & other,176,8455,0.02082,20,10

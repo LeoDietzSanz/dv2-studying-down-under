@@ -1,0 +1,343 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 15. Split bars (100% stacked bars): for each of the 20 largest source countries, the share of its students in each state, 2025. States are a single-hue ramp from dark (NSW) to light (other states), each segment labelled with its state, so the chart never relies on telling hues apart and the board's inks stay free for the names. Every country gets the same length, so a small country's split reads as clearly as China's (a Sankey sizes bands by head-count, which turns small countries into slivers). Rows are grouped by the state that takes most of a country's students, then sorted by that share. Countries picked on the departures board (signal 'picked', set by js/boards.js) have their names set bold in their ink; clicking a row toggles it on the board and the flow map.",
+  "width": "container",
+  "height": {
+    "step": 23
+  },
+  "params": [
+    {
+      "name": "picked",
+      "value": [
+        "CHN",
+        "IND",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "data": {
+    "url": "data/nationality_state_2025.csv",
+    "format": {
+      "parse": {
+        "enrolments": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "lookup": "nationality",
+      "from": {
+        "data": {
+          "url": "data/country_lookup.csv"
+        },
+        "key": "nationality",
+        "fields": [
+          "iso3"
+        ]
+      }
+    },
+    {
+      "lookup": "iso3",
+      "from": {
+        "data": {
+          "url": "data/flow_origins_2025.csv",
+          "format": {
+            "parse": {
+              "rank": "number"
+            }
+          }
+        },
+        "key": "iso3",
+        "fields": [
+          "rank",
+          "country"
+        ]
+      }
+    },
+    {
+      "filter": "isValid(datum.rank)"
+    },
+    {
+      "calculate": "indexof(['NSW', 'VIC', 'QLD', 'WA'], datum.state) >= 0 ? datum.state : 'Other'",
+      "as": "st"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "enrolments",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "iso3",
+        "country",
+        "st"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "n",
+          "as": "total"
+        }
+      ],
+      "groupby": [
+        "iso3"
+      ]
+    },
+    {
+      "calculate": "datum.n / datum.total",
+      "as": "share"
+    },
+    {
+      "calculate": "indexof(['NSW', 'VIC', 'QLD', 'WA', 'Other'], datum.st)",
+      "as": "st_order"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "share",
+          "as": "top_share"
+        }
+      ],
+      "groupby": [
+        "iso3"
+      ]
+    },
+    {
+      "calculate": "datum.share === datum.top_share ? datum.st_order : 9",
+      "as": "lead_order"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "min",
+          "field": "lead_order",
+          "as": "lead"
+        }
+      ],
+      "groupby": [
+        "iso3"
+      ]
+    },
+    {
+      "calculate": "datum.lead * 10 - datum.top_share",
+      "as": "row_sort"
+    },
+    {
+      "calculate": "indexof(picked, datum.iso3)",
+      "as": "slot"
+    },
+    {
+      "calculate": "datum.slot >= 0 ? ['#2F5FA7', '#C8371F', '#C99400', '#13A39A', '#9E5BD0'][datum.slot] : '#14213D'",
+      "as": "ink"
+    },
+    {
+      "stack": "share",
+      "groupby": [
+        "iso3"
+      ],
+      "sort": [
+        {
+          "field": "st_order"
+        }
+      ],
+      "as": [
+        "x0",
+        "x1"
+      ],
+      "offset": "normalize"
+    },
+    {
+      "calculate": "(datum.x0 + datum.x1) / 2",
+      "as": "xm"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "sort": {
+        "field": "row_sort",
+        "op": "min",
+        "order": "ascending"
+      },
+      "axis": null,
+      "scale": {
+        "paddingInner": 0.22,
+        "paddingOuter": 0.1
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.2,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "nice": false
+          },
+          "axis": {
+            "orient": "top",
+            "format": "%",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "title": null,
+            "grid": true,
+            "gridColor": "#C9D0D8",
+            "gridDash": [
+              2,
+              3
+            ],
+            "domain": false,
+            "ticks": false
+          }
+        },
+        "x2": {
+          "field": "x1"
+        },
+        "color": {
+          "field": "st",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "NSW",
+              "VIC",
+              "QLD",
+              "WA",
+              "Other"
+            ],
+            "range": [
+              "#0B1530",
+              "#253F73",
+              "#3F5F9C",
+              "#6586BF",
+              "#91A9D4"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "title": "From"
+          },
+          {
+            "field": "st",
+            "title": "Studying in"
+          },
+          {
+            "field": "share",
+            "title": "Share of that country",
+            "format": ".0%"
+          },
+          {
+            "field": "n",
+            "title": "Students",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.share >= (width < 320 ? 0.24 : 0.12)"
+        },
+        {
+          "calculate": "datum.st === 'Other' ? format(datum.share, '.0%') : datum.st + ' ' + format(datum.share, '.0%')",
+          "as": "seg"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "color": "#FFFFFF",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "seg"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.st === 'Other'",
+            "value": "#0B1530"
+          },
+          "value": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "$comment": "Row labels, left-aligned on the page's left edge: the country's name, bold, larger and in its ink when it is on the departures board.",
+      "transform": [
+        {
+          "filter": "datum.st_order === 0"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": -126,
+            "fontSize": {
+              "expr": "datum.slot >= 0 ? 13.5 : 12"
+            },
+            "fontWeight": {
+              "expr": "datum.slot >= 0 ? 700 : 400"
+            },
+            "font": "IBM Plex Sans",
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "x": {
+              "datum": 0
+            },
+            "text": {
+              "field": "country"
+            },
+            "color": {
+              "field": "ink",
+              "type": "nominal",
+              "scale": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "padding": {
+    "left": 0,
+    "top": 4,
+    "right": 4,
+    "bottom": 4
+  }
+}

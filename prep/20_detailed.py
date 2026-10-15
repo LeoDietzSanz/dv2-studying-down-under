@@ -9,7 +9,7 @@ December 2025 snapshot throughout.
 Outputs
 -------
   field_by_sector_2025.csv   field x sector, with Marimekko rectangle edges  -> chart 7
-  country_field_2025.csv     top-10 countries x field, share within country  -> chart 9
+  country_field_2025.csv     top-20 countries x field, share within country  -> chart 9
   nationality_region.csv     nationality -> region and 6-colour region group -> charts 4, 10
 """
 from __future__ import annotations
@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "raw" / "Pivot_Detailed_Latest_web2025.xlsx"
 OUT = ROOT / "data"
 YEAR = 2025
-TOP_N_COUNTRIES = 10
+TOP_N_COUNTRIES = 20
 ENROL = "DATA_YTD_Enrolments"
 
 

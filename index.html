@@ -55,7 +55,7 @@
         <p class="field field--red">Studying Down Under · International students in Australia</p>
         <h1 class="page-title">The export that <span class="k-intl">walks in</span></h1>
         <!-- DRAFT -->
-        <p class="deck">Australia's fourth-largest export doesn't leave by ship. It arrives by plane, twice a year, <b class="k-intl">1.06&nbsp;million</b> enrolments strong, and every one of them needs a visa.</p>
+        <p class="deck">Australia's fourth-largest export doesn't leave by ship. It arrives by plane, twice a year, <b class="k-intl">1.06&nbsp;million</b> enrolments strong, and every one of them needs a visa. It is counted, marketed and sold like an export. This page follows the students, and asks what selling education does to it.</p>
       </div>
 
       <div class="site-header__board">
@@ -93,7 +93,15 @@
         <!-- DRAFT -->
         <p>In 2005 Australia counted <b>346,000</b> international enrolments. In 2025 it counted <b class="k-intl">1.06&nbsp;million</b>. The line between them is not a ramp. It stalled after 2009, fell off a cliff when the borders shut in March 2020, and in 2025 fell again, this time with the borders wide open. That fall was policy, not a pandemic: visa fees nearly tripled and new students were capped.</p>
       </div>
-      <div class="act__stamp stamp stamp--navy" data-stamp style="--rot: 5deg">Entries 2005–2025<span class="big">×3.1</span>346k → 1.06m</div>
+      <aside class="act__visa visa" aria-label="Entries">
+        <p class="visa__head"><span>Entries</span><span>No. 01</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>2005</dt><dd>346,000</dd></div>
+          <div class="visa__row"><dt>Peak · 2024</dt><dd>1,088,612</dd></div>
+          <div class="visa__row"><dt>2025</dt><dd>1,058,040</dd></div>
+        </dl>
+        <div class="stamp stamp--navy" data-stamp style="--rot: 6deg">In 20 years<span class="big">×3.1</span>2005 → 2025</div>
+      </aside>
     </div>
 
     <div class="charts">
@@ -104,7 +112,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 340px" data-spec="charts/02-total-line.vl.json"
              role="img" aria-label="Line chart: enrolments rose from 346,000 in 2005 to a 2009 peak of 633,000, fell to 513,000 by 2012, climbed to 952,000 in 2019, dropped to 716,000 in 2021 while borders were closed, peaked at 1.09 million in 2024 and fell to 1.06 million in 2025."></div>
-        <figcaption>Enrolments count courses, not people: a student who takes an English course and then a degree counts twice. The shaded band marks the border closure, 20 March 2020 to 15 December 2021. The 2025 fall followed the visa fee rising from $710 to $1,600 (July 2024) and $2,000 (July 2025), and caps on new students (Ministerial Direction 111, December 2024). December year-to-date figures. Source: Department of Education, international student data (PRISMS).</figcaption>
+        <figcaption>Enrolments count courses, not people: a student who takes an English course and then a degree counts twice. The shaded band marks the border closure, March 2020 to December 2021. In 2025 the student visa fee reached $2,000, up from $710 in mid-2024, and the government capped how many new students each provider could take. Source: Department of Education, international student data (PRISMS).</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-01">
@@ -120,13 +128,13 @@
             <div class="tally__row"><dt class="field">Domestic</dt><dd class="tally__n k-dom">65</dd><dd class="tally__sub">1,086,722 students</dd></div>
           </dl>
         </div>
-        <figcaption>35 of every 100 students in Australian higher education in 2024 were overseas students; at universities alone, 33. Figures are perturbed for confidentiality. Source: Department of Education, Higher Education Student Data.</figcaption>
+        <figcaption>35 of every 100 students in Australian higher education in 2024 were overseas students; at universities alone, 33. Figures are adjusted slightly by the Department to protect privacy. Source: Department of Education, Higher Education Student Data.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-03">
         <header class="chart__head">
           <h3 class="chart__title">The boom was never only <span class="k-blue">universities</span></h3>
-          <p class="chart__sub">Enrolments by sector · 2005–2025<br><span class="key-sq" style="--c:#2F5FA7"></span>Higher education <span class="key-sq" style="--c:#C8371F"></span>VET <span class="key-sq" style="--c:#6E4BA8"></span>ELICOS <span class="key-sq" style="--c:#2E8754"></span>Schools <span class="key-sq" style="--c:#9A9C94"></span>Non-award</p>
+          <p class="chart__sub">Enrolments by sector · 2005–2025<br><span class="key-sq" style="--c:#2F5FA7"></span>Higher education <span class="key-sq" style="--c:#C8371F"></span>VET <span class="key-sq" style="--c:#9E5BD0"></span>ELICOS <span class="key-sq" style="--c:#13A39A"></span>Schools <span class="key-sq" style="--c:#9A9C94"></span>Non-award</p>
         </header>
         <div class="chart__vis" style="--vis-h: 330px" data-spec="charts/03-sector-area.vl.json"
              role="img" aria-label="Stacked area chart of enrolments by sector. Higher education grew steadily to the largest share; VET rose from 51,000 in 2005 to 209,000 in 2009, then fell by a third; ELICOS, schools and non-award are smaller bands."></div>
@@ -142,9 +150,17 @@
       <h2 class="act__title" id="act-2-title">The biggest senders aren't the <span class="k-intl">keenest</span>.</h2>
       <div class="prose">
         <!-- DRAFT -->
-        <p>China and India have topped the list every year since 2005. Measure each against its own population and both drop into the thirties. <b class="k-intl">Bhutan</b> has enrolments in Australia equal to <b>one in every 51</b> of its people. If Australia did the same, more than half a million Australians would be studying in a single foreign country.</p>
+        <p>China and India have topped the list every year since 2005. Measure each against its own population and both drop into the thirties. <b class="k-intl">Bhutan</b> has enrolments in Australia equal to <b>one in every 51</b> of its people. If Australia did the same, more than half a million Australians would be studying in a single foreign country. At the other end of the scale, two countries supply 39% of all students, up from 32% in 2005: few businesses would be comfortable leaning that hard on two customers.</p>
       </div>
-      <div class="act__stamp stamp stamp--round" data-stamp style="--rot: -7deg">Bhutan<span class="big">1 in 51</span>enrolled here</div>
+      <aside class="act__visa visa" aria-label="Citizenship">
+        <p class="visa__head"><span>Citizenship</span><span>No. 02</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>Countries</dt><dd>193</dd></div>
+          <div class="visa__row"><dt>Most students · China</dt><dd>227,460</dd></div>
+          <div class="visa__row"><dt>Highest rate · Bhutan</dt><dd>1,943 per 100k</dd></div>
+        </dl>
+        <div class="stamp stamp--round" data-stamp style="--rot: -8deg">Bhutan<span class="big">1 in 51</span>enrolled here</div>
+      </aside>
     </div>
 
     <div class="charts">
@@ -181,7 +197,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 370px" data-spec="charts/06-bump.vl.json"
              role="img" aria-label="Bump chart of source-country ranks 3rd to 15th, 2010 to 2025. Nepal climbs from 7th to 3rd; the Philippines from 22nd to 4th; Bangladesh from 19th to 7th; South Korea falls from 3rd to 14th."></div>
-        <figcaption>Encodes rank, not size. Nepal rose from 7th to 3rd, the Philippines from 22nd to 4th and Bangladesh from 19th to 7th; South Korea fell from 3rd to 14th. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Lines show each country's place in the ranking, not its number of students. Nepal rose from 7th to 3rd, the Philippines from 22nd to 4th and Bangladesh from 19th to 7th; South Korea fell from 3rd to 14th. Source: Department of Education, PRISMS.</figcaption>
       </figure>
     </div>
   </section>
@@ -193,9 +209,17 @@
       <h2 class="act__title" id="act-3-title">Your passport predicts your <span class="k-intl">degree</span>.</h2>
       <div class="prose">
         <!-- DRAFT -->
-        <p>Four in ten international enrolments are in business or IT. Domestic students spread themselves far more evenly. And the mix depends on where you're from: a third of Brazilian and Colombian students are here to learn <b>English</b>, while Bangladeshi students choose <b>IT</b> nearly two times in five.</p>
+        <p>Four in ten international enrolments are in business or IT. Domestic students spread themselves far more evenly. And the mix depends on where you're from: a third of Brazilian and Colombian students are here to learn <b>English</b>, while Bangladeshi students choose <b>IT</b> nearly two times in five. Students paying full international fees buy the courses that lead to a job and a visa, and providers build the courses that sell.</p>
       </div>
-      <div class="act__stamp stamp stamp--violet" data-stamp style="--rot: 4deg">Business + IT<span class="big">41%</span>of enrolments</div>
+      <aside class="act__visa visa" aria-label="Course">
+        <p class="visa__head"><span>Course</span><span>No. 03</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>Business &amp; commerce</dt><dd>29%</dd></div>
+          <div class="visa__row"><dt>Information technology</dt><dd>12%</dd></div>
+          <div class="visa__row"><dt>English language</dt><dd>9%</dd></div>
+        </dl>
+        <div class="stamp stamp--violet" data-stamp style="--rot: 5deg">Business + IT<span class="big">40%</span>of enrolments</div>
+      </aside>
     </div>
 
     <div class="charts">
@@ -206,27 +230,27 @@
         </header>
         <div class="chart__vis" style="--vis-h: 400px" data-spec="charts/07-marimekko.vl.json"
              role="img" aria-label="Marimekko chart of enrolments by field and sector. Business and Commerce is the widest column at 29%, split almost evenly between universities and VET; IT is 12%, mostly universities; English-language courses are 9%."></div>
-        <figcaption>Column width encodes each field's share of enrolments; the vertical split shows which sector teaches it. English-language courses are shown as their own field. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Each column is as wide as the field's share of all enrolments; its colours show who teaches it. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-08">
         <header class="chart__head">
           <h3 class="chart__title"><span class="k-intl">Overseas</span> takes business. <span class="k-dom">Domestic</span> takes health.</h3>
-          <p class="chart__sub">Share of each cohort's enrolments by field · <span class="k-dom">domestic</span> / <span class="k-intl">overseas</span> · higher education · 2024 · sorted by gap</p>
+          <p class="chart__sub">Share of each cohort's enrolments by field · <span class="k-dom">domestic</span> / <span class="k-intl">overseas</span> · universities and other higher-education providers · 2024</p>
         </header>
         <div class="chart__vis" style="--vis-h: 380px" data-spec="charts/08-dumbbell.vl.json"
              role="img" aria-label="Dumbbell plot comparing field shares. Overseas students: business 34%, IT 18%. Domestic students: business 15%, IT 5%, health 21%, society and culture 23%."></div>
-        <figcaption>A third of overseas students study business (33.7%), against one in seven domestic students (14.5%). Combined degrees count in both fields. Figures are perturbed. Source: Department of Education, Higher Education Student Data.</figcaption>
+        <figcaption>At university level the lean is stronger than across all courses: half of overseas students (52%) study business or IT, against 40% of all international enrolments, because vocational and English-language courses pull the overall share down. A third of overseas students study business (34%), against one in seven domestic students (15%). Source: Department of Education, Higher Education Student Data.</figcaption>
       </figure>
 
       <figure class="chart" id="fig-09">
         <header class="chart__head">
-          <h3 class="chart__title">Nearly everyone comes for <span class="k-blue">business</span>. Four countries break ranks.</h3>
-          <p class="chart__sub">Share of each country's enrolments by field · ten largest source countries · 2025 · ringed: each country's largest field</p>
+          <h3 class="chart__title">Business comes first for 14 of 20 countries. <span class="k-intl">Six</span> break ranks.</h3>
+          <p class="chart__sub">Share of each country's enrolments by field · 20 largest source countries · 2025 · dashed: fields that beat business</p>
         </header>
-        <div class="chart__vis" style="--vis-h: 420px" data-spec="charts/09-country-field-heat.vl.json"
-             role="img" aria-label="Heatmap of field shares for the ten largest source countries. Indonesia 43% business; Bangladesh 38% IT; Brazil 33% and Colombia 31% English language; Pakistan 22% engineering."></div>
-        <figcaption>Business is the largest field for six of the ten countries and takes at least 19% of every one. The exceptions: Bangladesh (IT, 38%), Pakistan (engineering, 22%), and Colombia and Brazil (English, 31% and 33%). Each row adds to 100%, so countries of very different sizes compare directly. Source: Department of Education, PRISMS.</figcaption>
+        <div class="chart__vis" style="--vis-h: 700px" data-spec="charts/09-country-field-heat.vl.json"
+             role="img" aria-label="Heatmap of field shares for the 20 largest source countries. Business is the top field for 14; Bangladesh 38% IT; Pakistan 22% engineering; Kenya 28% society and culture; Japan 41%, Brazil 33% and Colombia 31% English language."></div>
+        <figcaption>Business is the largest field for 14 of the 20 countries and takes at least 15% of every one. The six exceptions: Bangladesh (IT, 38%), Pakistan (engineering, 22%), Kenya (society and culture, 28%), and Japan, Brazil and Colombia, which come to learn English (41%, 33% and 31%). Each row adds to 100%. Source: Department of Education, PRISMS.</figcaption>
       </figure>
     </div>
   </section>
@@ -238,9 +262,17 @@
       <h2 class="act__title" id="act-4-title">Different flags, different <span class="k-intl">cities</span>.</h2>
       <div class="prose">
         <!-- DRAFT -->
-        <p>Almost half of Chinese students live in New South Wales. The largest share of Indian students is in Victoria. Nepali students, more than any other group, choose Sydney. Where a student comes from shapes which city they land in, and which campus they share.</p>
+        <p>Almost half of Chinese students live in New South Wales. The largest share of Indian students is in Victoria. Nepali students, more than any other group, choose Sydney. Where a student comes from shapes which city they land in, and which campus they share. For some universities, overseas students are now more than half of everyone enrolled.</p>
       </div>
-      <div class="act__stamp stamp stamp--round stamp--green" data-stamp style="--rot: 8deg">NSW + VIC<span class="big">69%</span>of enrolments</div>
+      <aside class="act__visa visa" aria-label="Residence · per 1,000 people">
+        <p class="visa__head"><span>Residence · per 1,000 people</span><span>No. 04</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>New South Wales</dt><dd>46.7</dd></div>
+          <div class="visa__row"><dt>Victoria</dt><dd>45.3</dd></div>
+          <div class="visa__row"><dt>ACT</dt><dd>44.6</dd></div>
+        </dl>
+        <div class="stamp stamp--round stamp--green" data-stamp style="--rot: 8deg">NSW + VIC<span class="big">69%</span>of students</div>
+      </aside>
     </div>
 
     <div class="charts">
@@ -283,7 +315,17 @@
           <p class="departures__foot">Tap a flight to put it on the map or take it off · five at a time · tiles and ribbons on the map work too</p>
         </aside>
         </div>
-        <figcaption>Each country's route is as wide as its students and splits near Australia into one branch per state capital, each as wide as the students who go there. 47% of Chinese students are in NSW and 43% of Indian students in Victoria; 62% of Nepali students are in NSW. Routes under 1,000 students are left out. Azimuthal equidistant projection centred on 110°E; routes from Colombia, Brazil and the United States enter from the Pacific edge, and Kenya's from the Indian Ocean edge. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Each route is as wide as its number of students and splits into one branch per state capital. 47% of Chinese students are in NSW and 43% of Indian students in Victoria; 62% of Nepali students are in NSW. Routes under 1,000 students are not shown. Routes from Colombia, Brazil and the United States enter from the Pacific, Kenya's from the Indian Ocean. Azimuthal equidistant projection. Source: Department of Education, PRISMS.</figcaption>
+      </figure>
+
+      <figure class="chart" id="fig-15">
+        <header class="chart__head">
+          <h3 class="chart__title">Every country picks its <span class="k-intl">own city</span></h3>
+          <p class="chart__sub">Share of each country's students by state · 20 largest source countries · 2025 · countries on the departures board are named in their colour<br><span class="key-sq" style="--c:#0B1530"></span>NSW <span class="key-sq" style="--c:#253F73"></span>VIC <span class="key-sq" style="--c:#3F5F9C"></span>QLD <span class="key-sq" style="--c:#6586BF"></span>WA <span class="key-sq" style="--c:#91A9D4"></span>other states and territories</p>
+        </header>
+        <div class="chart__vis" style="--vis-h: 500px" data-spec="charts/15-state-split.vl.json"
+             role="img" aria-label="Split bars showing each source country's students by state. Mongolia 77% and Nepal 62% in New South Wales; Sri Lanka 68%, Malaysia 49% and India 43% in Victoria; Japan 33% in Queensland; Bhutan 73% in Western Australia."></div>
+        <figcaption>Each bar is one country's students, adding to 100%, grouped by the state that takes the most of them. Mongolia (77%) and Nepal (62%) concentrate in New South Wales; Sri Lanka (68%), Malaysia (49%) and India (43%) in Victoria; Japan leans to Queensland (33%) and Bhutan to Western Australia (73%). Click a bar to add the country to the flow map above. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--linked" id="fig-11-12">
@@ -309,17 +351,17 @@
             <div class="chart__vis" style="--vis-h: 420px" data-spec="charts/11-australia.vl.json"
                  data-link="states" data-link-capture="pick" data-link-field="state" data-link-signal="st"
                  role="img" aria-label="Map of Australia shaded by international enrolments per 1,000 residents: NSW 46.7, Victoria 45.3, ACT 44.6, SA 30.0, WA 29.1, Queensland 26.0, NT 22.3, Tasmania 16.3. Red circles mark overseas students at each university campus, largest in Sydney and Melbourne."></div>
-            <p class="pair__key"><span class="key-sq" style="--c:#E6ECF5"></span>&lt;20 <span class="key-sq" style="--c:#C3D1E8"></span>20–30 <span class="key-sq" style="--c:#8FA9D3"></span>30–40 <span class="key-sq" style="--c:#5B7FBD"></span>40+ enrolments per 1,000 residents · lines join moved circles to their campus</p>
+            <p class="pair__key"><span class="key-sq" style="--c:#E6ECF5"></span>&lt;20 <span class="key-sq" style="--c:#C3D1E8"></span>20–30 <span class="key-sq" style="--c:#8FA9D3"></span>30–40 <span class="key-sq" style="--c:#5B7FBD"></span>40+ enrolments per 1,000 residents</p>
           </div>
           <div class="pair__item">
             <p class="field pair__label"><b>Overseas share</b> · by provider</p>
             <div class="chart__vis" style="--vis-h: 360px" data-spec="charts/12-beeswarm.vg.json"
                  data-link="states" data-link-capture="pickdot" data-link-field="state" data-link-signal="st"
                  role="img" aria-label="Beeswarm of 43 higher-education providers by overseas share of enrolments. Murdoch 57%, Sydney 51% and RMIT 50% are the most international; New England 6% and Batchelor Institute 0% the least."></div>
-            <p class="pair__key">Dot area = all students · click a dot to pick its state · double-click to clear</p>
+            <p class="pair__key">Dot area = all students · click a dot to show its state · double-click to clear</p>
           </div>
         </div>
-        <figcaption>Conic equal-area projection. Circles that would overlap are nudged apart, with a line to their true campus. NSW and Victoria hold 69% of enrolments, but per resident the ACT (44.6 per 1,000) is level with both. Murdoch (57%), Sydney (51%) and RMIT (50%) are the most international providers. Sources: Department of Education; ABS, National, state and territory population, Dec 2025.</figcaption>
+        <figcaption>Conic equal-area projection. NSW and Victoria hold 69% of enrolments, but per resident the ACT (44.6 per 1,000) is level with both. At Murdoch (57%), Sydney (51%) and RMIT (50%), overseas students are half or more of everyone enrolled. Sources: Department of Education; ABS, National, state and territory population, Dec 2025.</figcaption>
       </figure>
     </div>
   </section>
@@ -331,9 +373,17 @@
       <h2 class="act__title" id="act-5-title">Bigger than gold. Easier to <span class="k-intl">lose</span>.</h2>
       <div class="prose">
         <!-- DRAFT. Before finalising: check current visa and enrolment-cap policy; it has changed repeatedly. -->
-        <p>Students arrive in two waves, in February and July. In 2020 the February wave landed before the borders shut, and the July wave halved. In 2025 both waves were smaller than the year before. For an industry that earns more than gold, that is not a rounding error.</p>
+        <p>Students arrive in two waves, in February and July. In 2020 the February wave landed before the borders shut, and the July wave halved. In 2025 both waves were smaller than the year before. For an industry that earns more than gold, that is not a rounding error, and an industry this exposed to visa settings is running a business as much as a school.</p>
       </div>
-      <div class="act__stamp stamp" data-stamp style="--rot: -5deg">2025 · Borders open<span class="big">−2.8%</span>First fall</div>
+      <aside class="act__visa visa" aria-label="Conditions">
+        <p class="visa__head"><span>Conditions</span><span>No. 05</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>Education exports</dt><dd>A$53.6bn</dd></div>
+          <div class="visa__row"><dt>Visa fee · 2024 → 2025</dt><dd>$710 → $2,000</dd></div>
+          <div class="visa__row"><dt>New students · 2025</dt><dd>−15%</dd></div>
+        </dl>
+        <div class="stamp" data-stamp style="--rot: -6deg">2025 · Borders open<span class="big">−2.8%</span>First fall</div>
+      </aside>
     </div>
 
     <div class="charts">
@@ -344,7 +394,7 @@
         </header>
         <div class="chart__vis" style="--vis-h: 400px" data-spec="charts/13-calendar-heat.vl.json"
              role="img" aria-label="Calendar heatmap of new enrolments each month, 2015 to 2025. February and July are the darkest columns every year. In 2020 the July intake halved, to 51,000 from 97,000 the year before, and 2021 is pale throughout."></div>
-        <figcaption>Each tile is one month; the February and July intakes carry their values. July 2020 (ringed) fell to 50,900 from 96,800 a year earlier, and all of 2021 stayed pale. Monthly values derived from year-to-date totals. Source: Department of Education, PRISMS.</figcaption>
+        <figcaption>Each tile is one month; the February and July intakes carry their values. July 2020 (ringed) fell to 50,900 from 96,800 a year earlier, and all of 2021 stayed pale. Source: Department of Education, PRISMS.</figcaption>
       </figure>
 
       <figure class="chart chart--half" id="fig-14">
@@ -356,6 +406,69 @@
              role="img" aria-label="Bar chart of Australia's ten largest exports in 2024-25: iron ore $116.4 billion, coal $71.3 billion, natural gas $64.7 billion, education $53.6 billion, gold $46.9 billion, then tourism, business services, beef, alumina and IP charges."></div>
         <figcaption>Education-related travel services earned $53.6 billion, behind only iron ore, coal and natural gas. Source: DFAT, Australia's top 25 exports, goods &amp; services 2024–25 (from ABS data).</figcaption>
       </figure>
+    </div>
+  </section>
+
+
+  <!-- ================================================================ ACT 6 -->
+  <section class="act" id="act-6" aria-labelledby="act-6-title">
+    <div class="act__intro">
+      <p class="field"><span class="num">06</span> Purpose of visit</p>
+      <h2 class="act__title" id="act-6-title">Study, or <span class="k-intl">business</span>?</h2>
+      <div class="prose">
+        <!-- DRAFT -->
+        <p>Every student visa asks the same question, and twenty years of data suggest Australia's own answer has drifted. In 2005, public institutions taught almost two in three international students. By 2024 private providers taught <b class="k-intl">59%</b> of them, and 97% of those in vocational courses. Inside universities, overseas students now outnumber Australians in coursework master's degrees.</p>
+      </div>
+      <aside class="act__visa visa" aria-label="Declaration">
+        <p class="visa__head"><span>Declaration</span><span>No. 06</span></p>
+        <dl class="visa__fields">
+          <div class="visa__row"><dt>Taught privately · 2005</dt><dd>35%</dd></div>
+          <div class="visa__row"><dt>Taught privately · 2024</dt><dd>59%</dd></div>
+          <div class="visa__row"><dt>Master's by coursework · overseas</dt><dd>53%</dd></div>
+        </dl>
+        <div class="stamp stamp--round" data-stamp style="--rot: -6deg">Purpose of visit<span class="big">?</span>To be declared</div>
+      </aside>
+    </div>
+
+    <div class="charts">
+      <figure class="chart chart--half" id="fig-16">
+        <header class="chart__head">
+          <h3 class="chart__title"><span class="k-intl">Private</span> providers now teach most of them</h3>
+          <p class="chart__sub">Share of international enrolments at non-government providers, by sector · 2005–2025</p>
+        </header>
+        <div class="chart__vis" style="--vis-h: 320px" data-spec="charts/16-private-share.vl.json"
+             role="img" aria-label="Line chart of the share of international students taught by private providers. Overall it rose from 35% in 2005 to 59% in 2024 and 55% in 2025. In vocational education it rose from 73% to 97%; in English-language courses from 70% to 91%; in higher education from 10% to 24%."></div>
+        <figcaption>Private providers are colleges and companies outside the public university and TAFE systems. They taught 35% of international students in 2005 and 55% in 2025; in vocational courses, almost all of them (97%). Source: Department of Education, PRISMS.</figcaption>
+      </figure>
+
+      <figure class="chart chart--half" id="fig-17">
+        <header class="chart__head">
+          <h3 class="chart__title">The master's degree became an <span class="k-intl">export</span></h3>
+          <p class="chart__sub">Overseas students' share of university enrolments, by course level · 2020 and 2024</p>
+        </header>
+        <div class="chart__vis" style="--vis-h: 320px" data-spec="charts/17-course-level.vl.json"
+             role="img" aria-label="Slope chart of overseas students' share by course level. Postgraduate coursework rose from 47% in 2020 to 53% in 2024, crossing half. Postgraduate research rose from 36% to 42%, diplomas stayed about a third, and bachelor degrees rose from 23% to 26%."></div>
+        <figcaption>Postgraduate coursework is mostly master's degrees taught in classes rather than by research. Between 2020 and 2024 its overseas share rose from 47% to 53%, so most of its students are now from overseas. Figures are adjusted slightly by the Department to protect privacy. Source: Department of Education, Higher Education Student Data.</figcaption>
+      </figure>
+    </div>
+
+    <div class="declaration">
+      <p class="field">Declaration · to be completed by the reader</p>
+      <h3 class="declaration__q">If education is run as an export business, who is it for?</h3>
+      <div class="declaration__cols">
+        <div>
+          <p class="field">The case for the business</p>
+          <!-- DRAFT -->
+          <p>International fees pay for research, teaching and campuses that domestic students use too. The industry supports jobs across the country, and the students come by choice, often for the career and the pathway to residency that an Australian qualification offers.</p>
+        </div>
+        <div>
+          <p class="field">The case for the classroom</p>
+          <!-- DRAFT -->
+          <p>A provider that lives on fees is pushed to enrol for revenue rather than readiness, to grow the courses that sell rather than the ones the country needs, and to compete on price and visa outcomes rather than teaching. If quality slips, the reputation that sells the product goes with it, and so does the money.</p>
+        </div>
+      </div>
+      <p class="declaration__boxes" aria-hidden="true">Purpose of visit <span class="box"></span>Study <span class="box"></span>Business <span class="box"></span>Both</p>
+      <!-- DRAFT: a closing paragraph in your own words, saying where you land. -->
     </div>
   </section>
 

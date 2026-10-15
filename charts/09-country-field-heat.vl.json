@@ -1,8 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 9. Heatmap: share of each country's 2025 enrolments by field, ten largest source countries. Normalised within each row so rows are comparable. Cells over 10% carry their value. Each row's largest field is ringed: solid ink where it is business (six of ten countries), dashed stamp red where a country breaks ranks (Bangladesh IT, Pakistan engineering, Colombia and Brazil English). Column labels are one line so they never run into the cells.",
+  "description": "Chart 9. Heatmap: share of each country's 2025 enrolments by field, 20 largest source countries. Normalised within each row so rows are comparable. Cells over 10% carry their value. Where a country's largest field is not business, that cell is ringed in dashed stamp red (six of the 20 countries).",
   "width": "container",
-  "height": 360,
+  "height": {
+    "step": 30
+  },
   "data": {
     "url": "data/country_field_2025.csv",
     "format": {
@@ -21,7 +23,7 @@
       "as": "col"
     },
     {
-      "calculate": "datum.nationality === 'Korea, Republic of (South)' ? 'South Korea' : datum.nationality",
+      "calculate": "{'Korea, Republic of (South)': 'South Korea', 'Hong Kong SAR': 'Hong Kong', 'United States of America': 'United States'}[datum.nationality] || datum.nationality",
       "as": "row"
     },
     {
@@ -180,20 +182,6 @@
           },
           "value": "#14213D"
         }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum.ringed && datum.is_biz"
-        }
-      ],
-      "mark": {
-        "type": "rect",
-        "fill": null,
-        "stroke": "#14213D",
-        "strokeWidth": 2.2,
-        "cornerRadius": 4
       }
     },
     {

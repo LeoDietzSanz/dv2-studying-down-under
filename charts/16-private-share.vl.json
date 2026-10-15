@@ -1,0 +1,523 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 16. Line chart: share of international enrolments taught by private (non-government) providers, by sector and overall, December of each year 2005-2025. Lines are labelled at their ends (sector colours are the page-wide ones); 'All sectors' is the thick ink line. A dashed rule at 50% marks where private providers teach the majority.",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "data/provider_type_by_year.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "private_share": "number",
+        "private": "number",
+        "total": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.sector !== 'Non-award'"
+    },
+    {
+      "calculate": "datum.sector === 'All sectors' ? 'All sectors' : datum.sector",
+      "as": "label"
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "y": 0.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "color": "#7C8798",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 0.5,
+            "year": 2015.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 2,
+        "dy": 4,
+        "fontSize": 9.5,
+        "letterSpacing": 0.8,
+        "color": "#4D5A70",
+        "text": "HALF TAUGHT PRIVATELY"
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "detail": {
+          "field": "sector"
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.sector === 'All sectors'",
+            "value": 3.6
+          },
+          "value": 2
+        },
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2005,
+              2030.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "title": null,
+            "format": "d",
+            "values": [
+              2005,
+              2010,
+              2015,
+              2020,
+              2025
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "private_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "All sectors"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#9E5BD0",
+              "#13A39A",
+              "#14213D"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 30,
+        "opacity": 0
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "label",
+            "title": "Sector"
+          },
+          {
+            "field": "year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "private_share",
+            "title": "Taught by private providers",
+            "format": ".0%"
+          },
+          {
+            "field": "private",
+            "title": "Students at private providers",
+            "format": ","
+          }
+        ],
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2005,
+              2030.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "title": null,
+            "format": "d",
+            "values": [
+              2005,
+              2010,
+              2015,
+              2020,
+              2025
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "private_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "All sectors"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#9E5BD0",
+              "#13A39A",
+              "#14213D"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2025"
+        },
+        {
+          "calculate": "{'VET':-0.012,'ELICOS':0.0,'All sectors':0.0,'Schools':0.0,'Higher Education':0.0}[datum.sector] + datum.private_share",
+          "as": "ly"
+        },
+        {
+          "calculate": "datum.label + ' ' + format(datum.private_share, '.0%')",
+          "as": "t"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "fontSize": 10.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "y": {
+          "field": "ly",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        },
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2005,
+              2030.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "title": null,
+            "format": "d",
+            "values": [
+              2005,
+              2010,
+              2015,
+              2020,
+              2025
+            ],
+            "grid": false
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "All sectors"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#9E5BD0",
+              "#13A39A",
+              "#14213D"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2005"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 26
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2005,
+              2030.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "title": null,
+            "format": "d",
+            "values": [
+              2005,
+              2010,
+              2015,
+              2020,
+              2025
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "private_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "All sectors"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#9E5BD0",
+              "#13A39A",
+              "#14213D"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2005 && datum.sector === 'All sectors'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": 14,
+        "dx": 2,
+        "fontSize": 10.5,
+        "fontWeight": 600,
+        "color": "#14213D"
+      },
+      "encoding": {
+        "text": {
+          "value": "35% in 2005"
+        },
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2005,
+              2030.5
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "title": null,
+            "format": "d",
+            "values": [
+              2005,
+              2010,
+              2015,
+              2020,
+              2025
+            ],
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "private_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "field": "sector",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Higher Education",
+              "VET",
+              "ELICOS",
+              "Schools",
+              "All sectors"
+            ],
+            "range": [
+              "#2F5FA7",
+              "#C8371F",
+              "#9E5BD0",
+              "#13A39A",
+              "#14213D"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

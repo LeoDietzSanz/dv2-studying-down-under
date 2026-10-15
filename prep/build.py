@@ -10,7 +10,7 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-STEPS = ["10_basic.py", "20_detailed.py", "30_higher_ed.py", "50_lookups.py", "60_flow_paths.py", "70_campus_dodge.py"]
+STEPS = ["10_basic.py", "20_detailed.py", "30_higher_ed.py", "40_business.py", "50_lookups.py", "60_flow_paths.py", "70_campus_dodge.py"]
 
 t0 = time.time()
 for step in STEPS:

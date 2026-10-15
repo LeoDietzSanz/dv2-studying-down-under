@@ -50,6 +50,9 @@ function link(slot, view) {
   g.views.add(view);
   view.signal(target, g.value).runAsync();               // catch up if a partner already has a selection
   view.addSignalListener(capture, (_, value) => setLink(name, readSelection(value, field)));
+  // a double-click on any chart in the group clears the pick for all of them,
+  // whichever chart the pick was made on
+  slot.addEventListener("dblclick", () => setLink(name, ""));
 }
 
 /* Set a link group's value from outside the charts too (the state tick-boxes

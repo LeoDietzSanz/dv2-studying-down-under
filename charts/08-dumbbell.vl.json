@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 8. Dumbbell plot: each field's share of domestic enrolments (ink blue) vs overseas enrolments (stamp red), higher education 2024. Rows sorted by the gap, from fields overseas students lean towards (top) to fields domestic students lean towards (bottom); the sort is stated in the subtitle. Values are labelled where the gap is more than 5 points.",
+  "description": "Chart 8. Dumbbell plot: each field's share of domestic enrolments (ink blue) vs overseas enrolments (stamp red), higher education 2024. Rows are sorted by the average of the two shares, largest first, so the biggest fields sit at the top. Every value is labelled, on the outside end of its dumbbell.",
   "width": "container",
   "height": 330,
   "data": {
@@ -17,10 +17,20 @@
   },
   "transform": [
     {
+      "calculate": "(datum.domestic_share + datum.overseas_share) / 2",
+      "as": "avg"
+    },
+    {
       "window": [
         {
           "op": "row_number",
           "as": "order"
+        }
+      ],
+      "sort": [
+        {
+          "field": "avg",
+          "order": "descending"
         }
       ]
     }
@@ -57,7 +67,7 @@
           "type": "quantitative",
           "scale": {
             "domain": [
-              0,
+              -0.04,
               0.4
             ],
             "nice": false
@@ -161,10 +171,7 @@
           "$comment": "Value labels on the outside of each dumbbell, only where the gap is wider than 5 points.",
           "transform": [
             {
-              "filter": "abs(datum.gap_pp) > 5"
-            },
-            {
-              "calculate": "(datum.who === 'Overseas') === (datum.gap_pp > 0)",
+              "calculate": "datum.who === 'Overseas' ? datum.overseas_share >= datum.domestic_share : datum.domestic_share > datum.overseas_share",
               "as": "is_right"
             },
             {
@@ -207,10 +214,7 @@
         {
           "transform": [
             {
-              "filter": "abs(datum.gap_pp) > 5"
-            },
-            {
-              "calculate": "(datum.who === 'Overseas') === (datum.gap_pp > 0)",
+              "calculate": "datum.who === 'Overseas' ? datum.overseas_share >= datum.domestic_share : datum.domestic_share > datum.overseas_share",
               "as": "is_right"
             },
             {

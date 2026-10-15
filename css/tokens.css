@@ -30,8 +30,8 @@
   /* ---- stamp inks: categorical (sector order is fixed) --------------- */
   --ink-blue:   #2F5FA7;   /* Higher Education            */
   --ink-red:    #C8371F;   /* VET                         */
-  --ink-violet: #6E4BA8;   /* ELICOS                      */
-  --ink-green:  #2E8754;   /* Schools                     */
+  --ink-violet: #9E5BD0;   /* ELICOS (violet and teal replace an earlier violet and green that failed colour-blind checks) */
+  --ink-green:  #13A39A;   /* Schools (teal)              */
   --ink-grey:   #9A9C94;   /* Non-award / Rest of world   */
   --flap-amber: #C99400;   /* Americas; the arrivals-board amber */
 
@@ -61,7 +61,7 @@
   --page-pad:     clamp(18px, 4vw, 48px);
   --measure:      60ch;
 
-  --space-act:    104px;   /* room between acts, without leaving the reader stranded */
+  --space-act:    88px;    /* room between acts, without leaving the reader stranded */
   --space-chart:  60px;
   --space-cap:    14px;
 }

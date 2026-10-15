@@ -127,7 +127,7 @@
           "filter": "indexof(picked, datum.iso3) >= 0"
         },
         {
-          "calculate": "['#2F5FA7','#C8371F','#2E8754','#6E4BA8','#C99400'][indexof(picked, datum.iso3)]",
+          "calculate": "['#2F5FA7','#C8371F','#C99400','#13A39A','#9E5BD0'][indexof(picked, datum.iso3)]",
           "as": "ink"
         },
         {
@@ -263,7 +263,7 @@
           "filter": "indexof(picked, datum.iso3) >= 0"
         },
         {
-          "calculate": "['#2F5FA7','#C8371F','#2E8754','#6E4BA8','#C99400'][indexof(picked, datum.iso3)]",
+          "calculate": "['#2F5FA7','#C8371F','#C99400','#13A39A','#9E5BD0'][indexof(picked, datum.iso3)]",
           "as": "ink"
         },
         {
@@ -391,7 +391,7 @@
       },
       "transform": [
         {
-          "calculate": "indexof(picked, datum.iso3) >= 0 ? ['#2F5FA7','#C8371F','#2E8754','#6E4BA8','#C99400'][indexof(picked, datum.iso3)] : '#5D6878'",
+          "calculate": "indexof(picked, datum.iso3) >= 0 ? ['#2F5FA7','#C8371F','#C99400','#13A39A','#9E5BD0'][indexof(picked, datum.iso3)] : '#5D6878'",
           "as": "ink"
         }
       ],

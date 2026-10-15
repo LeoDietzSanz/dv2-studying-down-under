@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 11 (Map 4). Australia, conic equal-area projection (parallels 18°S and 36°S). State fill = international enrolments per 1,000 residents, 2025 (ABS ERP Dec 2025); circles = overseas students at each university's main campus, 2024 (area linear from zero). Picking a state (form boxes above the map, or a click on the map) zooms the projection to that state through a 'fit' expression, and campus circles move to positions precomputed by prep/70_campus_dodge.py for that view so none overlap; a leader line joins each moved circle to its true campus. The pick is shared with chart 12 through the 'st' signal bridge in js/embed.js.",
+  "description": "Chart 11 (Map 4). Australia, conic equal-area projection (parallels 18°S and 36°S). State fill = international enrolments per 1,000 residents, 2025 (ABS ERP Dec 2025); circles = overseas students at each provider's main campus, 2024 (area linear from zero). Picking a state (tick-boxes above the map, a click on a state, or a click on a provider in chart 12) zooms the map to that state: js/boards.js tweens the 'box' frame and the 't' blend between the old and new view, so the map, circle positions and sizes move smoothly. Circles that would overlap are moved just far enough apart in every view (prep/70_campus_dodge.py), with a hairline back to the campus where they moved more than a few pixels.",
   "usermeta": {
     "aspect": 0.86
   },
@@ -18,13 +18,34 @@
       0
     ],
     "fit": {
-      "expr": "{'ALL':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[112.5,-9.5],[157.5,-44.0]]}},'NSW':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[140.8,-28.0],[155.0,-37.6]]}},'VIC':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[140.8,-33.9],[150.2,-39.3]]}},'QLD':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[137.8,-10.5],[153.8,-29.3]]}},'WA':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[112.8,-13.5],[129.2,-35.3]]}},'SA':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[128.8,-25.8],[141.2,-38.2]]}},'TAS':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[143.6,-39.4],[148.6,-43.8]]}},'NT':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[128.8,-10.8],[138.2,-26.2]]}},'ACT':{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[148.7,-35.05],[149.45,-36.0]]}}}[st === '' ? 'ALL' : st]"
+      "expr": "{type:'Feature',geometry:{type:'MultiPoint',coordinates:[[box[0],box[1]],[(box[0]+box[2])/2,box[1]],[box[2],box[1]],[box[2],(box[1]+box[3])/2],[box[2],box[3]],[(box[0]+box[2])/2,box[3]],[box[0],box[3]],[box[0],(box[1]+box[3])/2]]}}"
     }
   },
   "params": [
     {
       "name": "st",
       "value": ""
+    },
+    {
+      "name": "box",
+      "value": [
+        112.5,
+        -9.5,
+        155.0,
+        -44.0
+      ]
+    },
+    {
+      "name": "vfrom",
+      "value": "ALL"
+    },
+    {
+      "name": "vto",
+      "value": "ALL"
+    },
+    {
+      "name": "t",
+      "value": 1
     }
   ],
   "layer": [
@@ -144,7 +165,7 @@
       }
     },
     {
-      "$comment": "Leader lines and true-location dots for circles that were nudged apart.",
+      "$comment": "A hairline from each circle that had to move back to its campus, with a dot on the campus itself.",
       "data": {
         "url": "data/campus_dodge_2024.csv",
         "format": {
@@ -154,20 +175,45 @@
             "overseas_share": "number",
             "lat": "number",
             "lon": "number",
-            "dlat": "number",
-            "dlon": "number",
-            "moved_px": "number",
-            "lab_lon": "number",
-            "lab_lat": "number"
+            "dlon_all": "number",
+            "dlat_all": "number",
+            "dlon_st": "number",
+            "dlat_st": "number",
+            "mv_all": "number",
+            "mv_st": "number"
           }
         }
       },
       "transform": [
         {
-          "filter": "datum.view === (st === '' ? 'ALL' : st)"
+          "calculate": "(vfrom === 'ALL' ? datum.dlon_all : vfrom === datum.state ? datum.dlon_st : datum.lon) * (1 - t) + (vto === 'ALL' ? datum.dlon_all : vto === datum.state ? datum.dlon_st : datum.lon) * t",
+          "as": "px"
         },
         {
-          "filter": "datum.moved_px > 3"
+          "calculate": "(vfrom === 'ALL' ? datum.dlat_all : vfrom === datum.state ? datum.dlat_st : datum.lat) * (1 - t) + (vto === 'ALL' ? datum.dlat_all : vto === datum.state ? datum.dlat_st : datum.lat) * t",
+          "as": "py"
+        },
+        {
+          "calculate": "((vfrom === 'ALL' || vfrom === datum.state) ? 1 : 0) * (1 - t) + ((vto === 'ALL' || vto === datum.state) ? 1 : 0) * t",
+          "as": "vis"
+        },
+        {
+          "filter": "datum.vis > 0.01"
+        },
+        {
+          "calculate": "(vfrom === 'ALL' ? datum.mv_all : vfrom === datum.state ? datum.mv_st : 0) * (1 - t) + (vto === 'ALL' ? datum.mv_all : vto === datum.state ? datum.mv_st : 0) * t",
+          "as": "mv"
+        },
+        {
+          "filter": "datum.mv > 5"
+        },
+        {
+          "calculate": "datum.vis * min(1, (datum.mv - 5) / 6)",
+          "as": "lo"
+        },
+        {
+          "calculate": "datum.lo * 0.7",
+          "as": "lo_rule"
         }
       ],
       "layer": [
@@ -175,8 +221,7 @@
           "mark": {
             "type": "rule",
             "color": "#14213D",
-            "strokeWidth": 0.7,
-            "opacity": 0.7,
+            "strokeWidth": 0.8,
             "clip": true
           },
           "encoding": {
@@ -189,19 +234,23 @@
               "type": "quantitative"
             },
             "longitude2": {
-              "field": "dlon"
+              "field": "px"
             },
             "latitude2": {
-              "field": "dlat"
+              "field": "py"
+            },
+            "opacity": {
+              "field": "lo_rule",
+              "type": "quantitative",
+              "scale": null
             }
           }
         },
         {
           "mark": {
             "type": "circle",
-            "size": 7,
+            "size": 10,
             "color": "#14213D",
-            "opacity": 1,
             "clip": true
           },
           "encoding": {
@@ -212,6 +261,11 @@
             "latitude": {
               "field": "lat",
               "type": "quantitative"
+            },
+            "opacity": {
+              "field": "lo",
+              "type": "quantitative",
+              "scale": null
             }
           }
         }
@@ -227,9 +281,12 @@
             "overseas_share": "number",
             "lat": "number",
             "lon": "number",
-            "dlat": "number",
-            "dlon": "number",
-            "moved_px": "number"
+            "dlon_all": "number",
+            "dlat_all": "number",
+            "dlon_st": "number",
+            "dlat_st": "number",
+            "mv_all": "number",
+            "mv_st": "number"
           }
         }
       },
@@ -241,11 +298,11 @@
       },
       "encoding": {
         "longitude": {
-          "field": "dlon",
+          "field": "px",
           "type": "quantitative"
         },
         "latitude": {
-          "field": "dlat",
+          "field": "py",
           "type": "quantitative"
         },
         "size": {
@@ -257,17 +314,17 @@
               0,
               45000
             ],
+            "zero": true,
+            "nice": false,
             "range": [
               0,
               {
-                "expr": "900 * pow(width / 640, 2) * (st === '' ? 1 : 2.2)"
+                "expr": "560 * pow(width / 640, 2) * ((vfrom === 'ALL' ? 1 : 1.8) * (1 - t) + (vto === 'ALL' ? 1 : 1.8) * t)"
               }
-            ],
-            "zero": true,
-            "nice": false
+            ]
           },
           "legend": {
-            "title": "OVERSEAS STUDENTS PER CAMPUS",
+            "title": "OVERSEAS STUDENTS",
             "values": [
               5000,
               20000,
@@ -286,7 +343,9 @@
           "value": "#C8371F"
         },
         "opacity": {
-          "value": 0.78
+          "field": "op",
+          "type": "quantitative",
+          "scale": null
         },
         "order": {
           "field": "overseas",
@@ -315,93 +374,23 @@
       },
       "transform": [
         {
-          "filter": "datum.view === (st === '' ? 'ALL' : st)"
-        }
-      ]
-    },
-    {
-      "$comment": "State views: every provider named. Lone campuses are labelled beside their circle; city clusters get a stacked column of names with leader lines (positions from prep/70_campus_dodge.py).",
-      "data": {
-        "url": "data/campus_dodge_2024.csv",
-        "format": {
-          "parse": {
-            "overseas": "number",
-            "total": "number",
-            "overseas_share": "number",
-            "lat": "number",
-            "lon": "number",
-            "dlat": "number",
-            "dlon": "number",
-            "moved_px": "number",
-            "lab_lon": "number",
-            "lab_lat": "number"
-          }
-        }
-      },
-      "transform": [
-        {
-          "filter": "st !== '' && datum.view === st && isValid(datum.lab_lon)"
-        }
-      ],
-      "layer": [
-        {
-          "transform": [
-            {
-              "filter": "datum.lab_lead === 'True' || datum.lab_lead === true"
-            }
-          ],
-          "mark": {
-            "type": "rule",
-            "color": "#14213D",
-            "strokeWidth": 0.6,
-            "opacity": 0.55,
-            "clip": true
-          },
-          "encoding": {
-            "longitude": {
-              "field": "dlon",
-              "type": "quantitative"
-            },
-            "latitude": {
-              "field": "dlat",
-              "type": "quantitative"
-            },
-            "longitude2": {
-              "field": "lab_lon"
-            },
-            "latitude2": {
-              "field": "lab_lat"
-            }
-          }
+          "calculate": "(vfrom === 'ALL' ? datum.dlon_all : vfrom === datum.state ? datum.dlon_st : datum.lon) * (1 - t) + (vto === 'ALL' ? datum.dlon_all : vto === datum.state ? datum.dlon_st : datum.lon) * t",
+          "as": "px"
         },
         {
-          "mark": {
-            "type": "text",
-            "baseline": "middle",
-            "fontSize": 10.5,
-            "fontWeight": 600,
-            "color": "#14213D",
-            "clip": true,
-            "align": {
-              "expr": "datum.lab_align"
-            },
-            "dx": {
-              "expr": "(datum.lab_lead === 'True' || datum.lab_lead === true) ? (datum.lab_align === 'left' ? 3 : -3) : 0"
-            }
-          },
-          "encoding": {
-            "longitude": {
-              "field": "lab_lon",
-              "type": "quantitative"
-            },
-            "latitude": {
-              "field": "lab_lat",
-              "type": "quantitative"
-            },
-            "text": {
-              "field": "short_name"
-            }
-          }
+          "calculate": "(vfrom === 'ALL' ? datum.dlat_all : vfrom === datum.state ? datum.dlat_st : datum.lat) * (1 - t) + (vto === 'ALL' ? datum.dlat_all : vto === datum.state ? datum.dlat_st : datum.lat) * t",
+          "as": "py"
+        },
+        {
+          "calculate": "((vfrom === 'ALL' || vfrom === datum.state) ? 1 : 0) * (1 - t) + ((vto === 'ALL' || vto === datum.state) ? 1 : 0) * t",
+          "as": "vis"
+        },
+        {
+          "filter": "datum.vis > 0.01"
+        },
+        {
+          "calculate": "datum.vis * 0.8",
+          "as": "op"
         }
       ]
     },
@@ -417,11 +406,11 @@
       },
       "transform": [
         {
-          "calculate": "{'NSW':146.6,'VIC':141.4,'QLD':144,'WA':121.5,'SA':135,'TAS':146.6,'NT':133.4,'ACT':151.9}[datum.state]",
+          "calculate": "{'NSW':146.6,'VIC':141.4,'QLD':144,'WA':121.5,'SA':135,'TAS':146.6,'NT':133.4,'ACT':150.7}[datum.state]",
           "as": "llon"
         },
         {
-          "calculate": "{'NSW':-31.6,'VIC':-36.2,'QLD':-22.5,'WA':-26,'SA':-29.5,'TAS':-42.1,'NT':-19.5,'ACT':-39.4}[datum.state]",
+          "calculate": "{'NSW':-31.6,'VIC':-36.2,'QLD':-22.5,'WA':-26,'SA':-29.5,'TAS':-42.1,'NT':-19.5,'ACT':-37.1}[datum.state]",
           "as": "llat"
         },
         {
@@ -434,15 +423,15 @@
           "transform": [
             {
               "filter": "datum.state === 'ACT'"
-            },
-            {
-              "filter": "st === ''"
             }
           ],
           "mark": {
             "type": "rule",
             "color": "#14213D",
-            "strokeWidth": 0.8
+            "strokeWidth": 0.8,
+            "opacity": {
+              "expr": "(vfrom === 'ALL' ? 1 : 0) * (1 - t) + (vto === 'ALL' ? 1 : 0) * t"
+            }
           },
           "encoding": {
             "longitude": {
@@ -465,9 +454,6 @@
           "transform": [
             {
               "filter": "datum.state !== 'ACT'"
-            },
-            {
-              "filter": "st === ''"
             }
           ],
           "mark": {
@@ -477,7 +463,10 @@
             "letterSpacing": 0.5,
             "color": "#14213D",
             "align": "left",
-            "dx": 2
+            "dx": 2,
+            "opacity": {
+              "expr": "(vfrom === 'ALL' ? 1 : 0) * (1 - t) + (vto === 'ALL' ? 1 : 0) * t"
+            }
           },
           "encoding": {
             "longitude": {
@@ -490,13 +479,6 @@
             },
             "text": {
               "field": "label"
-            },
-            "opacity": {
-              "condition": {
-                "test": "st === '' || datum.state === st",
-                "value": 1
-              },
-              "value": 0.3
             }
           }
         },
@@ -504,9 +486,6 @@
           "transform": [
             {
               "filter": "datum.state === 'ACT'"
-            },
-            {
-              "filter": "st === ''"
             }
           ],
           "mark": {
@@ -515,9 +494,12 @@
             "fontWeight": 600,
             "letterSpacing": 0.5,
             "color": "#14213D",
-            "align": "right",
-            "dx": 0,
-            "baseline": "top"
+            "align": "left",
+            "dx": 2,
+            "baseline": "top",
+            "opacity": {
+              "expr": "(vfrom === 'ALL' ? 1 : 0) * (1 - t) + (vto === 'ALL' ? 1 : 0) * t"
+            }
           },
           "encoding": {
             "longitude": {
@@ -530,13 +512,6 @@
             },
             "text": {
               "field": "label"
-            },
-            "opacity": {
-              "condition": {
-                "test": "st === '' || datum.state === st",
-                "value": 1
-              },
-              "value": 0.3
             }
           }
         }

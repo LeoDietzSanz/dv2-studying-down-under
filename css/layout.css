@@ -42,15 +42,14 @@ body { margin: 0; background: var(--paper); }
 
 /* ---- acts ------------------------------------------------------------- */
 .act { position: relative; margin-top: var(--space-act); }
-main > .act:first-child { margin-top: 56px; }
+main > .act:first-child { margin-top: 44px; }
 .act__intro {
-  position: relative; margin-bottom: 52px;
+  position: relative; margin-bottom: 40px;
   display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter);
-  align-items: center;
+  align-items: start;
 }
-.act__intro > * { grid-column: 1 / -1; }
-.act__intro > .prose { grid-column: 1 / span 7; }
-.act__intro .field { margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+.act__intro > * { grid-column: 1 / span 7; }
+.act__intro .field { margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
 /* the field number sits in a small box, like a numbered field on a form */
 .act__intro .field .num {
   display: inline-grid; place-items: center; min-width: 2.4em; height: 2em;
@@ -58,7 +57,7 @@ main > .act:first-child { margin-top: 56px; }
 }
 /* each act carries one stamp beside its text; the stamp holds a real figure.
    It spans every row of the intro and sits centred in the right-hand third. */
-.act__intro .act__stamp { grid-column: 8 / span 4; grid-row: 3; justify-self: center; align-self: center; }
+.act__intro .act__visa { grid-column: 8 / -1; grid-row: 2 / span 2; align-self: start; margin-top: 6px; }   /* the visa page starts level with the top of the headline */
 
 /* ---- charts -------------------------------------------------------------- */
 .charts {
@@ -124,8 +123,8 @@ main > .act:first-child { margin-top: 56px; }
   .charts, .site-header__grid, .site-footer__grid { grid-template-columns: minmax(0, 1fr); }
   .chart, .chart--half, .site-header__text, .site-header__board, .site-footer__sources, .site-footer__meta { grid-column: 1 / -1; }
   .act__intro { grid-template-columns: minmax(0, 1fr); }
-  .act__intro > *, .act__intro > .prose, .act__intro .act__stamp { grid-column: 1 / -1; }
-  .act__intro .act__stamp { grid-row: auto; justify-self: start; margin: 24px 0 0 12px; }
+  .act__intro > *, .act__intro > .prose, .act__intro .act__visa { grid-column: 1 / -1; }
+  .act__intro .act__visa { grid-row: auto; margin-top: 26px; }
 }
 @media (max-width: 640px) {
   :root { --space-act: 96px; --space-chart: 56px; }
@@ -170,7 +169,10 @@ main > .act:first-child { margin-top: 56px; }
 .charts > .chart--half { display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 0; align-content: start; }
 .pair--wide-left { grid-template-rows: auto auto auto; }
 .pair--wide-left > .pair__item { display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 0; }
-.pair--wide-left > .pair__item:last-child > .chart__vis { align-self: center; }   /* beeswarm centred on the map */
+.pair--wide-left > .pair__item:first-child { grid-column: 1; }
+.pair--wide-left > .pair__item:last-child > .chart__vis { flex: none; min-height: 0; }
+.pair--wide-left > .pair__item:last-child { padding-top: 60px; }   /* the swarm sits below its legend; this puts the dots on the map's midline */
+.pair--wide-left > .pair__item:last-child { grid-column: 2; grid-row: 1 / span 3; display: flex; flex-direction: column; justify-content: center; }   /* beeswarm, with its label and key, centred on the map */
 .chart--half > .chart__vis, .chart--half > .waffle { align-self: start; }
 
 /* ---- world maps stacked, each full width ---------------------------------- */
@@ -232,8 +234,58 @@ main > .act:first-child { margin-top: 56px; }
    beeswarm's legend and axis are uneven, so its dots are nudged to sit on
    the map's midline. */
 #fig-14 > .chart__vis { margin-top: 18px; }
-.pair--wide-left > .pair__item:last-child > .chart__vis { position: relative; top: 76px; }
 @media (max-width: 900px) {
   #fig-14 > .chart__vis { margin-top: 0; }
-  .pair--wide-left > .pair__item:last-child > .chart__vis { top: 0; }
+  .pair--wide-left > .pair__item:first-child, .pair--wide-left > .pair__item:last-child { grid-column: 1; grid-row: auto; padding-top: 0; }
 }
+
+/* ---- visa pages ---------------------------------------------------------------
+   Each act's key figures, printed as the fields of a visa page, with the
+   act's stamp pressed over the right-hand side, the way border stamps land
+   on whatever is already printed. The page fills the space beside the
+   paragraph, so the stamp is never left floating on its own. */
+.visa {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--rule); border-top: 3px solid var(--ink);
+  background:
+    repeating-linear-gradient(135deg, rgba(47, 95, 167, 0.045) 0 1px, transparent 1px 7px),
+    var(--paper-hi);
+  padding: 12px 16px 14px;
+  display: grid; grid-template-rows: auto 1fr; margin-top: 4px;
+}
+.visa__head {
+  margin: 0 0 6px; display: flex; justify-content: space-between; gap: 12px;
+  font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-muted);
+}
+.visa__fields { margin: 0; display: grid; align-content: space-around; width: 58%; }
+.visa__row { padding: 6px 0 5px; background: radial-gradient(circle, var(--rule) 1px, transparent 1.4px) 0 100% / 6px 2px repeat-x; }
+.visa__row:last-child { background: none; }
+.visa dt { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+.visa dd { margin: 1px 0 0; font-family: var(--font-mono); font-size: 18px; font-weight: 600; color: var(--ink); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.visa .stamp { position: absolute; right: 6%; top: 50%; margin-top: 8px; translate: 0 -50%; }
+.visa .stamp--round { right: 4%; }
+@media (max-width: 1100px) and (min-width: 901px) {
+  .visa__fields { width: 100%; }
+  .visa .stamp { top: auto; bottom: -6px; translate: none; right: 4%; opacity: 0.85; }
+}
+@media (max-width: 480px) {
+  .visa dd { font-size: 15px; }
+  .visa .stamp { font-size: 9.5px; padding: 8px 12px 9px; right: 3%; top: auto; bottom: 10px; translate: none; margin: 0; }
+  .visa .stamp .big { font-size: 34px; }
+  .visa .stamp--round { padding: 14px; }
+  .visa .stamp--round .big { font-size: 30px; }
+}
+
+/* ---- Act 6 closing: the reader's declaration ---------------------------------
+   The last field on the form, left for the reader: the question, the case
+   each side makes, and three empty boxes. */
+.declaration { margin-top: var(--space-chart); padding: 22px 0 6px; border-top: 3px double var(--ink); }
+.declaration__q { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.08; margin: 10px 0 22px; max-width: 26ch; color: var(--ink); }
+.declaration__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px calc(var(--gutter) * 1.6); max-width: 1000px; }
+.declaration__cols p:not(.field) { margin: 8px 0 0; max-width: 60ch; line-height: 1.6; }
+.declaration__boxes { margin: 26px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.declaration__boxes .box { display: inline-block; width: 20px; height: 20px; border: 1.5px solid var(--ink); background: var(--paper-hi); margin-left: 12px; }
+@media (max-width: 900px) { .declaration__cols { grid-template-columns: minmax(0, 1fr); } }
+/* chart 15 continues the flow map's story, so it follows it more closely */
+#fig-15 { margin-top: -24px; }

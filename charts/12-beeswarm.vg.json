@@ -33,10 +33,10 @@
       "on": [
         {
           "events": "@dots:click",
-          "update": "datum.datum.state === pickdot ? '' : datum.datum.state"
+          "update": "datum.state === st ? '' : datum.state"
         },
         {
-          "events": "dblclick",
+          "events": "view:dblclick",
           "update": "''"
         }
       ]
@@ -100,9 +100,9 @@
         "Private"
       ],
       "range": [
-        "#6E4BA8",
+        "#C99400",
         "#2F5FA7",
-        "#2E8754"
+        "#13A39A"
       ]
     }
   ],
@@ -229,50 +229,6 @@
           ]
         }
       ]
-    },
-    {
-      "$comment": "Name the four providers the caption cites: the three most international and New England at the other end.",
-      "type": "text",
-      "from": {
-        "data": "dots"
-      },
-      "encode": {
-        "update": {
-          "x": {
-            "field": "x"
-          },
-          "y": {
-            "field": "y"
-          },
-          "text": {
-            "signal": "indexof(['Murdoch University','The University of Sydney','RMIT University','The University of New England'], datum.datum.institution) >= 0 ? datum.datum.short_name + ' ' + format(datum.datum.overseas_share, '.0%') : ''"
-          },
-          "dy": {
-            "signal": "-(sqrt(datum.size / PI) + 5)"
-          },
-          "align": {
-            "value": "center"
-          },
-          "baseline": {
-            "value": "bottom"
-          },
-          "font": {
-            "value": "IBM Plex Mono"
-          },
-          "fontSize": {
-            "value": 10
-          },
-          "fontWeight": {
-            "value": 600
-          },
-          "fill": {
-            "value": "#14213D"
-          },
-          "opacity": {
-            "signal": "st === '' || datum.datum.state === st ? 1 : 0.15"
-          }
-        }
-      }
     }
   ]
 }

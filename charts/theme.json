@@ -47,7 +47,7 @@
   "text":  { "color": "#14213D", "font": "IBM Plex Mono", "fontSize": 11 },
 
   "range": {
-    "category": ["#2F5FA7", "#C8371F", "#6E4BA8", "#2E8754", "#9A9C94"],
+    "category": ["#2F5FA7", "#C8371F", "#9E5BD0", "#13A39A", "#9A9C94"],
     "ramp":     ["#E6ECF5", "#C3D1E8", "#8FA9D3", "#5B7FBD", "#2F5FA7", "#1C3C70"]
   },
 

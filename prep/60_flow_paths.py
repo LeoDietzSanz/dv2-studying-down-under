@@ -16,6 +16,9 @@ Why ribbons (filled polygons) and not lines:
   slices, one per capital, and each branch starts on exactly its slice and
   leaves in the trunk's direction. Branch widths therefore add up to the
   trunk at every zoom level, and branches of one origin never cross.
+  Trunks are curves that arrive at their own "gate" on an arc around
+  south-east Australia, so routes from neighbouring countries arrive side by
+  side rather than on top of each other.
 
 Geometry is built in the map's own projection (azimuthal equidistant centred
 on 110 E, 2 S, as in charts/10-flow-map.vl.json), so widths are even on
@@ -37,8 +40,10 @@ N_ORIGINS = 20             # the 20 largest source countries
 FLOW_MIN = 1000            # routes smaller than this are left out (caption says so)
 RAD_PER_STUDENT = 0.075 / 230000    # ribbon width: 230,000 students = 0.075 rad (~4.3 deg)
 MIN_WIDTH = 0.0022         # thinnest branch, so small routes stay visible (~1 px on a laptop)
-SPLIT_BEFORE = 0.36        # rad (~21 deg) before the destinations' centre, trunks split
-N_TRUNK, N_BRANCH = 16, 40
+N_TRUNK, N_BRANCH = 48, 40
+HUB = (145.0, -32.0)       # centre of the arc of arrival gates (south-east Australia)
+ARC = 0.40                 # gate arc radius, rad (~23 deg)
+GATE_GAP = 0.004           # gap between neighbouring gates, rad
 
 LON0, LAT0 = math.radians(110), math.radians(-2)    # projection centre
 
@@ -100,6 +105,16 @@ def ribbon(centre, width):
     return ring[::-1] if area > 0 else ring
 
 
+def lerp(a, b, t):
+    return (a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t)
+
+
+def cubic(p0, p1, p2, p3, t):
+    u = 1 - t
+    return (u**3 * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t**3 * p3[0],
+            u**3 * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t**3 * p3[1])
+
+
 def bezier(p0, p1, p2, t):
     u = 1 - t
     return (u * u * p0[0] + 2 * u * t * p1[0] + t * t * p2[0],
@@ -126,6 +141,37 @@ def main() -> None:
     top = totals.head(N_ORIGINS)
     features, origins = [], []
 
+    # ---- arrival gates ------------------------------------------------------
+    # Every route arrives at a "gate" on an arc around south-east Australia
+    # (centre HUB, radius ARC). Gates are handed out in the order the origins
+    # sit around the arc, each as wide as its route plus a small gap, so
+    # routes from neighbouring countries (India and Pakistan, say) arrive side
+    # by side instead of on top of each other, and never cross. Routes from
+    # the Pacific edge get their own run of gates on the eastern side.
+    hub = fwd(*HUB)
+    pre = {}
+    for nat in top.index:
+        info = lk.loc[lk["nationality"] == nat].iloc[0]
+        g = ns[(ns["nationality"] == nat) & (ns["enrolments"] >= FLOW_MIN) & ns["state"].isin(caps.index)]
+        (olon, olat), via = ENTRY.get(info["iso3"], ((info["lon"], info["lat"]), ""))
+        nlon, nlat = NUDGE.get(info["iso3"], (0, 0))
+        o = fwd(olon + nlon, olat + nlat)
+        pre[nat] = dict(o=o, w=float((g["enrolments"] * RAD_PER_STUDENT).clip(lower=MIN_WIDTH).sum()),
+                        b=math.atan2(o[1] - hub[1], o[0] - hub[0]), pacific="Pacific" in via)
+    gate = {}
+    for pacific in (False, True):
+        group = sorted((n for n in pre if pre[n]["pacific"] == pacific), key=lambda n: pre[n]["b"])
+        if not group:
+            continue
+        spans = [(pre[n]["w"] + GATE_GAP) / ARC for n in group]
+        tot = sum(pre[n]["w"] for n in group)
+        mean = math.atan2(sum(math.sin(pre[n]["b"]) * pre[n]["w"] for n in group) / tot,
+                          sum(math.cos(pre[n]["b"]) * pre[n]["w"] for n in group) / tot)
+        angle = mean - sum(spans) / 2
+        for n, sp in zip(group, spans):
+            gate[n] = angle + sp / 2
+            angle += sp
+
     for rank, (nat, all_students) in enumerate(top.items(), start=1):
         info = lk.loc[lk["nationality"] == nat].iloc[0]
         iso3 = info["iso3"]
@@ -141,21 +187,23 @@ def main() -> None:
         tile = (olon + nlon, olat + nlat)
         o = fwd(*tile)
 
-        wsum = g["enrolments"].sum()
-        centre = ((g["dx"] * g["enrolments"]).sum() / wsum, (g["dy"] * g["enrolments"]).sum() / wsum)
-        dist = math.hypot(o[0] - centre[0], o[1] - centre[1])
-        head = unit((centre[0] - o[0], centre[1] - o[1]))
-        back = min(SPLIT_BEFORE, dist * 0.5)
-        split = (centre[0] - head[0] * back, centre[1] - head[1] * back)
+        # Trunk: a cubic curve from the origin to its gate, arriving square-on
+        # (pointing at the hub), so the branches leave it in a tidy fan.
+        a_ = gate[nat]
+        out = (math.cos(a_), math.sin(a_))              # from the gate, back out towards the origin
+        split = (hub[0] + out[0] * ARC, hub[1] + out[1] * ARC)
+        head = (-out[0], -out[1])                       # direction of travel at the gate
         perp = (-head[1], head[0])                      # left of travel
+        span = math.hypot(split[0] - o[0], split[1] - o[1])
+        c2 = (split[0] + out[0] * span * 0.4, split[1] + out[1] * span * 0.4)
+        c1 = lerp(o, c2, 0.3)
         trunk_w = g["w"].sum()
         shown = int(g["enrolments"].sum())
         grp = group_of(info["region_group"])
         name = SHORT.get(nat, nat)
         base = dict(iso3=iso3, country=name, grp=grp)
 
-        trunk_line = [(o[0] + (split[0] - o[0]) * i / N_TRUNK, o[1] + (split[1] - o[1]) * i / N_TRUNK)
-                      for i in range(N_TRUNK + 1)]
+        trunk_line = [cubic(o, c1, c2, split, i / N_TRUNK) for i in range(N_TRUNK + 1)]
         features.append({"type": "Feature",
                          "properties": dict(base, part="trunk", code="", city="all capitals shown",
                                             enrolments=shown, share=round(shown / all_students, 4)),

@@ -151,8 +151,8 @@
         ],
         "range": [
           "#C8371F",
-          "#6E4BA8",
-          "#2E8754",
+          "#9E5BD0",
+          "#13A39A",
           "#2F5FA7",
           "#BAC0B8"
         ]
@@ -296,10 +296,14 @@
       }
     },
     {
-      "$comment": "End labels for every line still in the window in 2025: an ISO code on a flap tile, plus the name for the four story lines.",
+      "$comment": "End labels for every line still in the window in 2025: ISO code on a flap tile, then the country name (story lines in their colour, the rest in grey).",
       "transform": [
         {
           "filter": "datum.year === 2025 && datum.rank >= 3 && datum.rank <= 15"
+        },
+        {
+          "calculate": "{'Korea, Republic of (South)':'South Korea','Hong Kong SAR':'Hong Kong','United States of America':'United States'}[datum.nationality] || datum.nationality",
+          "as": "short"
         }
       ],
       "layer": [
@@ -341,22 +345,44 @@
           }
         },
         {
-          "transform": [
-            {
-              "filter": "datum.is_story === 1"
-            }
-          ],
           "mark": {
             "type": "text",
             "align": "left",
             "dx": 46,
             "fontSize": 10.5,
-            "fontWeight": 600,
+            "fontWeight": {
+              "expr": "datum.is_story === 1 ? 600 : 400"
+            },
             "fontFamily": "IBM Plex Sans"
           },
           "encoding": {
             "text": {
-              "field": "story"
+              "field": "short"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.is_story === 1",
+                "field": "story",
+                "type": "nominal",
+                "legend": null,
+                "scale": {
+                  "domain": [
+                    "Nepal",
+                    "Philippines",
+                    "Bangladesh",
+                    "South Korea",
+                    "Other"
+                  ],
+                  "range": [
+                    "#C8371F",
+                    "#9E5BD0",
+                    "#13A39A",
+                    "#2F5FA7",
+                    "#BAC0B8"
+                  ]
+                }
+              },
+              "value": "#7C8798"
             }
           }
         }
@@ -391,13 +417,13 @@
             "year": 2010.3,
             "rank": 16.15,
             "t": "PHL ↑ from 22nd in 2010",
-            "c": "#6E4BA8"
+            "c": "#9E5BD0"
           },
           {
             "year": 2019.35,
             "rank": 16.15,
             "t": "BGD ↑ 17th → 7th in two years",
-            "c": "#2E8754"
+            "c": "#13A39A"
           }
         ]
       },

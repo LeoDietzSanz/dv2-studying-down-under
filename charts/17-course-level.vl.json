@@ -1,0 +1,350 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 17. Slope chart: overseas students' share of enrolments at each higher-education course level, 2020 and 2024. Postgraduate coursework (mostly master's degrees) is drawn in stamp red and crosses the dashed 50% line: by 2024 most of its students are from overseas. The other levels are neutral, labelled at both ends.",
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "data/he_course_level.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "overseas_share": "number",
+        "overseas": "number",
+        "total": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year === 2020 || datum.year === 2024"
+    },
+    {
+      "calculate": "datum.level === 'Postgraduate coursework'",
+      "as": "hero"
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "y": 0.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "color": "#7C8798"
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "detail": {
+          "field": "level"
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.hero",
+            "value": 3.4
+          },
+          "value": 1.8
+        },
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "labelFontWeight": 600,
+            "domain": false,
+            "ticks": false
+          },
+          "scale": {
+            "paddingOuter": 0.9
+          }
+        },
+        "y": {
+          "field": "overseas_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.15,
+              0.6
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.hero",
+            "value": "#C8371F"
+          },
+          "value": "#8C95A3"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "opacity": 1,
+        "stroke": "#EEF1EC",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "level",
+            "title": "Course level"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "overseas_share",
+            "title": "Overseas share",
+            "format": ".0%"
+          },
+          {
+            "field": "overseas",
+            "title": "Overseas students",
+            "format": ","
+          },
+          {
+            "field": "total",
+            "title": "All students",
+            "format": ","
+          }
+        ],
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "labelFontWeight": 600,
+            "domain": false,
+            "ticks": false
+          },
+          "scale": {
+            "paddingOuter": 0.9
+          }
+        },
+        "y": {
+          "field": "overseas_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.15,
+              0.6
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.hero",
+            "value": "#C8371F"
+          },
+          "value": "#8C95A3"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2024"
+        },
+        {
+          "calculate": "(datum.level === 'Diplomas and associate degrees' ? 'Diplomas' : datum.level) + ' ' + format(datum.overseas_share, '.0%')",
+          "as": "t"
+        },
+        {
+          "calculate": "datum.level === 'Diplomas and associate degrees' ? datum.overseas_share - 0.012 : datum.level === 'Postgraduate research' ? datum.overseas_share + 0.008 : datum.overseas_share",
+          "as": "ly"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 10.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "y": {
+          "field": "ly",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        },
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "labelFontWeight": 600,
+            "domain": false,
+            "ticks": false
+          },
+          "scale": {
+            "paddingOuter": 0.9
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.hero",
+            "value": "#C8371F"
+          },
+          "value": "#8C95A3"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2020"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "fontSize": 10.5,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "overseas_share",
+          "format": ".0%"
+        },
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "labelFontWeight": 600,
+            "domain": false,
+            "ticks": false
+          },
+          "scale": {
+            "paddingOuter": 0.9
+          }
+        },
+        "y": {
+          "field": "overseas_share",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.15,
+              0.6
+            ]
+          },
+          "axis": {
+            "title": null,
+            "format": "%",
+            "values": [
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6
+            ],
+            "gridDash": [
+              2,
+              3
+            ]
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.hero",
+            "value": "#C8371F"
+          },
+          "value": "#8C95A3"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "y": 0.5,
+            "year": 2020
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dy": -3,
+        "dx": -28,
+        "fontSize": 9.5,
+        "letterSpacing": 0.8,
+        "color": "#4D5A70",
+        "text": "MAJORITY OVERSEAS ABOVE"
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        }
+      }
+    }
+  ]
+}
