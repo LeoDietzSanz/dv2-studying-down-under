@@ -277,15 +277,13 @@ main > .act:first-child { margin-top: 44px; }
   .visa .stamp--round .big { font-size: 30px; }
 }
 
-/* ---- Act 6 closing: the reader's declaration ---------------------------------
-   The last field on the form, left for the reader: the question, the case
-   each side makes, and three empty boxes. */
-.declaration { margin-top: var(--space-chart); padding: 22px 0 6px; border-top: 3px double var(--ink); }
-.declaration__q { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.08; margin: 10px 0 22px; max-width: 26ch; color: var(--ink); }
-.declaration__cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px calc(var(--gutter) * 1.6); max-width: 1000px; }
-.declaration__cols p:not(.field) { margin: 8px 0 0; max-width: 60ch; line-height: 1.6; }
-.declaration__boxes { margin: 26px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
-.declaration__boxes .box { display: inline-block; width: 20px; height: 20px; border: 1.5px solid var(--ink); background: var(--paper-hi); margin-left: 12px; }
-@media (max-width: 900px) { .declaration__cols { grid-template-columns: minmax(0, 1fr); } }
+/* ---- afterword: the closing note at the end of Act 5 ------------------------ */
+.afterword { margin-top: var(--space-chart); padding-top: 20px; border-top: 3px double var(--ink); }
+.afterword .field { margin-bottom: 10px; }
+
 /* chart 15 continues the flow map's story, so it follows it more closely */
 #fig-15 { margin-top: -24px; }
+@media (prefers-reduced-motion: reduce) { 
+/* footer: sources, context and the AI note share the left column */
+.site-footer__sub { margin-top: 26px; }
+.site-footer__note { margin: 10px 0 0; max-width: 72ch; font-size: var(--fs-caption); line-height: 1.6; color: var(--ink-muted); }

@@ -38,6 +38,9 @@ from pathlib import Path
 import pandas as pd
 from openpyxl import load_workbook
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from labels import display_name  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 RAW, DATA, GEO = ROOT / "raw", ROOT / "data", ROOT / "geo"
 YEAR = 2025
@@ -191,6 +194,7 @@ def main() -> None:
     country["rank_per_100k"] = big["per_100k"].rank(ascending=False, method="min")
     country["rank_per_100k"] = country["rank_per_100k"].astype("Int64")
     country = country.sort_values("enrolments", ascending=False)
+    country["name"] = country["country"].map(display_name)     # what charts show
     save(country, "country_2025.csv")
 
     # ---- 3. Map 4 fill: states ----------------------------------------------

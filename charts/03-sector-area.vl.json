@@ -42,7 +42,7 @@
     {
       "$comment": "Annotation inside the VET band at its 2009 peak.",
       "transform": [{ "filter": "datum.sector === 'VET' && datum.year === 2009" }, { "calculate": "(datum.y0 + datum.y1) / 2", "as": "mid" }],
-      "mark": { "type": "text", "color": "#FFFFFF", "fontSize": 10, "fontWeight": 600, "letterSpacing": 0.6, "lineHeight": 12,
+      "mark": { "type": "text", "color": "#FFFFFF", "fontSize": 10, "fontWeight": 600, "letterSpacing": 0.6, "lineHeight": 12, "dx": 24, "dy": -5,
                 "text": ["VET ×4.1", "2005–09"] },
       "encoding": { "y": { "field": "mid", "type": "quantitative" } }
     },

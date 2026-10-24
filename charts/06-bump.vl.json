@@ -81,6 +81,10 @@
     {
       "calculate": "min(datum.rank, 16.9)",
       "as": "rc"
+    },
+    {
+      "calculate": "{'Korea, Republic of (South)':'South Korea','Hong Kong SAR':'Hong Kong','United States of America':'United States'}[datum.nationality] || datum.nationality",
+      "as": "name"
     }
   ],
   "encoding": {
@@ -275,7 +279,7 @@
       "encoding": {
         "tooltip": [
           {
-            "field": "nationality",
+            "field": "name",
             "title": "Citizenship"
           },
           {

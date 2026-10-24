@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 2. Annotated line chart: total international student enrolments (December year-to-date), 2005-2025. Title, subtitle and caption are in index.html.",
+  "description": "Chart 2. Annotated line chart: total international student enrolments (December year-to-date), 2005-2025. Title, subtitle and caption are in index.html. The enrolment line and its area are drawn in ink navy; stamp red is kept for the border closure.",
   "$comment_style": "Stamp red = international. Annotations in ink: mono caps, dashed rings like a hand-drawn stamp circle. The border closure is a shaded band, not just a point: it was a period, not an event.",
   "$comment_narrow": "Below 520px wide the annotations switch to short labels so they don't collide.",
   "params": [
@@ -139,14 +139,14 @@
     {
       "mark": {
         "type": "area",
-        "color": "#C8371F",
+        "color": "#14213D",
         "opacity": 0.045
       }
     },
     {
       "mark": {
         "type": "line",
-        "color": "#C8371F"
+        "color": "#14213D"
       }
     },
     {
@@ -205,7 +205,7 @@
     {
       "mark": {
         "type": "point",
-        "color": "#C8371F",
+        "color": "#14213D",
         "size": 80,
         "stroke": "#EEF1EC",
         "strokeWidth": 2.5

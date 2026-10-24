@@ -61,7 +61,7 @@
             },
             "key": "iso3",
             "fields": [
-              "country",
+              "name",
               "per_100k",
               "enrolments",
               "rank_per_100k",
@@ -72,14 +72,14 @@
       ],
       "params": [
         {
-          "name": "hov",
+          "name": "pin",
           "select": {
             "type": "point",
             "fields": [
               "iso3"
             ],
-            "on": "pointerover",
-            "clear": "pointerout"
+            "on": "click",
+            "clear": "dblclick"
           }
         }
       ],
@@ -140,7 +140,7 @@
         },
         "tooltip": [
           {
-            "field": "country",
+            "field": "name",
             "title": "Citizenship"
           },
           {
@@ -219,7 +219,10 @@
           "mark": {
             "type": "rule",
             "color": "#14213D",
-            "strokeWidth": 0.8
+            "strokeWidth": 0.8,
+            "opacity": {
+              "expr": "hl === '' ? 1 : 0"
+            }
           },
           "encoding": {
             "longitude": {
@@ -242,7 +245,10 @@
           "mark": {
             "type": "circle",
             "size": 14,
-            "color": "#14213D"
+            "color": "#14213D",
+            "opacity": {
+              "expr": "hl === '' ? 1 : 0"
+            }
           },
           "encoding": {
             "longitude": {
@@ -268,7 +274,10 @@
             "fontSize": 9.5,
             "fontWeight": 600,
             "letterSpacing": 0.4,
-            "color": "#14213D"
+            "color": "#14213D",
+            "opacity": {
+              "expr": "hl === '' ? 1 : 0"
+            }
           },
           "encoding": {
             "longitude": {
@@ -297,7 +306,10 @@
             "fontSize": 9.5,
             "fontWeight": 600,
             "letterSpacing": 0.4,
-            "color": "#14213D"
+            "color": "#14213D",
+            "opacity": {
+              "expr": "hl === '' ? 1 : 0"
+            }
           },
           "encoding": {
             "longitude": {
@@ -330,7 +342,10 @@
         "fontSize": 8.5,
         "fontWeight": 600,
         "letterSpacing": 1.2,
-        "color": "#14213D"
+        "color": "#14213D",
+        "opacity": {
+          "expr": "hl === '' ? 1 : 0"
+        }
       },
       "encoding": {
         "longitude": {
@@ -342,6 +357,99 @@
           "type": "quantitative"
         }
       }
+    },
+    {
+      "$comment": "The pinned country: its name and rate beside its centre.",
+      "data": {
+        "url": "data/country_2025.csv",
+        "format": {
+          "parse": {
+            "per_100k": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "hl !== '' && datum.iso3 === hl"
+        },
+        {
+          "calculate": "datum.name + ' · ' + (isValid(datum.per_100k) ? format(datum.per_100k, ',.1f') + ' per 100,000' : 'no rate')",
+          "as": "t"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 30,
+            "color": "#14213D",
+            "opacity": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "stroke": "#EEF1EC",
+            "strokeWidth": 4,
+            "strokeJoin": "round",
+            "color": "#EEF1EC",
+            "dx": 8
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#14213D",
+            "dx": 8
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
     }
   ],
   "usermeta": {

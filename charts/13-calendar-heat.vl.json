@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 13. Calendar heatmap built like an arrivals board: one tile per month, 2015-2025, colour = new enrolments that month (monthly values derived from year-to-date totals in prep/10_basic.py). The two intake months are flagged in red in the header; their values are printed on the tiles, board-style. July 2020 is ringed in stamp red: the second intake halved after borders closed in March (96.8k in July 2019, 50.9k in July 2020; both values are printed on their tiles).",
+  "description": "Chart 13. Calendar heatmap built like an arrivals board: one tile per month, 2015-2025, colour = new enrolments that month (monthly values derived from year-to-date totals in prep/10_basic.py). The two intake months are flagged in red in the header; their values are printed on the tiles, board-style. July 2020 is ringed in stamp red: the second intake halved after borders closed in March (96.8k in July 2019, 50.9k in July 2020; both values are printed on their tiles). Legend ticks (5k, 20k, 45k, 80k, 125k) are 1, 2, 3, 4 and 5 squared, so on the square-root colour scale they sit evenly spaced; the domain runs to 125k, just above the largest month (124k, July 2023).",
   "width": "container",
   "height": 330,
   "data": {
@@ -82,7 +82,7 @@
             "type": "sqrt",
             "domain": [
               0,
-              120000
+              125000
             ],
             "range": [
               "#EEF2F8",
@@ -98,10 +98,11 @@
             "direction": "horizontal",
             "gradientLength": 220,
             "values": [
-              10000,
-              40000,
+              5000,
+              20000,
+              45000,
               80000,
-              120000
+              125000
             ],
             "labelExpr": "format(datum.value / 1000, 'd') + 'k'",
             "titleOrient": "left",

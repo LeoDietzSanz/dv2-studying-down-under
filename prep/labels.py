@@ -147,3 +147,20 @@ def short_uni(name: str) -> str:
         if s.endswith(suffix):
             s = s[: -len(suffix)]
     return s
+
+
+# Names as readers know them. The Department's own spellings stay as join
+# keys in every CSV; charts show these.
+DISPLAY_NAME = {
+    "Korea, Republic of (South)": "South Korea",
+    "Hong Kong SAR": "Hong Kong",
+    "United States of America": "United States",
+    "Korea, Democratic People's Republic of (North)": "North Korea",
+    "United Kingdom, Channel Islands and Isle of Man": "United Kingdom",
+    "Macau SAR": "Macau",
+    "Iran": "Iran",
+}
+
+
+def display_name(name: str) -> str:
+    return DISPLAY_NAME.get(name, name)

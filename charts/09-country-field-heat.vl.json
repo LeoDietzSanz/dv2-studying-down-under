@@ -139,7 +139,7 @@
         },
         "tooltip": [
           {
-            "field": "nationality",
+            "field": "row",
             "title": "Citizenship"
           },
           {

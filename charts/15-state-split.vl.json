@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 15. Split bars (100% stacked bars): for each of the 20 largest source countries, the share of its students in each state, 2025. States are a single-hue ramp from dark (NSW) to light (other states), each segment labelled with its state, so the chart never relies on telling hues apart and the board's inks stay free for the names. Every country gets the same length, so a small country's split reads as clearly as China's (a Sankey sizes bands by head-count, which turns small countries into slivers). Rows are grouped by the state that takes most of a country's students, then sorted by that share. Countries picked on the departures board (signal 'picked', set by js/boards.js) have their names set bold in their ink; clicking a row toggles it on the board and the flow map.",
+  "description": "Chart 15. Split bars (100% stacked bars): for each of the 20 largest source countries, the share of its students in each state, 2025. States are four hues (blue, orange, violet, teal) plus grey for the smaller states and territories; the four hues pass the colour-blind check for every pair, and each wide segment is also labelled with its state. Every country gets the same length, so a small country's split reads as clearly as China's (a Sankey sizes bands by head-count, which turns small countries into slivers). Rows are grouped by the state that takes most of a country's students, then sorted by that share. Countries picked on the departures board (signal 'picked', set by js/boards.js) have their names set bold in their ink; clicking a row toggles it on the board and the flow map.",
   "width": "container",
   "height": {
     "step": 23
@@ -230,11 +230,11 @@
               "Other"
             ],
             "range": [
-              "#0B1530",
-              "#253F73",
-              "#3F5F9C",
-              "#6586BF",
-              "#91A9D4"
+              "#31599E",
+              "#E3832F",
+              "#A15CC9",
+              "#2AA198",
+              "#AEB3AA"
             ]
           }
         },
@@ -287,10 +287,10 @@
         },
         "color": {
           "condition": {
-            "test": "datum.st === 'Other'",
-            "value": "#0B1530"
+            "test": "datum.st === 'NSW' || datum.st === 'QLD'",
+            "value": "#FFFFFF"
           },
-          "value": "#FFFFFF"
+          "value": "#14213D"
         }
       }
     },

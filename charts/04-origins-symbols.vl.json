@@ -77,14 +77,14 @@
       ],
       "params": [
         {
-          "name": "hov",
+          "name": "pin",
           "select": {
             "type": "point",
             "fields": [
               "iso3"
             ],
-            "on": "pointerover",
-            "clear": "pointerout"
+            "on": "click",
+            "clear": "dblclick"
           }
         }
       ],
@@ -177,7 +177,7 @@
         },
         "tooltip": [
           {
-            "field": "country",
+            "field": "name",
             "title": "Citizenship"
           },
           {
@@ -259,10 +259,10 @@
         },
         "opacity": {
           "condition": {
-            "test": "hl === '' || datum.iso3 === hl",
+            "test": "hl === ''",
             "value": 1
           },
-          "value": 0.15
+          "value": 0
         }
       }
     },
@@ -293,6 +293,91 @@
           "type": "quantitative"
         }
       }
+    },
+    {
+      "$comment": "The pinned country (clicked on either map): its name and enrolments beside the circle.",
+      "data": {
+        "url": "data/country_2025.csv",
+        "format": {
+          "parse": {
+            "enrolments": "number",
+            "lat": "number",
+            "lon": "number",
+            "per_100k": "number",
+            "rank_enrolments": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "hl !== '' && datum.iso3 === hl"
+        },
+        {
+          "calculate": "sqrt(1500 * pow(width / 560, 2) * datum.enrolments / 227460 / PI)",
+          "as": "r"
+        },
+        {
+          "calculate": "datum.name + ' · ' + format(datum.enrolments, ',')",
+          "as": "t"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "stroke": "#EEF1EC",
+            "strokeWidth": 4,
+            "strokeJoin": "round",
+            "color": "#EEF1EC",
+            "dx": {
+              "expr": "datum.r + 6"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#14213D",
+            "dx": {
+              "expr": "datum.r + 6"
+            }
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
     }
   ],
   "usermeta": {
